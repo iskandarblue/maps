@@ -12,13 +12,19 @@
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+
+        .dropdown-inverse {
+          overflow-x: hidden;
+          max-height: 200px;
+          height: auto;
+        }
     </style>
 </head>
 <body>
   <div id='map'></div>
     <div class="btn-group">
       <i class="dropdown-arrow dropdown-arrow-inverse"></i>
-      <button class="btn btn-primary">EMA Program</button>
+      <button class="btn btn-primary">EMA Programs</button>
       <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
         <span class="caret"></span>
       </button>
@@ -87,9 +93,9 @@ map.on('style.load', function (e) {
         "type": "circle",
         "source": "uni",
         "paint": {
-          "circle-color" : "#3bb2d0",
+          "circle-color" : "#FFA500",
           "circle-radius" : 7,
-          "circle-opacity" :0.5
+          "circle-opacity" :0.7
 
         },
 
@@ -101,6 +107,7 @@ $().ready(function(){
         var value = $(this).text();
         console.log(value);
 
+        popup.remove();
         map.setFilter('uni', ['==', 'code', value]);
 
 /*
@@ -132,15 +139,16 @@ $().ready(function(){
 
       console.log(features[0].properties)
 
+      console.log(features.length);
+
      if (!features.length) {
           popup.remove();
-          return;
       }
 
       // Populate the popup and set its coordinates
       // based on the feature found.
       popup.setLngLat([features[0].properties.lon, features[0].properties.lat])
-          .setHTML(features[0].properties.title + '<div>' + features[0].properties.website + '</div>')
+          .setHTML(features[0].properties.title + '<div>' + '<a href="' + features[0].properties.website +'">link</a>' + '</div>')
           .addTo(map);
   });
 
