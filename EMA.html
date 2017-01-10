@@ -148,7 +148,7 @@ map.addSource('cluster', {
   'type': 'geojson',
   'data': './master_points.geojson',
   'cluster': true,
-  'clusterMaxZoom': 7, // Max zoom to cluster points on
+  'clusterMaxZoom': 6, // Max zoom to cluster points on
   'clusterRadius': 50
 });
 
@@ -159,7 +159,7 @@ map.addLayer({
     "filter": ["!has", "point_count"],
     "layout": {
         "icon-image": "placeMarker",
-        "icon-offset": [0, -15]
+        "icon-offset": [0, -14]
     }
 });
 
@@ -177,6 +177,9 @@ layers.forEach(function (layer, i) {
         "id": "cluster-" + i,
         "type": "circle",
         "source": "cluster",
+        "layout": {
+            "visibility": "visible"
+        },
         "paint": {
             "circle-color": layer[1],
             "circle-radius": 18,
@@ -196,6 +199,7 @@ map.addLayer({
     "type": "symbol",
     "source": "cluster",
     "layout": {
+        "visibility": "visible",
         "text-field": "{point_count}",
         "text-font": [
             "DIN Offc Pro Medium",
@@ -210,9 +214,8 @@ map.addLayer({
         "type": "symbol",
         "source": "uni",
         "layout":{
-
           "visibility": "none",
-          "icon-image": "marker-15",
+          "icon-image": "placeMarker",
           "icon-offset": [0, -11.5]
         }
 
@@ -238,11 +241,22 @@ $().ready(function(){
 
  if (value !== "ALL"){
         popup.remove();
-        map.setLayoutProperty('uni','visibility', 'visible');
-        map.setFilter('uni', ['==', 'code', value]);
+
+        map.setLayoutProperty('cluster-count','visibility', 'none');
+        map.setLayoutProperty('unclustered-points', 'visibility', 'none');
+        map.setLayoutProperty('cluster-0','visibility', 'none');
+        map.setLayoutProperty('cluster-1', 'visibility','none');
+        map.setLayoutProperty('cluster-2','visibility', 'none');
+        map.setLayoutProperty('uni', 'visibility', 'visible');
+        map.setFilter('uni', '==', 'code', value);
+
       } else {
-
-
+        map.setLayoutProperty('cluster-count','visibility', 'none');
+        map.setLayoutProperty('unclustered-points', 'none');
+        map.setLayoutProperty('cluster-0','visibility', 'none');
+        map.setLayoutProperty('cluster-1', 'visibility','none');
+        map.setLayoutProperty('cluster-2','visibility', 'none');
+        map.setLayoutProperty('uni', 'visibility', 'visible');
 
       }
 
@@ -287,14 +301,7 @@ $().ready(function(){
 
   map.on('mousemove', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
-        layers: [
-
-          'uni',
-          'cluster-0',
-          'cluster-1',
-          'cluster-2'
-
-        ] });
+        layers: ['uni'] });
       // Change the cursor style as a UI indicator.
       map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
 
