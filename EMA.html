@@ -301,8 +301,8 @@ function renderListings(features) {
             item.addEventListener('mouseover', function() {
                 // Highlight corresponding feature on the map
                 popup.setLngLat(feature.geometry.coordinates)
-                    .setText(feature.properties.city)
-
+                    .setHTML('<div>' + feature.properties.title + '</div>')
+                    .addTo(map);
                     console.log(feature.properties);
 
             });
