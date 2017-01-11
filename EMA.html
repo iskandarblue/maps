@@ -13,116 +13,429 @@
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
 
-        .dropdown-inverse {
-          overflow-x: hidden;
-          max-height: 200px;
-          height: auto;
-          background: '#ff4b1f';
-        }
-        .mapboxgl-popup {
-          position: absolute;
-          top: 0;
-          left: 0;
-          font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        }
+    </style>
+  </head>
+  <style>
 
-        .btn-group {
+#map {
+    position:absolute;
+    left:25%;
+    top:0;
+    bottom:0;
+    width: 75%;
+}
 
-          margin-left: 20px;
-          display: inline-block;
-          border-radius: 2px;
-          background: '#ff4b1f';
+  .dropdown-inverse {
+    overflow-x: hidden;
+    max-height: 200px;
+    height: auto;
+    background: '#ff4b1f';
+  }
+  .mapboxgl-popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  }
 
-        }
+  .btn-group {
+
+    margin-left: 20px;
+    display: inline-block;
+    border-radius: 2px;
+    background: '#ff4b1f';
+
+  }
+
+  .btn btn-primary{
+
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  color: #eee;
+  border-radius: 2px;
+  z-index: 3;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 10px;
+  margin-left: 20px;
+  background: '#ff4b1f';
+
+  }
+  .dropdown-toggle{
+
+    border-radius: 5px;
+    background: '#ff4b1f';
+  }
+
+#header {
+  position: absolute;
+  z-index: 1012022;
+  top: 0px;
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  background: rgba(12, 12, 12, 0.8);
+  color: #fff;
+}
 
 
-        .btn btn-primary{
+#modes {
+  margin-left: 20px;
+  display: inline-block;
+  z-index: 1;
+}
 
-        display: inline-block;
-        height: 28px;
-        line-height: 28px;
-        color: #eee;
-        border-radius: 2px;
-        z-index: 3;
-        cursor: pointer;
-        font-weight: 600;
-        font-family: 'Open Sans', sans-serif;
-        padding: 5px 10px;
-        margin-left: 20px;
-        background: '#ff4b1f';
+.mode, .mode-selected, .mode-summer, .mode-fall, .mode-winter {
+    display: inline-block;
+    height: 38px;
+    width: 135px;
+    line-height: 28px;
+    color: #fff;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 25px
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+    background: rgba(12, 12, 12, 0.8);
+}
 
-        }
 
-        .dropdown-toggle{
+.mode-selected {
+  background: #6A95CE;
+}
 
-          border-radius: 5px;
-          background: '#ff4b1f';
-        }
+.mode-summer {
+  background: rgba(127, 255, 212, 0.5);
+}
 
-        #header {
-          position: absolute;
-          z-index: 1012022;
-          top: 0px;
-          width: 100%;
-          line-height: 50px;
-          height: 50px;
-          background: rgba(12, 12, 12, 0.8);
-          color: #eee;
-        }
+.mode-fall {
+  background: rgba(217, 133, 59, 0.5);
+}
+
+.mode-winter {
+  background: rgba(255, 107, 107, 0.5);
+}
+
+.mode:hover, .mode:active,
+.mode-selected:hover, .mode-selected:active {
+    color: #fff;
+}
+
+.map-overlay {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.map-overlay fieldset {
+    display: none;
+    z-index: 2;
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    margin: 0;
+}
+
+.map-overlay input {
+    display: block;
+    z-index: 2;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.map-overlay .listing {
+    overflow: auto;
+    max-height: 100%;
+}
+
+.map-overlay .listing > * {
+    display: block;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+.map-overlay .listing a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: #404;
+    text-decoration: none;
+}
+
+.map-overlay .listing a:last-child {
+    border: none;
+}
+
+.map-overlay .listing a:hover {
+    background: #f0f0f0;
+}
+
+.mapboxgl-popup {
+
+max-width: 300px;
+max-height: 200px;
+font: 12px/20px 'Open Sans', sans-serif;
+border-radius: 2px;
+
+}
+
+.mapboxgl-popup-content {
+    overflow: auto;
+    color: #fff;
+    background: rgba(12, 12, 12, 0.8);
+    border-radius: 5px;
+
+}
+
 
 </style>
-</head>
-<body>
+
+<div class='map-overlay'>
+  <div id = 'modes'>
+  <div class = 'mode-selected' id='program'>Program</div>
+  <div class = 'mode' id='city'>City</div>
+</div>
+    <fieldset>
+        <input id='feature-filter' type='text' placeholder='Filter results by program name' />
+    </fieldset>
+    <div id='feature-listing' class='listing'></div>
+</div>
 
   <div id='map'></div>
-    <div id='header'>
-    <div class="btn-group">
-      <i class="dropdown-arrow dropdown-arrow-inverse"></i>
-      <button class="btn btn-primary">EMA Programs</button>
-      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-        <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu dropdown-inverse">
-        <li><a href="#link">ALL</a></li>
-        <li><a href="#link">4CITIES</a></li>
-        <li><a href="#link">ACES</a></li>
-        <li><a href="#link">ADVANCES</a></li>
-        <li><a href="#link">AMASE</a></li>
-        <li><a href="#link">ARCHMAT</a></li>
-        <li><a href="#link">ASC</a></li>
-        <li><a href="#link">ASTROMUNDUS</a></li>
-        <li><a href="#link">ATOMSIM</a></li>
-        <li><a href="#link">BIFTEC</a></li>
-        <li><a href="#link">CARTO</a></li>
-        <li><a href="#link">ChIR</a></li>
-        <li><a href="#link">CHOREOMUNDUS</a></li>
-        <li><a href="#link">CLE</a></li>
-        <li><a href="#link">CoDe</a></li>
-        <li><a href="#link">CoMEM</a></li>
-        <li><a href="#link">COSI</a></li>
-        <li><a href="#link">CWCN</a></li>
-        <li><a href="#link">DCLead</a></li>
-        <li><a href="#link">DESEM</a></li>
-        <li><a href="#link">Dyclam</a></li>
-        <li><a href="#link">EACH</a></li>
-        <li><a href="#link">EDAMUS</a></li>
-        <li><a href="#link">EM HRPP</a></li>
-        <li><a href="#link">EMARO +</a></li>
-        <li><a href="#link">EMECC NURSING</a></li>
-        <li><a href="#link">EMERALD</a></li>
-        <li><a href="#link">EMGS</a></li>
-      </ul>
-    </div>
-  </div>
 
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/iskandarblue/cixri3vlr000g2rn2z9fwknj6',
-    center: [35.2551, 45.5260],
-    zoom: 2.
+    center: [15.2551, 50.5260],
+    zoom: 3.0,
+    maxZoom: 7,
+    minZoom: 1,
 });
+
+
+document.getElementById('city').addEventListener('click', function () {
+      var city = document.getElementById('city');
+      var program = document.getElementById('program');
+      var ff = document.getElementById('feature-filter');
+
+
+      if (city.className ===  'mode') {
+        city.className = 'mode-selected'
+        ff.placeholder = 'Filter results by city name'
+
+        program.className = 'mode'
+      } else {
+        city.className = 'mode'
+        program.className = 'mode-selected'
+        ff.placeholder = 'Filter results by program name'
+    }
+  });
+
+  document.getElementById('program').addEventListener('click', function () {
+        var city = document.getElementById('city');
+        var program = document.getElementById('program');
+        var ff = document.getElementById('feature-filter');
+
+        if (program.className ===  'mode') {
+          program.className = 'mode-selected'
+          city.className = 'mode'
+          ff.placeholder = 'Filter results by program name'
+        } else {
+          city.className = 'mode-selected'
+          program.className = 'mode'
+          ff.placeholder = 'Filter results by city name'
+      }
+    });
+
+var program = document.getElementById('program');
+
+if (program.className === 'mode-selected') {
+
+  console.log("Lets show programs")
+} else {
+
+  console.log("Lets show cities")
+}
+
+
+
+var programs = [];
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+    closeButton: false,
+    anchor: 'top-left'
+});
+
+var filterEl = document.getElementById('feature-filter');
+var listingEl = document.getElementById('feature-listing');
+
+
+function renderListings(features) {
+    // Clear any existing listings
+    listingEl.innerHTML = '';
+    if (features.length) {
+        features.forEach(function(feature) {
+            var prop = feature.properties;
+            var item = document.createElement('a');
+            item.href = prop.website;
+            item.target = '_blank';
+            item.textContent = prop.code;
+            item.addEventListener('mouseover', function() {
+                // Highlight corresponding feature on the map
+                popup.setLngLat(feature.geometry.coordinates)
+                    .setText(feature.properties.city)
+
+                    console.log(feature.properties);
+
+            });
+            listingEl.appendChild(item);
+        });
+
+        // Show the filter input
+        filterEl.parentNode.style.display = 'block';
+    } else {
+        var empty = document.createElement('p');
+        empty.textContent = 'Drag the map to populate results';
+        listingEl.appendChild(empty);
+
+        // Hide the filter input
+        filterEl.parentNode.style.display = 'none';
+
+        // remove features filter
+        map.setFilter('uni', ['has', 'code']);
+    }
+}
+
+
+function normalize(string) {
+    return string.trim().toLowerCase();
+}
+
+function getUniqueFeatures(array, comparatorProperty) {
+    var existingFeatureKeys = {};
+    // Because features come from tiled vector data, feature geometries may be split
+    // or duplicated across tile boundaries and, as a result, features may appear
+    // multiple times in query results.
+    var uniqueFeatures = array.filter(function(el) {
+        if (existingFeatureKeys[el.properties[comparatorProperty]]) {
+            return false;
+        } else {
+            existingFeatureKeys[el.properties[comparatorProperty]] = true;
+            return true;
+        }
+    });
+
+    return uniqueFeatures;
+}
+
+map.on('style.load', function (e) {
+    map.addSource('uni', {
+        "type": 'geojson',
+        "data": './master_points.geojson'
+    });
+    map.addLayer({
+        "id": "uni",
+        "type": "symbol",
+        "source": "uni",
+        "layout":{
+          "visibility": "visible",
+          "icon-image": "marker-15",
+          "icon-offset": [0, -7.5],
+          "icon-allow-overlap": true,
+        }
+    });
+
+map.on('moveend', function() {
+     var features = map.queryRenderedFeatures({layers:['uni']});
+
+
+     if (features) {
+         var uniqueFeatures = getUniqueFeatures(features, "code");
+         // Populate features for the listing overlay.
+         renderListings(uniqueFeatures);
+
+         // Clear the input container
+         filterEl.value = '';
+
+         // Store the current features in sn `programs` variable to
+         // later use for filtering on `keyup`.
+         programs = uniqueFeatures;
+     }
+ });
+
+ map.on('mousemove', function(e) {
+     var features = map.queryRenderedFeatures(e.point, {
+         layers: ['uni']
+     });
+
+     // Change the cursor style as a UI indicator.
+     map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+     if (!features.length) {
+         popup.remove();
+         return;
+     }
+
+     var feature = features[0];
+     // Populate the popup and set its coordinates
+     // based on the feature found.
+     popup.setLngLat(feature.geometry.coordinates)
+         .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
+         +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>')
+         .addTo(map);
+ });
+
+ filterEl.addEventListener('keyup', function(e) {
+     var value = normalize(e.target.value);
+
+     // Filter visible features that don't match the input value.
+     var filtered = programs.filter(function(feature) {
+         var name = normalize(feature.properties.title);
+         var code = normalize(feature.properties.code);
+         return name.indexOf(value) > -1 || code.indexOf(value) > -1;
+     });
+
+     // Populate the sidebar with filtered results
+     renderListings(filtered);
+
+     // Set the filter to populate features into the layer.
+     map.setFilter('uni', ['in', 'code'].concat(filtered.map(function(feature) {
+         return feature.properties.code;
+
+         console.log(feature.properties);
+     })));
+ });
+
+ // Call this function on initialization
+ // passing an empty array to render an empty state
+ renderListings([]);
+});
+
+
+map.addControl(new mapboxgl.NavigationControl());
+
+
+
+
+/*
 
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -132,16 +445,9 @@ function getRandomColor() {
     }
     return color;
 }
-
 var color = getRandomColor()
 
-console.log(color);
 
-map.on('style.load', function (e) {
-    map.addSource('uni', {
-        "type": 'geojson',
-        "data": './master_points.geojson'
-    });
 
 
 map.addSource('cluster', {
@@ -162,9 +468,6 @@ map.addLayer({
         "icon-offset": [0, -14]
     }
 });
-
-
-
 
 var layers = [
     [10, '#ff4b1f'],
@@ -209,30 +512,16 @@ map.addLayer({
     }
 });
 
-    map.addLayer({
-        "id": "uni",
-        "type": "symbol",
-        "source": "uni",
-        "layout":{
-          "visibility": "none",
-          "icon-image": "placeMarker",
-          "icon-offset": [0, -11.5]
-        }
-
-  });
-});
-
+*/
+/*
 $(function(){
-
     $(".dropdown-menu li a").click(function(){
-
       $(".btn:first-child").text($(this).text());
       $(".btn:first-child").val($(this).text());
 
    });
 
 });
-
 
 $().ready(function(){
     $('a').click(function(){
@@ -260,7 +549,7 @@ $().ready(function(){
 
       }
 
-/*
+
     // Add a layer for this symbol type if it hasn't been added already.
     if (!map.getLayer(layerID)) {
         map.addLayer({
@@ -273,18 +562,15 @@ $().ready(function(){
             "filter": ["==", "code", symbol]
         });
       }
-    */
+
     });
   });
 
-  map.on('click', function (e) {
-      var cluster_features = map.queryRenderedFeatures(e.point, {
-          layers: [
-              'cluster-0',
-              'cluster-1',
-              'cluster-2'
-          ]
-      });
+
+map.on('click', function (e) {
+    var cluster_features = map.queryRenderedFeatures(e.point, {
+        layers: ['uni']
+    });
       var cluster_feature = cluster_features[0];
       if (cluster_feature && cluster_feature.properties.cluster) {
           map.jumpTo({
@@ -294,10 +580,7 @@ $().ready(function(){
       }
   });
 
-  var popup = new mapboxgl.Popup({
-      closeButton: true,
-      closeOnClick: true
-  });
+
 
   map.on('mousemove', function(e) {
       var features = map.queryRenderedFeatures(e.point, {
@@ -319,7 +602,7 @@ $().ready(function(){
           .setHTML(features[0].properties.title + '<div>' + '<a href="' + features[0].properties.website +'">website</a>' + '</div>')
           .addTo(map);
   });
-
+*/
 
 </script>
 
