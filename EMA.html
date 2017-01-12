@@ -181,9 +181,8 @@
     border: none;
 }
 
-
 .map-overlay .listing a:hover {
-    background: rgba(255, 249, 76, 0.2);
+    background: rgba(146, 254, 157, 0.1);
 }
 
 .mapboxgl-popup {
@@ -479,6 +478,7 @@ map.on('load', function (e) {
             program.className = 'mode-selected'
             ff.placeholder = 'Filter results by program name'
             map.setLayoutProperty('city', 'visibility', 'none');
+            map.setLayoutProperty('uni', 'visibility', 'visible');
         }
       });
 
