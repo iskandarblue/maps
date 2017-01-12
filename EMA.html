@@ -198,7 +198,7 @@ border-radius: 2px;
     overflow: auto;
     color: #fff;
     background: rgba(12, 12, 12, 0.8);
-    border-radius: 5px;
+    border-radius: 2px;
 
 }
 
@@ -255,12 +255,13 @@ document.getElementById('city').addEventListener('click', function () {
 
         if (program.className ===  'mode') {
           program.className = 'mode-selected'
-          city.className = 'mode'
           ff.placeholder = 'Filter results by program name'
+          map.setLayoutProperty('uni', 'visibility', 'visible');
         } else {
-          city.className = 'mode-selected'
           program.className = 'mode'
           ff.placeholder = 'Filter results by city name'
+          map.setLayoutProperty('uni', 'visibility', 'none');
+          map.setLayoutProperty('uni_select', 'visibility', 'none');
       }
     });
 
@@ -294,19 +295,55 @@ function renderListings(features) {
     if (features.length) {
         features.forEach(function(feature) {
             var prop = feature.properties;
+            var xmin = feature.properties.xmin;
+            var ymin = feature.properties.ymin;
+            var xmax = feature.properties.xmax;
+            var ymax = feature.properties.ymax;
             var item = document.createElement('a');
-            item.href = prop.website;
             item.target = '_blank';
             item.textContent = prop.code;
+            item.addEventListener('click', function(){
+
+              console.log(xmin);
+              console.log(ymin);
+              map.fitBounds([[
+                              xmin,
+                              ymin
+                          ], [
+                              xmax,
+                              ymax
+                          ]]);
+
+                    var codeFilter =  item.textContent;
+              console.log(codeFilter);
+
+              map.addLayer({
+                  "id": "uni_select",
+                  "type": "symbol",
+                  "source": "uni",
+                  "layout":{
+                    "visibility": "none",
+                    "icon-image": "marker-15red",
+                    "icon-offset": [0, -7.5],
+                    "icon-allow-overlap": true,
+                  },
+                    "filter": ["==", "code", codeFilter]
+              });
+
+
+              map.setLayoutProperty('uni_select', 'visibility', 'visible');
+
+            });
             item.addEventListener('mouseover', function() {
                 // Highlight corresponding feature on the map
-                popup.setLngLat(feature.geometry.coordinates)
+          /*      popup.setLngLat(feature.geometry.coordinates)
                     .setHTML('<div>' + feature.properties.title + '</div>')
-                    .addTo(map);
+                    .addTo(map);    */
                     console.log(feature.properties);
 
             });
             listingEl.appendChild(item);
+            console.log(item);
         });
 
         // Show the filter input
@@ -346,10 +383,10 @@ function getUniqueFeatures(array, comparatorProperty) {
     return uniqueFeatures;
 }
 
-map.on('style.load', function (e) {
+map.on('load', function (e) {
     map.addSource('uni', {
         "type": 'geojson',
-        "data": './master_points.geojson'
+        "data": './extents.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -362,6 +399,7 @@ map.on('style.load', function (e) {
           "icon-allow-overlap": true,
         }
     });
+
 
 map.on('moveend', function() {
      var features = map.queryRenderedFeatures({layers:['uni']});
@@ -403,6 +441,28 @@ map.on('moveend', function() {
          .addTo(map);
  });
 
+ map.on('mousemove', function(e) {
+     var features = map.queryRenderedFeatures(e.point, {
+         layers: ['uni_select']
+     });
+
+     // Change the cursor style as a UI indicator.
+     map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+     if (!features.length) {
+         popup.remove();
+         return;
+     }
+
+     var feature = features[0];
+     // Populate the popup and set its coordinates
+     // based on the feature found.
+     popup.setLngLat(feature.geometry.coordinates)
+         .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
+         +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
+         .addTo(map);
+ });
+
  filterEl.addEventListener('keyup', function(e) {
      var value = normalize(e.target.value);
 
@@ -420,7 +480,6 @@ map.on('moveend', function() {
      map.setFilter('uni', ['in', 'code'].concat(filtered.map(function(feature) {
          return feature.properties.code;
 
-         console.log(feature.properties);
      })));
  });
 
