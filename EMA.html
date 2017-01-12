@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
@@ -258,7 +259,8 @@ var listingEl = document.getElementById('feature-listing');
 function renderListings(features) {
     // Clear any existing listings
     listingEl.innerHTML = '';
-    if (features.length) {
+    var city = document.getElementById('city');
+    if (features.length && city.className === 'mode' ) {
         features.forEach(function(feature) {
             var prop = feature.properties;
             var xmin = feature.properties.xmin;
@@ -314,7 +316,73 @@ function renderListings(features) {
 
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
-    } else {
+    } else if (features.length && city.className === 'mode-selected' ) {
+        features.forEach(function(feature) {
+            var prop = feature.properties;
+            var lat = feature.properties.lat;
+            var lon = feature.properties.lon;
+            var item = document.createElement('a');
+            item.target = '_blank';
+            item.textContent = prop.code;
+            item.addEventListener('click', function(){
+
+
+                function htmlFromProps(props) {
+                  var html = "";
+                  var i = 0;
+                  for (p in props) {
+                    if (props[p] && props[p] != "null") {
+                      html += "<div>" + (i === 0 ? "<strong>" : "");
+                      html += props[p];
+                      html += (i++ === 0 ? "</strong>" : "") + "</div>\n";
+                    }
+                  }
+                  return html;
+                }
+
+
+                var feature = features[0];
+
+                delete feature.properties["field_1"];
+                  delete feature.properties["lon"];
+                    delete feature.properties["lat"];
+                      delete feature.properties["code"];
+                      delete feature.properties["title"];
+
+/*
+            popup.setLngLat(feature.geometry.coordinates)
+            .setHTML(htmlFromProps(feature.properties))
+            .addTo(map);   */
+
+              console.log(lon);
+              console.log(lat);
+
+              map.flyTo({
+
+                center: [lon, lat],
+                zoom: 7
+
+              });
+
+            });
+
+            item.addEventListener('mouseover', function() {
+                // Highlight corresponding feature on the map
+          /*      popup.setLngLat(feature.geometry.coordinates)
+                    .setHTML('<div>' + feature.properties.title + '</div>')
+                    .addTo(map);    */
+                    console.log(feature.properties);
+
+            });
+            listingEl.appendChild(item);
+            console.log(item);
+        });
+
+        // Show the filter input
+        filterEl.parentNode.style.display = 'block';
+
+
+    } else  {
         var empty = document.createElement('p');
         empty.textContent = 'Drag the map to populate results';
         listingEl.appendChild(empty);
@@ -324,8 +392,11 @@ function renderListings(features) {
 
         // remove features filter
         map.setFilter('uni', ['has', 'code']);
+        map.setFilter('city', ['has', 'code']);
     }
 }
+
+
 
 
 function normalize(string) {
@@ -350,6 +421,22 @@ function getUniqueFeatures(array, comparatorProperty) {
 }
 
 map.on('load', function (e) {
+
+  map.addSource('city', {
+      "type": 'geojson',
+      "data": './by_cities.geojson'
+  });
+  map.addLayer({
+      "id": "city",
+      "type": "symbol",
+      "source": "city",
+      "layout":{
+        "visibility": "none",
+        "icon-image": "markertrans",
+        "icon-offset": [0, -7.5],
+        "icon-allow-overlap": true,
+      }
+  });
     map.addSource('uni', {
         "type": 'geojson',
         "data": './extents.geojson'
@@ -366,6 +453,8 @@ map.on('load', function (e) {
         }
     });
 
+
+
     document.getElementById('city').addEventListener('click', function () {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
@@ -375,12 +464,18 @@ map.on('load', function (e) {
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
             ff.placeholder = 'Filter results by city name'
+            program.className = 'mode'
+            map.setLayoutProperty('city', 'visibility', 'visible');
+            map.setLayoutProperty('uni', 'visibility', 'none');
+            map.setLayoutProperty('uni_select', 'visibility', 'none');
+
 
             program.className = 'mode'
           } else {
             city.className = 'mode'
             program.className = 'mode-selected'
             ff.placeholder = 'Filter results by program name'
+            map.setLayoutProperty('city', 'visibility', 'none');
         }
       });
 
@@ -391,21 +486,26 @@ map.on('load', function (e) {
 
             if (program.className ===  'mode') {
               program.className = 'mode-selected'
+              city.className = 'mode'
               ff.placeholder = 'Filter results by program name'
+              map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'visible');
+              map.setLayoutProperty('uni_select', 'visibility', 'visible')
+
 
             } else {
               program.className = 'mode'
+              city.className = 'mode-selected'
               ff.placeholder = 'Filter results by city name'
               map.setLayoutProperty('uni', 'visibility', 'none');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
+              map.setLayoutProperty('uni_select', 'visibility', 'none')
+              map.setLayoutProperty('city', 'visibility', 'none');
           }
         });
 
 
 map.on('moveend', function() {
-     var features = map.queryRenderedFeatures({layers:['uni']});
+     var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
 
      if (features) {
@@ -441,7 +541,11 @@ map.on('moveend', function() {
      map.setFilter('uni', ['in', 'code'].concat(filtered.map(function(feature) {
          return feature.properties.code;
 
-     })));
+     })))
+/*     map.setFilter('city', ['in', 'code'].concat(filtered.map(function(feature) {
+         return feature.properties.code;
+
+     })))*/;
  });
 
  // Call this function on initialization
@@ -479,8 +583,12 @@ map.on('moveend', function() {
 
 
   map.on('mousemove', function(e) {
+
+      var program = document.getElementById('program');
+
+  if (program.className === "mode-selected"){
       var features = map.queryRenderedFeatures(e.point, {
-          layers: ['uni_select']
+          layers: ['uni_select', 'uni']
       });
 
       // Change the cursor style as a UI indicator.
@@ -495,13 +603,81 @@ map.on('moveend', function() {
       // Populate the popup and set its coordinates
       // based on the feature found.
       popup.setLngLat(feature.geometry.coordinates)
-          .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
+          .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + feature.properties.uni
           +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
           .addTo(map);
+
+} else if (program.className === "mode") {
+
+  var features = map.queryRenderedFeatures(e.point, {
+      layers: ['city']
   });
 
+  // Change the cursor style as a UI indicator.
+  map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+  if (!features.length) {
+      popup.remove();
+      return;
+  }
+
+  function htmlFromProps(props) {
+    var html = "";
+    var i = 0;
+    for (p in props) {
+      if (props[p] && props[p] != "null") {
+        html += "<div>" + (i === 0 ? "<strong>" : "");
+        html += props[p];
+        html += (i++ === 0 ? "</strong>" : "") + "</div>\n";
+      }
+    }
+    return html;
+  }
 
 
+  var feature = features[0];
+
+  delete feature.properties["field_1"];
+
+    delete feature.properties["lon"];
+
+      delete feature.properties["lat"];
+
+        delete feature.properties["code"];
+
+        delete feature.properties["title"];
+  // Populate the popup and set its coordinates
+  // based on the feature found.
+  popup.setLngLat(feature.geometry.coordinates)
+      .setHTML(htmlFromProps(feature.properties))
+      .addTo(map);
+
+}
+
+  });
+
+/*
+    map.on('mousemove', function(e) {
+        var features = map.queryRenderedFeatures(e.point, {
+            layers: ['city']
+        });
+
+        // Change the cursor style as a UI indicator.
+        map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+        if (!features.length) {
+            popup.remove();
+            return;
+        }
+
+        var feature = features[0];
+        // Populate the popup and set its coordinates
+        // based on the feature found.
+        popup.setLngLat(feature.geometry.coordinates)
+            .setHTML('<div><b>' + feature.properties.city + '</div></b>')
+            .addTo(map);
+    });
+*/
 map.addControl(new mapboxgl.NavigationControl());
 
 
