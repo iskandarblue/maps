@@ -230,41 +230,8 @@ var map = new mapboxgl.Map({
 });
 
 
-document.getElementById('city').addEventListener('click', function () {
-      var city = document.getElementById('city');
-      var program = document.getElementById('program');
-      var ff = document.getElementById('feature-filter');
 
-
-      if (city.className ===  'mode') {
-        city.className = 'mode-selected'
-        ff.placeholder = 'Filter results by city name'
-
-        program.className = 'mode'
-      } else {
-        city.className = 'mode'
-        program.className = 'mode-selected'
-        ff.placeholder = 'Filter results by program name'
-    }
-  });
-
-  document.getElementById('program').addEventListener('click', function () {
-        var city = document.getElementById('city');
-        var program = document.getElementById('program');
-        var ff = document.getElementById('feature-filter');
-
-        if (program.className ===  'mode') {
-          program.className = 'mode-selected'
-          ff.placeholder = 'Filter results by program name'
-          map.setLayoutProperty('uni', 'visibility', 'visible');
-        } else {
-          program.className = 'mode'
-          ff.placeholder = 'Filter results by city name'
-          map.setLayoutProperty('uni', 'visibility', 'none');
-          map.setLayoutProperty('uni_select', 'visibility', 'none');
-      }
-    });
-
+/*
 var program = document.getElementById('program');
 
 if (program.className === 'mode-selected') {
@@ -274,8 +241,7 @@ if (program.className === 'mode-selected') {
 
   console.log("Lets show cities")
 }
-
-
+*/
 
 var programs = [];
 
@@ -400,6 +366,43 @@ map.on('load', function (e) {
         }
     });
 
+    document.getElementById('city').addEventListener('click', function () {
+          var city = document.getElementById('city');
+          var program = document.getElementById('program');
+          var ff = document.getElementById('feature-filter');
+
+
+          if (city.className ===  'mode') {
+            city.className = 'mode-selected'
+            ff.placeholder = 'Filter results by city name'
+
+            program.className = 'mode'
+          } else {
+            city.className = 'mode'
+            program.className = 'mode-selected'
+            ff.placeholder = 'Filter results by program name'
+        }
+      });
+
+      document.getElementById('program').addEventListener('click', function () {
+            var city = document.getElementById('city');
+            var program = document.getElementById('program');
+            var ff = document.getElementById('feature-filter');
+
+            if (program.className ===  'mode') {
+              program.className = 'mode-selected'
+              ff.placeholder = 'Filter results by program name'
+              map.setLayoutProperty('uni', 'visibility', 'visible');
+              map.setLayoutProperty('uni_select', 'visibility', 'visible');
+
+            } else {
+              program.className = 'mode'
+              ff.placeholder = 'Filter results by city name'
+              map.setLayoutProperty('uni', 'visibility', 'none');
+              map.setLayoutProperty('uni_select', 'visibility', 'none');
+          }
+        });
+
 
 map.on('moveend', function() {
      var features = map.queryRenderedFeatures({layers:['uni']});
@@ -419,49 +422,7 @@ map.on('moveend', function() {
      }
  });
 
- map.on('mousemove', function(e) {
-     var features = map.queryRenderedFeatures(e.point, {
-         layers: ['uni']
-     });
 
-     // Change the cursor style as a UI indicator.
-     map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-
-     if (!features.length) {
-         popup.remove();
-         return;
-     }
-
-     var feature = features[0];
-     // Populate the popup and set its coordinates
-     // based on the feature found.
-     popup.setLngLat(feature.geometry.coordinates)
-         .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
-         +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>')
-         .addTo(map);
- });
-
- map.on('mousemove', function(e) {
-     var features = map.queryRenderedFeatures(e.point, {
-         layers: ['uni_select']
-     });
-
-     // Change the cursor style as a UI indicator.
-     map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-
-     if (!features.length) {
-         popup.remove();
-         return;
-     }
-
-     var feature = features[0];
-     // Populate the popup and set its coordinates
-     // based on the feature found.
-     popup.setLngLat(feature.geometry.coordinates)
-         .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
-         +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
-         .addTo(map);
- });
 
  filterEl.addEventListener('keyup', function(e) {
      var value = normalize(e.target.value);
@@ -487,6 +448,58 @@ map.on('moveend', function() {
  // passing an empty array to render an empty state
  renderListings([]);
 });
+
+
+ map.on('mousemove', function(e) {
+
+   var visibility = map.getLayoutProperty('uni', 'visibility');
+
+     var features = map.queryRenderedFeatures(e.point, {
+         layers: ['uni']
+     });
+
+     // Change the cursor style as a UI indicator.
+     map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+     if (!features.length) {
+         popup.remove();
+         return;
+     }
+
+     var feature = features[0];
+
+     console.log(feature);
+     // Populate the popup and set its coordinates
+     // based on the feature found.
+     popup.setLngLat(feature.geometry.coordinates)
+         .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
+         +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>')
+         .addTo(map);
+ });
+
+
+  map.on('mousemove', function(e) {
+      var features = map.queryRenderedFeatures(e.point, {
+          layers: ['uni_select']
+      });
+
+      // Change the cursor style as a UI indicator.
+      map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+      if (!features.length) {
+          popup.remove();
+          return;
+      }
+
+      var feature = features[0];
+      // Populate the popup and set its coordinates
+      // based on the feature found.
+      popup.setLngLat(feature.geometry.coordinates)
+          .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + ' (' + feature.properties.code + ')' + '</div>' + '<div>' + feature.properties.uni
+          +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
+          .addTo(map);
+  });
+
 
 
 map.addControl(new mapboxgl.NavigationControl());
