@@ -83,7 +83,7 @@
 
 
 #modes {
-  margin-left: 5px;
+  margin-left: 15px;
   display: inline-block;
   z-index: 1;
 }
@@ -91,14 +91,14 @@
 .mode, .mode-selected, .mode-summer, .mode-fall, .mode-winter {
     display: inline-block;
     height: 38px;
-    width: 153px;
+    width: 140px;
     line-height: 28px;
     color: #fff;
     border-radius: 3px;
     z-index: 1;
     cursor: pointer;
     font-weight: 600;
-    font-size: 25px
+    font-size: 15px;
     margin-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -109,7 +109,7 @@
 }
 
 .mode-selected {
-  background: #00c3ff ;
+  background: #FF8008 ;
 }
 
 .mode-summer {
@@ -243,11 +243,14 @@ if (program.className === 'mode-selected') {
 }
 */
 
+
 var programs = [];
 
 // Create a popup, but don't add it to the map yet.
 var popup = new mapboxgl.Popup({
+    offset: [0, -10],
     closeButton: false,
+    closeOnClick: true,
     anchor: 'top-left'
 });
 
