@@ -19,16 +19,18 @@
   <style>
 
   #overlay{
+    content:url(http://iskandarblue.github.io/maps/EMA_splash.JPG);
     display: none;
   	position: fixed;
-  	top: 0%;
+  	top: 10%;
   	left: 0%;
   	width: 100%;
-  	height: 100%;
-  	background-color: black;
-  	opacity: 0.8;
+  	height: 80%;
+  	opacity: 0.9;
   	z-index:1001;
   }
+
+
 
 #map {
     position:absolute;
@@ -199,6 +201,7 @@ border-radius: 5px;
 
 </style>
 
+<div id ='overlay'></div>
 <div class='map-overlay'>
   <div id = 'modes'>
   <div class = 'mode-selected' id='program'>Program</div>
@@ -213,6 +216,13 @@ border-radius: 5px;
   <div id='map'></div>
 
 <script>
+
+
+$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+
 
 // splash page
 
@@ -233,7 +243,7 @@ $("#overlay").show();
 
 setTimeout(function(){
   $("#overlay").fadeOut();
-}, 5000);
+}, 2000);
 
 
 
