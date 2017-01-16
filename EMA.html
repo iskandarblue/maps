@@ -18,6 +18,18 @@
   </head>
   <style>
 
+  #overlay{
+    display: none;
+  	position: fixed;
+  	top: 0%;
+  	left: 0%;
+  	width: 100%;
+  	height: 100%;
+  	background-color: black;
+  	opacity: 0.8;
+  	z-index:1001;
+  }
+
 #map {
     position:absolute;
     left:25%;
@@ -70,18 +82,6 @@
     background: '#ff4b1f';
   }
 
-#header {
-  position: absolute;
-  z-index: 1012022;
-  top: 0px;
-  width: 100%;
-  line-height: 50px;
-  height: 50px;
-  background: rgba(12, 12, 12, 0.8);
-  color: #fff;
-}
-
-
 #modes {
   margin-left: 15px;
   display: inline-block;
@@ -110,18 +110,6 @@
 
 .mode-selected {
   background: #FF8008 ;
-}
-
-.mode-summer {
-  background: rgba(127, 255, 212, 0.5);
-}
-
-.mode-fall {
-  background: rgba(217, 133, 59, 0.5);
-}
-
-.mode-winter {
-  background: rgba(255, 107, 107, 0.5);
 }
 
 .mode:hover, .mode:active,
@@ -202,6 +190,12 @@ border-radius: 5px;
 
 }
 
+.link
+{
+   color:aqua;
+   text-decoration: none;
+   background-color: none;
+}
 
 </style>
 
@@ -219,6 +213,30 @@ border-radius: 5px;
   <div id='map'></div>
 
 <script>
+
+// splash page
+
+$.fn.center = function () {
+  this.css("position","absolute");
+  this.css("top", Math.max(0, (
+    ($(window).height() - $(this).outerHeight()) / 2) +
+     $(window).scrollTop()) + "px"
+  );
+  this.css("left", Math.max(0, (
+    ($(window).width() - $(this).outerWidth()) / 2) +
+     $(window).scrollLeft()) + "px"
+  );
+  return this;
+}
+
+$("#overlay").show();
+
+setTimeout(function(){
+  $("#overlay").fadeOut();
+}, 5000);
+
+
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -228,21 +246,6 @@ var map = new mapboxgl.Map({
     maxZoom: 7,
     minZoom: 1,
 });
-
-
-
-/*
-var program = document.getElementById('program');
-
-if (program.className === 'mode-selected') {
-
-  console.log("Lets show programs")
-} else {
-
-  console.log("Lets show cities")
-}
-*/
-
 
 var programs = [];
 
@@ -398,9 +401,6 @@ function renderListings(features) {
     }
 }
 
-
-
-
 function normalize(string) {
     return string.trim().toLowerCase();
 }
@@ -426,7 +426,7 @@ map.on('load', function (e) {
 
   map.addSource('city', {
       "type": 'geojson',
-      "data": './by_cities.geojson'
+      "data": './baz.geojson'
   });
   map.addLayer({
       "id": "city",
@@ -455,13 +455,11 @@ map.on('load', function (e) {
         }
     });
 
-
-
     document.getElementById('city').addEventListener('click', function () {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
-
+           renderListings([])
 
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
@@ -471,8 +469,6 @@ map.on('load', function (e) {
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
 
-
-            program.className = 'mode'
           } else {
             city.className = 'mode'
             program.className = 'mode-selected'
@@ -486,30 +482,31 @@ map.on('load', function (e) {
             var city = document.getElementById('city');
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
+             renderListings([])
 
-            if (program.className ===  'mode') {
+            if (program.className ===  'mode-selected') {
+              program.className = 'mode'
+              city.className = 'mode-selected'
+              ff.placeholder = 'Filter results by city name'
+              map.setLayoutProperty('city', 'visibility', 'visible');
+              map.setLayoutProperty('uni', 'visibility', 'none');
+              map.setLayoutProperty('uni_select', 'visibility', 'none')
+
+
+
+            } else {
               program.className = 'mode-selected'
               city.className = 'mode'
               ff.placeholder = 'Filter results by program name'
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'visible')
-
-
-            } else {
-              program.className = 'mode'
-              city.className = 'mode-selected'
-              ff.placeholder = 'Filter results by city name'
-              map.setLayoutProperty('uni', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none')
-              map.setLayoutProperty('city', 'visibility', 'none');
+
           }
         });
 
-
 map.on('moveend', function() {
      var features = map.queryRenderedFeatures({layers:['uni', 'city']});
-
 
      if (features) {
          var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -524,8 +521,6 @@ map.on('moveend', function() {
          programs = uniqueFeatures;
      }
  });
-
-
 
  filterEl.addEventListener('keyup', function(e) {
      var value = normalize(e.target.value);
@@ -555,7 +550,6 @@ map.on('moveend', function() {
  // passing an empty array to render an empty state
  renderListings([]);
 });
-
 
  map.on('mousemove', function(e) {
 
@@ -624,31 +618,67 @@ map.on('moveend', function() {
       return;
   }
 
-  function htmlFromProps(props) {
-    var html = "";
-    var i = 0;
-    for (p in props) {
-      if (props[p] && props[p] != "null") {
-        html += "<div>" + (i === 0 ? "<strong>" : "");
-        html += props[p];
-        html += (i++ === 0 ? "</strong>" : "") + "</div>\n";
+//
+
+var feature = features[0];
+
+function htmlFromProps(props) {
+  var city = "";
+  var courses = [];
+  var websites = [];
+  for (p in props) {
+    if (props[p] && props[p] != "null" && props[p] != "NA") {
+      if (isCourse(p)) {
+        courses[getIndex(p)] = props[p];
+      } else if (isWebsite(p)) {
+        websites[getIndex(p)] = props[p];
+      } else {
+        city = props[p];
       }
     }
-    return html;
   }
+  return buildHTML(city, courses, websites);
+}
 
+function isCourse(propname) {
+  return (propname.indexOf("course") != -1);
+}
 
-  var feature = features[0];
+function isWebsite(propname) {
+  return (propname.indexOf("website") != -1);
+}
 
+function getIndex(propname) {
+  var indexRegEx = new RegExp("^.*(\\d+)$");
+  var matches = indexRegEx.exec(propname);
+  if ((matches != null) && (matches.length == 2)) {
+    return parseInt(matches[1]);
+  } else {
+    return 0;
+  }
+}
+
+function buildHTML(city, courses, websites) {
+  var html = "";
+  html += "<div><strong>";
+  html += city;
+  html += "</strong></div>\n";
+
+  for (i = 1; i < courses.length; i++) {
+    html += "<div class='link'>";
+    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>";
+    html += "</div>\n";
+  }
+  return html;
+}
+
+/*
   delete feature.properties["field_1"];
-
     delete feature.properties["lon"];
-
       delete feature.properties["lat"];
-
         delete feature.properties["code"];
+        delete feature.properties["title"]; */
 
-        delete feature.properties["title"];
   // Populate the popup and set its coordinates
   // based on the feature found.
   popup.setLngLat(feature.geometry.coordinates)
@@ -658,7 +688,6 @@ map.on('moveend', function() {
 }
 
   });
-
 /*
     map.on('mousemove', function(e) {
         var features = map.queryRenderedFeatures(e.point, {
@@ -683,23 +712,8 @@ map.on('moveend', function() {
 */
 map.addControl(new mapboxgl.NavigationControl());
 
-
-
-
 /*
-
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-}
-var color = getRandomColor()
-
-
-
+//Clustering
 
 map.addSource('cluster', {
   'type': 'geojson',
@@ -719,12 +733,6 @@ map.addLayer({
         "icon-offset": [0, -14]
     }
 });
-
-var layers = [
-    [10, '#ff4b1f'],
-    [5, '#F0F564'],
-    [0, '#1fddff']
-];
 
 layers.forEach(function (layer, i) {
     map.addLayer({
@@ -800,7 +808,6 @@ $().ready(function(){
 
       }
 
-
     // Add a layer for this symbol type if it hasn't been added already.
     if (!map.getLayer(layerID)) {
         map.addLayer({
@@ -816,7 +823,6 @@ $().ready(function(){
 
     });
   });
-
 
 map.on('click', function (e) {
     var cluster_features = map.queryRenderedFeatures(e.point, {
