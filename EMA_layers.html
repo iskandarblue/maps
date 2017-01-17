@@ -305,7 +305,7 @@ $("#overlay").show();
 
 setTimeout(function(){
   $("#overlay").fadeOut();
-}, 2500);
+}, 3500);
 
 
 
@@ -529,7 +529,7 @@ function addDataLayer(){
       "source": "city",
       "layout":{
         "visibility": "none",
-        "icon-image": "markeryellow",
+        "icon-image": "markertrans",
         "icon-offset": [0, -7.5],
         "icon-allow-overlap": true,
       }
@@ -603,6 +603,12 @@ function switchLayer(layer) {
 
 } else if (layerId === "bright"){
 
+  var program = document.getElementById('program');
+  program.className = 'mode-selected'
+  var city = document.getElementById('city');
+    city.className = 'mode'
+
+
   var color = document.getElementById('changeLayer');
   color.style.backgroundColor = `rgba(24, 24, 24, 0.0)`;
   map.setStyle('mapbox://styles/iskandarblue/ciy0v11q8004c2sp6qutlk0qp')
@@ -636,7 +642,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
 
-                map.setLayoutProperty('city','icon-image', 'markertrans');
+
 
           } else {
             city.className = 'mode'
