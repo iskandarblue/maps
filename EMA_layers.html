@@ -536,7 +536,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": './extents.geojson'
+        "data": './master_extents.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -544,7 +544,7 @@ function addDataLayer(){
         "source": "uni",
         "layout":{
           "visibility": "visible",
-          "icon-image": "marker-15",
+          "icon-image": "aquamode",
           "icon-offset": [0, -7.5],
           "icon-allow-overlap": true,
         }
