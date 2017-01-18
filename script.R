@@ -119,8 +119,8 @@ out <- bcpw[bcpw$city %in% c("Barcelona", "Brussels"), ]
 
 bcpw$dups <- apply(bcpw[-1], 1, function(i) any(duplicated(i[!is.na(i)])))
 
-baz <- dplyr::left_join(baz, bar, by = c("course6" = "code"))
-colnames(baz)[26] <- "website6"
+baz <- dplyr::left_join(baz, bar, by = c("course16" = "code"))
+colnames(baz)[36] <- "website16"
 
 
 
