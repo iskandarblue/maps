@@ -25,7 +25,7 @@
   	position: fixed;
     border-style: solid;
   	top: 30%;
-  	left: 155px;
+  	left: calc(50% - 488.5px);
   	opacity: 0.9;
   	z-index:1001;
   }
@@ -115,30 +115,31 @@
     background: '#ff4b1f';
   }
 
-#modes {
-  margin-left: 15px;
-  display: inline-block;
-  z-index: 1;
-}
+  #modes {
+      /* margin-left: 15px; */
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+  }
 
 .mode, .mode-selected, .mode-summer, .mode-fall, .mode-winter {
-    display: inline-block;
-    height: 38px;
-    width: 140px;
-    line-height: 28px;
-    color: #fff;
-    border-radius: 25px;
-    z-index: 1;
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 15px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 5px 10px;
-    text-align: center;
-    background: rgba(12, 12, 12, 0.7);
+  display: inline-block;
+  height: 38px;
+  width: 140px;
+  line-height: 28px;
+  color: #fff;
+  border-radius: 25px;
+  z-index: 1;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 10px;
+  text-align: center;
+  background: rgba(12, 12, 12, 0.7);
 }
 
 .mode-selected {
@@ -890,7 +891,7 @@ function buildHTML(city, courses, websites) {
 
 map.addControl(new mapboxgl.NavigationControl());
 
-/*
+<!-- Yandex.Metrika counter -->
 //Clustering
 
 map.addSource('cluster', {
@@ -932,8 +933,8 @@ layers.forEach(function (layer, i) {
                 ["<", "point_count", layers[i - 1][0]]]
     });
 });
+/*
 
-// Add a layer for the clusters' count labels
 map.addLayer({
     "id": "cluster-count",
     "type": "symbol",
@@ -949,8 +950,7 @@ map.addLayer({
     }
 });
 
-*/
-/*
+
 $(function(){
     $(".dropdown-menu li a").click(function(){
       $(".btn:first-child").text($(this).text());
@@ -1037,9 +1037,40 @@ map.on('click', function (e) {
           .setHTML(features[0].properties.title + '<div>' + '<a href="' + features[0].properties.website +'">website</a>' + '</div>')
           .addTo(map);
   });
+
 */
+  <!-- Yandex.Metrika counter -->
 
 </script>
+
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter42182154 = new Ya.Metrika({
+                    id:42182154,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/42182154" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 
 </body>
 </html>
