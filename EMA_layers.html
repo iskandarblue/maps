@@ -158,7 +158,7 @@
     bottom: 0;
     left: 0;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    background-color: #fff;
+    background-color: rgba(12, 12, 12, 0.7);
     max-height: 100%;
     overflow: hidden;
 }
@@ -166,10 +166,11 @@
 .map-overlay fieldset {
     display: none;
     z-index: 2;
-    background: #ddd;
+    background: rgba(12, 12, 12, 0.7);
     border: none;
     padding: 10px;
     margin: 0;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 .map-overlay input {
@@ -186,6 +187,7 @@
 .map-overlay .listing {
     overflow: auto;
     max-height: 100%;
+
 }
 
 .map-overlay .listing > * {
@@ -196,8 +198,9 @@
 }
 
 .map-overlay .listing a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    color: #404;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(12, 12, 12, 0.7);
     text-decoration: none;
 }
 
@@ -489,6 +492,7 @@ function renderListings(features) {
     } else  {
         var empty = document.createElement('p');
         empty.textContent = 'Drag the map to populate results';
+        empty.style.color = "#FFFFF0";
         listingEl.appendChild(empty);
 
         // Hide the filter input
