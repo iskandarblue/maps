@@ -12,12 +12,56 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
+
 
     </style>
   </head>
   <style>
 
+
+#about {
+  display: none;
+  position: absolute;
+  z-index: 20202020;
+  background: rgba(0, 0, 0, 0.93);
+  width: 100%;
+  height: 100%;
+}
+
+#about-close {
+  border: 1px solid #eee;
+  position: relative;
+  left: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  float: left;
+  bottom: 0px;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  background: url('close.svg') center center no-repeat;
+  cursor: pointer;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+#about-close:hover {
+  opacity: 0.9;
+}
+
+
+  #about-link{
+    content:url('./info.svg');
+    position: absolute;
+    background-color: rgba(24, 24, 24, 0.0);
+    z-index: 10;
+    border-radius: 5px;
+    bottom: 1%;
+    left: 1%;
+    height: 35px;
+    width: 35px;
+    opacity: 0.7;
+  }
 
   #overlay{
     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
@@ -34,7 +78,8 @@
     position: absolute;
     z-index: 2;
     top: 3px;
-    left: 30%;
+    left: 29%;
+    height: 35px;
     padding: 10px;
     color: #ccc;
     border-radius: 5px;
@@ -51,8 +96,8 @@
       border-radius: 5px;
     	top: 1%;
       left: 26%;
-    	height: 50px;
-      width: 50px;
+    	height: 35px;
+      width: 35px;
     	opacity: 0.8;
     }
     .wrap {
@@ -278,19 +323,39 @@ border-radius: 5px;
     <div id='feature-listing' class='listing'></div>
 </div>
 
-  <div id='map'></div>
+<div id='about'>
+  <div id='about-close'></div>
+</div>
+  <div id='map'>
+    <div id='about-link'></div>
+  </div>
+
+
+
 
 
 <script>
-
-
-
 
 $(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
 
+
+$("#about-link").on('click', function() {
+  var display =  $("#about").css("display");
+      if(display="none")
+      {
+          $("#about").attr("style", "display:block");
+      }
+
+});
+
+$("#about-close").on('click', function() {
+
+          $("#about").attr("style", "display:none");
+
+});
 
 // splash page
 
@@ -672,6 +737,7 @@ for (var i = 0; i < inputs.length; i++) {
               ff.placeholder = 'Filter results by city name'
               map.setLayoutProperty('city', 'visibility', 'visible');
               map.setLayoutProperty('uni', 'visibility', 'none');
+              map.setLayoutProperty('uni_select', 'visibility', 'none');
 
             } else {
               program.className = 'mode-selected'
@@ -679,6 +745,7 @@ for (var i = 0; i < inputs.length; i++) {
               ff.placeholder = 'Filter results by program name'
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
+              map.setLayoutProperty('uni_select', 'visibility', 'none');
 
           }
         });

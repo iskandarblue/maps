@@ -6,18 +6,62 @@
     <meta name='viewport' content="width=device-width"/>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" src="d3.min.js"></script>
+    <script type="text/javascript" src="d3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
 
     </style>
   </head>
+
   <style>
 
+  #about {
+    display: none;
+    position: absolute;
+    z-index: 20202020;
+    background: rgba(0, 0, 0, 0.88);
+    width: 100%;
+    height: 100%;
+  }
+
+  #about-close {
+    border: 1px solid #eee;
+    position: relative;
+    left: 0px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    float: right;
+    bottom: 0px;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    background: url('close.svg') center center no-repeat;
+    cursor: pointer;
+    opacity: 0.6;
+    font-size: 13px;
+  }
+
+  #about-close:hover {
+    opacity: 0.9;
+  }
+
+  #about-link{
+    content:url('./info.svg');
+    position: absolute;
+    background-color: rgba(24, 24, 24, 0.5);
+    z-index: 10;
+    border-radius: 5px;
+    top: 5%;
+    left: 26%;
+    height: 50px;
+    width: 50px;
+    opacity: 0.8;
+  }
 
   #overlay{
     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
@@ -246,7 +290,9 @@ border-radius: 5px;
 */
 </style>
 
+
 <div id ='overlay'></div>
+
 
 <div class="wrap">
 <div id='changeLayer'></div>
@@ -260,9 +306,6 @@ border-radius: 5px;
 
 </div>
 </div>
-
-
-
 
 <div class='map-overlay'>
   <div id = 'modes'>
@@ -278,15 +321,32 @@ border-radius: 5px;
   <div id='map'></div>
 
 
+<div id='about-link'></div>
+<div id ='about'></div>
+
 <script>
 
 
 
+$(document).ready(function(){
+
+});
 
 $(window).load(function() {
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
+
+
+
+  $("#about-link").on('click', function() {
+    var display =  $("#about").css("display");
+        if(display="none")
+        {
+            $("#about").attr("style", "display:block");
+        }
+
+  });
 
 
 // splash page
