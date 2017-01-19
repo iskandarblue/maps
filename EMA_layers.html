@@ -19,36 +19,72 @@
   <style>
 
 
-#about {
-  display: none;
-  position: absolute;
-  z-index: 20202020;
-  background: rgba(0, 0, 0, 0.93);
-  width: 100%;
-  height: 100%;
-}
+    #about {
+      display: none;
+      position: absolute;
+      z-index: 20202020;
+      background: rgba(0, 0, 0, 0.88);
+      width: 100%;
+      height: 100%;
+    }
 
-#about-close {
-  border: 1px solid #eee;
-  position: relative;
-  left: 0px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  float: left;
-  bottom: 0px;
-  width: 38px;
-  height: 38px;
-  border-radius: 19px;
-  background: url('close.svg') center center no-repeat;
-  cursor: pointer;
-  opacity: 0.6;
-  font-size: 13px;
-}
+    #about-header {
+      font-weight: 600; font-size: 24px;
+    }
 
-#about-close:hover {
-  opacity: 0.9;
-}
+    #about-content {
+      margin: 100px 200px;
+    }
 
+    #about-text{
+      color: rgba(250, 250, 250, 0.88);
+    }
+
+    #about-close {
+      border: 1px solid #eee;
+      position: relative;
+      right: 0px;
+      margin-top: 20px;
+      margin-right: 20px;
+      float: right;
+      top: 0px;
+      width: 38px;
+      height: 38px;
+      border-radius: 19px;
+      background: url('close.svg') center center no-repeat;
+      cursor: pointer;
+      opacity: 0.6;
+      font-size: 13px;
+    }
+
+    #about-close:hover {
+      opacity: 0.9;
+    }
+
+    #about-map {
+     text-align: left;
+     margin: 25px 0;
+    }
+
+
+
+    #about-map-button {
+      display: inline-block;
+      font-weight: 600;
+      padding: 10px;
+      background:#6190E8;
+      cursor: pointer;
+      border-radius: 5px;
+
+    }
+
+    #about-map-button:hover {
+      background: #A7BFE8;
+    }
+
+    #about-credits {
+      font-size: 13px;
+    }
 
   #about-link{
     content:url('./info.svg');
@@ -294,6 +330,31 @@ border-radius: 5px;
 */
 </style>
 
+<div class = 'about' id='about'>
+
+
+  <div id = 'about-close'></div>
+  <div id='about-content'>
+    <div id='about-text'>
+    <div id = 'about-header'>EMA web map</div>
+      <p>The Erasmus Mundus Association is a professional network for Erasmus Mundus students and graduates. This webmap serves as a search tool for graduate programs by location and links prospective students to program webpages.</p>
+      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program acronym, displaying red markers for all the program locations. The second displays programs and links to individual webpages by city.  For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
+      <p>We hope that this data exploration tool will serve as an engaging resource for bikeshare users, urbanists, open data enthusiasts, and those who work in public transportation.</p>
+      <p>Read more details at <a href='http://www.em-a.eu/'>the EMA website</a></p>
+      <div id = 'about-map'><div id = 'about-map-button'>Back to the map</div></div>
+      <div id='about-credits'>
+      <p>Bike share trip data: <a href="http://www.citibikenyc.com/system-data">System data</a>, <a href="http://www.theopenbus.com/">Openbus json data</a>
+        <br/>Map engine — <a href='https://www.mapbox.com/mapbox-gl-js/'>Mapbox GL JS</a>
+        <br/>Data processing, design & development: <a href="https://www.linkedin.com/in/alexander-tedeschi-4a006938">Alexander Tedeschi</a> and <a href="https://de.linkedin.com/in/dejanpopovic11">Dejan Popović</a></p>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div id='map'>
+    <div id='about-link'></div>
+  </div>
+
 <div id ='overlay'></div>
 
 <div class="wrap">
@@ -309,9 +370,6 @@ border-radius: 5px;
 </div>
 </div>
 
-
-
-
 <div class='map-overlay'>
   <div id = 'modes'>
   <div class = 'mode-selected' id='program'>Program</div>
@@ -322,15 +380,6 @@ border-radius: 5px;
     </fieldset>
     <div id='feature-listing' class='listing'></div>
 </div>
-
-<div id='about'>
-  <div id='about-close'></div>
-</div>
-  <div id='map'>
-    <div id='about-link'></div>
-  </div>
-
-
 
 
 
@@ -376,7 +425,7 @@ $("#overlay").show();
 
 setTimeout(function(){
   $("#overlay").fadeOut();
-}, 3500);
+}, 3000);
 
 
 
