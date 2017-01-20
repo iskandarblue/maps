@@ -387,6 +387,34 @@ border-radius: 5px;
       display: inline;
     }
 
+
+      #modes {
+        margin-left: 20px;
+        display: inline-block;
+      }
+
+      .mode, .mode-selected {
+          display: inline-block;
+          height: 28px;
+          line-height: 28px;
+          color: #eee;
+          border-radius: 2px;
+          z-index: 3;
+          cursor: pointer;
+          font-weight: 600;
+          margin-right: 10px;
+          padding: 5px 10px;
+      }
+
+      .mode-selected {
+        background: #444;
+      }
+
+      .mode:hover, .mode:active,
+      .mode-selected:hover, .mode-selected:active {
+          color: #fff;
+      }
+
     #map {
         position:absolute;
         left:0%;
