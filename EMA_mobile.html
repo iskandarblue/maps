@@ -128,7 +128,7 @@ a:hover, a:active { color: #08f; }
 }
 
 
-  #overlay{
+  #banner{
     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
     display: none;
   	position: fixed;
@@ -387,6 +387,21 @@ border-radius: 5px;
         width: 100%;
     }
 
+
+    #banner{
+      content:url(http://iskandari.github.io/maps/EMA_med.jpg);
+      display: none;
+    	position: fixed;
+      width: 240px;
+      height: 60px;
+      border-style: solid;
+    	top: calc(50% - 30px);;
+    	left: calc(50% - 120px);
+    	opacity: 0.9;
+    	z-index:1001;
+
+    }
+
     .map-overlay {
         position: absolute;
         width: 100%;
@@ -475,8 +490,6 @@ border-radius: 5px;
     }
 
     .mapboxgl-ctrl-attrib { font-size: 9.5px; }
-
-    #urbica-logo { display: none; }
 
     #panel {
       left: 0;
@@ -596,7 +609,7 @@ border-radius: 5px;
     <div id='about-link'></div>
   </div>
 
-<div id ='overlay'></div>
+<div id ='banner'></div>
 
 
 <div class='map-overlay'>
@@ -657,10 +670,10 @@ $.fn.center = function () {
   return this;
 }
 
-$("#overlay").show();
+$("#banner").show();
 
 setTimeout(function(){
-  $("#overlay").fadeOut();
+  $("#banner").fadeOut();
 }, 3000);
 
 
