@@ -373,6 +373,7 @@ border-radius: 5px;
 */
 
 
+
 @media screen and (max-width: 480px) {
     .desktop {
         display: none;
@@ -381,17 +382,19 @@ border-radius: 5px;
       display: inline;
     }
 
-    #header {
-      position: absolute;
-      display: block;
-      z-index: 4012022;
-      top: 0px;
-      width: 100%;
-      line-height: 50px;
-      height: 50px;
-      background: rgba(12, 12, 12, 0.8);
-      color: #eee;
+
+    .map-overlay {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: 100px;
+        left: 0;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: rgba(12, 12, 12, 0.7);
+        max-height: 20%;
+        overflow: hidden;
     }
+
 
     #about-link {
       background: url('img/info.svg') center center no-repeat;
@@ -406,6 +409,10 @@ border-radius: 5px;
       opacity: 1;
     }
 
+    #slider-area {
+      width: 200px;
+    }
+
     #controls {
       z-index: 101010;
       position: absolute;
@@ -417,7 +424,9 @@ border-radius: 5px;
       color: #fff;
     }
 
-    .mapboxgl-ctrl-attrib { font-size: 5.5px; }
+    .mapboxgl-ctrl-attrib { font-size: 9.5px; }
+
+    #urbica-logo { display: none; }
 
     #panel {
       left: 0;
@@ -503,7 +512,6 @@ border-radius: 5px;
 
 <div class = 'about' id='about'>
 
-
   <div id = 'about-close'></div>
   <div id='about-content'>
     <div id='about-text'>
@@ -552,7 +560,6 @@ border-radius: 5px;
     <div id='feature-listing' class='listing'></div>
 </div>
 
-<div id='header'><span class = "mobile"></span></div>
 
 
 <script>
