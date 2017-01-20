@@ -347,14 +347,17 @@ border-radius: 5px;
    background-color: none;
 }
 
-#panel {
-  left: 0;
-  top: 50px;
+#header {
+  position: absolute;
+  z-index: 1012022;
+  top: 0px;
   width: 100%;
-  background: none;
+  line-height: 50px;
+  height: 50px;
+  background: rgba(12, 12, 12, 0.8);
+  color: #eee;
   display: none;
 }
-
 
 /*
 #header {
@@ -376,6 +379,17 @@ border-radius: 5px;
     }
     .mobile {
       display: inline;
+    }
+
+    #header {
+      position: absolute;
+      z-index: 1012022;
+      top: 0px;
+      width: 100%;
+      line-height: 50px;
+      height: 50px;
+      background: rgba(12, 12, 12, 0.8);
+      color: #eee;
     }
 
     #about-link {
@@ -522,6 +536,8 @@ border-radius: 5px;
 
 <div id ='overlay'></div>
 
+
+<div id='header'><span class = "mobile"></span></div>
 
 
 <div class='map-overlay'>
