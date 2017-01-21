@@ -387,7 +387,9 @@ border-radius: 5px;
       display: inline;
     }
 
-
+    .wrap {
+      display:none;
+    }
     .mapboxgl-ctrl {
       display:none
     }
@@ -404,15 +406,11 @@ border-radius: 5px;
       display: inline;
     }
 
-      #modes {
-        margin-left: 20px;
-        display: inline-block;
-        justify-content: left;
-      }
+
 
       .mode, .mode-selected {
           display: inline-block;
-          height: 28px;
+          height: 38px;
           line-height: 28px;
           color: #eee;
           border-radius: 2px;
@@ -468,7 +466,7 @@ border-radius: 5px;
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         background-color: rgba(12, 12, 12, 0.7);
         overflow: hidden;
-        
+
     }
 
     .map-overlay fieldset {
@@ -522,12 +520,15 @@ border-radius: 5px;
 
 
     #about-link {
-      background: url('img/info.svg') center center no-repeat;
-      width: 24px;
-      margin: 0px 10px;
-      height: 50px;
-      line-height: 50px;
-      opacity: 0.75;
+      background: url(img/info.svg) center center no-repeat;
+    width: 24px;
+    /* margin: 0px 10px; */
+    height: 27px;
+    line-height: 50px;
+    opacity: 0.75;
+    /* top: 0px; */
+    position: static;
+    margin-right: 10px;
     }
 
     #about-link:hover {
@@ -655,7 +656,7 @@ border-radius: 5px;
 </div>
 
   <div id='map'>
-    <div id='about-link'></div>
+
   </div>
 
 <div id ='banner'></div>
@@ -664,6 +665,7 @@ border-radius: 5px;
 <div class='map-overlay'>
 <div class='header'>
   <div id = 'modes'>
+  <div id='about-link'></div>
   <div class = 'mode-selected' id='program'>Program</div>
   <div class = 'mode' id='city'>City</div>
 </div>
