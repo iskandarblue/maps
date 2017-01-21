@@ -3,24 +3,46 @@
 <head>
     <meta charset='utf-8' />
     <title>EMA Map</title>
-    <meta name='viewport' content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
-    <style>
-        body { margin:0; padding:0; }
 
 
-    </style>
-  </head>
   <style>
 
+  body {
+    color: #eee;
+    overflow: hidden;
+    background: #666;
+   -webkit-touch-callout: none;
+     -webkit-user-select: none;
+        -moz-user-select: none;
+         -ms-user-select: none;
+             user-select: none;
+  }
+
+  .mobile { display: none; }
+
+
+
+.mapboxgl-ctrl-attrib a,.mapboxgl-ctrl-attrib { color: #ddd; }
+   .mapboxgl-ctrl-attrib {
+     color: #ddd; }
+   .mapboxgl-ctrl-attrib .mapboxgl-ctrl {
+   }
+   .mapboxgl-ctrl {
+     background: rgba(12, 12, 12, 0.5) !important;
+   }
+
+  </style>
+</head>
+<style>
 
     #about {
-      display: none;
       position: absolute;
       z-index: 20202020;
       background: rgba(0, 0, 0, 0.88);
@@ -99,14 +121,32 @@
     height: 35px;
     width: 35px;
     opacity: 0.7;
+    display: none
   }
 
   #about-link:hover{
     cursor: pointer;
 }
 
+#about-linked{
+  content:url('./info.svg');
+  position: absolute;
+  background-color: rgba(24, 24, 24, 0.0);
+  z-index: 10;
+  border-radius: 5px;
+  bottom: 1%;
+  left: 1%;
+  height: 35px;
+  width: 35px;
+  opacity: 0.7;
+}
 
-  #overlay{
+#about-linked:hover{
+  cursor: pointer;
+}
+
+
+  #banner{
     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
     display: none;
   	position: fixed;
@@ -208,19 +248,20 @@
       display: flex;
       z-index: 1;
       justify-content: center;
+
   }
 
 .mode, .mode-selected, .mode-summer, .mode-fall, .mode-winter {
   display: inline-block;
   height: 38px;
-  width: 140px;
   line-height: 28px;
   color: #fff;
+  width: 125px;
   border-radius: 25px;
   z-index: 1;
   cursor: pointer;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 5px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -238,6 +279,7 @@
 .mode-selected:hover, .mode-selected:active {
     color: #fff;
 }
+
 
 .map-overlay {
     position: absolute;
@@ -286,7 +328,7 @@
 }
 
 .map-overlay .listing a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(2, 70, 0, 0.5);
     color: rgba(255, 255, 255, 0.9);
     background: rgba(12, 12, 12, 0.7);
     text-decoration: none;
@@ -323,6 +365,19 @@ border-radius: 5px;
    text-decoration: none;
    background-color: none;
 }
+
+#header {
+  position: absolute;
+  z-index: 1012022;
+  top: 0px;
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  background: rgba(12, 12, 12, 0.8);
+  color: #eee;
+  display: none;
+}
+
 /*
 #header {
   position: absolute;
@@ -335,10 +390,270 @@ border-radius: 5px;
   background: #fff;
 }
 */
+
+
+
+@media screen and (max-width: 480px) {
+
+    .desktop {
+        display: none;
+    }
+    .mobile {
+      display: inline;
+    }
+
+    .wrap {
+      display:none;
+    }
+    .mapboxgl-ctrl {
+      display:none
+    }
+
+    #header {
+      position: absolute;
+      z-index: 1012022;
+      top: 0px;
+      width: 100%;
+      line-height: 50px;
+      height: 50px;
+      background: rgba(12, 12, 12, 0.8);
+      color: #eee;
+      display: inline;
+    }
+
+
+    #about-linked{
+      display: none;
+    }
+
+
+      .mode, .mode-selected {
+          display: inline-block;
+          height: 38px;
+          line-height: 28px;
+          color: #eee;
+          border-radius: 2px;
+          z-index: 3;
+          cursor: pointer;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-weight: 600;
+          margin-top: 5px;
+          margin-bottom:5px;
+          margin-right: 10px;
+          padding: 5px 10px;
+      }
+
+      .mode-selected {
+        background: #FF8008;
+      }
+
+      .mode:hover, .mode:active,
+      .mode-selected:hover, .mode-selected:active {
+          color: #fff;
+      }
+
+    #map {
+        position: relative!important;
+        width: 100%;
+        height: 50vh;
+        overflow: hidden!important;
+        left: 0;
+    }
+
+    #changeLayer {
+      display: none
+    }
+
+    #banner{
+      content:url(http://iskandari.github.io/maps/EMA_med.jpg);
+      display: none;
+    	position: fixed;
+      width: 240px;
+      height: 60px;
+      border-style: solid;
+    	top: calc(50% - 30px);;
+    	left: calc(50% - 120px);
+    	opacity: 0;
+    	z-index:1001;
+
+    }
+
+    .map-overlay {
+      position: relative;
+        width: 100%;
+        top: 0;
+        height: 50vh;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: rgba(12, 12, 12, 0.7);
+        overflow: hidden;
+
+    }
+
+    .map-overlay fieldset {
+        display: none;
+        z-index: 2;
+        background: rgba(12, 12, 12, 0.9);
+        border: none;
+        padding: 10px;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .map-overlay input {
+        display: block;
+        z-index: 2;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        background: rgba(12, 12, 12, 0.7);
+        padding: 0px;
+        margin-top: 2px;
+        font-size: 16px;
+    }
+
+    .map-overlay .listing {
+        overflow: auto;
+
+    }
+
+    .map-overlay .listing > * {
+        display: block;
+        padding: 5px 10px;
+        margin: 0;
+
+    }
+
+    .map-overlay .listing a {
+        border-bottom: 1px solid rgba(2, 70, 0, 0.5);
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(12, 12, 12, 0.7);
+        text-decoration: none;
+    }
+
+    .map-overlay .listing a:last-child {
+        border: none;
+    }
+
+    .map-overlay .listing a:hover {
+        background: rgba(146, 254, 157, 0.1);
+    }
+
+
+    #about-link {
+    background: url(img/info.svg) center center no-repeat;
+    width: 24px;
+    /* margin: 0px 10px; */
+    height: 27px;
+    line-height: 50px;
+    opacity: 0.75;
+    /* top: 0px; */
+    position: static;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: inline;
+    }
+
+    #about-link:hover {
+      opacity: 1;
+    }
+
+
+    .mapboxgl-ctrl-attrib { display: none}
+
+
+    #about {
+      display: block;
+      overflow-y: auto;
+    }
+
+    #about {
+      /* display: none; */
+      position: absolute;
+      z-index: 20202020;
+      background: rgba(0, 0, 0, 0.88);
+      width: 100%;
+      height: 100%;
+    }
+
+    #about-header {
+      font-weight: 600; font-size: 24px;
+    }
+
+    #about-content {
+      padding: 20px;
+      margin: 0;
+      font-size: 13px;
+    }
+
+
+    #about-close {
+      position: fixed;
+      border: 1px solid #eee;
+      right: 0px;
+      margin-top: 10px;
+      margin-right: 10px;
+      float: right;
+      top: 0px;
+      width: 28px;
+      height: 28px;
+      border-radius: 14px;
+      background: url('close.svg') center center no-repeat;
+      cursor: pointer;
+      opacity: 0.6;
+    }
+
+    #about-close:hover {
+      opacity: 0.9;
+    }
+
+    #about-map {
+     text-align: left;
+     margin: 20px 0;
+    }
+
+    #about-map-button {
+      display: inline-block;
+      font-weight: 600;
+      padding: 10px;
+      background: #06c;
+      cursor: pointer;
+      border-radius: 5px;
+
+    }
+
+    #about-map-button:hover {
+      background: #0cf;
+    }
+
+    #about-credits {
+      font-size: 13px;
+    }
+
+    #about-text{
+      color: rgba(250, 250, 250, 0.88);
+    }
+
+    #about-text a {
+      color: #08f!important;
+}
+      .mapboxgl-popup {
+
+      max-width: 150px;
+      max-height: 250px;
+      font: 12px/20px 'Open Sans', sans-serif;
+      border-radius: 5px;
+
+      }
+}
+
+
 </style>
+<body>
+
+
 
 <div class = 'about' id='about'>
-
 
   <div id = 'about-close'></div>
   <div id='about-content'>
@@ -371,17 +686,19 @@ border-radius: 5px;
 </div>
 
   <div id='map'>
-    <div id='about-link'></div>
+    <div id ='about-linked'></div>
   </div>
 
-<div id ='overlay'></div>
-
+<div id ='banner'></div>
 
 
 <div class='map-overlay'>
+<div class='header'>
   <div id = 'modes'>
+  <div id='about-link'></div>
   <div class = 'mode-selected' id='program'>Program</div>
   <div class = 'mode' id='city'>City</div>
+</div>
 </div>
     <fieldset>
         <input id='feature-filter' type='text' placeholder='Filter results by program name' />
@@ -400,6 +717,15 @@ $(window).load(function() {
 
 
 $("#about-link").on('click', function() {
+  var display =  $("#about").css("display");
+      if(display="none")
+      {
+          $("#about").attr("style", "display:block");
+      }
+
+});
+
+$("#about-linked").on('click', function() {
   var display =  $("#about").css("display");
       if(display="none")
       {
@@ -436,10 +762,10 @@ $.fn.center = function () {
   return this;
 }
 
-$("#overlay").show();
+$("#banner").show();
 
 setTimeout(function(){
-  $("#overlay").fadeOut();
+  $("#banner").fadeOut();
 }, 3000);
 
 
