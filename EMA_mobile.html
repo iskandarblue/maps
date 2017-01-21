@@ -122,10 +122,28 @@
     height: 35px;
     width: 35px;
     opacity: 0.7;
+    display: none
   }
 
   #about-link:hover{
     cursor: pointer;
+}
+
+#about-linked{
+  content:url('./info.svg');
+  position: absolute;
+  background-color: rgba(24, 24, 24, 0.0);
+  z-index: 10;
+  border-radius: 5px;
+  bottom: 1%;
+  left: 1%;
+  height: 35px;
+  width: 35px;
+  opacity: 0.7;
+}
+
+#about-linked:hover{
+  cursor: pointer;
 }
 
 
@@ -404,6 +422,12 @@ border-radius: 5px;
       display: inline;
     }
 
+
+    #about-linked{
+      display: none;
+    }
+
+
       .mode, .mode-selected {
           display: inline-block;
           height: 38px;
@@ -662,7 +686,7 @@ border-radius: 5px;
 </div>
 
   <div id='map'>
-
+    <div id ='about-linked'></div>
   </div>
 
 <div id ='banner'></div>
@@ -693,6 +717,15 @@ $(window).load(function() {
 
 
 $("#about-link").on('click', function() {
+  var display =  $("#about").css("display");
+      if(display="none")
+      {
+          $("#about").attr("style", "display:block");
+      }
+
+});
+
+$("#about-linked").on('click', function() {
   var display =  $("#about").css("display");
       if(display="none")
       {
