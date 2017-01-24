@@ -824,6 +824,7 @@ function renderListings(features) {
              map.setFilter("uni_select", ["==", "code", codeFilter]);
 
               map.setLayoutProperty('uni_select', 'visibility', 'visible');
+              map.setPaintProperty('uni', 'icon-opacity', 0.3);
 
 
             });
@@ -1004,12 +1005,16 @@ function addDataLayer(){
         "id": "uni",
         "type": "symbol",
         "source": "uni",
+        "paint" :{
+          "icon-opacity": 1.0
+        },
         "layout":{
           "visibility": "visible",
           "icon-image": "marker-11",
           "icon-offset": [0, -7.5],
-          "icon-allow-overlap": true,
-        }
+          "icon-allow-overlap": true
+        },
+      "filter": ["==", "code", ""]
     });
 
     map.addLayer({
@@ -1141,6 +1146,7 @@ for (var i = 0; i < inputs.length; i++) {
         });
 
 map.on('moveend', function() {
+
      var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
      if (features) {
@@ -1158,6 +1164,7 @@ map.on('moveend', function() {
  });
 
  filterEl.addEventListener('keyup', function(e) {
+
      var value = normalize(e.target.value);
 
      // Filter visible features that don't match the input value.
