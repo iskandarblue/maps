@@ -42,6 +42,10 @@
 </head>
 <style>
 
+.mapbox-improve-map {
+    display: none;
+}
+
     #about {
       position: absolute;
       z-index: 20202020;
@@ -52,12 +56,13 @@
     }
 
     #about-header {
-      font-weight: 600; font-size: 24px;
+      font-weight: 600; font-size: 26px;
       margin-bottom: 10px;
     }
 
     #about-content {
       margin: 100px 200px;
+      font-size: 18px
     }
 
     #about-text{
@@ -661,7 +666,7 @@ border-radius: 5px;
     <div id='about-text'>
     <div id = 'about-header'>EMA web map</div>
       <p>The Erasmus Mundus Association is a professional network for Erasmus Mundus students and graduates. This webmap serves as a search tool for graduate programs by location and links prospective students to program webpages.</p>
-      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program acronym, displaying red markers for all the program locations. The second displays programs and links to individual webpages by city.  For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
+      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program acronym and displays markers for all locations of an individual program. The second displays programs and links to individual webpages by city.  For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
       <p>We hope that this program exploration tool will serve as a resource for students, faculty, and EMA staff.</p>
       <p>Read more details at <a href='http://www.em-a.eu/'>the EMA website</a></p>
       <div id = 'about-map'><div id = 'about-map-button'>Back to the map</div></div>
@@ -702,7 +707,7 @@ border-radius: 5px;
 </div>
 </div>
     <fieldset>
-        <input id='feature-filter' type='text' placeholder='Filter results by program name' />
+        <input id='feature-filter' type='text' placeholder='Filter reults by program acronym or click' />
     </fieldset>
     <div id='feature-listing' class='listing'></div>
 </div>
@@ -825,6 +830,9 @@ function renderListings(features) {
              map.setFilter("uni_select", ["==", "code", codeFilter]);
 
               map.setLayoutProperty('uni_select', 'visibility', 'visible');
+              map.setLayoutProperty('uni', 'visibility', 'none');
+
+              setTimeout(function() { map.setLayoutProperty('uni', 'visibility', 'visible'); }, 5000);
 
 
             });
@@ -1159,6 +1167,10 @@ map.on('moveend', function() {
  });
 
  filterEl.addEventListener('keyup', function(e) {
+   
+    map.setLayoutProperty('uni_select', 'visibility', 'none');
+
+
      var value = normalize(e.target.value);
 
      // Filter visible features that don't match the input value.
