@@ -205,6 +205,7 @@
     max-height: 200px;
     height: auto;
     background: '#ff4b1f';
+
   }
   .mapboxgl-popup {
     position: absolute;
@@ -349,16 +350,31 @@ max-width: 300px;
 max-height: 250px;
 font: 12px/20px 'Open Sans', sans-serif;
 border-radius: 5px;
+color: #bce;
 
 }
+
 
 .mapboxgl-popup-content {
     overflow: auto;
     color: #fff;
-    background: rgba(12, 12, 12, 0.8);
+    background: rgba(12, 12, 12, 0.1);
     border-radius: 5px;
 
 }
+
+.coded-cities-popup{
+  overflow: auto;
+  color: #bda;
+  background: rgba(12, 12, 229, 0.2);
+  max-width: 200px;
+  max-height: 25px;
+  font: 12px/20px 'Open Sans', sans-serif;
+  border-radius: 5px;
+  border-color: #F00000;
+
+}
+
 
 .link
 {
@@ -809,6 +825,55 @@ function renderListings(features) {
             var item = document.createElement('a');
             item.target = '_blank';
             item.textContent = prop.code;
+
+
+
+            item.addEventListener('mouseover', function() {
+
+
+
+
+              var clickedCode // dynamically changing string
+              var features = map.queryRenderedFeatures({layers:['uni']});
+
+              var codedCities = features.filter(function (feature){
+                  return feature.properties.code === prop.code;
+              });
+
+                  window.popupB = [];
+                  for (i = 0; i < codedCities.length; ++i) {
+
+                    window.popupB[i] = new mapboxgl.Popup({
+                        offset: [0, -10],
+                        closeButton: false,
+                        closeOnClick: true,
+                        anchor: 'top-left'
+                    });
+
+
+                      console.log(codedCities[i].geometry.coordinates);
+
+                      window.popupB[i].setLngLat(codedCities[i].geometry.coordinates)
+                      .setHTML('<div class="coded-cities-popup">'  + codedCities[i].properties.uni + '</div>')
+                      .addTo(map);
+
+                    }
+
+          });
+
+            item.addEventListener('mouseout', function() {
+
+              var features = map.queryRenderedFeatures({layers:['uni']});
+              var codedCities = features.filter(function (feature){
+                  return feature.properties.code === prop.code;
+              });
+
+              for (i = 0; i < codedCities.length; ++i) {
+                  window.popupB[i].remove()
+                }
+
+            });
+
             item.addEventListener('click', function(){
 
               map.fitBounds([[
