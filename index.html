@@ -955,8 +955,10 @@ function renderListings(features) {
 
     } else  {
         var empty = document.createElement('p');
-        empty.textContent = 'Drag the map to populate results';
+        empty.innerHTML = '<p><div>' + 'Drag the map to populate results' + '</div></p>';
         empty.style.color = "#FFFFF0";
+        empty.style.fontSize = 125 + "%";
+        empty.style.textAlign - "center";
         listingEl.appendChild(empty);
 
         // Hide the filter input
@@ -1167,7 +1169,7 @@ map.on('moveend', function() {
  });
 
  filterEl.addEventListener('keyup', function(e) {
-   
+
     map.setLayoutProperty('uni_select', 'visibility', 'none');
 
 
