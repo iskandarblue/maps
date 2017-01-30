@@ -42,6 +42,45 @@
 </head>
 <style>
 
+
+    #program_title{
+      position: absolute;
+      z-index: 20202020;
+      background: rgba(12, 12, 12, 0.99);
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      display: none;
+      left: 50%;
+      width: auto;
+      top: 1%;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 10px;
+      -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+       transform: translateX(-50%);
+    }
+
+    #go-back {
+      content:url('./back-button.svg');
+      color: #fff;
+      border-radius: 5px;
+      left: 1%;
+      height: 20px;
+      width: 20px;
+      opacity: 0.79;
+      float: left;
+      margin-right: 10px;
+      display:inline-block;
+    }
+
+    #go-back:hover {
+      opacity: 0.99;
+    }
+
 .mapbox-improve-map {
     display: none;
 }
@@ -692,6 +731,11 @@ border-radius: 5px;
 </div>
 
   <div id='map'>
+    <div id='program_title'>
+            <div id ='go-back'></div>
+        <span id="myspan">TITLE</span>
+    </div>
+
     <div id ='about-linked'></div>
   </div>
 
@@ -707,7 +751,7 @@ border-radius: 5px;
 </div>
 </div>
     <fieldset>
-        <input id='feature-filter' type='text' placeholder='Filter reults by program acronym or click' />
+        <input id='feature-filter' type='text' placeholder='Filter reults and click program acronym' />
     </fieldset>
     <div id='feature-listing' class='listing'></div>
 </div>
@@ -727,6 +771,7 @@ $("#about-link").on('click', function() {
       if(display="none")
       {
           $("#about").attr("style", "display:block");
+          $("#program_title").attr("style", "display:none");
       }
 
 });
@@ -832,7 +877,8 @@ function renderListings(features) {
               map.setLayoutProperty('uni_select', 'visibility', 'visible');
               map.setLayoutProperty('uni', 'visibility', 'none');
 
-              setTimeout(function() { map.setLayoutProperty('uni', 'visibility', 'visible'); }, 5000);
+              document.getElementById("myspan").textContent= item.textContent;
+              document.getElementById("program_title").style.display = "inline-block";
 
 
             });
@@ -1114,6 +1160,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('city', 'visibility', 'visible');
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
+            document.getElementById("program_title").style.display = "none";
 
 
 
@@ -1149,6 +1196,14 @@ for (var i = 0; i < inputs.length; i++) {
               map.setLayoutProperty('uni_select', 'visibility', 'none');
 
           }
+        });
+
+        document.getElementById('go-back').addEventListener('click', function () {
+
+            map.setLayoutProperty('uni', 'visibility', 'visible');
+            map.setLayoutProperty('uni_select', 'visibility', 'none');
+            document.getElementById("program_title").style.display = "none";
+
         });
 
 map.on('moveend', function() {
