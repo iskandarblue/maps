@@ -859,10 +859,10 @@ function renderListings(features) {
                     var codeFilter =  item.textContent
 
 //filter uni_select red markers by program acronym
-             map.setFilter("uni_select", ["==", "code", codeFilter]);
+             map.setFilter("uni_icon", ["==", "code", codeFilter]);
 
 //make uni_select visible
-              map.setLayoutProperty('uni_select', 'visibility', 'visible');
+              map.setLayoutProperty('uni_icon', 'visibility', 'visible');
 
 //hide uni layer
               map.setLayoutProperty('uni', 'visibility', 'none');
@@ -885,21 +885,15 @@ function renderListings(features) {
                     console.log(feature.properties);
 
             });
-/*
+
             item.addEventListener('mouseout', function() {
-
-
+              var codeFilter =  item.textContent
               map.setFilter("uni_select", ["==", "code", codeFilter]);
-
  //make uni_select visible
-               map.setLayoutProperty('uni_select', 'visibility', 'visible');
+               map.setLayoutProperty('uni_select', 'visibility', 'none');
                 // Highlight corresponding feature on the map
-          /*      popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML('<div>' + feature.properties.title + '</div>')
-                    .addTo(map);
-                    console.log(feature.properties);
 
-            }); */
+            });
 
             listingEl.appendChild(item);
 
@@ -1146,6 +1140,19 @@ function addDataLayer(){
         "filter": ["==", "code", ""]
     });
 
+    map.addLayer({
+        "id": "uni_icon",
+        "type": "symbol",
+        "source": "uni",
+        "layout":{
+          "visibility": "none",
+          "icon-image": "marker-15redwhite",
+          "icon-offset": [0, -7.5],
+          "icon-allow-overlap": true,
+        },
+        "filter": ["==", "code", ""]
+    });
+
   }
 
 
@@ -1226,6 +1233,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('city', 'visibility', 'visible');
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
+            map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
 
 
@@ -1252,6 +1260,7 @@ for (var i = 0; i < inputs.length; i++) {
               map.setLayoutProperty('city', 'visibility', 'visible');
               map.setLayoutProperty('uni', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
+              map.setLayoutProperty('uni_code', 'visibility', 'none');
 
             } else {
               program.className = 'mode-selected'
@@ -1260,6 +1269,7 @@ for (var i = 0; i < inputs.length; i++) {
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
+              map.setLayoutProperty('uni_code', 'visibility', 'none');
 
           }
         });
@@ -1268,6 +1278,7 @@ for (var i = 0; i < inputs.length; i++) {
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
+            map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
 
           var elem = document.getElementById("appended-p");
@@ -1380,7 +1391,7 @@ map.on('moveend', function() {
 
   if (program.className === "mode-selected"){
       var features = map.queryRenderedFeatures(e.point, {
-          layers: ['uni_select', 'uni']
+          layers: ['uni_icon', 'uni']
       });
 
       // Change the cursor style as a UI indicator.
