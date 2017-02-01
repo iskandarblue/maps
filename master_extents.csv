@@ -1,0 +1,489 @@
+field_1,code,title,website,uni,country,city,lat,lon,xmin,ymin,xmax,ymax
+1,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,-5.7038,3.6761,18.3738,52.8503
+2,ACES,"ACES - Joint Masters Degree in Aquaculture, Environment and Society",http://www.sams.ac.uk/aces-erasmus,University of the Highlands and Islands,UK,Oban,56.4152,-5.471,-7.471,33.3387,27.1442,58.4152
+3,ADVANCES,ADVANCES - MA Advanced Development in Social Work,http://www.socialworkadvances.org/,University of Lincoln,UK,Lincoln,53.2307,-0.5406,-11.1393,36.7223,23.0122,59.0488
+4,AMASE,AMASE - Joint European Master Programme on Advanced Materials Science and Engineering,http://www.amase-master.net/,Saarland University,Germany,SaarbrÃ_cken,49.2402,6.9969,0.1734,39.3851,24.1567,67.5848
+5,ARCHMAT,ARCHMAT - European Master in ARCHaeological MATerials Science,http://www.erasmusmundus-archmat.uevora.pt/,University of Evora,Portugal,Evora,38.5707,-7.9093,-9.9093,36.5707,24.9444,43.9028
+6,ASC,ASC - Advanced Spectroscopy in Chemistry Master's Course,http://www.master-asc.org/,University of Bologna,Italy,Bologna,44.4949,11.3426,1.0573,42.4949,26.9384,62.1699
+7,ASTROMUNDUS,ASTROMUNDUS - Astrophysics,http://www.astromundus.eu/,University of Innsbruck,Austria,Innsbruck,47.2692,1.4041,-0.5959,39.9028,22.4489,53.5413
+8,ATOSIM,"ATOSIM - Atomic Scale Modelling of Physical, Chemical and Bio-molecular Systems",http://www.erasmusmundus-atosim.cecam.org/,University of Lyon,France,Lyon,45.764,4.8357,2.8357,39.9028,14.4964,54.3702
+9,BIFTEC,"BIFTEC - European Master of Science in Food Science, Technology and Business",http://www.fet.kuleuven.be/biftec,University of Leuven,Belgium,Ghent,51.0543,3.7174,-10.6291,39.1579,13.7537,53.7834
+10,CARTO,CARTO E+ JMD Cartography,http://www.cartographymaster.eu/,Technical University of Munich,Germany,Munich,48.1351,11.582,4.8937,46.1351,18.3738,54.2215
+11,ChIR,ChIR - Erasmus Mundus Master in Chemical Innovation and Regulation,http://www.emmcchir.org/,University of Algarve,Portugal,Faro,37.0194,-7.9304,-9.9304,35.0194,13.3426,57.9533
+12,CHOREOMUNDUS,"CHOREOMUNDUS - International Master in Dance Knowledge, Practice and Heritage",https://www.ntnu.edu/studies/choreomundus,Norwegian University of Science and Technology,Norway,Trondheim,63.4305,10.3951,-2.1278,43.7772,22.1414,65.4305
+13,CLE,CLE - Master Erasmus Mundus en  en Cultures LittÃ©raires EuropÃ©ennes,http://www.cle.unibo.it/site/,University of Bologna,Italy,Bologna,44.4949,11.3426,-19.366,12.7645,24.9444,50.5734
+14,CoDe,CoDe - Joint European Master in Comparative Local Development,http://www.erasmusmundus-code.eu/,Corvinus University of Budapest,Hungary,Budapest,47.4979,19.0402,9.1217,44.0569,21.0402,51.0134
+15,CoMEM,CoMEM - Erasmus Mundus MSC Coastal and Marine Engineering and Management,http://www.ntnu.edu/studies/mscomem,Norwegian University of Science and Technology,Norway,Trondheim,63.4305,10.3951,-3.4044,39.3851,12.3951,65.4305
+16,COSI,COSI Colour in Science and Industry,http://www.master-colorscience.eu/,University Jean Monnet,France,Saint-Etienne,45.4397,4.3872,-5.5986,35.1773,31.7636,64.601
+17,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,University of Bergamo,Italy,Bergamo,45.6983,9.6773,-11.1393,36.7223,18.9252,58.3398
+18,DCLead,DCLead - Msc Digital Communication Leadership,http://www.dclead.eu/,University of Salzburg,Austria,Salzburg,47.8095,13.055,2.3517,45.8095,15.055,59.0488
+19,DESEM,DESEM - Erasmus Mundus MSc in Dependable Software Systems,http://www.cs.nuim.ie/courses/desem/,National University of Ireland Maynooth,Ireland,Maynooth,53.3813,-6.5918,-8.5918,46.6921,8.1844,58.3398
+20,Dyclam,Dyclam - Dynamics of cultural landscapes and heritage management,http://www.dyclam.eu/fr/,University Jean Monnet,France,Saint-Etienne,45.4397,4.3872,-10.4043,37.6052,16.2681,50.8566
+21,EACH,EACH - Excellence in Analytical Chemistry,http://www.analyticalchemistry.eu/,University of Tartu,Estonia,Tartu,58.3776,6.729,2.8357,43.764,24.2666,62.4518
+22,EDAMUS,EDAMUS - Sustainable Management of Food Quality,http://www.master-edamus.eu/,University of Montpellier,France,Montpellier,43.6108,3.8767,-2.8897,33.5138,26.018,45.6108
+23,EM HRPP,EM HRPP - Erasmus Mundus Masters in Human Rights Policy and Practice,http://ws1.roehampton.ac.uk/admissions/erasmusmundus/hrp/index.html,Roehampton University,UK,London,51.5074,-0.1278,-4.935,41.263,13.9746,59.7089
+24,EMARO+,EMARO+ - European Master on Advanced Robotics +,http://emaro.irccyn.ec-nantes.fr/,Ã‰cole centrale de Nantes,France,Nantes,47.2184,-1.5536,-3.5536,37.9864,23.0122,54.2297
+25,EMECC NURSING,EMECC NURSING - Emergency and Critical Care Nursing,http://masternursing.uniovi.es/,University of Oviedo,Spain,Oviedo,43.3619,-5.8494,-10.686,35.0194,26.9384,62.1699
+26,EMECS,EMECS - European Masters programme in Embedded Computing Systems,http://www.emecs.eu/,University of Kaiserslautern,Germany,Kaiserslautern,49.4401,7.7491,-3.4044,47.4401,12.3951,65.4305
+27,EMERALD,EMERALD - Master Course in Georesources Engineering,http://em-georesources.eu/,University of LiÃ¨ge,Belgium,LiÃ¨ge,50.5831,5.5591,3.5591,46.6921,24.1567,67.5848
+28,EMGS,EMGS - Global Studies - A European Perspective,http://www.globalstudies-masters.info/,London School of Economics and Political Sciences,UK,London,51.5074,-0.1278,-2.1278,46.2082,19.0385,57.6419
+29,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,Erasmus University Rotterdam,Netherlands,Rotterdam,51.9244,4.4777,1.7174,17.076,74.8777,55.5511
+30,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,Karoli Gaspar University of the Reformed Church in Hungary,Hungary,Budapest,47.4979,19.0402,-10.5448,-35.9321,21.0402,54.1548
+31,EMMCMSP,EMMCMSP - Erasmus Mundus Master Course on Maritime Spatial Planning,http://www.iuav.it/Didattica1/master/master---I1/Erasmus-Mu/,IUAV University of Venice,Italy,Venice,45.4408,12.3155,-27.6806,35.3891,14.3155,47.4408
+32,EMM-Nano,EMM-Nano - Erasmus Mundus Master in Nanoscience and Nanotechnology,http://www.emm-nano.org/,Catholic University of Leuven,Belgium,Leuven,50.8798,4.7005,2.7005,43.1885,15.7373,59.7089
+33,EMPHID,EMPHID - Public Health in Disasters,http://www.pubhealthdisasters.eu/,Karolinska Institute,Sweden,Solna,59.3689,18.0084,-7.8494,41.3619,20.0084,61.3689
+34,EMQAL,EMQAL - European Joint Master in Quality in Analytical Laboratories,http://www.emqal.org/,University of Algarve,Portugal,Faro,37.0194,-7.9304,-9.9304,34.5271,20.6466,62.3913
+35,EM-SANF,EM-SANF - Erasmus Mundus Master Course Sustainable Animal Nutrition and Feeding,http://www.emsanf.eu/UK/,Purpan Engineering School,France,Toulouse,43.6047,1.4442,-0.5558,41.6047,23.6273,58.1629
+36,EMSD,EMSD - European Master programme in Systems Dynamics,http://www.europeansystemdynamics.eu/,University of Bergen,Norway,Bergen,60.3913,5.3221,-11.1393,36.1157,15.3613,62.3913
+37,EMSE,EMSE - European Masters Programme in Software Engineering,http://em-se.eu/,Free University of Bozen-Bolzano,Italy,Bolzano,46.4983,11.3548,-5.7038,38.4168,27.4651,67.0121
+38,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,University of LiÃ¨ge,Belgium,LiÃ¨ge,50.5831,5.5591,-3.5536,42.4056,30.008,56.0924
+39,EMTM,EMTM - European Master in Tourism Management,http://www.emtmmaster.net/,University of Southern Denmark,Denmark,Kolding,55.496,9.4731,0.8214,39.9794,16.5058,57.496
+40,EPOG,"EPOG - Master's Course - Economic Policies in the age of Globalisation : knowledge, finance and development",http://www.epog.eu/,University of Paris XIII-Nord,France,Paris,48.8566,2.3522,-2.3007,-28.2041,30.0473,54.52
+41,EUCOMOR,EUCOMOR - European Master in Comparative Morphology,http://www.eucomor.net/,University of Antwerp,Belgium,Antwerp,51.2194,4.4025,2.4025,38.8518,18.9252,54.4064
+42,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,University of Groningen,Netherlands,Groningen,53.2194,6.5665,-104.5528,16.5204,137.5022,61.8586
+43,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,University of Toulouse Jean-Jaures,France,Toulouse,43.6047,1.4442,-92.049,-24.0087,141.6917,53.2562
+44,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,University of Aix-Marseille III Paul Cezanne,France,Marseille,43.2965,5.3698,0.1734,39.3851,27.2797,56.6872
+45,EU4M - EMMC,EU4M - EMMC Mechatronic Engineering,http://www.eu4m.eu/,University of Oviedo,Spain,Oviedo,43.3619,-5.8494,-7.8494,28.0131,42.9766,59.0051
+46,EUPADRA,EUPADRA - PARLIAMENTARY PROCEDURES AND LEGISLATIVE DRAFTING,http://eupadra.eu/,Free International University of Social Studies,Italy,Rome,41.9028,12.4964,-5.7038,38.4168,14.4964,53.5074
+47,EWEM,EWEM - European Wind Energy Master,http://www.windenergymaster.eu/,Delft University of Technology,Netherlands,Delft,52.0116,4.3571,2.3571,50.0116,14.4949,65.4305
+48,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,University of Bordeaux 1,France,Bordeaux,44.8378,-0.5792,-10.6538,38.6405,12.8978,52.8798
+49,GroundwatCH,GroundwatCH - Groundwater and Global Change - Impacts and Adaptation,http://www.groundwatermaster.eu/,Technical Institute of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,15.7373,54.0116
+50,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Granada,Spain,Granada,37.1773,-3.5986,-76.4518,35.1773,21.456,55.7457
+51,GeoTech,GeoTech - Master of Science in Geospatial Technologies,http://mastergeotech.info/,University of MÃ_nster,Germany,MÃ_nster,51.9607,7.6261,-11.1393,36.7223,9.6261,53.9607
+52,GLOBED,GLOBED Erasmus Mundus Joint Master Degree on Education Policies for Global Development,http://globed.eu/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,33.8956,16.4869,61.9139
+53,IMAE,IMAE - International Master in Applied Ecology,http://www.emmc-imae.org/,University of Poitiers,France,Poitiers,46.5802,0.3404,-53.2177,-32.0346,12.1228,56.3233
+54,IMAESC,IMAESC - International Master in Adult Education for Social Change,http://www.gla.ac.uk/postgraduate/erasmusmundus/imaesc/,University of Glasgow,UK,Glasgow,55.8642,-4.2518,-6.2518,33.8956,26.7536,61.437
+55,IMFSE,IMFSE - International Master of Science in Fire Safety Engineering,http://www.imfse.ugent.be/,Ghent University,Belgium,Ghent,51.0543,3.7174,-5.1883,49.0543,15.191,57.9533
+56,IMIM,IMIM - International Master in Industrial Management,http://www.imim.polimi.it/,Technical University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,38.4168,13.582,57.9533
+57,IMIM Med,IMIM - International Master in Innovative Medicine,http://www.innovativemedicine.eu/,University of Groningen,The Netherlands,Groningen,53.2194,6.5665,4.5665,47.3988,19.6389,61.8586
+58,IMQP,IMQP - Erasmus Mundus Master in Quaternary and Prehistory,https://sites.google.com/a/unife.it/quaternary-prehistory/,University of Ferrara,Italy,Ferrara,44.8381,11.6198,-10.4043,37.6052,13.6198,50.8566
+59,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,Jagiellonian University,Poland,Krakow,50.0647,19.945,-6.2518,39.7151,78.8512,60.3776
+60,IMRD,IMRD - International Master of Science in Rural Development,http://www.imrd.ugent.be/,Slovak University of Agriculture in Nitra,Slovakia,Nitra,48.3061,18.0764,-3.6778,41.7228,20.0764,54.52
+61,IT4BI,IT4BI - Information Technologies for Business Intelligence,http://it4bi.univ-tours.fr/,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,-1.3152,39.3851,15.405,54.52
+62,JEMES,JEMES - Joint European Master Programme in Environmental Studies,http://www.jemes-cisu.eu/,Technical University of Hamburg-Harburg,Germany,Hamburg,53.5511,9.9937,-10.6538,38.6405,11.9937,59.0488
+63,KINOEYES | KEM,KINOEYES | KEM - The European Movie Masters,http://www.kinoeyes.eu/,Lusofona University,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,26.7536,61.437
+64,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,The University of the Basque Country,Spain,San Sebastian,43.3183,-1.9812,-3.9812,33.8956,16.4869,55.2194
+65,LIVE,LIVE - Leading International Vaccinology Education,http://live.univ-lyon1.fr/,University of Antwerp,Belgium,Antwerp,51.2194,4.4025,0.1734,39.3851,6.8357,53.2194
+66,MAIA,MAIA - Medical Imaging and Applications EMJMD,http://www.maiamaster.org/,University of Girona,Spain,Girona,41.9794,2.8214,0.8214,39.4908,15.8334,49.322
+67,MAMASELF,MAMASELF - Master in material science exploring European large scale facilities,http://www.mamaself.eu/,University of Rennes 1,France,Rennes,48.1173,-1.6778,-3.6778,41.6108,13.582,50.1351
+68,MARIHE,MARIHE - Research and Innovation in Higher Education,http://www.marihe.eu/,Danube University Krems,Austria,Krems an der Donau,48.41,15.6038,6.0472,37.9042,118.4074,63.4978
+69,MATHMODS,"MATHMODS - Mathematical Modelling in Engineering: Theory, Numerics, Applications",http://www.mathmods.eu/,University of L'Aquila,Italy,L'Aquila,42.3498,13.3995,0.1734,39.3851,20.6466,56.352
+70,MCM,MCM - Master of Science in Computational Mechanics,http://www.cimne.com/cm-master/,Swansea University,UK,Swansea,51.6214,-3.9436,-5.9436,39.3851,11.1829,53.6214
+71,ME3,ME3 - European Joint Masters in Management and Engineering of Environment and Energy,http://www.emn.fr/z-de/me3-site/,Queen's University Belfast,UK,Belfast,54.5973,-5.9301,-7.9301,38.4168,21.0402,61.3293
+72,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,41.7168,47.4064
+73,Media AC,Media AC Ãê Media Arts Cultures,http://www.mediaartscultures.eu/,Danube University Krems,Austria,Krems an der Donau,48.41,15.6038,7.9217,20.3964,116.1095,59.0488
+74,MEEES,MEEES - Masters in Earthquake Engineering and Engineering Seismology,http://www.meees.org/,"Institute for Advanced Study/University of Pavia - UME School, Italy",Italy,Pavia,45.1847,9.1582,3.7245,36.2466,34.8597,54.401
+75,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,Antwerpen University,Belgium,Antwerp,51.2194,4.4025,-49.8822,-17.7942,18.8719,55.0027
+76,MEME,MEME - Erasmus Mundus Master Programme in Evolutionary Biology,http://www.evobio.eu/,University of Groningen,The Netherlands,Groningen,53.2194,6.5665,-73.1097,40.3736,19.6389,61.8586
+77,MEREMMC,MEREMMC - European MSc in Marine Environment and Resources,http://www.merconsortium.eu/,University of Southampton,UK,Southampton,50.9097,-1.4044,-4.9901,41.3267,7.5591,52.9097
+78,MFAMILY,MFAMILY - European Master in Social Work with Families and Children,http://www.mfamily.eu/,University Institute of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,-1.6524,34.5825,60.97
+79,MIM,MIM - Crossing the Mediterranean: towards investment and integration,http://www.mastermimplus.eu/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,14.3155,47.4408
+80,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,University of Lille,France,Lille,50.6292,3.0573,-45.1729,-24.9068,25.6236,53.8969
+81,MONABIP,MONABIP - Molecular Nano- and Biophotonics,http://www.monabiphot.ens-cachan.fr/,Cachan Normal Superior University,France,Cachan,48.7919,2.3314,-5.7038,38.4168,19.0385,53.1079
+82,MSPME,MSPME - Masters in Strategic Project Management (European),http://www.mspme.org/,Heriot Watt Universit,UK,Edinburgh,55.9533,-3.1883,-5.1883,43.4654,22.263,65.8258
+83,MUNDUS JOURNALISM,"MUNDUS JOURNALISM - Erasmus Mundus Masters Journalism, Media and Globalisation",http://www.mundusjournalism.com/,University of Amsterdam,The Netherlands,Amsterdam,52.3702,4.8952,-5.9436,49.5074,11.9937,55.5511
+84,MUNDUS MAPP,MUNDUS MAPP - Erasmus Mundus Master's in Public Policy,http://www.mundusmapp.org/,Central European University,Hungary,Budapest,47.4979,19.0402,-3.0873,39.3851,21.0402,55.96
+85,MUNDUS URBANO,MUNDUS URBANO - Master of Science in International Cooperation and Urban Development,http://www.mundus-urbano.eu/,University of Grenoble- Alpes,France,Grenoble,45.1885,5.7245,0.1734,39.3851,14.4964,51.8728
+86,NOMADS EMMC,NOMADS EMMC - The â€ùDoc Nomadsâ€ù Joint Master in Documentary Film Directing,http://www.docnomads.eu/,Lusofona University,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,21.0402,52.8503
+87,PERCCOM,PERCCOM - PERvasive Computing & COMmunications for Sustainable Development,http://perccom.univ-lorraine.fr/,Lulea University of Technology,Sweden,Lulea,65.5848,22.1567,-1.6649,46.6921,30.1897,67.5848
+88,PLANET Europe,"PLANET Europe - Joint Masters Programme on European Spatial Planning, Environmental Policies and Regional Development",http://www.planet-europe.eu/,Radboud University Nijmegen,The Netherlands,Nijmegen,51.8126,5.8372,-5.1791,49.4816,17.5869,58.1612
+89,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,Technical University of Valencia,Spain,Valencia,39.4699,-0.3763,-3.6778,37.4699,13.8768,53.5413
+90,QEM,QEM - Models and Methods of Quantitative Economics,http://erasmusmundus-qem.univ-paris1.fr/,Bielefeld University,Germany,Bielefeld,52.0302,8.5325,0.1734,39.3851,14.3155,54.0302
+91,SAHC,SAHC - Advanced Masters in Structural Analysis of Monuments and Historical Constructions,http://www.msc-sahc.org/,University of Minho,Portugal,GuimarÃ£es,41.4425,-8.2918,-10.2918,39.3851,16.4378,52.0755
+92,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,Lulea University of Technology,Sweden,Lulea,65.5848,22.1567,-2.6087,33.6895,141.6917,67.5848
+93,SSI,SSI - Joint International Master in Smart Systems Integration,http://ssi-master.eu/,Heriot Watt University,UK,Edinburgh,55.9533,-3.1883,-5.1883,45.4979,21.0402,61.1708
+94,STEPS,STEPS - Erasmus Mundus Master Course in Sustainable Transportation and Electrical Power Systems,http://emmcsteps.uniovi.es/,University of Oviedo,Spain,Oviedo,43.3619,-5.8494,-10.4404,38.2048,14.4964,54.9548
+95,SUFONAMA,SUFONAMA - Sustainable Forest and Nature Management,http://sufonama.eu/,University of Copenhagen,Denmark,Copenhagen,55.6761,12.5683,-6.1239,43.4064,15.0824,57.6761
+96,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,Czech Technical University in Prague,Czech Republic,Prague,50.0755,14.4378,-10.4404,38.2048,24.1567,67.5848
+97,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,Autonomous University of Madrid,Spain,Madrid,40.4168,-3.7038,-10.6291,37.4699,14.3908,55.2194
+98,TPTI,"TPTI - Techniques, Patrimoine, Territoires de l'Industrie",http://www.tpti.eu/,University of Paris 1 Pantheon-Sorbonne,France,Paris,48.8566,2.3522,-9.9093,36.5707,13.8768,50.8566
+99,TRIBOS,TRIBOS - Joint European master in tribology of surfaces and interfaces,http://www.master-tribos.eu/,University of Leeds,UK,Leeds,53.8008,-1.5491,-10.4404,38.2048,24.1567,67.5848
+100,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,0.3522,-29.4954,155.012,52.8503
+101,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Montpellier SupAgro,France,Montpellier,43.6108,3.8767,-11.1393,36.7223,15.2346,51.9844
+102,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",University of Bologna,Italy,Bologna,44.4949,11.3426,-48.330376,-25.944841,123.544,61.9343
+103,WINTOUR,WINTOUR - EMJMD on Wine Tourism Innovation,http://www.wintour-master.eu/en_index/,University Rovira i Virgili,Spain,Tarragona,41.1189,1.2445,-10.6291,39.1189,3.2445,46.8378
+104,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,-5.7038,3.6761,18.3738,52.8503
+105,ACES,"ACES - Joint Masters Degree in Aquaculture, Environment and Society",http://www.sams.ac.uk/aces-erasmus,University of Crete,Greece,Heraklion,35.3387,25.1442,-7.471,33.3387,27.1442,58.4152
+106,ADVANCES,ADVANCES - MA Advanced Development in Social Work,http://www.socialworkadvances.org/,Aalborg University,Denmark,Aalborg,57.0488,9.9217,-11.1393,36.7223,23.0122,59.0488
+107,AMASE,AMASE - Joint European Master Programme on Advanced Materials Science and Engineering,http://www.amase-master.net/,Lulea Technology University,Sweden,Lulea,65.5848,22.1567,0.1734,39.3851,24.1567,67.5848
+108,ARCHMAT,ARCHMAT - European Master in ARCHaeological MATerials Science,http://www.erasmusmundus-archmat.uevora.pt/,Sapienza University,Italy,Rome,41.9028,12.4964,-9.9093,36.5707,24.9444,43.9028
+109,ASC,ASC - Advanced Spectroscopy in Chemistry Master's Course,http://www.master-asc.org/,University of Helsinki,Finland,Helsinki,60.1699,24.9384,1.0573,42.4949,26.9384,62.1699
+110,ASTROMUNDUS,ASTROMUNDUS - Astrophysics,http://www.astromundus.eu/,University of Belgrade,Serbia,Belgrade,44.7866,20.4489,-0.5959,39.9028,22.4489,53.5413
+111,ATOSIM,"ATOSIM - Atomic Scale Modelling of Physical, Chemical and Bio-molecular Systems",http://www.erasmusmundus-atosim.cecam.org/,University of Amsterdam,Netherlands,Amsterdam,52.3702,4.8952,2.8357,39.9028,14.4964,54.3702
+112,BIFTEC,"BIFTEC - European Master of Science in Food Science, Technology and Business",http://www.fet.kuleuven.be/biftec,Catholic University of Portugal,Portugal,Porto,41.1579,-8.6291,-10.6291,39.1579,13.7537,53.7834
+113,CARTO,CARTO E+ JMD Cartography,http://www.cartographymaster.eu/,Vienna University of Technology,Austria,Vienna,48.2082,16.3738,4.8937,46.1351,18.3738,54.2215
+114,ChIR,ChIR - Erasmus Mundus Master in Chemical Innovation and Regulation,http://www.emmcchir.org/,University of Barcelona,Spain,Barcelona,41.3851,2.1734,-9.9304,35.0194,13.3426,57.9533
+115,CHOREOMUNDUS,"CHOREOMUNDUS - International Master in Dance Knowledge, Practice and Heritage",https://www.ntnu.edu/studies/choreomundus,Blaise Pascal University,France,Clermont-Ferrand,45.7772,3.087,-2.1278,43.7772,22.1414,65.4305
+116,CLE,CLE - Master Erasmus Mundus en  en Cultures LittÃ©raires EuropÃ©ennes,http://www.cle.unibo.it/site/,University of Upper Alsace,France,Mulhouse,47.7508,7.3359,-19.366,12.7645,24.9444,50.5734
+117,CoDe,CoDe - Joint European Master in Comparative Local Development,http://www.erasmusmundus-code.eu/,University of Trento,Italy,Trento,46.0748,11.1217,9.1217,44.0569,21.0402,51.0134
+118,CoMEM,CoMEM - Erasmus Mundus MSC Coastal and Marine Engineering and Management,http://www.ntnu.edu/studies/mscomem,Technical University of Catalonia Barcelona Tech,Spain,Barcelona,41.3851,2.1734,-3.4044,39.3851,12.3951,65.4305
+119,COSI,COSI Colour in Science and Industry,http://www.master-colorscience.eu/,University of Granada,Spain,Granada,37.1773,-3.5986,-5.5986,35.1773,31.7636,64.601
+120,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,New University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,18.9252,58.3398
+121,DCLead,DCLead - Msc Digital Communication Leadership,http://www.dclead.eu/,Aalborg University,Denmark,Aalborg,57.0488,9.9217,2.3517,45.8095,15.055,59.0488
+122,DESEM,DESEM - Erasmus Mundus MSc in Dependable Software Systems,http://www.cs.nuim.ie/courses/desem/,University of St. Andrews,UK,St. Andrews,56.3398,-2.7967,-8.5918,46.6921,8.1844,58.3398
+123,Dyclam,Dyclam - Dynamics of cultural landscapes and heritage management,http://www.dyclam.eu/fr/,Polytechnic Institute of Tomar,Portugal,Tomar,39.6052,-8.4043,-10.4043,37.6052,16.2681,50.8566
+124,EACH,EACH - Excellence in Analytical Chemistry,http://www.analyticalchemistry.eu/,University Claude Bernard Lyon 1,France,Lyon,45.764,4.8357,2.8357,43.764,24.2666,62.4518
+125,EDAMUS,EDAMUS - Sustainable Management of Food Quality,http://www.master-edamus.eu/,University of Basilicata,Italy,Potenza,40.6464,15.8055,-2.8897,33.5138,26.018,45.6108
+126,EM HRPP,EM HRPP - Erasmus Mundus Masters in Human Rights Policy and Practice,http://ws1.roehampton.ac.uk/admissions/erasmusmundus/hrp/index.html,University of Gothenburg,Sweden,Gothenburg,57.7089,11.9746,-4.935,41.263,13.9746,59.7089
+127,EMARO+,EMARO+ - European Master on Advanced Robotics +,http://emaro.irccyn.ec-nantes.fr/,Warsaw University of Technology,Poland,Warsaw,52.2297,21.0122,-3.5536,37.9864,23.0122,54.2297
+128,EMECC NURSING,EMECC NURSING - Emergency and Critical Care Nursing,http://masternursing.uniovi.es/,University of Algarve,Portugal,Faro,37.0194,-7.9304,-10.686,35.0194,26.9384,62.1699
+129,EMECS,EMECS - European Masters programme in Embedded Computing Systems,http://www.emecs.eu/,Norwegian University of Science and Technology,Norway,Trondheim,63.4305,10.3951,-3.4044,47.4401,12.3951,65.4305
+130,EMERALD,EMERALD - Master Course in Georesources Engineering,http://em-georesources.eu/,University of Lorraine,France,Nancy,48.6921,6.1844,3.5591,46.6921,24.1567,67.5848
+131,EMGS,EMGS - Global Studies - A European Perspective,http://www.globalstudies-masters.info/,Roskilde University,Denmark,Roskilde,55.6419,12.0878,-2.1278,46.2082,19.0385,57.6419
+132,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,Aix-Marseille University,France,Aix-en-Provence,43.5297,5.4474,1.7174,17.076,74.8777,55.5511
+133,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,University of Silesia in Katowice,Poland,Katowice,50.2649,19.0238,-10.5448,-35.9321,21.0402,54.1548
+134,EMMCMSP,EMMCMSP - Erasmus Mundus Master Course on Maritime Spatial Planning,http://www.iuav.it/Didattica1/master/master---I1/Erasmus-Mu/,University of the Azores,Portugal,Ponta Delgada,37.7428,-25.6806,-27.6806,35.3891,14.3155,47.4408
+135,EMM-Nano,EMM-Nano - Erasmus Mundus Master in Nanoscience and Nanotechnology,http://www.emm-nano.org/,Chalmers University of Technology,Sweden,Gothenburg,57.7089,11.9746,2.7005,43.1885,15.7373,59.7089
+136,EMPHID,EMPHID - Public Health in Disasters,http://www.pubhealthdisasters.eu/,Catholic University of Leuven,Belgium,Leuven,50.8798,4.7005,-7.8494,41.3619,20.0084,61.3689
+137,EMQAL,EMQAL - European Joint Master in Quality in Analytical Laboratories,http://www.emqal.org/,University of Barcelona,Spain,Barcelona,41.3851,2.1734,-9.9304,34.5271,20.6466,62.3913
+138,EM-SANF,EM-SANF - Erasmus Mundus Master Course Sustainable Animal Nutrition and Feeding,http://www.emsanf.eu/UK/,Aarhus University,Denmark,Aarhus,56.1629,10.2039,-0.5558,41.6047,23.6273,58.1629
+139,EMSD,EMSD - European Master programme in Systems Dynamics,http://www.europeansystemdynamics.eu/,New University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.1157,15.3613,62.3913
+140,EMSE,EMSE - European Masters Programme in Software Engineering,http://em-se.eu/,University of Oulu,Finland,Oulu,65.0121,25.4651,-5.7038,38.4168,27.4651,67.0121
+141,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,Ã‰cole centrale de Nantes,France,Nantes,47.2184,-1.5536,-3.5536,42.4056,30.008,56.0924
+142,EMTM,EMTM - European Master in Tourism Management,http://www.emtmmaster.net/,University of Ljubljana,Slovenia,Ljubljana,46.0569,14.5058,0.8214,39.9794,16.5058,57.496
+143,EPOG,"EPOG - Master's Course - Economic Policies in the age of Globalisation : knowledge, finance and development",http://www.epog.eu/,Berlin School of Economics and Law,Germany,Berlin,52.52,13.405,-2.3007,-28.2041,30.0473,54.52
+144,EUCOMOR,EUCOMOR - European Master in Comparative Morphology,http://www.eucomor.net/,Justus Liebig University Giessen,Germany,Giessen,50.5841,8.6784,2.4025,38.8518,18.9252,54.4064
+145,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Palacky University of Olomouc,Czech Republic,Olomouc,49.5938,17.2509,-104.5528,16.5204,137.5022,61.8586
+146,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,University of Bonn,Germany,Bonn,50.7374,7.0982,-92.049,-24.0087,141.6917,53.2562
+147,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,University of Karlsruhe,Germany,Karlsruhe,49.0069,8.4037,0.1734,39.3851,27.2797,56.6872
+148,EU4M - EMMC,EU4M - EMMC Mechatronic Engineering,http://www.eu4m.eu/,Karlsruhe University of Applied Sciences,Germany,Karlsruhe,49.0069,8.4037,-7.8494,28.0131,42.9766,59.0051
+149,EUPADRA,EUPADRA - PARLIAMENTARY PROCEDURES AND LEGISLATIVE DRAFTING,http://eupadra.eu/,University of London,UK,London,51.5074,-0.1278,-5.7038,38.4168,14.4964,53.5074
+150,EWEM,EWEM - European Wind Energy Master,http://www.windenergymaster.eu/,Technical University of Denmark,Denmark,Kongens Lyngby,55.7635,12.4949,2.3571,50.0116,14.4949,65.4305
+151,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,University of Aveiro,Portugal,Aveiro,40.6405,-8.6538,-10.6538,38.6405,12.8978,52.8798
+152,GroundwatCH,GroundwatCH - Groundwater and Global Change - Impacts and Adaptation,http://www.groundwatermaster.eu/,UNESCO-IHE Institute for Water Education,Netherlands,Delft,52.0116,4.3571,-11.1393,36.7223,15.7373,54.0116
+153,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Oviedo,Spain,Oviedo,43.3619,-5.8494,-76.4518,35.1773,21.456,55.7457
+154,GeoTech,GeoTech - Master of Science in Geospatial Technologies,http://mastergeotech.info/,University Jaume I,Spain,CastellÃ_n de la Plana,39.9864,-0.0513,-11.1393,36.7223,9.6261,53.9607
+155,GLOBED,GLOBED Erasmus Mundus Joint Master Degree on Education Policies for Global Development,http://globed.eu/,University of Oslo,Norway,Oslo,59.9139,10.7522,0.1734,33.8956,16.4869,61.9139
+156,IMAE,IMAE - International Master in Applied Ecology,http://www.emmc-imae.org/,University Christian-Albrechts,Germany,Kiel,54.3233,10.1228,-53.2177,-32.0346,12.1228,56.3233
+157,IMAESC,IMAESC - International Master in Adult Education for Social Change,http://www.gla.ac.uk/postgraduate/erasmusmundus/imaesc/,University of Malta,Malta,Msida,35.8956,14.4869,-6.2518,33.8956,26.7536,61.437
+158,IMFSE,IMFSE - International Master of Science in Fire Safety Engineering,http://www.imfse.ugent.be/,Lund University,Sweden,Lund,55.7047,13.191,-5.1883,49.0543,15.191,57.9533
+159,IMIM,IMIM - International Master in Industrial Management,http://www.imim.polimi.it/,Polytechnic University of Milan,Italy,Milan,45.4654,9.1859,-5.7038,38.4168,13.582,57.9533
+160,IMIM Med,IMIM - International Master in Innovative Medicine,http://www.innovativemedicine.eu/,Heidelberg University,Germany,Heidelberg,49.3988,8.6724,4.5665,47.3988,19.6389,61.8586
+161,IMQP,IMQP - Erasmus Mundus Master in Quaternary and Prehistory,https://sites.google.com/a/unife.it/quaternary-prehistory/,Rovira i Virgili University,Spain,Tarragona,41.1189,1.2445,-10.4043,37.6052,13.6198,50.8566
+162,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,University of Glasgow,UK,Glasgow,55.8642,-4.2518,-6.2518,39.7151,78.8512,60.3776
+163,IMRD,IMRD - International Master of Science in Rural Development,http://www.imrd.ugent.be/,University of Pisa,Italy,Pisa,43.7228,10.4017,-3.6778,41.7228,20.0764,54.52
+164,IT4BI,IT4BI - Information Technologies for Business Intelligence,http://it4bi.univ-tours.fr/,University of Tours,France,Tours,47.3941,0.6848,-1.3152,39.3851,15.405,54.52
+165,JEMES,JEMES - Joint European Master Programme in Environmental Studies,http://www.jemes-cisu.eu/,Aalborg University,Denmark,Aalborg,57.0488,9.9217,-10.6538,38.6405,11.9937,59.0488
+166,KINOEYES | KEM,KINOEYES | KEM - The European Movie Masters,http://www.kinoeyes.eu/,Edinburgh Napier University,UK,Edinburgh,55.9533,-3.1883,-11.1393,36.7223,26.7536,61.437
+167,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,University of Groningen,The Netherlands,Groningen,53.2194,6.5665,-3.9812,33.8956,16.4869,55.2194
+168,LIVE,LIVE - Leading International Vaccinology Education,http://live.univ-lyon1.fr/,University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,6.8357,53.2194
+169,MAIA,MAIA - Medical Imaging and Applications EMJMD,http://www.maiamaster.org/,University of Bourgogne,France,Dijon,47.322,5.0415,0.8214,39.4908,15.8334,49.322
+170,MAMASELF,MAMASELF - Master in material science exploring European large scale facilities,http://www.mamaself.eu/,Technical University of Munich,Germany,Munich,48.1351,11.582,-3.6778,41.6108,13.582,50.1351
+171,MARIHE,MARIHE - Research and Innovation in Higher Education,http://www.marihe.eu/,University of Tampere,Finland,Tampere,61.4978,23.761,6.0472,37.9042,118.4074,63.4978
+172,MATHMODS,"MATHMODS - Mathematical Modelling in Engineering: Theory, Numerics, Applications",http://www.mathmods.eu/,Autonomous University - Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,20.6466,56.352
+173,MCM,MCM - Master of Science in Computational Mechanics,http://www.cimne.com/cm-master/,Stuttgart University,Germany,Stuttgart,48.7758,9.1829,-5.9436,39.3851,11.1829,53.6214
+174,ME3,ME3 - European Joint Masters in Management and Engineering of Environment and Energy,http://www.emn.fr/z-de/me3-site/,Budapest University of Technology and Economics,Hungary,Budapest,47.4979,19.0402,-7.9301,38.4168,21.0402,61.3293
+175,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,University of Lleida,Spain,Lleida,41.6176,0.62,-11.1393,36.7223,41.7168,47.4064
+176,Media AC,Media AC Ãê Media Arts Cultures,http://www.mediaartscultures.eu/,Aalborg University,Denmark,Aalborg,57.0488,9.9217,7.9217,20.3964,116.1095,59.0488
+177,MEEES,MEEES - Masters in Earthquake Engineering and Engineering Seismology,http://www.meees.org/,University of Grenoble Joseph Fourier,France,Grenoble,45.1885,5.7245,3.7245,36.2466,34.8597,54.401
+178,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,University of Bari Aldo Moro,Italy,Bari,41.1171,16.8719,-49.8822,-17.7942,18.8719,55.0027
+179,MEME,MEME - Erasmus Mundus Master Programme in Evolutionary Biology,http://www.evobio.eu/,Ludwig Maximilians University of Munich,Germany,Munich,48.1351,11.582,-73.1097,40.3736,19.6389,61.8586
+180,MEREMMC,MEREMMC - European MSc in Marine Environment and Resources,http://www.merconsortium.eu/,Bordeaux University,France,Bordeaux,44.8378,-0.5792,-4.9901,41.3267,7.5591,52.9097
+181,MFAMILY,MFAMILY - European Master in Social Work with Families and Children,http://www.mfamily.eu/,University of Gothenburg,Sweden,Gothenburg,57.7089,11.9746,-11.1393,-1.6524,34.5825,60.97
+182,MIM,MIM - Crossing the Mediterranean: towards investment and integration,http://www.mastermimplus.eu/,Paul-Valery Montpellier University,France,Montpellier,43.6108,3.8767,0.1734,39.3851,14.3155,47.4408
+183,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,Katholieke KU Leuven,Belgium,Leuven,50.8798,4.7005,-45.1729,-24.9068,25.6236,53.8969
+184,MONABIP,MONABIP - Molecular Nano- and Biophotonics,http://www.monabiphot.ens-cachan.fr/,Complutense University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,38.4168,19.0385,53.1079
+185,MSPME,MSPME - Masters in Strategic Project Management (European),http://www.mspme.org/,Polytechnic University of Milan,Italy,Milan,45.4654,9.1859,-5.1883,43.4654,22.263,65.8258
+186,MUNDUS JOURNALISM,"MUNDUS JOURNALISM - Erasmus Mundus Masters Journalism, Media and Globalisation",http://www.mundusjournalism.com/,City University London,UK,London,51.5074,-0.1278,-5.9436,49.5074,11.9937,55.5511
+187,MUNDUS MAPP,MUNDUS MAPP - Erasmus Mundus Master's in Public Policy,http://www.mundusmapp.org/,International Institute of Social Studies of Erasmus University Rotterdam,Netherlands,The Hague,52.0705,4.3007,-3.0873,39.3851,21.0402,55.96
+188,MUNDUS URBANO,MUNDUS URBANO - Master of Science in International Cooperation and Urban Development,http://www.mundus-urbano.eu/,Darmstadt University,Germany,Darmstadt,49.8728,8.6512,0.1734,39.3851,14.4964,51.8728
+189,NOMADS EMMC,NOMADS EMMC - The â€ùDoc Nomadsâ€ù Joint Master in Documentary Film Directing,http://www.docnomads.eu/,Luca School of Arts,Belgium,Brussels,50.8503,4.3517,-11.1393,36.7223,21.0402,52.8503
+190,PERCCOM,PERCCOM - PERvasive Computing & COMmunications for Sustainable Development,http://perccom.univ-lorraine.fr/,University of Lorraine,France,Nancy,48.6921,6.1844,-1.6649,46.6921,30.1897,67.5848
+191,PLANET Europe,"PLANET Europe - Joint Masters Programme on European Spatial Planning, Environmental Policies and Regional Development",http://www.planet-europe.eu/,Blekinge Institute of Technology,Sweden,Karlskrona,56.1612,15.5869,-5.1791,49.4816,17.5869,58.1612
+192,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,University of GÃ¶ttingen,Germany,GÃ¶ttingen,51.5413,9.9158,-3.6778,37.4699,13.8768,53.5413
+193,QEM,QEM - Models and Methods of Quantitative Economics,http://erasmusmundus-qem.univ-paris1.fr/,Pantheon-Sorbonne University,France,Paris,48.8566,2.3522,0.1734,39.3851,14.3155,54.0302
+194,SAHC,SAHC - Advanced Masters in Structural Analysis of Monuments and Historical Constructions,http://www.msc-sahc.org/,Czech Technical University in Prague,Czech Republic,Prague,50.0755,14.4378,-10.2918,39.3851,16.4378,52.0755
+195,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,University of WÃ_rzburg,Germany,WÃ_rzburg,49.7913,9.9534,-2.6087,33.6895,141.6917,67.5848
+196,SSI,SSI - Joint International Master in Smart Systems Integration,http://ssi-master.eu/,Buskerud and Vestfold University College,Norway,Vestfold,59.1708,10.1144,-5.1883,45.4979,21.0402,61.1708
+197,STEPS,STEPS - Erasmus Mundus Master Course in Sustainable Transportation and Electrical Power Systems,http://emmcsteps.uniovi.es/,University of Nottingham,UK,Nottingham,52.9548,-1.1581,-10.4404,38.2048,14.4964,54.9548
+198,SUFONAMA,SUFONAMA - Sustainable Forest and Nature Management,http://sufonama.eu/,Bangor University,UK,Bangor,53.2274,-4.1239,-6.1239,43.4064,15.0824,57.6761
+199,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,University of LiÃ¨ge,Belgium,LiÃ¨ge,50.5831,5.5591,-10.4404,38.2048,24.1567,67.5848
+200,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,University of Valencia,Spain,Valencia,39.4699,-0.3763,-10.6291,37.4699,14.3908,55.2194
+201,TPTI,"TPTI - Techniques, Patrimoine, Territoires de l'Industrie",http://www.tpti.eu/,University of Evora,Portugal,Evora,38.5707,-7.9093,-9.9093,36.5707,13.8768,50.8566
+202,TRIBOS,TRIBOS - Joint European master in tribology of surfaces and interfaces,http://www.master-tribos.eu/,University of Ljubljana,Slovenia,Ljubljana,46.0569,14.5058,-10.4404,38.2048,24.1567,67.5848
+203,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,0.3522,-29.4954,155.012,52.8503
+204,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Bordeaux Sciences Agro,France,Bordeaux,44.8378,-0.5792,-11.1393,36.7223,15.2346,51.9844
+205,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",University of Cadiz,Spain,Cadiz,36.5271,-6.2886,-48.330376,-25.944841,123.544,61.9343
+206,WINTOUR,WINTOUR - EMJMD on Wine Tourism Innovation,http://www.wintour-master.eu/en_index/,University of Bordeaux,France,Bordeaux,44.8378,-0.5792,-10.6291,39.1189,3.2445,46.8378
+207,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,University of Vienna,Austria,Vienna,48.2082,16.3738,-5.7038,3.6761,18.3738,52.8503
+208,ACES,"ACES - Joint Masters Degree in Aquaculture, Environment and Society",http://www.sams.ac.uk/aces-erasmus,University of Nantes,France,Nantes,47.2184,-1.5536,-7.471,33.3387,27.1442,58.4152
+209,ADVANCES,ADVANCES - MA Advanced Development in Social Work,http://www.socialworkadvances.org/,University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,23.0122,59.0488
+210,AMASE,AMASE - Joint European Master Programme on Advanced Materials Science and Engineering,http://www.amase-master.net/,University of Lorraine,France,Nancy,48.6921,6.1844,0.1734,39.3851,24.1567,67.5848
+211,ARCHMAT,ARCHMAT - European Master in ARCHaeological MATerials Science,http://www.erasmusmundus-archmat.uevora.pt/,Aristotle University of Thessaloniki,Greece,Thessaloniki,40.6401,22.9444,-9.9093,36.5707,24.9444,43.9028
+212,ASC,ASC - Advanced Spectroscopy in Chemistry Master's Course,http://www.master-asc.org/,Jagiellonian University,Poland,Krakow,50.0647,19.945,1.0573,42.4949,26.9384,62.1699
+213,ASTROMUNDUS,ASTROMUNDUS - Astrophysics,http://www.astromundus.eu/,University of GÃ¶ttingen,Germany,GÃ¶ttingen,51.5413,9.9158,-0.5959,39.9028,22.4489,53.5413
+214,ATOSIM,"ATOSIM - Atomic Scale Modelling of Physical, Chemical and Bio-molecular Systems",http://www.erasmusmundus-atosim.cecam.org/,Free University of Amsterdam,Netherlands,Amsterdam,52.3702,4.8952,2.8357,39.9028,14.4964,54.3702
+215,BIFTEC,"BIFTEC - European Master of Science in Food Science, Technology and Business",http://www.fet.kuleuven.be/biftec,Anhalt University of Applied Sciences,Germany,Bernburg,51.7834,11.7537,-10.6291,39.1579,13.7537,53.7834
+216,CARTO,CARTO E+ JMD Cartography,http://www.cartographymaster.eu/,Dresden University of Technology,Germany,Dresden,51.0504,13.7373,4.8937,46.1351,18.3738,54.2215
+217,ChIR,ChIR - Erasmus Mundus Master in Chemical Innovation and Regulation,http://www.emmcchir.org/,University of Bologna,Italy,Bologna,44.4949,11.3426,-9.9304,35.0194,13.3426,57.9533
+218,CHOREOMUNDUS,"CHOREOMUNDUS - International Master in Dance Knowledge, Practice and Heritage",https://www.ntnu.edu/studies/choreomundus,University of Roehampton London,UK,London,51.5074,-0.1278,-2.1278,43.7772,22.1414,65.4305
+219,CLE,CLE - Master Erasmus Mundus en  en Cultures LittÃ©raires EuropÃ©ennes,http://www.cle.unibo.it/site/,University of Strasbourg,France,Strasbourg,48.5734,7.7521,-19.366,12.7645,24.9444,50.5734
+220,CoDe,CoDe - Joint European Master in Comparative Local Development,http://www.erasmusmundus-code.eu/,University of Ljubljana,Slovenia,Ljubljana,46.0569,14.5058,9.1217,44.0569,21.0402,51.0134
+221,CoMEM,CoMEM - Erasmus Mundus MSC Coastal and Marine Engineering and Management,http://www.ntnu.edu/studies/mscomem,Delft University of Technology,Netherlands,Delft,52.0116,4.3571,-3.4044,39.3851,12.3951,65.4305
+222,COSI,COSI Colour in Science and Industry,http://www.master-colorscience.eu/,University of Eastern Finland,Finland,Joensuu,62.601,29.7636,-5.5986,35.1773,31.7636,64.601
+223,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,University of Perpignan Via Domita,France,Perpignan,42.6887,2.8948,-11.1393,36.7223,18.9252,58.3398
+224,DCLead,DCLead - Msc Digital Communication Leadership,http://www.dclead.eu/,Free University of Brussel,Belgium,Brussels,50.8503,4.3517,2.3517,45.8095,15.055,59.0488
+225,DESEM,DESEM - Erasmus Mundus MSc in Dependable Software Systems,http://www.cs.nuim.ie/courses/desem/,University of Lorraine,France,Nancy,48.6921,6.1844,-8.5918,46.6921,8.1844,58.3398
+226,Dyclam,Dyclam - Dynamics of cultural landscapes and heritage management,http://www.dyclam.eu/fr/,University of Naples Federico II,Italy,Napoli,40.8518,14.2681,-10.4043,37.6052,16.2681,50.8566
+227,EACH,EACH - Excellence in Analytical Chemistry,http://www.analyticalchemistry.eu/,Uppsala University,Sweden,Uppsala,59.8586,17.6389,2.8357,43.764,24.2666,62.4518
+228,EDAMUS,EDAMUS - Sustainable Management of Food Quality,http://www.master-edamus.eu/,University of Mentouri (Constantine 1),Algiers,Constantine,36.3602,6.6424,-2.8897,33.5138,26.018,45.6108
+229,EM HRPP,EM HRPP - Erasmus Mundus Masters in Human Rights Policy and Practice,http://ws1.roehampton.ac.uk/admissions/erasmusmundus/hrp/index.html,University of Deusto,Spain,Bilbao,43.263,-2.935,-4.935,41.263,13.9746,59.7089
+230,EMARO+,EMARO+ - European Master on Advanced Robotics +,http://emaro.irccyn.ec-nantes.fr/,University of Genova,Italy,Genova,44.4056,8.9463,-3.5536,37.9864,23.0122,54.2297
+231,EMECC NURSING,EMECC NURSING - Emergency and Critical Care Nursing,http://masternursing.uniovi.es/,Polytechnic Institute of SantarÃ©m,Portugal,SantarÃ©m,39.2367,-8.686,-10.686,35.0194,26.9384,62.1699
+232,EMECS,EMECS - European Masters programme in Embedded Computing Systems,http://www.emecs.eu/,University of Southampton,UK,Southampton,50.9097,-1.4044,-3.4044,47.4401,12.3951,65.4305
+233,EMERALD,EMERALD - Master Course in Georesources Engineering,http://em-georesources.eu/,Lulea University of Technology,Sweden,Lulea,65.5848,22.1567,3.5591,46.6921,24.1567,67.5848
+234,EMGS,EMGS - Global Studies - A European Perspective,http://www.globalstudies-masters.info/,University of Leipzig,Germany,Leipzig,51.3397,12.3731,-2.1278,46.2082,19.0385,57.6419
+235,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,University of Bologna,Italy,Bologna,44.4949,11.3426,1.7174,17.076,74.8777,55.5511
+236,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,University of Lorraine,France,Nancy,48.6921,6.1844,-10.5448,-35.9321,21.0402,54.1548
+237,EMMCMSP,EMMCMSP - Erasmus Mundus Master Course on Maritime Spatial Planning,http://www.iuav.it/Didattica1/master/master---I1/Erasmus-Mu/,University of Seville,Spain,Seville,37.3891,-5.9845,-27.6806,35.3891,14.3155,47.4408
+238,EMM-Nano,EMM-Nano - Erasmus Mundus Master in Nanoscience and Nanotechnology,http://www.emm-nano.org/,University Joseph Fourier,France,Grenoble,45.1885,5.7245,2.7005,43.1885,15.7373,59.7089
+239,EMPHID,EMPHID - Public Health in Disasters,http://www.pubhealthdisasters.eu/,University of Oviedo,Spain,Oviedo,43.3619,-5.8494,-7.8494,41.3619,20.0084,61.3689
+240,EMQAL,EMQAL - European Joint Master in Quality in Analytical Laboratories,http://www.emqal.org/,University of Bergen,Norway,Bergen,60.3913,5.3221,-9.9304,34.5271,20.6466,62.3913
+241,EM-SANF,EM-SANF - Erasmus Mundus Master Course Sustainable Animal Nutrition and Feeding,http://www.emsanf.eu/UK/,University of Debrecen,Hungary,Debrecen,47.5316,21.6273,-0.5558,41.6047,23.6273,58.1629
+242,EMSD,EMSD - European Master programme in Systems Dynamics,http://www.europeansystemdynamics.eu/,University of Palermo,Italy,Palermo,38.1157,13.3613,-11.1393,36.1157,15.3613,62.3913
+243,EMSE,EMSE - European Masters Programme in Software Engineering,http://em-se.eu/,University of Kaiserslautern,Germany,Kaiserslautern,49.4401,7.7491,-5.7038,38.4168,27.4651,67.0121
+244,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,University of Galati Dunarea de Jos,Romania,Galati,45.4353,28.008,-3.5536,42.4056,30.008,56.0924
+245,EMTM,EMTM - European Master in Tourism Management,http://www.emtmmaster.net/,University of Girona,Spain,Girona,41.9794,2.8214,0.8214,39.9794,16.5058,57.496
+246,EPOG,"EPOG - Master's Course - Economic Policies in the age of Globalisation : knowledge, finance and development",http://www.epog.eu/,Kingston University,UK,Kingston,51.4123,-0.3007,-2.3007,-28.2041,30.0473,54.52
+247,EUCOMOR,EUCOMOR - European Master in Comparative Morphology,http://www.eucomor.net/,University of Veterinary Medicine,Austria,Vienna,48.2082,16.3738,2.4025,38.8518,18.9252,54.4064
+248,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,University of Strasbourg,France,Strasbourg,48.5734,7.7521,-104.5528,16.5204,137.5022,61.8586
+249,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,University of Coimbra,Portugal,Coimbra,40.2048,-8.4404,-92.049,-24.0087,141.6917,53.2562
+250,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,Technical University of Catalunya,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,27.2797,56.6872
+251,EU4M - EMMC,EU4M - EMMC Mechatronic Engineering,http://www.eu4m.eu/,L'Ã‰cole Nationale SupÃ©rieure de MÃ©canique et de Microtechniques,France,BesanÃ§on,47.2378,6.0241,-7.8494,28.0131,42.9766,59.0051
+252,EUPADRA,EUPADRA - PARLIAMENTARY PROCEDURES AND LEGISLATIVE DRAFTING,http://eupadra.eu/,Complutense University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,38.4168,14.4964,53.5074
+253,EWEM,EWEM - European Wind Energy Master,http://www.windenergymaster.eu/,Norwegian University of Science and Technology,Norway,Trondheim,63.4305,10.3951,2.3571,50.0116,14.4949,65.4305
+254,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,Technical University of Darmstadt,Germany,Darmstadt,49.8728,8.6512,-10.6538,38.6405,12.8978,52.8798
+255,GroundwatCH,GroundwatCH - Groundwater and Global Change - Impacts and Adaptation,http://www.groundwatermaster.eu/,Dresden University of Technology,Germany,Dresden,51.0504,13.7373,-11.1393,36.7223,15.7373,54.0116
+256,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,Central European University,Hungary,Budapest,47.4979,19.0402,-76.4518,35.1773,21.456,55.7457
+257,GeoTech,GeoTech - Master of Science in Geospatial Technologies,http://mastergeotech.info/,New University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,9.6261,53.9607
+258,GLOBED,GLOBED Erasmus Mundus Joint Master Degree on Education Policies for Global Development,http://globed.eu/,University of Malta,Malta,Msida,35.8956,14.4869,0.1734,33.8956,16.4869,61.9139
+259,IMAE,IMAE - International Master in Applied Ecology,http://www.emmc-imae.org/,University of Coimbra,Portugal,Coimbra,40.2048,-8.4404,-53.2177,-32.0346,12.1228,56.3233
+260,IMAESC,IMAESC - International Master in Adult Education for Social Change,http://www.gla.ac.uk/postgraduate/erasmusmundus/imaesc/,Tallinn University,Estonia,Tallinn,59.437,24.7536,-6.2518,33.8956,26.7536,61.437
+261,IMFSE,IMFSE - International Master of Science in Fire Safety Engineering,http://www.imfse.ugent.be/,The University of Edinburgh,UK,Edinburgh,55.9533,-3.1883,-5.1883,49.0543,15.191,57.9533
+262,IMIM,IMIM - International Master in Industrial Management,http://www.imim.polimi.it/,Heriot-Watt University,UK,Edinburgh,55.9533,-3.1883,-5.7038,38.4168,13.582,57.9533
+263,IMIM Med,IMIM - International Master in Innovative Medicine,http://www.innovativemedicine.eu/,Uppsala University,Sweden,Uppsala,59.8586,17.6389,4.5665,47.3988,19.6389,61.8586
+264,IMQP,IMQP - Erasmus Mundus Master in Quaternary and Prehistory,https://sites.google.com/a/unife.it/quaternary-prehistory/,Polytechnic Institute of Tomar,Portugal,Tomar,39.6052,-8.4043,-10.4043,37.6052,13.6198,50.8566
+265,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,Corvinus University of Budapest,Hungary,Budapest,47.4979,19.0402,-6.2518,39.7151,78.8512,60.3776
+266,IMRD,IMRD - International Master of Science in Rural Development,http://www.imrd.ugent.be/,Agrocampus Ouest,France,Rennes,48.1173,-1.6778,-3.6778,41.7228,20.0764,54.52
+267,IT4BI,IT4BI - Information Technologies for Business Intelligence,http://it4bi.univ-tours.fr/,Technical University of Catalunya,Spain,Barcelona,41.3851,2.1734,-1.3152,39.3851,15.405,54.52
+268,JEMES,JEMES - Joint European Master Programme in Environmental Studies,http://www.jemes-cisu.eu/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,-10.6538,38.6405,11.9937,59.0488
+269,KINOEYES | KEM,KINOEYES | KEM - The European Movie Masters,http://www.kinoeyes.eu/,Baltic Film and Media School,Estonia,Tallinn,59.437,24.7536,-11.1393,36.7223,26.7536,61.437
+270,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,University of Lorraine,France,Nancy,48.6921,6.1844,-3.9812,33.8956,16.4869,55.2194
+271,LIVE,LIVE - Leading International Vaccinology Education,http://live.univ-lyon1.fr/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,6.8357,53.2194
+272,MAIA,MAIA - Medical Imaging and Applications EMJMD,http://www.maiamaster.org/,University of Cassino and Southern Lazio,Italy,Cassino,41.4908,13.8334,0.8214,39.4908,15.8334,49.322
+273,MAMASELF,MAMASELF - Master in material science exploring European large scale facilities,http://www.mamaself.eu/,Ludwig Maximilian University,Germany,Munich,48.1351,11.582,-3.6778,41.6108,13.582,50.1351
+274,MARIHE,MARIHE - Research and Innovation in Higher Education,http://www.marihe.eu/,Beijing Normal University,China,Beijing,39.9042,116.4074,6.0472,37.9042,118.4074,63.4978
+275,MATHMODS,"MATHMODS - Mathematical Modelling in Engineering: Theory, Numerics, Applications",http://www.mathmods.eu/,Gdansk University of Technology,Poland,Gdansk,54.352,18.6466,0.1734,39.3851,20.6466,56.352
+276,MCM,MCM - Master of Science in Computational Mechanics,http://www.cimne.com/cm-master/,Polytechnic University of Catalonia,Spain,Barcelona,41.3851,2.1734,-5.9436,39.3851,11.1829,53.6214
+277,ME3,ME3 - European Joint Masters in Management and Engineering of Environment and Energy,http://www.emn.fr/z-de/me3-site/,The Technical University of Madrid,Spain,Madrid,40.4168,-3.7038,-7.9301,38.4168,21.0402,61.3293
+278,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,University of Padova,Italy,Padova,45.4064,11.8768,-11.1393,36.7223,41.7168,47.4064
+279,Media AC,Media AC Media Arts Cultures,http://www.mediaartscultures.eu/,University of Lodz,Poland,Lodz,51.7592,19.456,7.9217,20.3964,116.1095,59.0488
+280,MEEES,MEEES - Masters in Earthquake Engineering and Engineering Seismology,http://www.meees.org/,University of Patras,Greece,Patras,38.2466,21.7346,3.7245,36.2466,34.8597,54.401
+281,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,Staffordshire University,UK,Stoke-on-Trent,53.0027,-2.1794,-49.8822,-17.7942,18.8719,55.0027
+282,MEME,MEME - Erasmus Mundus Master Programme in Evolutionary Biology,http://www.evobio.eu/,Uppsala University,Sweden,Uppsala,59.8586,17.6389,-73.1097,40.3736,19.6389,61.8586
+283,MEREMMC,MEREMMC - European MSc in Marine Environment and Resources,http://www.merconsortium.eu/,LiÃ¨ge University,Belgium,LiÃ¨ge,50.5831,5.5591,-4.9901,41.3267,7.5591,52.9097
+284,MFAMILY,MFAMILY - European Master in Social Work with Families and Children,http://www.mfamily.eu/,University of Stavanger,Norway,Stavanger,58.97,5.7331,-11.1393,-1.6524,34.5825,60.97
+285,MIM,MIM - Crossing the Mediterranean: towards investment and integration,http://www.mastermimplus.eu/,Ca' Foscari University of Venice,Italy,Venice,45.4408,12.3155,0.1734,39.3851,14.3155,47.4408
+286,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,University College Cork,Ireland,Cork,51.8969,-8.4863,-45.1729,-24.9068,25.6236,53.8969
+287,MONABIP,MONABIP - Molecular Nano- and Biophotonics,http://www.monabiphot.ens-cachan.fr/,Wroclaw University of Technology,Poland,Wroclaw,51.1079,17.0385,-5.7038,38.4168,19.0385,53.1079
+288,MSPME,MSPME - Masters in Strategic Project Management (European),http://www.mspme.org/,Umea University,Sweden,Umea,63.8258,20.263,-5.1883,43.4654,22.263,65.8258
+289,MUNDUS JOURNALISM,"MUNDUS JOURNALISM - Erasmus Mundus Masters Journalism, Media and Globalisation",http://www.mundusjournalism.com/,University of Hamburg,Germany,Hamburg,53.5511,9.9937,-5.9436,49.5074,11.9937,55.5511
+290,MUNDUS MAPP,MUNDUS MAPP - Erasmus Mundus Master's in Public Policy,http://www.mundusmapp.org/,University of York,UK,York,53.96,-1.0873,-3.0873,39.3851,21.0402,55.96
+291,MUNDUS URBANO,MUNDUS URBANO - Master of Science in International Cooperation and Urban Development,http://www.mundus-urbano.eu/,University of Catalonia,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,14.4964,51.8728
+292,NOMADS EMMC,NOMADS EMMC - The â€ùDoc Nomadsâ€ù Joint Master in Documentary Film Directing,http://www.docnomads.eu/,the National Royal Hungarian Academy of Music and Drama,Hungry,Budapest,47.4979,19.0402,-11.1393,36.7223,21.0402,52.8503
+293,PERCCOM,PERCCOM - PERvasive Computing & COMmunications for Sustainable Development,http://perccom.univ-lorraine.fr/,ITMO University,Russia,Saint Petersburg,59.9343,0.3351,-1.6649,46.6921,30.1897,67.5848
+294,PLANET Europe,"PLANET Europe - Joint Masters Programme on European Spatial Planning, Environmental Policies and Regional Development",http://www.planet-europe.eu/,Cardiff University,UK,Cardiff,51.4816,-3.1791,-5.1791,49.4816,17.5869,58.1612
+295,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,Agrocampus Ouest,France,Rennes,48.1173,-1.6778,-3.6778,37.4699,13.8768,53.5413
+296,QEM,QEM - Models and Methods of Quantitative Economics,http://erasmusmundus-qem.univ-paris1.fr/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,14.3155,54.0302
+297,SAHC,SAHC - Advanced Masters in Structural Analysis of Monuments and Historical Constructions,http://www.msc-sahc.org/,Technical University of Catalonia,Spain,Barcelona,41.3851,2.1734,-10.2918,39.3851,16.4378,52.0755
+298,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,Cranfield University,UK,Cranfield,52.0686,-0.6087,-2.6087,33.6895,141.6917,67.5848
+299,SSI,SSI - Joint International Master in Smart Systems Integration,http://ssi-master.eu/,Budapest University of Technology and Economics,Hungary,Budapest,47.4979,19.0402,-5.1883,45.4979,21.0402,61.1708
+300,STEPS,STEPS - Erasmus Mundus Master Course in Sustainable Transportation and Electrical Power Systems,http://emmcsteps.uniovi.es/,University of Rome,Italy,Rome,41.9028,12.4964,-10.4404,38.2048,14.4964,54.9548
+301,SUFONAMA,SUFONAMA - Sustainable Forest and Nature Management,http://sufonama.eu/,University of GÃ¶ttingen,Germany,GÃ¶ttingen,51.5413,9.9158,-6.1239,43.4064,15.0824,57.6761
+302,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,University of Naples Federico II,Italy,Napoli,40.8518,14.2681,-10.4404,38.2048,24.1567,67.5848
+303,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,University of Groningen,Netherlands,Groningen,53.2194,6.5665,-10.6291,37.4699,14.3908,55.2194
+304,TPTI,"TPTI - Techniques, Patrimoine, Territoires de l'Industrie",http://www.tpti.eu/,University of Padova,Italy,Padova,45.4064,11.8768,-9.9093,36.5707,13.8768,50.8566
+305,TRIBOS,TRIBOS - Joint European master in tribology of surfaces and interfaces,http://www.master-tribos.eu/,University of Coimbra,Portugal,Coimbra,40.2048,-8.4404,-10.4404,38.2048,24.1567,67.5848
+306,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,Pierre and Marie Curie University,France,Paris,48.8566,2.3522,0.3522,-29.4954,155.012,52.8503
+307,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Hochschule Geisenheim University,Germany,Geisenheim,49.9844,7.9614,-11.1393,36.7223,15.2346,51.9844
+308,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",University of Ningbo,China,Ningbo,29.8683,121.544,-48.330376,-25.944841,123.544,61.9343
+309,WINTOUR,WINTOUR - EMJMD on Wine Tourism Innovation,http://www.wintour-master.eu/en_index/,University of Porto,Portugal,Porto,41.1579,-8.6291,-10.6291,39.1189,3.2445,46.8378
+310,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,University of Copenhagen,Denmark,Copenhagen,5.6761,12.5683,-5.7038,3.6761,18.3738,52.8503
+312,ADVANCES,ADVANCES - MA Advanced Development in Social Work,http://www.socialworkadvances.org/,UniversitÃ© Paris Ouest Nanterre La DÃ©fense,France,Paris,48.8566,2.3522,-11.1393,36.7223,23.0122,59.0488
+313,AMASE,AMASE - Joint European Master Programme on Advanced Materials Science and Engineering,http://www.amase-master.net/,Polytechnic University of Catalonia - BarcelonaTech,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,24.1567,67.5848
+315,ASC,ASC - Advanced Spectroscopy in Chemistry Master's Course,http://www.master-asc.org/,University Leipzig,Germany,Leipzig,51.3397,12.3731,1.0573,42.4949,26.9384,62.1699
+316,ASTROMUNDUS,ASTROMUNDUS - Astrophysics,http://www.astromundus.eu/,University of Padova,Italy,Padova,45.4064,11.8768,-0.5959,39.9028,22.4489,53.5413
+317,ATOSIM,"ATOSIM - Atomic Scale Modelling of Physical, Chemical and Bio-molecular Systems",http://www.erasmusmundus-atosim.cecam.org/,Sapienza University,Italy,Rome,41.9028,12.4964,2.8357,39.9028,14.4964,54.3702
+319,CARTO,CARTO E+ JMD Cartography,http://www.cartographymaster.eu/,University of Twente,Netherlands,Enschede,52.2215,6.8937,4.8937,46.1351,18.3738,54.2215
+320,ChIR,ChIR - Erasmus Mundus Master in Chemical Innovation and Regulation,http://www.emmcchir.org/,Heriot Watt University,UK,Edinburgh,55.9533,-3.1883,-9.9304,35.0194,13.3426,57.9533
+321,CHOREOMUNDUS,"CHOREOMUNDUS - International Master in Dance Knowledge, Practice and Heritage",https://www.ntnu.edu/studies/choreomundus,Scientific University of Szeged,Hungary,Szeged,46.253,20.1414,-2.1278,43.7772,22.1414,65.4305
+322,CLE,CLE - Master Erasmus Mundus en  en Cultures LittÃ©raires EuropÃ©ennes,http://www.cle.unibo.it/site/,Aristotle University of Thessaloniki,Greece,Thessaloniki,40.6401,22.9444,-19.366,12.7645,24.9444,50.5734
+323,CoDe,CoDe - Joint European Master in Comparative Local Development,http://www.erasmusmundus-code.eu/,University of Regensburg,Germany,Regensburg,49.0134,12.1016,9.1217,44.0569,21.0402,51.0134
+324,CoMEM,CoMEM - Erasmus Mundus MSC Coastal and Marine Engineering and Management,http://www.ntnu.edu/studies/mscomem,"City University, London",UK,London,51.5074,-0.1278,-3.4044,39.3851,12.3951,65.4305
+325,COSI,COSI Colour in Science and Industry,http://www.master-colorscience.eu/,Gjovik University College,Norway,Gjovik,60.7954,0.6916,-5.5986,35.1773,31.7636,64.601
+326,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,University of St. Andrews,UK,St. Andrews,56.3398,-2.7967,-11.1393,36.7223,18.9252,58.3398
+329,Dyclam,Dyclam - Dynamics of cultural landscapes and heritage management,http://www.dyclam.eu/fr/,University of Stuttgart,Germany,Stuttgart,48.7758,9.1829,-10.4043,37.6052,16.2681,50.8566
+330,EACH,EACH - Excellence in Analytical Chemistry,http://www.analyticalchemistry.eu/,Abo Akademi University,Finland,Turku,60.4518,22.2666,2.8357,43.764,24.2666,62.4518
+331,EDAMUS,EDAMUS - Sustainable Management of Food Quality,http://www.master-edamus.eu/,The Mediterranean Agronomic Institute of Zaragoza,Spain,Zaragoza,41.6489,-0.8897,-2.8897,33.5138,26.018,45.6108
+333,EMARO+,EMARO+ - European Master on Advanced Robotics +,http://emaro.irccyn.ec-nantes.fr/,Jaume I University,Spain,CastellÃ_n de la Plana,39.9864,-0.0513,-3.5536,37.9864,23.0122,54.2297
+334,EMECC NURSING,EMECC NURSING - Emergency and Critical Care Nursing,http://masternursing.uniovi.es/,Helsinki Metropolia University of Applied Sciences,Finland,Helsinki,60.1699,24.9384,-10.686,35.0194,26.9384,62.1699
+336,EMERALD,EMERALD - Master Course in Georesources Engineering,http://em-georesources.eu/,Freiberg University of Mining and Technology,Germany,Freiberg,50.9128,13.3417,3.5591,46.6921,24.1567,67.5848
+337,EMGS,EMGS - Global Studies - A European Perspective,http://www.globalstudies-masters.info/,University of Vienna,Austria,Vienna,48.2082,16.3738,-2.1278,46.2082,19.0385,57.6419
+338,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,University of Ghent,Belgium,Ghent,51.0543,3.7174,1.7174,17.076,74.8777,55.5511
+339,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,University of Minho,Portugal,Braga,41.5455,-8.4265,-10.5448,-35.9321,21.0402,54.1548
+341,EMM-Nano,EMM-Nano - Erasmus Mundus Master in Nanoscience and Nanotechnology,http://www.emm-nano.org/,Dresden University of Technology,Germany,Dresden,51.0504,13.7373,2.7005,43.1885,15.7373,59.7089
+343,EMQAL,EMQAL - European Joint Master in Quality in Analytical Laboratories,http://www.emqal.org/,University of Cadiz,Spain,Cadiz,36.5271,-6.2886,-9.9304,34.5271,20.6466,62.3913
+344,EM-SANF,EM-SANF - Erasmus Mundus Master Course Sustainable Animal Nutrition and Feeding,http://www.emsanf.eu/UK/,Wageningen University,Netherlands,Wageningen,51.9692,5.6654,-0.5558,41.6047,23.6273,58.1629
+345,EMSD,EMSD - European Master programme in Systems Dynamics,http://www.europeansystemdynamics.eu/,Radboud University,Netherlands,Nijmegen,51.8126,5.8372,-11.1393,36.1157,15.3613,62.3913
+346,EMSE,EMSE - European Masters Programme in Software Engineering,http://em-se.eu/,Technical University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,38.4168,27.4651,67.0121
+347,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,University of Rostock,Germany,Rostock,54.0924,12.0991,-3.5536,42.4056,30.008,56.0924
+349,EPOG,"EPOG - Master's Course - Economic Policies in the age of Globalisation : knowledge, finance and development",http://www.epog.eu/,Wits University,South Africa,Johannesburg,-26.2041,28.0473,-2.3007,-28.2041,30.0473,54.52
+350,EUCOMOR,EUCOMOR - European Master in Comparative Morphology,http://www.eucomor.net/,PoznaÅ„ University of Life Sciences,Poland,PoznaÅ„,52.4064,16.9252,2.4025,38.8518,18.9252,54.4064
+351,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,University of GÃ¶ttingen,Germany,GÃ¶ttingen,51.5413,9.9158,-104.5528,16.5204,137.5022,61.8586
+352,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,Hosei University,Japan,Tokyo,35.6895,139.6917,-92.049,-24.0087,141.6917,53.2562
+353,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,Autonomous University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,27.2797,56.6872
+354,EU4M - EMMC,EU4M - EMMC Mechatronic Engineering,http://www.eu4m.eu/,Nile University,Egypt,Giza,30.0131,31.2089,-7.8494,28.0131,42.9766,59.0051
+356,EWEM,EWEM - European Wind Energy Master,http://www.windenergymaster.eu/,Carl von Ossietzky University of Oldenburg,Germany,Oldenburg,53.1435,8.2146,2.3571,50.0116,14.4949,65.4305
+357,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,Grenoble Institute of Technology,France,Grenoble,45.1885,5.7245,-10.6538,38.6405,12.8978,52.8798
+359,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Bologna,Italy,Bologna,44.4949,11.3426,-76.4518,35.1773,21.456,55.7457
+361,GLOBED,GLOBED Erasmus Mundus Joint Master Degree on Education Policies for Global Development,http://globed.eu/,University of Amsterdam,The Netherlands,Amsterdam,52.3702,4.8952,0.1734,33.8956,16.4869,61.9139
+362,IMAE,IMAE - International Master in Applied Ecology,http://www.emmc-imae.org/,University of East Anglia,UK,Norwich,52.6309,1.2974,-53.2177,-32.0346,12.1228,56.3233
+365,IMIM,IMIM - International Master in Industrial Management,http://www.imim.polimi.it/,Technical University of Munich,Germany,Munich,48.1351,11.582,-5.7038,38.4168,13.582,57.9533
+367,IMQP,IMQP - Erasmus Mundus Master in Quaternary and Prehistory,https://sites.google.com/a/unife.it/quaternary-prehistory/,University of TrÃ¡s-os-Montes and Alto Douro,Portugal,Vila Rea,41.301,-7.7422,-10.4043,37.6052,13.6198,50.8566
+368,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,University of Tartu,Estonia,Tartu,58.3776,6.729,-6.2518,39.7151,78.8512,60.3776
+369,IMRD,IMRD - International Master of Science in Rural Development,http://www.imrd.ugent.be/,Humboldt University of Berlin,Germany,Berlin,52.52,13.405,-3.6778,41.7228,20.0764,54.52
+370,IT4BI,IT4BI - Information Technologies for Business Intelligence,http://it4bi.univ-tours.fr/,Technical University of Berlin,Germany,Berlin,52.52,13.405,-1.3152,39.3851,15.405,54.52
+371,JEMES,JEMES - Joint European Master Programme in Environmental Studies,http://www.jemes-cisu.eu/,University of Aveiro,Portugal,Aveiro,40.6405,-8.6538,-10.6538,38.6405,11.9937,59.0488
+373,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,University of Malta,Malta,Msida,35.8956,14.4869,-3.9812,33.8956,16.4869,55.2194
+374,LIVE,LIVE - Leading International Vaccinology Education,http://live.univ-lyon1.fr/,Claude Bernard University Lyon 1,France,Lyon,45.764,4.8357,0.1734,39.3851,6.8357,53.2194
+376,MAMASELF,MAMASELF - Master in material science exploring European large scale facilities,http://www.mamaself.eu/,University of Torino,Italy,Torino,45.0703,7.6869,-3.6778,41.6108,13.582,50.1351
+377,MARIHE,MARIHE - Research and Innovation in Higher Education,http://www.marihe.eu/,University of Applied Sciences OsnabrÃ_ck,Germany,OsnabrÃ_ck,52.2799,8.0472,6.0472,37.9042,118.4074,63.4978
+378,MATHMODS,"MATHMODS - Mathematical Modelling in Engineering: Theory, Numerics, Applications",http://www.mathmods.eu/,University of Hamburg,Germany,Hamburg,53.5511,9.9937,0.1734,39.3851,20.6466,56.352
+379,MCM,MCM - Master of Science in Computational Mechanics,http://www.cimne.com/cm-master/,Nantes Technical University,France,Nantes,47.2184,-1.5536,-5.9436,39.3851,11.1829,53.6214
+380,ME3,ME3 - European Joint Masters in Management and Engineering of Environment and Energy,http://www.emn.fr/z-de/me3-site/,The Royal Institute of Technology,Sweden,Stockholm,59.3293,18.0686,-7.9301,38.4168,21.0402,61.3293
+381,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,University of Valladolid,Spain,Valladolid,41.6523,-4.7245,-11.1393,36.7223,41.7168,47.4064
+382,Media AC,Media AC Ãê Media Arts Cultures,http://www.mediaartscultures.eu/,City University of Hong Kong,China,Hong Kong,22.3964,114.1095,7.9217,20.3964,116.1095,59.0488
+383,MEEES,MEEES - Masters in Earthquake Engineering and Engineering Seismology,http://www.meees.org/,Middle East Technical University,Turkey,Ankara,39.9334,32.8597,3.7245,36.2466,34.8597,54.401
+384,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,University of Economics,Czech Republic,Prague,50.0755,14.4378,-49.8822,-17.7942,18.8719,55.0027
+385,MEME,MEME - Erasmus Mundus Master Programme in Evolutionary Biology,http://www.evobio.eu/,University of Montpellier 2,France,Montpellier,43.6108,3.8767,-73.1097,40.3736,19.6389,61.8586
+386,MEREMMC,MEREMMC - European MSc in Marine Environment and Resources,http://www.merconsortium.eu/,University of the Basque Country,Spain,Leioa,43.3267,-2.9901,-4.9901,41.3267,7.5591,52.9097
+387,MFAMILY,MFAMILY - European Master in Social Work with Families and Children,http://www.mfamily.eu/,Makerere University,Uganda,Kampala,0.3476,32.5825,-11.1393,-1.6524,34.5825,60.97
+389,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,Babes-Bolyai University,Romania,Cluj,46.7712,23.6236,-45.1729,-24.9068,25.6236,53.8969
+390,MONABIP,MONABIP - Molecular Nano- and Biophotonics,http://www.monabiphot.ens-cachan.fr/,University of Wroclaw,Poland,Wroclaw,51.1079,17.0385,-5.7038,38.4168,19.0385,53.1079
+392,MUNDUS JOURNALISM,"MUNDUS JOURNALISM - Erasmus Mundus Masters Journalism, Media and Globalisation",http://www.mundusjournalism.com/,Swansea University,UK,Swansea,51.6214,-3.9436,-5.9436,49.5074,11.9937,55.5511
+393,MUNDUS MAPP,MUNDUS MAPP - Erasmus Mundus Master's in Public Policy,http://www.mundusmapp.org/,Barcelona University,Spain,Barcelona,41.3851,2.1734,-3.0873,39.3851,21.0402,55.96
+394,MUNDUS URBANO,MUNDUS URBANO - Master of Science in International Cooperation and Urban Development,http://www.mundus-urbano.eu/,University of Rome Tor Vergata,Italy,Rome,41.9028,12.4964,0.1734,39.3851,14.4964,51.8728
+396,PERCCOM,PERCCOM - PERvasive Computing & COMmunications for Sustainable Development,http://perccom.univ-lorraine.fr/,Lappeenranta University of Technology,Finland,Lappeenranta,61.055,28.1897,-1.6649,46.6921,30.1897,67.5848
+398,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,AgroParisTech,France,Paris,48.8566,2.3522,-3.6778,37.4699,13.8768,53.5413
+399,QEM,QEM - Models and Methods of Quantitative Economics,http://erasmusmundus-qem.univ-paris1.fr/,Ca' Foscari University of Venice,Italy,Venice,45.4408,12.3155,0.1734,39.3851,14.3155,54.0302
+400,SAHC,SAHC - Advanced Masters in Structural Analysis of Monuments and Historical Constructions,http://www.msc-sahc.org/,University of Padova,Italy,Padova,45.4064,11.8768,-10.2918,39.3851,16.4378,52.0755
+401,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,Czech Technical University,Czech Republic,Prague,50.0755,14.4378,-2.6087,33.6895,141.6917,67.5848
+403,STEPS,STEPS - Erasmus Mundus Master Course in Sustainable Transportation and Electrical Power Systems,http://emmcsteps.uniovi.es/,Institute Polytechnic of Coimbra,Portugal,Coimbra,40.2048,-8.4404,-10.4404,38.2048,14.4964,54.9548
+404,SUFONAMA,SUFONAMA - Sustainable Forest and Nature Management,http://sufonama.eu/,"Swedish University of Agricultural Sciences, Alnarp",Sweden,Alnarp,55.6576,13.0824,-6.1239,43.4064,15.0824,57.6761
+405,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,University of Coimbra,Portugal,Coimbra,40.2048,-8.4404,-10.4404,38.2048,24.1567,67.5848
+406,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,Catholic University of Leuven,Belgium,Leuven,50.8798,4.7005,-10.6291,37.4699,14.3908,55.2194
+408,TRIBOS,TRIBOS - Joint European master in tribology of surfaces and interfaces,http://www.master-tribos.eu/,Lulea University of Technology,Sweden,Lulea,65.5848,22.1567,-10.4404,38.2048,24.1567,67.5848
+409,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,University of Florence,Italy,Florence,43.7696,11.2558,0.3522,-29.4954,155.012,52.8503
+410,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Udine University,Italy,Udine,46.0711,13.2346,-11.1393,36.7223,15.2346,51.9844
+411,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",University of Santa Cecilia,Brazil,Santos,-23.944841,-46.330376,-48.330376,-25.944841,123.544,61.9343
+413,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,Autonomous University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,3.6761,18.3738,52.8503
+415,ADVANCES,ADVANCES - MA Advanced Development in Social Work,http://www.socialworkadvances.org/,Warsaw University,Poland,Warsaw,52.2297,21.0122,-11.1393,36.7223,23.0122,59.0488
+418,ASC,ASC - Advanced Spectroscopy in Chemistry Master's Course,http://www.master-asc.org/,Lille1 University,France,Lille,50.6292,3.0573,1.0573,42.4949,26.9384,62.1699
+419,ASTROMUNDUS,ASTROMUNDUS - Astrophysics,http://www.astromundus.eu/,University of Rome Tor Vergata,Italy,Rome,41.9028,12.4964,-0.5959,39.9028,22.4489,53.5413
+425,CLE,CLE - Master Erasmus Mundus en  en Cultures LittÃ©raires EuropÃ©ennes,http://www.cle.unibo.it/site/,Cheikh Anta Diop University,Senegal,Dakar,14.7645,-17.366,-19.366,12.7645,24.9444,50.5734
+427,CoMEM,CoMEM - Erasmus Mundus MSC Coastal and Marine Engineering and Management,http://www.ntnu.edu/studies/mscomem,University of Southampton,UK,Southampton,50.9097,-1.4044,-3.4044,39.3851,12.3951,65.4305
+429,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,University of Santiago de Compostela,Spain,Santiago de Compostela,42.8782,-8.5448,-11.1393,36.7223,18.9252,58.3398
+432,Dyclam,Dyclam - Dynamics of cultural landscapes and heritage management,http://www.dyclam.eu/fr/,National Museum of Natural History,France,Paris,48.8566,2.3522,-10.4043,37.6052,16.2681,50.8566
+434,EDAMUS,EDAMUS - Sustainable Management of Food Quality,http://www.master-edamus.eu/,The Mediterranean Agronomic Institute of Chania,Greece,Chania,35.5138,24.018,-2.8897,33.5138,26.018,45.6108
+440,EMGS,EMGS - Global Studies - A European Perspective,http://www.globalstudies-masters.info/,University of Wroclaw,Poland,Wroclaw,51.1079,17.0385,-2.1278,46.2082,19.0385,57.6419
+441,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,University of Haifa,Israel,Haifa,32.794,34.9896,1.7174,17.076,74.8777,55.5511
+442,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,Roma Tre University,Italy,Rome,41.9028,12.4964,-10.5448,-35.9321,21.0402,54.1548
+446,EMQAL,EMQAL - European Joint Master in Quality in Analytical Laboratories,http://www.emqal.org/,Gdansk University of Technology,Poland,Gdansk,54.352,18.6466,-9.9304,34.5271,20.6466,62.3913
+450,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,University of Genova,Italy,Genova,44.4056,8.9463,-3.5536,42.4056,30.008,56.0924
+452,EPOG,"EPOG - Master's Course - Economic Policies in the age of Globalisation : knowledge, finance and development",http://www.epog.eu/,University of Turin,Italy,Turin,45.0703,7.6869,-2.3007,-28.2041,30.0473,54.52
+453,EUCOMOR,EUCOMOR - European Master in Comparative Morphology,http://www.eucomor.net/,University of Naples Federico II,Italy,Napoli,40.8518,14.2681,2.4025,38.8518,18.9252,54.4064
+454,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Vidhyapeeth University in Pune,India,Pune,18.5204,73.8567,-104.5528,16.5204,137.5022,61.8586
+455,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,Catholic University of Leuven,Belgium,Leuven,50.8798,4.7005,-92.049,-24.0087,141.6917,53.2562
+456,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,University of Barcelona,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,27.2797,56.6872
+457,EU4M - EMMC,EU4M - EMMC Mechatronic Engineering,http://www.eu4m.eu/,Ivanovo State Power Engineering University,Russia,Ivanovo,57.0051,40.9766,-7.8494,28.0131,42.9766,59.0051
+460,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,University of LiÃ¨ge,Belgium,LiÃ¨ge,50.5831,5.5591,-10.6538,38.6405,12.8978,52.8798
+462,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Utrecht,Netherlands,Utrecht,52.0907,5.1214,-76.4518,35.1773,21.456,55.7457
+465,IMAE,IMAE - International Master in Applied Ecology,http://www.emmc-imae.org/,Federal University of Rio Grande do Sul,Brazil,Porto Alegre,-30.0346,-51.2177,-53.2177,-32.0346,12.1228,56.3233
+470,IMQP,IMQP - Erasmus Mundus Master in Quaternary and Prehistory,https://sites.google.com/a/unife.it/quaternary-prehistory/,National Museum of Natural History,France,Paris,48.8566,2.3522,-10.4043,37.6052,13.6198,50.8566
+471,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,KIMEP University,Kazakhstan,Almaty,43.222,76.8512,-6.2518,39.7151,78.8512,60.3776
+472,IMRD,IMRD - International Master of Science in Rural Development,http://www.imrd.ugent.be/,Ghent University,Belgium,Ghent,51.0543,3.7174,-3.6778,41.7228,20.0764,54.52
+473,IT4BI,IT4BI - Information Technologies for Business Intelligence,http://it4bi.univ-tours.fr/,Ã‰cole Centrale Paris,France,Paris,48.8566,2.3522,-1.3152,39.3851,15.405,54.52
+476,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,University of Trento,Italy,Trento,46.0748,11.1217,-3.9812,33.8956,16.4869,55.2194
+479,MAMASELF,MAMASELF - Master in material science exploring European large scale facilities,http://www.mamaself.eu/,University of Montpellier,France,Montpellier,43.6108,3.8767,-3.6778,41.6108,13.582,50.1351
+481,MATHMODS,"MATHMODS - Mathematical Modelling in Engineering: Theory, Numerics, Applications",http://www.mathmods.eu/,University of Nice - Sophia Antipolis,France,Nice,43.7102,7.262,0.1734,39.3851,20.6466,56.352
+483,ME3,ME3 - European Joint Masters in Management and Engineering of Environment and Energy,http://www.emn.fr/z-de/me3-site/,Nantes Mining University,France,Nantes,47.2184,-1.5536,-7.9301,38.4168,21.0402,61.3293
+484,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,University of Tuscia,Italy,Viterbo,42.4207,12.1077,-11.1393,36.7223,41.7168,47.4064
+486,MEEES,MEEES - Masters in Earthquake Engineering and Engineering Seismology,http://www.meees.org/,University of Potsdam,Germany,Potsdam,52.401,13.0119,3.7245,36.2466,34.8597,54.401
+487,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,Lille University,France,Lille,50.6292,3.0573,-49.8822,-17.7942,18.8719,55.0027
+488,MEME,MEME - Erasmus Mundus Master Programme in Evolutionary Biology,http://www.evobio.eu/,Harvard University,USA,Cambridge,42.3736,-71.1097,-73.1097,40.3736,19.6389,61.8586
+492,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,University Cheikh Anta Diop de Dakar,Senegal,Dakar,14.7645,-17.366,-45.1729,-24.9068,25.6236,53.8969
+493,MONABIP,MONABIP - Molecular Nano- and Biophotonics,http://www.monabiphot.ens-cachan.fr/,Paris Descartes University - Paris 5,France,Paris,48.8566,2.3522,-5.7038,38.4168,19.0385,53.1079
+501,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,Montpellier SupAgro,France,Montpellier,43.6108,3.8767,-3.6778,37.4699,13.8768,53.5413
+504,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,Aalto University,Finland,Helsinki,60.1699,24.9384,-2.6087,33.6895,141.6917,67.5848
+507,SUFONAMA,SUFONAMA - Sustainable Forest and Nature Management,http://sufonama.eu/,University of Padova,Italy,Padova,45.4064,11.8768,-6.1239,43.4064,15.0824,57.6761
+508,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,Politehnica University of Timisoara,Romania,Timisoara,45.7489,21.2087,-10.4404,38.2048,24.1567,67.5848
+509,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,University of Perugia,Italy,Perugia,43.1107,12.3908,-10.6291,37.4699,14.3908,55.2194
+512,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,UniversitÃ© de Dschang,Cameroon,Dschang,5.4459,10.0472,0.3522,-29.4954,155.012,52.8503
+513,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,University of Turin,Italy,Turin,45.0703,7.6869,-11.1393,36.7223,15.2346,51.9844
+514,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",Russian State Hydrometeorological University,Russia,Saint Petersburg,59.9343,0.3351,-48.330376,-25.944841,123.544,61.9343
+516,4CITIES,4CITIES - UNICA Euromaster in Urban Studies,http://www.4cities.eu/,Complutense University of Madrid,Spain,Madrid,40.4168,-3.7038,-5.7038,3.6761,18.3738,52.8503
+532,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,University of Sheffield,UK,Sheffield,53.3811,-1.4701,-11.1393,36.7223,18.9252,58.3398
+544,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,University of Hamburg,Germany,Hamburg,53.5511,9.9937,1.7174,17.076,74.8777,55.5511
+545,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,University of Santiago de Compostela,Spain,Santiago de Compostela,42.8782,-8.5448,-10.5448,-35.9321,21.0402,54.1548
+553,EMSHIP,EMSHIP - European Education in Advanced Ship Design,http://www.emship.eu/,West Pomeranian University of Technology,Poland,Szczecin,53.4285,14.5528,-3.5536,42.4056,30.008,56.0924
+557,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,University of Udine,Italy,Udine,46.0711,13.2346,-104.5528,16.5204,137.5022,61.8586
+558,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,University of Memphis,USA,Memphis,35.1495,-90.049,-92.049,-24.0087,141.6917,53.2562
+559,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,Institute of Photonic Sciences,Spain,Barcelona,41.3851,2.1734,0.1734,39.3851,27.2797,56.6872
+563,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,Catholic University of Leuven,Belgium,Leuven,50.8798,4.7005,-10.6538,38.6405,12.8978,52.8798
+565,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Lodz,Poland,Lodz,51.7592,19.456,-76.4518,35.1773,21.456,55.7457
+574,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,Ilia State University,Georgia,Tbilisi,41.7151,44.8271,-6.2518,39.7151,78.8512,60.3776
+579,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,Saarland University,Germany,SaarbrÃ_cken,49.2402,6.9969,-3.9812,33.8956,16.4869,55.2194
+587,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,Portuguese Catholic University in Porto,Portugal,Porto,41.1579,-8.6291,-11.1393,36.7223,41.7168,47.4064
+590,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,University of Cantabria,Spain,Santander,43.4623,-3.81,-49.8822,-17.7942,18.8719,55.0027
+595,MITRA,"MITRA - Master en mÃ©diation interculturelle: identitÃ©s, mobilitÃ©s, conflits",http://mastermitra.univ-lille3.fr/,Federal University of Rio de Janeiro,Brazil,Rio de Janeiro,-22.9068,-43.1729,-45.1729,-24.9068,25.6236,53.8969
+604,PlantHealth,PlantHealth - European Master degree in Plant Health in Sustainable Cropping Systems,http://planthealth.upv.es/,University of Padova,Italy,Padova,45.4064,11.8768,-3.6778,37.4699,13.8768,53.5413
+607,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,Paul Sabatier University,France,Toulouse,43.6047,1.4442,-2.6087,33.6895,141.6917,67.5848
+611,SUSCOS,SUSCOS - Sustainable Constructions under Natural Hazards and Catastrophic Events,http://steel.fsv.cvut.cz/suscos/,Lulea University of Technology,Sweden,Lulea,65.5848,22.1567,-10.4404,38.2048,24.1567,67.5848
+612,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,Paul Sabatier University,France,Toulouse,43.6047,1.4442,-10.6291,37.4699,14.3908,55.2194
+615,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,Universiti Malaysia Terengganu,Malaysia,Kuala Terengganu,5.3296,103.137,0.3522,-29.4954,155.012,52.8503
+616,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,15.2346,51.9844
+617,WACOMA,WACOMA - Erasmus Mundus Master in Water and Coastal Management,"http://erasmusmundus.uca.es/en/content,3,erasmus-mundus",University of Algarve,Portugal,Faro,37.0194,-7.9304,-48.330376,-25.944841,123.544,61.9343
+635,CWCN,CWCN - Crossways in Cultural Narratives,http://www.munduscrossways.eu/,Adam Mickiewicz University PoznaÅ„,Poland,PoznaÅ„,52.4064,16.9252,-11.1393,36.7223,18.9252,58.3398
+647,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,Indira Gandhi Institute of Development Research,India,Mumbai,19.076,72.8777,1.7174,17.076,74.8777,55.5511
+648,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,Stellenbosch University,South Africa,Stellenbosch,-33.9321,18.8602,-10.5448,-35.9321,21.0402,54.1548
+660,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Osaka University,Japan,Osaka,34.6937,135.5022,-104.5528,16.5204,137.5022,61.8586
+661,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,Charles University in Prague,Czech Republic,Prague,50.0755,14.4378,-92.049,-24.0087,141.6917,53.2562
+662,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,Ã‰cole centrale de Marseille,France,Marseille,43.2965,5.3698,0.1734,39.3851,27.2797,56.6872
+666,FAME,FAME - Functionalised Advanced Materials and Engineering,http://www.fame-master.com/,University of Augsburg,Germany,Augsburg,48.3705,10.8978,-10.6538,38.6405,12.8978,52.8798
+668,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,University of Hull,UK,Hull,53.7457,-0.3367,-76.4518,35.1773,21.456,55.7457
+677,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,Lobachevsky State University of Nizhni Novgorod,Russia,Nizhni Novgorod,56.2965,43.9361,-6.2518,39.7151,78.8512,60.3776
+682,LCT,LCT - European Masters Program in Language and Communication Technologies,http://www.lct-master.org/,Charles University in Prague,Czech Republic,Prague,50.0755,14.4378,-3.9812,33.8956,16.4869,55.2194
+690,MEDfOR,MEDfOR - Mediterranean Forestry and Natural Resources Management,http://www.medfor.eu/,Karadeniz Technical University,Turkey,Trabzon,41.0027,39.7168,-11.1393,36.7223,41.7168,47.4064
+693,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,Free University of Brussels,Belgium,Brussels,50.8503,4.3517,-49.8822,-17.7942,18.8719,55.0027
+710,SPACEMASTER,SPACEMASTER - EMMC in Space Science and Technology,http://www.spacemaster.eu/,University of Tokyo,Japan,Tokyo,35.6895,139.6917,-2.6087,33.6895,141.6917,67.5848
+715,TCCM,TCCM - Euromaster on Theoretical Chemistry and Computational Modelling,http://www.emtccm.org/,University of Porto,Portugal,Porto,41.1579,-8.6291,-10.6291,37.4699,14.3908,55.2194
+718,TROPIMUNDO,TROPIMUNDO - Erasmus Mundus Masters Course in Tropical Biodiversity and Ecosystems,http://www.tropimundo.eu/,University of Queensland,Australia,Brisbane,-27.4954,153.012,0.3522,-29.4954,155.012,52.8503
+719,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Technical University of Madrid,Spain,Madrid,40.4168,-3.7038,-11.1393,36.7223,15.2346,51.9844
+750,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,University of Vienna,Austria,Vienna,48.2082,16.3738,1.7174,17.076,74.8777,55.5511
+751,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,University of Hildesheim,Germany,Hildesheim,52.1548,9.958,-10.5448,-35.9321,21.0402,54.1548
+763,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,National Autonomous University of Mexico,Mexico,Mexico City,23.6345,-102.5528,-104.5528,16.5204,137.5022,61.8586
+764,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,Federal University of Sao Carlos,Brazil,Sao Carlos,-22.0087,-47.8909,-92.049,-24.0087,141.6917,53.2562
+765,EUROPHOTONICS,"EUROPHOTONICS - Master in Photonics Engineering, Nanophotonics and Biophotonics",http://www.europhotonics.org/wordpress/,Vilnius University,Lithuania,Vilnius,54.6872,25.2797,0.1734,39.3851,27.2797,56.6872
+771,GEMMA,GEMMA - Master's Degree in Women's and Gender Studies,http://masteres.ugr.es/gemma/,"Rutgers, The State University of New Jersey",USA,New Brunswick,40.4862,-74.4518,-76.4518,35.1773,21.456,55.7457
+780,IMRCEES,"IMRCEES - International Masters in Russian, Central and East European Studies",http://www.gla.ac.uk/postgraduate/erasmusmundus/imrcees/,National University of Kyiv-Mohyla Academy,Ukraine,Kiev,50.4501,30.5234,-6.2518,39.7151,78.8512,60.3776
+796,MEGEI,MEGEI - MA Economics of Globalisation and European Integration,http://www.ua.ac.be/egei,University of Brasilia,Brazil,Brasilia,-15.7942,-47.8822,-49.8822,-17.7942,18.8719,55.0027
+822,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,School of Agronomy Ãê University of Lisbon,Portugal,Lisbon,38.7223,-9.1393,-11.1393,36.7223,15.2346,51.9844
+853,EMLE,EMLE - European Master in Law and Economics,http://www.emle.org/,Warsaw School of Economics,Poland,Warsaw,52.2297,21.0122,1.7174,17.076,74.8777,55.5511
+854,EMLex ,EMLex - EuropÃ_ischer Master fÃ_r Lexikographie / European Master in Lexicography,http://www.emlex.phil.uni-erlangen.de/,Institute of German Language,Germany,Mannheim,49.4875,8.466,-10.5448,-35.9321,21.0402,54.1548
+866,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Jagiellonian University,Poland,Krakow,50.0647,19.945,-104.5528,16.5204,137.5022,61.8586
+867,EUROPHILOSOPHIE,EUROPHILOSOPHIE - Philosophies allemande et franÂçaise dans lâ€™espace europÃ©en,http://europhilomem.hypotheses.org/,University of Wuppertal,Germany,Wuppertal,51.2562,7.1508,-92.049,-24.0087,141.6917,53.2562
+925,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,Polytechnic University of Madrid,Spain,Madrid,40.4168,-3.7038,-11.1393,36.7223,15.2346,51.9844
+969,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,University of Deusto,Spain,Bilbao,43.263,-2.935,-104.5528,16.5204,137.5022,61.8586
+1028,VINIFERA,VINIFERA EuroMaster - European Master of Science of Viticulture and Enology,http://vinifera-euromaster.eu/,University of Turin,Italy,Turin,45.0703,7.6869,-11.1393,36.7223,15.2346,51.9844
+1072,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Uppsala University,Sweden,Uppsala,59.8586,17.6389,-104.5528,16.5204,137.5022,61.8586
+1175,EUROCULTURE,"EUROCULTURE - Society, Politics and Culture in a Global Context",https://www.euroculturemaster.eu/,Indiana University-Purdue University,USA,Indianapolis,39.7684,-86.1581,-104.5528,16.5204,137.5022,61.8586

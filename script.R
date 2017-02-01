@@ -110,10 +110,12 @@ citta <- as.character(citta)
 geocodes <- geocode(citta)
 
 
+
+
 geotech$lon <- as.numeric(geotech$lon)
 geotech$lat <- as.numeric(geotech$lat)
 
-programs <- readOGR("master_points.geojson", "OGRGeoJSON")
+new <- readOGR("new.geojson", "OGRGeoJSON")
 
 geotech <- programs[programs@data$code == "GeoTech",]
 euroculture <- programs[programs@data$code == "EUROCULTURE",]
@@ -131,11 +133,11 @@ iris_split <- split(iris, iris$Species)
 
 #split SpatialPointsDataFrame by program code 
 
-programs_split <- split(programs, programs@data$code)
+programs_split <- split(new, new@data$code)
 str(programs_split)
 
 #create empty list
-result <- vector("list", 103)
+result <- vector("list", 23)
 
 #for each program create a bbox
 for (i in 1:length(programs_split)) {
@@ -159,7 +161,9 @@ for (i in 1:length(programs_split)) {
 }
 
 coords.x1.min <- data.frame(103)
-  
+
+foo <- data.frame(matrix(ncol = 4, nrow =23))
+
 for (i in 1:length(result)){
  
    foo$X1[i] <- result[[i]][1]
@@ -167,6 +171,15 @@ for (i in 1:length(result)){
    foo$X3[i] <- result[[i]][3]
    foo$X4[i] <- result[[i]][4]
 }
+
+#stretch extents
+
+foo$X1 <- foo$X1 -1
+foo$X2 <- foo$X2 - 1
+foo$X3 <- foo$X3 + 1
+foo$X4 <- foo$X4 + 1
+
+merged <- merge(np, foo, by.x = "code", by.y = "code")
 
 
 df <- data.frame(matrix(unlist(result), nrow=103, byrow=T),stringsAsFactors=FALSE)
@@ -225,41 +238,64 @@ bcpw$dups <- apply(bcpw[-1], 1, function(i) any(duplicated(i[!is.na(i)])))
 baz <- dplyr::left_join(baz, bar, by = c("course16" = "code"))
 colnames(baz)[36] <- "website16"
 
-foo <- "Hello World"
-bar <- "Hellos Worlds"
 
-foo_words <- strsplit(foo, " ")
-bar_words <- strsplit(bar, " ")
+updated   <- master[master$code != "CHOREOMUNDUS" & 
+                   master$code != "CWCN" &
+                   master$code != "DESEM" &
+                   master$code != "EDAMUS" &
+                   master$code != "EM-SANF" &
+                   master$code != "EUROCULTURE" &
+                   master$code != "EUROPHILOSOPHIE" &
+                   master$code != "EWEM" &
+                   master$code != "FAME" &
+                   master$code != "GEMMA" &
+                   master$code != "IT4BI" &
+                   master$code != "JEMES" &
+                   master$code != "MARIHE" &
+                   master$code != "MEDfOR" &
+                   master$code != "MITRA" &
+                   master$code != "MSPME" &
+                   master$code != "MUNDUS MAPP" &
+                   master$code != "NOMADS EMMC" &
+                   master$code != "PLANET Europe" &
+                   master$code != "SAHC" &
+                   master$code != "SUFONAMA" &
+                    master$code != "WACOMA", ]
 
-grepl("Hello", foo_words[[1]], perl=TRUE)
-grepl("Hello", bar_words[[1]], perl=TRUE)
 
 
 
 
-value.match(/.*(\d{6}).*/) 
-
-pmatch(foo, bar)
-
-match(foo, bar, /.*\.(\d+).*\.(\d+)/)
 
 
 
-#[1] "F" "o" "u" "r" "s" "c" "o" "r" "e" "a"
 
-#extract all of the `(all)` values from a column 
-first_totals <- myaqm_dcast$`5`[seq(0, length(myaqm_dcast$`5`), 5)]
 
-#repeat them 5 times
-divisor<- rep(first_totals, each=5)
 
-#remove the last row for the time being because the number of rows is not divisible by 5
-myaqm_dcast<- myaqm_dcast[-156,]
 
-#insert this column into your dataframe
-myaqm_dcast$divisor <- divisor
 
-#divide as needed 
-myaqm_dcast$`5`/ myaqm_dcast$divisor = myaqm_dcast$newcol
+
+
+
+index <- new$code ==  "EMLex"
+df$est[index] <- (df$a[index] - 5)/2.533 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
