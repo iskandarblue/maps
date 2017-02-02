@@ -87,6 +87,36 @@
         display: none;
     }
 
+    #interest {
+      position: absolute;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.88);
+      color: #fff;
+      width: 25%;
+      height: 100%;
+      display: none;
+    }
+
+    #interest-close {
+      right: 0px;
+      margin-top: 20px;
+      margin-right: 20px;
+      float: right;
+      top: 0px;
+      width: 38px;
+      height: 38px;
+      border-radius: 19px;
+      content: url('./back-button.svg');
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 13px;
+      display:inline-block;
+    }
+
+    #interest-close:hover {
+      opacity: 0.9;
+    }
+
     #about {
       position: absolute;
       z-index: 20202020;
@@ -228,7 +258,7 @@
       left: 26%;
     	height: 35px;
       width: 35px;
-    	opacity: 0.8;
+    	opacity: 0.6;
     }
     .wrap {
       position: relative;
@@ -685,6 +715,9 @@ border-radius: 5px;
 </style>
 <body>
 
+<div id='interest'>
+<div id = 'interest-close'></div>
+</div>
 
 <div class = 'about' id='about'>
 
@@ -720,7 +753,6 @@ border-radius: 5px;
 
   <div id='map'>
     <div id='program_title'>
-            <div id ='go-back'></div>
         <span id="myspan">TITLE</span>
     </div>
 
@@ -777,6 +809,14 @@ $("#about-close").on('click', function() {
           $("#about").attr("style", "display:none");
 
 });
+
+$("#interest-close").on('click', function() {
+
+          $("#interest").attr("style", "display:none");
+
+});
+
+
 
 $("#about-map-button").on('click', function() {
 
@@ -885,8 +925,20 @@ function renderListings(features) {
               map.setLayoutProperty('uni', 'visibility', 'none');
 
 //fill title block with program acronym
+              interest = document.getElementById("interest")
               document.getElementById("myspan").textContent= prop.code;
               document.getElementById("program_title").style.display = "inline-block";
+
+
+              interest.style.display = "block";
+
+              $('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+            '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info" +
+            "info info info info info info info info info info info" + '</div>').appendTo("#interest");
+
+
+
+
             });
             item.addEventListener('mouseover', function() {
 
@@ -1157,7 +1209,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": './new.geojson'
+        "data": 'new.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -1320,12 +1372,13 @@ for (var i = 0; i < inputs.length; i++) {
           }
         });
 
-        document.getElementById('go-back').addEventListener('click', function () {
+        document.getElementById('interest-close').addEventListener('click', function () {
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
+            document.getElementById("interest").innerHTML = "";
 
           var elem = document.getElementById("appended-p");
           elem.parentNode.removeChild(elem);
