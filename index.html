@@ -388,6 +388,7 @@
 
 .map-overlay .listing a:hover {
     background: rgba(146, 254, 157, 0.1);
+    cursor: pointer;
 }
 
 .mapboxgl-popup {
@@ -531,7 +532,7 @@ border-radius: 5px;
         border: none;
         padding: 10px;
         margin: 0;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .map-overlay input {
@@ -738,7 +739,7 @@ border-radius: 5px;
 </div>
 </div>
     <fieldset>
-        <input id='feature-filter' type='text' placeholder='Filter reults and click program acronym' />
+        <input id='feature-filter' type='text' placeholder='Filter reults or click program' />
     </fieldset>
     <div id='feature-listing' class='listing'></div>
 </div>
@@ -830,6 +831,7 @@ var listingEl = document.getElementById('feature-listing');
 
 function renderListings(features) {
     // Clear any existing listings
+
     listingEl.innerHTML = '';
     var city = document.getElementById('city');
     if (features.length && city.className === 'mode' ) {
@@ -847,6 +849,21 @@ function renderListings(features) {
 
             item.addEventListener('click', function(){
 
+        /*        setTimeout(function() {
+
+              var selected = document.createElement('p');
+              selected.innerHTML = prop.code + ": " + prop.title;
+              selected.style.marginTop = 25 + "%";
+              selected.style.backgroundColor = "rgba(12, 12, 12, 0.0)";
+              selected.style.textAlign = "center";
+              selected.style.fontSize = 16 + "px";
+              selected.style.fontWeight = 500;
+              selected.id = "selected";
+              selected.style.color = "rgba(240, 240, 240, 0.8)";
+              listingEl.appendChild(selected)
+
+          }, 2000); */
+
 
               map.fitBounds([[
                               xmin,
@@ -856,7 +873,7 @@ function renderListings(features) {
                               ymax
                           ]]);
 
-                    var codeFilter =  item.textContent
+                    var codeFilter =  prop.code
 
 //filter uni_select red markers by program acronym
              map.setFilter("uni_icon", ["==", "code", codeFilter]);
@@ -868,7 +885,7 @@ function renderListings(features) {
               map.setLayoutProperty('uni', 'visibility', 'none');
 
 //fill title block with program acronym
-              document.getElementById("myspan").textContent= item.textContent;
+              document.getElementById("myspan").textContent= prop.code;
               document.getElementById("program_title").style.display = "inline-block";
             });
             item.addEventListener('mouseover', function() {
@@ -884,16 +901,41 @@ function renderListings(features) {
                     .addTo(map);    */
                     console.log(feature.properties);
 
+                    setTimeout(function() {
+
+
+                            item.style.color = 'rgba(250, 250, 250, 0.8)';
+                            item.textContent = prop.title;
+                            item.style.fontWeight = 600;
+                            item.style.borderRadius = 5 + 'px';
+                          }, 50);
+
             });
 
             item.addEventListener('mouseout', function() {
-              var codeFilter =  item.textContent
+
+              var codeFilter =  prop.code;
               map.setFilter("uni_select", ["==", "code", codeFilter]);
  //make uni_select visible
                map.setLayoutProperty('uni_select', 'visibility', 'none');
+          /*     map.setFilter("uni_icon", ["==", "code", codeFilter]);
+                map.setLayoutProperty('uni_icon', 'visibility', 'none'); */
+
+            setTimeout(function() {
+               item.textContent = prop.code;
+               item.style.fontWeight = 400;
+               item.style.color = 'rgba(255, 255, 255, 0.9)';
+              item.style.borderRadius = 0 + 'px';
+
+
+
+             }, 50);
+
                 // Highlight corresponding feature on the map
 
             });
+
+
 
             listingEl.appendChild(item);
 
@@ -1019,12 +1061,12 @@ $(document).ready(function() { /* code here */
         var city = document.getElementById('city');
         var program = document.getElementById('program');
 
-        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select'] });
+        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select', 'uni_icon'] });
         var cityFeatures = map.queryRenderedFeatures({ layers: ['city'] });
 
         if(bb.style.display != "none" && redFeatures.length > 0) {
 
-          var variable1 = '<p><div>' + 'Hit back arrow to see all programs' + '</div></p>';
+          var variable1 = '<p><div>' + 'click ' + '<img src= "./back-button.svg" height="15" width="15">' + ' to see all programs' + '</div></p>';
 
             }
             else if(program.className === 'mode-selected'){
@@ -1034,8 +1076,10 @@ $(document).ready(function() { /* code here */
         }  else {console.log("wtf")}
 
         empty.innerHTML = variable1
-        empty.style.color = "#FFFFF0";
+        empty.style.color = "rgba(240, 240, 240, 0.8)";
+        empty.style.textAlign = "center";
         empty.id="appended-p";
+        empty.textAlign = "center";
         empty.style.fontSize = 125 + "%";
         listingEl.appendChild(empty);
 
@@ -1054,9 +1098,9 @@ $(document).ready(function() { /* code here */
                 var empty = document.createElement('p');
 
                 empty.innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
-                empty.style.color = "#FFFFF0";
+                empty.style.color = "rgba(240, 240, 240, 0.8)";
                 empty.style.fontSize = 125 + "%";
-                empty.style.textAlign - "center";
+                empty.style.textAlign = "center";
                 listingEl.appendChild(empty);
 
                 // Hide the filter input
@@ -1113,7 +1157,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": './update17.geojson'
+        "data": './new.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -1228,20 +1272,22 @@ for (var i = 0; i < inputs.length; i++) {
 
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
-            ff.placeholder = 'Filter results by city name'
+            ff.placeholder = 'Filter results or click city name'
             program.className = 'mode'
             map.setLayoutProperty('city', 'visibility', 'visible');
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
+            document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+
 
 
 
           } else {
             city.className = 'mode'
             program.className = 'mode-selected'
-            ff.placeholder = 'Filter results by program name'
+            ff.placeholder = 'Filter or click program name'
             map.setLayoutProperty('city', 'visibility', 'none');
             map.setLayoutProperty('uni', 'visibility', 'visible');
         }
@@ -1265,7 +1311,7 @@ for (var i = 0; i < inputs.length; i++) {
             } else {
               program.className = 'mode-selected'
               city.className = 'mode'
-              ff.placeholder = 'Filter results by program name'
+              ff.placeholder = 'Filter or click program name'
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
@@ -1284,13 +1330,15 @@ for (var i = 0; i < inputs.length; i++) {
           var elem = document.getElementById("appended-p");
           elem.parentNode.removeChild(elem);
 
+
             var back = document.createElement('p');
-                back.innerHTML = '<p><div>' + 'Drag map to populate results' + '</div></p>';
+                back.innerHTML = '<p><div>' + '' + '</div></p>';
                 back.style.color = "#FFFFF0";
                 back.style.fontSize = 125 + "%";
                 listingEl.appendChild(back);
 
-                var delayMillis = 100; //1 second
+
+                var delayMillis = 150; //1 second
 
 setTimeout(function() {
 
@@ -1391,7 +1439,7 @@ map.on('moveend', function() {
 
   if (program.className === "mode-selected"){
       var features = map.queryRenderedFeatures(e.point, {
-          layers: ['uni_icon', 'uni']
+          layers: ['uni_icon', 'uni_select', 'uni']
       });
 
       // Change the cursor style as a UI indicator.
