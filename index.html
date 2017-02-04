@@ -812,8 +812,7 @@ $("#about-close").on('click', function() {
 
 });
 
-
-$(document).on('click', "#interest-close", function() {
+$("#interest-close").on('click', function() {
 
             $("#interest").fadeOut("slow");
 
@@ -965,21 +964,17 @@ function renderListings(features) {
 
                     setTimeout(function() {
 
-                            var op = 0.3;  // initial opacity
-                    var timer = setInterval(function () {
-                        if (op >= 1){
-                            clearInterval(timer);
-                        }
-                            item.style.opacity = op;
-                            item.style.filter = 'alpha(opacity=' + op * 100 + ")";
-                                                            op += op * 0.1;
-                                                        }, 50);
+                      function fadeOut(id, speed) {
+                          var s = item.style;
+                          s.opacity = 1;
+                          (function fade() {(s.opacity-=.1)<.1?s.display="none":setTimeout(fade,speed)})();
+                      }
 
                             item.style.color = 'rgba(250, 250, 250, 0.8)';
                             item.textContent = prop.title;
                             item.style.fontWeight = 600;
                             item.style.borderRadius = 5 + 'px';
-                          }, 50);
+                          }, 10);
 
             });
 
