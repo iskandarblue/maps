@@ -941,12 +941,11 @@ function renderListings(features) {
               document.getElementById("myspan").textContent= prop.code;
               document.getElementById("program_title").style.display = "inline-block";
 
-              $("#interest").fadeIn("slow");
+              $("#interest").fadeIn("slow")
 
-              $("#interest").children().not('#interest-close').remove();
-
-              $("#interest-close").after('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
-              '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info" + '</div>');
+              $("#interest-close").appendTo("#interest");
+              $('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info" + '</div>').appendTo("#interest");
 
 
             });
@@ -966,6 +965,15 @@ function renderListings(features) {
 
                     setTimeout(function() {
 
+                            var op = 0.3;  // initial opacity
+                    var timer = setInterval(function () {
+                        if (op >= 1){
+                            clearInterval(timer);
+                        }
+                            item.style.opacity = op;
+                            item.style.filter = 'alpha(opacity=' + op * 100 + ")";
+                                                            op += op * 0.1;
+                                                        }, 50);
 
                             item.style.color = 'rgba(250, 250, 250, 0.8)';
                             item.textContent = prop.title;
@@ -990,15 +998,9 @@ function renderListings(features) {
                item.style.color = 'rgba(255, 255, 255, 0.9)';
               item.style.borderRadius = 0 + 'px';
 
-
-
              }, 50);
 
-                // Highlight corresponding feature on the map
-
             });
-
-
 
             listingEl.appendChild(item);
 
@@ -1085,13 +1087,6 @@ function renderListings(features) {
                 }
                 return html;
               }
-
-              /*
-                delete feature.properties["field_1"];
-                  delete feature.properties["lon"];
-                    delete feature.properties["lat"];
-                      delete feature.properties["code"];
-                      delete feature.properties["title"]; */
 
                 // Populate the popup and set its coordinates
                 // based on the feature found.
@@ -1342,9 +1337,6 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
             document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
-
-
-
 
           } else {
             city.className = 'mode'
@@ -1607,143 +1599,11 @@ function buildHTML(city, courses, websites) {
   });
 
 });
-/*
-    map.on('mousemove', function(e) {
-        var features = map.queryRenderedFeatures(e.point, {
-            layers: ['city']
-        });
 
-        // Change the cursor style as a UI indicator.
-        map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-
-        if (!features.length) {
-            popup.remove();
-            return;
-        }
-
-        var feature = features[0];
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup.setLngLat(feature.geometry.coordinates)
-            .setHTML('<div><b>' + feature.properties.city + '</div></b>')
-            .addTo(map);
-    });
-
-
-*/
 
 map.addControl(new mapboxgl.NavigationControl());
 
-<!-- Yandex.Metrika counter -->
-//Clustering
 
-
-/*
-
-map.addLayer({
-    "id": "cluster-count",
-    "type": "symbol",
-    "source": "cluster",
-    "layout": {
-        "visibility": "visible",
-        "text-field": "{point_count}",
-        "text-font": [
-            "DIN Offc Pro Medium",
-            "Arial Unicode MS Bold"
-        ],
-        "text-size": 12
-    }
-});
-
-
-$(function(){
-    $(".dropdown-menu li a").click(function(){
-      $(".btn:first-child").text($(this).text());
-      $(".btn:first-child").val($(this).text());
-
-   });
-
-});
-
-$().ready(function(){
-    $('a').click(function(){
-        var value = $(this).text();
-        console.log(value);
-
- if (value !== "ALL"){
-        popup.remove();
-
-        map.setLayoutProperty('cluster-count','visibility', 'none');
-        map.setLayoutProperty('unclustered-points', 'visibility', 'none');
-        map.setLayoutProperty('cluster-0','visibility', 'none');
-        map.setLayoutProperty('cluster-1', 'visibility','none');
-        map.setLayoutProperty('cluster-2','visibility', 'none');
-        map.setLayoutProperty('uni', 'visibility', 'visible');
-        map.setFilter('uni', '==', 'code', value);
-
-      } else {
-        map.setLayoutProperty('cluster-count','visibility', 'none');
-        map.setLayoutProperty('unclustered-points', 'none');
-        map.setLayoutProperty('cluster-0','visibility', 'none');
-        map.setLayoutProperty('cluster-1', 'visibility','none');
-        map.setLayoutProperty('cluster-2','visibility', 'none');
-        map.setLayoutProperty('uni', 'visibility', 'visible');
-
-      }
-
-    // Add a layer for this symbol type if it hasn't been added already.
-    if (!map.getLayer(layerID)) {
-        map.addLayer({
-            "id": layerID,
-            "type": "circle", #1fddff
-            "source": "uni",#ff4b1f
-            "paint": {
-                "circle-color": "#F0F564",
-            },
-            "filter": ["==", "code", symbol]
-        });
-      }
-
-    });
-  });
-
-map.on('click', function (e) {
-    var cluster_features = map.queryRenderedFeatures(e.point, {
-        layers: ['uni']
-    });
-      var cluster_feature = cluster_features[0];
-      if (cluster_feature && cluster_feature.properties.cluster) {
-          map.jumpTo({
-              center: e.lngLat,
-              zoom: map.getZoom() + 1
-          });
-      }
-  });
-
-
-
-  map.on('mousemove', function(e) {
-      var features = map.queryRenderedFeatures(e.point, {
-        layers: ['uni'] });
-      // Change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-      console.log(features[0].properties)
-
-      console.log(features.length);
-
-     if (!features.length) {
-          popup.remove();
-      }
-
-      // Populate the popup and set its coordinates
-      // based on the feature found.
-      popup.setLngLat([features[0].properties.lon, features[0].properties.lat])
-          .setHTML(features[0].properties.title + '<div>' + '<a href="' + features[0].properties.website +'">website</a>' + '</div>')
-          .addTo(map);
-  });
-
-*/
   <!-- Yandex.Metrika counter -->
 
 </script>
