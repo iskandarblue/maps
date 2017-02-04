@@ -791,11 +791,11 @@ border-radius: 5px;
 
 
 <script>
-
+/*
 $(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+		$(".se-pre-con").fadeOut("fast");;
+	}); */
 
 // close about page
 $("#about-link").on('click', function() {
@@ -1381,7 +1381,24 @@ for (var i = 0; i < inputs.length; i++) {
             ff.placeholder = 'Filter or click program name'
             map.setLayoutProperty('city', 'visibility', 'none');
             map.setLayoutProperty('uni', 'visibility', 'visible');
-        }
+        };
+
+        var delayMillis = 250;
+
+        setTimeout(function() {
+
+          var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+          if (features) {
+              var uniqueFeatures = getUniqueFeatures(features, "code");
+              // Populate features for the listing overlay.
+              renderListings(uniqueFeatures);
+            };
+
+        }, delayMillis);
+
+
+
       });
 
       document.getElementById('program').addEventListener('click', function () {
@@ -1408,7 +1425,23 @@ for (var i = 0; i < inputs.length; i++) {
               map.setLayoutProperty('uni_select', 'visibility', 'none');
               map.setLayoutProperty('uni_code', 'visibility', 'none');
 
-          }
+          };
+
+
+          var delayMillis = 250;
+
+          setTimeout(function() {
+
+            var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+            if (features) {
+                var uniqueFeatures = getUniqueFeatures(features, "code");
+                // Populate features for the listing overlay.
+                renderListings(uniqueFeatures);
+              };
+
+          }, delayMillis);
+
         });
 
         document.getElementById('interest-close').addEventListener('click', function () {
@@ -1426,7 +1459,7 @@ for (var i = 0; i < inputs.length; i++) {
                 back.style.fontSize = 125 + "%";
                 listingEl.appendChild(back);   */
 
-                var delayMillis = 500; //1 second
+                var delayMillis = 250; //1 second
 
 setTimeout(function() {
 
