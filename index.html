@@ -102,6 +102,7 @@
       right: 0px;
       margin-top: 20px;
       margin-right: 20px;
+      margin-left: 20px;
       float: right;
       top: 0px;
       width: 38px;
@@ -811,13 +812,12 @@ $("#about-close").on('click', function() {
 
 });
 
-$("#interest-close").on('click', function() {
 
-          $("#interest").fadeOut("slow");
+$(document).on('click', "#interest-close", function() {
 
-});
+            $("#interest").fadeOut("slow");
 
-
+  });
 
 $("#about-map-button").on('click', function() {
 
@@ -943,10 +943,11 @@ function renderListings(features) {
 
               $("#interest").fadeIn("slow");
 
+              $("#interest").children().not('#interest-close').remove();
 
-              $('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
-            '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info " +
-            "info info info info info info info info info info info" + '</div>').appendTo("#interest");
+              $("#interest-close").after('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info" + '</div>');
+
 
             });
 
