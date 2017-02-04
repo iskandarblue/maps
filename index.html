@@ -941,11 +941,11 @@ function renderListings(features) {
               document.getElementById("myspan").textContent= prop.code;
               document.getElementById("program_title").style.display = "inline-block";
 
-              interest.style.display = "block";
+              $("#interest").fadeIn("slow");
 
 
               $('<div style ="font-size:35px; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
-            '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info" +
+            '<div style ="font-size:35px; margin-left:10px; margin-top: 25px;">' + "info info info info " +
             "info info info info info info info info info info info" + '</div>').appendTo("#interest");
 
             });
