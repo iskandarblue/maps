@@ -1036,10 +1036,6 @@ function renderListings(features) {
 //City mode - on click zoom fly to city
 
             item.addEventListener('click', function(){
-
-            console.log(lon);
-              console.log(lat);
-
               map.flyTo({
 
                 center: [lon, lat],
@@ -1255,7 +1251,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": 'mater1617.geojson'
+        "data": 'new_program.geojson'
     });
     map.addLayer({
         "id": "uni",
