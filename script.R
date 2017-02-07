@@ -7,7 +7,8 @@ pacman::p_load("rgdal","rgeos","maptools","gridExtra","geojsonio")
 
 
 zips <- readOGR("cb_2015_us_zcta510_500k.shp")
-states <- readOGR("states.geojson", "OGRGeoJSON")
+
+country <- readOGR("new_country.geojson", "OGRGeoJSON")
 
 #> us@proj4string
 #CRS arguments:
@@ -133,11 +134,15 @@ iris_split <- split(iris, iris$Species)
 
 #split SpatialPointsDataFrame by program code 
 
+
+country_split <- split(country, country@data$admin)
+
+
 programs_split <- split(new, new@data$code)
 str(programs_split)
 
 #create empty list
-result <- vector("list", 23)
+result <- vector("list", 49)
 
 #for each program create a bbox
 for (i in 1:length(programs_split)) {
@@ -151,8 +156,8 @@ dr <- t(as.data.frame(result))
 result <- vector("list", 103)
 names <- vector("list", 103)
 
-for (i in 1:length(programs_split)) {
-  result[[i]] <- bbox(programs_split[[i]])
+for (i in 1:length(country_split)) {
+  result[[i]] <- bbox(country_split[[i]])
 }
 
   
@@ -163,13 +168,17 @@ for (i in 1:length(programs_split)) {
 coords.x1.min <- data.frame(103)
 
 foo <- data.frame(matrix(ncol = 4, nrow =23))
+colnames(foo)[1] <- "xmin"
+colnames(foo)[2] <- "ymin"
+colnames(foo)[3] <- "xmax"
+colnames(foo)[4] <- "ymax"
 
 for (i in 1:length(result)){
  
-   foo$X1[i] <- result[[i]][1]
-   foo$X2[i] <- result[[i]][2]
-   foo$X3[i] <- result[[i]][3]
-   foo$X4[i] <- result[[i]][4]
+   foo$V1[i] <- result[[i]][1]
+   foo$V2[i] <- result[[i]][2]
+   foo$V3[i] <- result[[i]][3]
+   foo$V4[i] <- result[[i]][4]
 }
 
 #stretch extents
@@ -269,11 +278,11 @@ updated   <- master[master$code != "CHOREOMUNDUS" &
 
 
 
+cities <- lapply(cities, function(x) {gsub("final generation", "D/C", x)})
 
 
 
-
-
+cities <- as.data.frame(cities)
 
 
 
