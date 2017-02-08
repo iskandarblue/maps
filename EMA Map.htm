@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8' />
+<!-- saved from url=(0042)http://iskandari.github.io/maps/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <title>EMA Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
+    <script type="text/javascript" async="" src="./EMA Map_files/watch.js"></script><script src="./EMA Map_files/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="./EMA Map_files/bootstrap.min.css">
+    <script src="./EMA Map_files/jquery.min.js"></script>
+    <script src="./EMA Map_files/bootstrap.min.js"></script>
+    <script src="./EMA Map_files/underscore-min.js"></script>
+    <link href="./EMA Map_files/mapbox-gl.css" rel="stylesheet">
 
 
   <style>
@@ -39,7 +39,6 @@
    }
 
   </style>
-</head>
 <style>
 
 
@@ -426,7 +425,7 @@
 .mapboxgl-popup {
 
 max-width: 300px;
-max-height: 300px;
+max-height: 450px;
 font: 12px/20px 'Open Sans', sans-serif;
 border-radius: 5px;
 overflow: auto;
@@ -435,6 +434,7 @@ overflow: auto;
 
 .mapboxgl-popup-content {
     overflow: auto;
+    overflow-y: auto;
     color: #fff;
     background: rgba(12, 12, 12, 0.8);
     border-radius: 5px;
@@ -726,69 +726,73 @@ overflow: auto;
       }
 }
 
-</style>
+</style></head>
+
 <body>
 
-<div id='interest'>
-<div id = 'interest-close'></div>
-</div>
+<div id="interest" style="display: none;">
 
-<div class = 'about' id='about'>
+<div id="interest-close"></div><div style="font-size:30px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px"> Erasmus Mundus Master in Quaternary and Prehistory</div><div style="font-size:30px; margin-left:10px; margin-top: 25px;"><a href="https://sites.google.com/a/unife.it/quaternary-prehistory/" target="_blank">program details</a></div></div>
 
-  <div id = 'about-close'></div>
-  <div id='about-content'>
-    <div id='about-text'>
-    <div id = 'about-header'>EMA web map</div>
+<div class="about" id="about">
+
+  <div id="about-close"></div>
+  <div id="about-content">
+    <div id="about-text">
+    <div id="about-header">EMA web map</div>
       <p>The Erasmus Mundus Association is a professional network for Erasmus Mundus students and graduates. This webmap serves as a search tool for graduate programs by location and links prospective students to program webpages.</p>
-      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program name and displays markers for all locations of an individual program. The second displays programs and links to individual webpages by city.  Discontinued programs are marked <b>D/C</b>. For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
+      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program name and displays markers for all locations of an individual program. The second displays programs and links to individual webpages by city.  Discontinued programs are marked <b>D/C</b>. For more details, please see the list of all <a href="http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php">Erasmus Mundus Masters Courses</a>.</p>
       <p>We hope that this program exploration tool will serve as a resource for students, faculty, and EMA staff.</p>
-      <p>Read more details at <a href='http://www.em-a.eu/'>the EMA website</a></p>
-      <div id = 'about-map'><div id = 'about-map-button'>Back to the map</div></div>
-      <div id='about-credits'>
-        <br/>Map engine — <a href='https://www.mapbox.com/mapbox-gl-js/'>Mapbox GL JS</a>
-        <br/>Data processing, design & development: <a href="https://www.linkedin.com/in/alexander-tedeschi-4a006938">Alexander Tedeschi</a> and <a href="https://de.linkedin.com/in/dejanpopovic11">Dejan Popović</a></p>
+      <p>Read more details at <a href="http://www.em-a.eu/">the EMA website</a></p>
+      <div id="about-map"><div id="about-map-button">Back to the map</div></div>
+      <div id="about-credits">
+        <br>Map engine — <a href="https://www.mapbox.com/mapbox-gl-js/">Mapbox GL JS</a>
+        <br>Data processing, design &amp; development: <a href="https://www.linkedin.com/in/alexander-tedeschi-4a006938">Alexander Tedeschi</a> and <a href="https://de.linkedin.com/in/dejanpopovic11">Dejan Popović</a><p></p>
     </div>
   </div>
 </div>
 </div>
 
 <div class="wrap">
-<div id='changeLayer'></div>
-<div id='menu'>
-  <input id='light' type='radio' name='rtoggle' value='light', checked='checked'>
-  <label for='light'>light</label>
-  <input id='dark' type='radio' name='rtoggle' value='dark'>
-  <label for='dark'>dark</label>
-  <input id='bright' type='radio' name='rtoggle' value='bright'>
-  <label for='bright'>streets</label>
+<div id="changeLayer"></div>
+<div id="menu">
+  <input id="light" type="radio" name="rtoggle" value="light" ,="" checked="checked">
+  <label for="light">light</label>
+  <input id="dark" type="radio" name="rtoggle" value="dark">
+  <label for="dark">dark</label>
+  <input id="bright" type="radio" name="rtoggle" value="bright">
+  <label for="bright">streets</label>
 
 </div>
 </div>
 
-  <div id='map'>
-    <div id='program_title'>
-        <span id="myspan">TITLE</span>
+  <div id="map" class="mapboxgl-map">
+    <div id="program_title" style="display: none;">
+        <span id="myspan">IMQP</span>
     </div>
 
-    <div id ='about-linked'></div>
-  </div>
+    <div id="about-linked"></div>
+  <div class="mapboxgl-canvas-container mapboxgl-interactive"><canvas class="mapboxgl-canvas" tabindex="0" aria-label="Map" style="position: absolute; width: 960px; height: 655px;" width="1920" height="1310"></canvas></div><div class="mapboxgl-control-container"><div class="mapboxgl-ctrl-top-left"></div><div class="mapboxgl-ctrl-top-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-group"><button class="mapboxgl-ctrl-icon mapboxgl-ctrl-zoom-in" type="button" aria-label="Zoom In"></button><button class="mapboxgl-ctrl-icon mapboxgl-ctrl-zoom-out" type="button" aria-label="Zoom Out"></button><button class="mapboxgl-ctrl-icon mapboxgl-ctrl-compass" type="button" aria-label="Reset North"><span class="arrow" style="transform: rotate(0deg);"></span></button></div></div><div class="mapboxgl-ctrl-bottom-left"></div><div class="mapboxgl-ctrl-bottom-right"><div class="mapboxgl-ctrl mapboxgl-ctrl-attrib"><a href="https://www.mapbox.com/about/maps/" target="_blank">© Mapbox</a> <a href="http://www.openstreetmap.org/about/" target="_blank">© OpenStreetMap</a> <a class="mapbox-improve-map" href="https://www.mapbox.com/map-feedback/#/1.0999220696606926/44.8277575685313/6" target="_blank">Improve this map</a></div></div></div><div class="mapboxgl-popup mapboxgl-popup-anchor-top-left" style="transform: translate(0px, 0px) translate(556px, 266px);"><div class="mapboxgl-popup-tip"></div><div class="mapboxgl-popup-content"><div><strong>Clermont-Ferrand</strong></div>
+<div class="link"><a href="http://glodep.eu/" style="color: rgb(0,255,0)" ;="" target="_blank">GLODEP</a>  <div style="display:inline; opacity: 0.7; color:#3399ff;"><i>NEW</i></div></div>
+</div></div></div>
 
-<div id ='banner'></div>
+<div id="banner" style="display: none;"></div>
 
 
-<div class='map-overlay'>
-<div class='header'>
-  <div id = 'modes'>
-  <div id='about-link'></div>
-  <div class = 'mode-selected' id='program'>Program</div>
-  <div class = 'mode' id='city'>City</div>
+<div class="map-overlay">
+<div class="header">
+  <div id="modes">
+  <div id="about-link"></div>
+  <div class="mode" id="program">Program</div>
+  <div class="mode-selected" id="city">City</div>
 </div>
 </div>
-    <fieldset>
-        <input id='feature-filter' type='text' placeholder='Filter reults or click program' />
+    <fieldset style="display: block;">
+        <input id="feature-filter" type="text" placeholder="Filter results or click city name">
     </fieldset>
-    <div id='feature-listing' class='listing'></div>
+    <div id="feature-listing" class="listing"><a target="_blank"><div style="display:inline;">   Aveiro </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Barcelona </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>24</b></div></a><a target="_blank"><div style="display:inline;">   Bilbao </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Bordeaux </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Braga </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Cachan </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Caen </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Castellón de la Plana </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Clermont-Ferrand </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Coimbra </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>6</b></div></a><a target="_blank"><div style="display:inline;">   Dijon </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Evora </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Girona </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Leioa </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Liège </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Lisbon </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>12</b></div></a><a target="_blank"><div style="display:inline;">   Lleida </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Loire Valley </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Aix-en-Provence </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Lyon </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Madrid </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>12</b></div></a><a target="_blank"><div style="display:inline;">   Marseille </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Montpellier </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>7</b></div></a><a target="_blank"><div style="display:inline;">   Nantes </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Oviedo </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>6</b></div></a><a target="_blank"><div style="display:inline;">   Paris </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>16</b></div></a><a target="_blank"><div style="display:inline;">   Perpignan </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Poitiers </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Porto </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>4</b></div></a><a target="_blank"><div style="display:inline;">   Rennes </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>4</b></div></a><a target="_blank"><div style="display:inline;">   Saint-Etienne </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Salamanca </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   San Sebastian </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Santander </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Santarém </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Santiago de Compostela </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Angers </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Tarragona </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Tomar </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Toulouse </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Tours cedex 1 </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Valencia </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Valladolid </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Vila Rea </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Zaragoza </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Ancona </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Mainz </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Mannheim </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Milan </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Mulhouse </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Munich </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Nancy </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>5</b></div></a><a target="_blank"><div style="display:inline;">   Nice </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Padova </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>7</b></div></a><a target="_blank"><div style="display:inline;">   Palermo </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Pavia </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Perugia </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Pisa </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Augsburg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Regensburg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Rome </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>6</b></div></a><a target="_blank"><div style="display:inline;">   Saarbrücken </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Salzburg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Strasbourg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Stuttgart </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Torino </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Trento </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Turin </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Udine </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Venice </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Viterbo </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Würzburg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Bergamo </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Besançon </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Bologna </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>7</b></div></a><a target="_blank"><div style="display:inline;">   Bolzano </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Cassino </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Darmstadt </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Ferrara </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Florence </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Freiburg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Geisenheim </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Genova </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>3</b></div></a><a target="_blank"><div style="display:inline;">   Giessen </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Grenoble </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>4</b></div></a><a target="_blank"><div style="display:inline;">   Heidelberg </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Innsbruck </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Kaiserslautern </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   Karlsruhe </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>2</b></div></a><a target="_blank"><div style="display:inline;">   L'Aquila </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a><a target="_blank"><div style="display:inline;">   Lausanne </div>  <div style="display:inline; margin-left: 5px; color: #43cea2;"><b>1</b></div></a></div>
 </div>
+
 
 <script>
 /*
@@ -925,6 +929,8 @@ function renderListings(features) {
 
             item.addEventListener('click', function(){
 
+
+
         /*        setTimeout(function() {
 
               var selected = document.createElement('p');
@@ -939,6 +945,7 @@ function renderListings(features) {
               listingEl.appendChild(selected)
 
           }, 2000); */
+
 
               map.fitBounds([[
                               xmin,
@@ -971,6 +978,7 @@ function renderListings(features) {
               $("#interest-close").appendTo("#interest");
               $('<div style ="font-size:30px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
               '<div style ="font-size:30px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
+
 
             });
 
@@ -1029,13 +1037,11 @@ function renderListings(features) {
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
     } else if (features.length && city.className === 'mode-selected' ) {
-
-
         features.forEach(function(feature) {
             var prop = feature.properties;
             var lat = feature.properties.lat;
             var lon = feature.properties.lon;
-            var count = feature.properties.Freq;
+            var count = feature.properties.countcount;
             var item = document.createElement('a');
             item.target = '_blank';
             item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; color: #43cea2;"><b>' + count + '</b></div>';
@@ -1057,20 +1063,17 @@ function renderListings(features) {
             item.addEventListener('mouseover', function() {
 //Get all links from properties and put them in the popup
 
+              delete feature.properties["countcount"];
 
               function htmlFromProps(props) {
                 var city = "";
                 var courses = [];
                 var websites = [];
                 var status = [];
-                var index = -1;
-
                 for (p in props) {
-                  if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
+                  if (props[p] && props[p] != "null" && props[p] != "NA") {
                     if (isCourse(p)) {
-                      //courses[getIndex(p)] = props[p];
-                      console.log(props[p]);
-                      courses[index] = props[p];
+                      courses[getIndex(p)] = props[p];
                     } else if (isWebsite(p)) {
                       websites[getIndex(p)] = props[p];
                     } else if (isStatus(p)) {
@@ -1079,7 +1082,6 @@ function renderListings(features) {
                       city = props[p];
                     }
                   }
-                  index = index+1;
                 }
                 return buildHTML(city, courses, websites, status);
               }
@@ -1109,10 +1111,8 @@ function renderListings(features) {
               function hideUndf(str) {
                 if (str == undefined) {
                   return ""
-              } else if (str == "DISCONTINUED" || str == "DISCONTINUEE" ){
-                  return "D/C"
               } else {
-                 return str
+                  return str
               }
             }
 
@@ -1129,10 +1129,10 @@ function renderListings(features) {
               function buildHTML(city, courses, websites, status) {
                 var html = "";
                 html += "<div><strong>";
-                html += prop.city;
+                html += city;
                 html += "</strong></div>\n";
 
-                for (i = 0; i < courses.length; i++) {
+                for (i = 1; i < courses.length; i++) {
                   html += "<div class='link'>";
                   html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
                   html += "</div>\n";
@@ -1146,6 +1146,7 @@ function renderListings(features) {
                     .setHTML(htmlFromProps(prop))
                     .addTo(map);
 
+
             });
             listingEl.appendChild(item);
             console.log(item);
@@ -1154,26 +1155,39 @@ function renderListings(features) {
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
 
+
     } else {
 
+      var city = document.getElementById('city');
+
+      if (city.className === 'mode' ) {
+
+$(document).ready(function() { /* code here */
+            //your code here
         var empty = document.createElement('p');
         var bb = document.getElementById("program_title")
-
+        console.log(bb.style.display)
         var city = document.getElementById('city');
         var program = document.getElementById('program');
         var country = document.getElementById('country');
 
-//        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select', 'uni_icon'] });
-//        var cityFeatures = map.queryRenderedFeatures({ layers: ['city'] });
+        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select', 'uni_icon'] });
+        var cityFeatures = map.queryRenderedFeatures({ layers: ['city'] });
 
-//        if(bb.style.display != "none" && redFeatures.length > 0) {
+        if(bb.style.display != "none" && redFeatures.length > 0) {
 
-//          var variable1 = '<p><div>' + 'click ' + '<img src= "./back-button.svg" height="15" width="15">' + ' to see all programs' + '</div></p>';
+          var variable1 = '<p><div>' + 'click ' + '<img src= "./back-button.svg" height="15" width="15">' + ' to see all programs' + '</div></p>';
 
-//            } else if(program.className === 'mode-selected'){
+            }
+            else if(program.className === 'mode-selected'){
 
           var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
+        }  else if(country.className === 'mode-selected'){
+
+      var variable1 = '<p><div>' + 'Select country!' + '</div></p>';
+
+    } else {console.log("wtf")}
 
         empty.innerHTML = variable1
         empty.style.color = "rgba(245, 245, 245, 0.9)";
@@ -1183,6 +1197,7 @@ function renderListings(features) {
         empty.style.fontSize = 125 + "%";
         listingEl.appendChild(empty);
 
+ });
 
         // Hide the filter input
         filterEl.parentNode.style.display = 'none';
@@ -1191,9 +1206,8 @@ function renderListings(features) {
         map.setFilter('uni', ['has', 'code']);
         map.setFilter('city', ['has', 'code']);
 
-        /*
-
       } else if (city.className === 'mode-selected') {
+
 
                 var empty = document.createElement('p');
 
@@ -1210,7 +1224,9 @@ function renderListings(features) {
                 map.setFilter('uni', ['has', 'code']);
                 map.setFilter('city', ['has', 'code']);
 
-    } */
+    } else {
+      console.log("fail");
+    }
 
   }
 
@@ -1275,7 +1291,7 @@ function addDataLayer(){
 
   map.addSource('city', {
       "type": 'geojson',
-      "data": 'cityUpdate.geojson'
+      "data": 'city_update.geojson'
   });
   map.addLayer({
       "id": "city",
@@ -1290,7 +1306,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": 'updateProgram.geojson'
+        "data": 'new_program.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -1477,9 +1493,7 @@ for (var i = 0; i < inputs.length; i++) {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
-           listingEl.innerHTML = '';
-
-
+           renderListings([])
 
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
@@ -1490,7 +1504,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
             document.getElementById("program_title").style.display = "none";
-
+            document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
           } else {
             city.className = 'mode'
@@ -1500,11 +1514,11 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni', 'visibility', 'visible');
         };
 
-        var delayMillis = 10;
+        var delayMillis = 250;
 
         setTimeout(function() {
 
-          var features = map.queryRenderedFeatures({layers:['city']});
+          var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
           if (features) {
               var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -1513,6 +1527,7 @@ for (var i = 0; i < inputs.length; i++) {
             };
 
         }, delayMillis);
+
 
 
       });
@@ -1527,11 +1542,10 @@ for (var i = 0; i < inputs.length; i++) {
               program.className = 'mode-selected'
               city.className = 'mode'
               ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('city', 'visibility', 'none');
+              map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
               map.setLayoutProperty('uni_code', 'visibility', 'none');
-              document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
             } else {
               program.className = 'mode'
@@ -1544,7 +1558,7 @@ for (var i = 0; i < inputs.length; i++) {
 
             };
 
-              var delayMillis = 1000;
+              var delayMillis = 550;
 
               setTimeout(function() {
 
@@ -1594,7 +1608,7 @@ setTimeout(function() {
         });
 
 map.on('moveend', function() {
-     var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+     var features = map.queryRenderedFeatures({layers:['uni', 'city', 'uni_circle']});
 
      if (features) {
          var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -1612,9 +1626,8 @@ map.on('moveend', function() {
 
  filterEl.addEventListener('keyup', function(e) {
 
-   console.log(programs);
-
 /*    map.setLayoutProperty('uni_select', 'visibility', 'none');  */
+
 
      var value = normalize(e.target.value);
 
@@ -1700,6 +1713,7 @@ map.on('moveend', function() {
           .addTo(map);
 
 
+
 } else if (city.className === "mode-selected") {
 
   var features = map.queryRenderedFeatures(e.point, {
@@ -1719,100 +1733,97 @@ map.on('moveend', function() {
 //
 
 var feature = features[0];
-  console.log(feature)
+  delete feature.properties["countcount"];
+
+function htmlFromProps(props) {
+
+  var city = "";
+  var courses = [];
+  var websites = [];
+  var status = [];
+  for (p in props) {
+    if (props[p] && props[p] != "null" && props[p] != "NA") {
+      if (isCourse(p)) {
+        courses[getIndex(p)] = props[p];
+      } else if (isWebsite(p)) {
+        websites[getIndex(p)] = props[p];
+      } else if (isStatus(p)) {
+        status[getIndex(p)] = props[p];
+      } else {
+        city = props[p];
+      }
+    }
+  }
+  return buildHTML(city, courses, websites, status);
+}
+
+function isCourse(propname) {
+  return (propname.indexOf("course") != -1);
+}
+
+function isWebsite(propname) {
+  return (propname.indexOf("website") != -1);
+}
+
+function isStatus(propname) {
+  return (propname.indexOf("status") != -1);
+}
+
+function getIndex(propname) {
+  var indexRegEx = new RegExp("^.*(\\d+)$");
+  var matches = indexRegEx.exec(propname);
+  if ((matches != null) && (matches.length == 2)) {
+    return parseInt(matches[1]);
+  } else {
+    return 0;
+  }
+}
+
+function hideUndf(str) {
+  if (str == undefined) {
+    return ""
+} else {
+    return str
+}
+}
+
+function colored(str){
+  if (str === "NEW"){
+
+    return "#3399ff"
+
+  } else {
+    return "#fa8072"
+  }
+}
+
+function buildHTML(city, courses, websites, status) {
+  var html = "";
+  html += "<div><strong>";
+  html += city;
+  html += "</strong></div>\n";
+
+  for (i = 1; i < courses.length; i++) {
+    html += "<div class='link'>";
+    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
+    html += "</div>\n";
+  }
+  return html;
+}
 
 
-                function htmlFromProps(props) {
-                  var city = "";
-                  var courses = [];
-                  var websites = [];
-                  var status = [];
-                  var index = -1;
+/*
+  delete feature.properties["field_1"];
+    delete feature.properties["lon"];
+      delete feature.properties["lat"];
+        delete feature.properties["code"];
+        delete feature.properties["title"]; */
 
-                  for (p in props) {
-                    if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
-                      if (isCourse(p)) {
-                        //courses[getIndex(p)] = props[p];
-                        console.log(props[p]);
-                        courses[index] = props[p];
-                      } else if (isWebsite(p)) {
-                        websites[getIndex(p)] = props[p];
-                      } else if (isStatus(p)) {
-                        status[getIndex(p)] = props[p];
-                      } else {
-                        city = props[p];
-                      }
-                    }
-                    index = index+1;
-                  }
-                  return buildHTML(city, courses, websites, status);
-                }
-
-                function isCourse(propname) {
-                  return (propname.indexOf("course") != -1);
-                }
-
-                function isWebsite(propname) {
-                  return (propname.indexOf("website") != -1);
-                }
-
-                function isStatus(propname) {
-                  return (propname.indexOf("status") != -1);
-                }
-
-                
-
-                function getIndex(propname) {
-                  var indexRegEx = new RegExp("^.*(\\d+)$");
-                  var matches = indexRegEx.exec(propname);
-                  if ((matches != null) && (matches.length == 2)) {
-                    return parseInt(matches[1]);
-                  } else {
-                    return 0;
-                  }
-                }
-
-                function hideUndf(str) {
-                  if (str == undefined) {
-                    return ""
-                } else if (str == "DISCONTINUED"){
-                    return "D/C"
-                } else {
-                   return str
-                }
-              }
-
-              function colored(str){
-                  if (str === "NEW"){
-
-                    return "#3399ff"
-
-                  } else {
-                    return "#fa8072"
-                  }
-                }
-
-                function buildHTML(city, courses, websites, status) {
-                  var html = "";
-                  html += "<div><strong>";
-                  html += feature.properties.city;
-                  html += "</strong></div>\n";
-
-                  for (i = 0; i < courses.length; i++) {
-                    html += "<div class='link'>";
-                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
-                    html += "</div>\n";
-                  }
-                  return html;
-                }
-
-
-                  // Populate the popup and set its coordinates
-                  // based on the feature found.
-                  popup.setLngLat(feature.geometry.coordinates)
-                      .setHTML(htmlFromProps(feature.properties))
-                      .addTo(map);
-
+  // Populate the popup and set its coordinates
+  // based on the feature found.
+  popup.setLngLat(feature.geometry.coordinates)
+      .setHTML(htmlFromProps(feature.properties))
+      .addTo(map);
 
 } else if (country.className === "mode-selected") {
 
@@ -1827,6 +1838,9 @@ var feature = features[0];
 
 
   var feature = features[0];
+    delete feature.properties["count"];
+
+
 
 
     console.log(feature);
@@ -1841,92 +1855,98 @@ var feature = features[0];
 
 //
 
-              function htmlFromProps(props) {
-                var city = "";
-                var courses = [];
-                var websites = [];
-                var status = [];
-                var index = -1;
-
-                for (p in props) {
-                  if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
-                    if (isCourse(p)) {
-                      //courses[getIndex(p)] = props[p];
-                      console.log(props[p]);
-                      courses[index] = props[p];
-                    } else if (isWebsite(p)) {
-                      websites[getIndex(p)] = props[p];
-                    } else if (isStatus(p)) {
-                      status[getIndex(p)] = props[p];
-                    } else {
-                      city = props[p];
-                    }
-                  }
-                  index = index+1;
-                }
-                return buildHTML(city, courses, websites, status);
-              }
-
-              function isCourse(propname) {
-                return (propname.indexOf("course") != -1);
-              }
-
-              function isWebsite(propname) {
-                return (propname.indexOf("website") != -1);
-              }
-
-              function isStatus(propname) {
-                return (propname.indexOf("status") != -1);
-              }
-
-              function getIndex(propname) {
-                var indexRegEx = new RegExp("^.*(\\d+)$");
-                var matches = indexRegEx.exec(propname);
-                if ((matches != null) && (matches.length == 2)) {
-                  return parseInt(matches[1]);
-                } else {
-                  return 0;
-                }
-              }
-
-              function hideUndf(str) {
-                if (str == undefined) {
-                  return ""
-              } else {
-                  return str
-              }
-            }
-
-            function colored(str){
-                if (str === "NEW"){
-
-                  return "#3399ff"
-
-                } else {
-                  return "#fa8072"
-                }
-              }
-
-              function buildHTML(city, courses, websites, status) {
-                var html = "";
-                html += "<div><strong>";
-                html += city;
-                html += "</strong></div>\n";
-
-                for (i = 0; i < courses.length; i++) {
-                  html += "<div class='link'>";
-                  html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
-                  html += "</div>\n";
-                }
-                return html;
-              }
 
 
-                // Populate the popup and set its coordinates
-                // based on the feature found.
-                popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML(htmlFromProps(prop))
-                    .addTo(map);
+function htmlFromProps(props) {
+
+  var city = "";
+  var courses = [];
+  var websites = [];
+  var status = [];
+  for (p in props) {
+    if (props[p] && props[p] != "null" && props[p] != "NA") {
+      if (isCourse(p)) {
+        courses[getIndex(p)] = props[p];
+      } else if (isWebsite(p)) {
+        websites[getIndex(p)] = props[p];
+      } else if (isStatus(p)) {
+        status[getIndex(p)] = props[p];
+      } else {
+        city = props[p];
+      }
+    }
+  }
+  return buildHTML(city, courses, websites, status);
+}
+
+function isCourse(propname) {
+  return (propname.indexOf("course") != -1);
+}
+
+function isWebsite(propname) {
+  return (propname.indexOf("website") != -1);
+}
+
+function isStatus(propname) {
+  return (propname.indexOf("status") != -1);
+}
+
+function getIndex(propname) {
+  var indexRegEx = new RegExp("^.*(\\d+)$");
+  var matches = indexRegEx.exec(propname);
+  if ((matches != null) && (matches.length == 2)) {
+    return parseInt(matches[1]);
+  } else {
+    return 0;
+  }
+}
+
+function hideUndf(str) {
+  if (str == undefined) {
+    return ""
+} else {
+    return str
+}
+}
+
+function colored(str){
+  if (str === "NEW"){
+
+    return "#3399ff"
+
+  } else {
+    return "#fa8072"
+  }
+}
+
+function buildHTML(city, courses, websites, status) {
+  var html = "";
+  html += "<div><strong>";
+  html += city;
+  html += "</strong></div>\n";
+
+  for (i = 1; i < courses.length; i++) {
+    html += "<div class='link'>";
+    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
+    html += "</div>\n";
+  }
+  return html;
+}
+
+
+/*
+  delete feature.properties["field_1"];
+    delete feature.properties["lon"];
+      delete feature.properties["lat"];
+        delete feature.properties["code"];
+        delete feature.properties["title"]; */
+
+  // Populate the popup and set its coordinates
+  // based on the feature found.
+
+  popupB.setLngLat({lng: feature.properties.lon, lat: feature.properties.lat})
+      .setHTML(htmlFromProps(feature.properties))
+      .addTo(map);
 
 
 
@@ -1971,9 +1991,10 @@ map.addControl(new mapboxgl.NavigationControl());
         } else { f(); }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/42213174" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>&lt;div&gt;&lt;img src="https://mc.yandex.ru/watch/42213174" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
 <!-- /Yandex.Metrika counter -->
 
 
-</body>
-</html>
+
+
+</body></html>

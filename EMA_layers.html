@@ -831,48 +831,11 @@ function renderListings(features) {
             item.addEventListener('mouseover', function() {
 
 
+    console.log(prop.code);
 
-
-              var clickedCode // dynamically changing string
-              var features = map.queryRenderedFeatures({layers:['uni']});
-
-              var codedCities = features.filter(function (feature){
-                  return feature.properties.code === prop.code;
-              });
-
-                  window.popupB = [];
-                  for (i = 0; i < codedCities.length; ++i) {
-
-                    window.popupB[i] = new mapboxgl.Popup({
-                        offset: [0, -10],
-                        closeButton: false,
-                        closeOnClick: true,
-                        anchor: 'top-left'
                     });
 
 
-                      console.log(codedCities[i].geometry.coordinates);
-
-                      window.popupB[i].setLngLat(codedCities[i].geometry.coordinates)
-                      .setHTML('<div class="coded-cities-popup">'  + codedCities[i].properties.uni + '</div>')
-                      .addTo(map);
-
-                    }
-
-          });
-
-            item.addEventListener('mouseout', function() {
-
-              var features = map.queryRenderedFeatures({layers:['uni']});
-              var codedCities = features.filter(function (feature){
-                  return feature.properties.code === prop.code;
-              });
-
-              for (i = 0; i < codedCities.length; ++i) {
-                  window.popupB[i].remove()
-                }
-
-            });
 
             item.addEventListener('click', function(){
 
@@ -1104,6 +1067,24 @@ map.on('style.load', function (e) {
 });
 
 map.on('load', function () {
+
+
+var delayMillis = 1000;
+
+  setTimeout(function() {
+
+    var features = map.queryRenderedFeatures({layers:['uni']});
+
+    if (features) {
+        var uniqueFeatures = getUniqueFeatures(features, "code");
+        // Populate features for the listing overlay.
+        renderListings(uniqueFeatures);
+      };
+
+}, delayMillis);
+
+
+
 var layerList = document.getElementById('menu');
 var inputs = layerList.getElementsByTagName('input');
 
@@ -1166,6 +1147,8 @@ for (var i = 0; i < inputs.length; i++) {
           var ff = document.getElementById('feature-filter');
            renderListings([])
 
+
+
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
             ff.placeholder = 'Filter results by city name'
@@ -1190,6 +1173,19 @@ for (var i = 0; i < inputs.length; i++) {
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
              renderListings([])
+             var delayMillis = 1000;
+
+               setTimeout(function() {
+
+                 var features = map.queryRenderedFeatures({layers:['uni']});
+
+                 if (features) {
+                     var uniqueFeatures = getUniqueFeatures(features, "code");
+                     // Populate features for the listing overlay.
+                     renderListings(uniqueFeatures);
+                   };
+
+             }, delayMillis);
 
             if (program.className ===  'mode-selected') {
               program.className = 'mode'
@@ -1229,6 +1225,9 @@ map.on('moveend', function() {
  });
 
  filterEl.addEventListener('keyup', function(e) {
+
+   var programs = getUniqueFeatures(map.queryRenderedFeatures({layers:['uni']}), "code");
+
 
      var value = normalize(e.target.value);
 
