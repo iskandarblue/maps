@@ -1243,7 +1243,7 @@ function addDataLayer(){
 
   map.addSource("states", {
       "type": "geojson",
-      "data": './newCountry.geojson'
+      "data": './finalCountry.geojson'
   });
 
   map.addLayer({
@@ -1719,58 +1719,53 @@ map.on('moveend', function() {
 //
 
 var feature = features[0];
+
   console.log(feature)
 
 
-                function htmlFromProps(props) {
-                  var city = "";
-                  var courses = [];
-                  var websites = [];
-                  var status = [];
-                  var index = -1;
+  function htmlFromProps(props) {
+    var city = "";
+    var courses = [];
+    var websites = [];
+    var status = [];
+    for (p in props) {
+      if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
+        if (isCourse(p)) {
+          courses[getIndex(p)] = props[p];
+        } else if (isWebsite(p)) {
+          websites[getIndex(p)] = props[p];
+        } else if (isStatus(p)){
+          status[getIndex(p)] = props[p];
+        } else {
+          city = props[p];
+        }
+      }
+    }
+    return buildHTML(city, courses, websites, status);
+  }
 
-                  for (p in props) {
-                    if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
-                      if (isCourse(p)) {
-                        //courses[getIndex(p)] = props[p];
-                        console.log(props[p]);
-                        courses[index] = props[p];
-                      } else if (isWebsite(p)) {
-                        websites[getIndex(p)] = props[p];
-                      } else if (isStatus(p)) {
-                        status[getIndex(p)] = props[p];
-                      } else {
-                        city = props[p];
-                      }
-                    }
-                    index = index+1;
-                  }
-                  return buildHTML(city, courses, websites, status);
-                }
+  function isCourse(propname) {
+    return (propname.indexOf("course") != -1);
+  }
 
-                function isCourse(propname) {
-                  return (propname.indexOf("course") != -1);
-                }
+  function isWebsite(propname) {
+    return (propname.indexOf("website") != -1);
+  }
 
-                function isWebsite(propname) {
-                  return (propname.indexOf("website") != -1);
-                }
-
-                function isStatus(propname) {
-                  return (propname.indexOf("status") != -1);
-                }
+  function isStatus(propname) {
+    return (propname.indexOf("status") != -1);
+  }
 
 
-
-                function getIndex(propname) {
-                  var indexRegEx = new RegExp("^.*(\\d+)$");
-                  var matches = indexRegEx.exec(propname);
-                  if ((matches != null) && (matches.length == 2)) {
-                    return parseInt(matches[1]);
-                  } else {
-                    return 0;
-                  }
-                }
+  function getIndex(propname) {
+    var indexRegEx = new RegExp("^.*?(\\d+)$");
+    var matches = indexRegEx.exec(propname);
+    if ((matches != null) && (matches.length == 2)) {
+      return parseInt(matches[1]);
+    } else {
+      return 0;
+    }
+  }
 
                 function hideUndf(str) {
                   if (str == undefined) {
@@ -1798,13 +1793,15 @@ var feature = features[0];
                   html += feature.properties.city;
                   html += "</strong></div>\n";
 
-                  for (i = 0; i < courses.length; i++) {
+                  for (i = 1; i < courses.length; i++) {
+                    if (courses[i]) {
                     html += "<div class='link'>";
                     html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
                     html += "</div>\n";
                   }
-                  return html;
                 }
+              return html;
+            }
 
 
                   // Populate the popup and set its coordinates
