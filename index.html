@@ -971,8 +971,8 @@ function renderListings(features) {
 
               $("#interest").children().not('#interest-close').remove();
               $("#interest-close").appendTo("#interest");
-              $('<div style ="font-size:30px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
-              '<div style ="font-size:30px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
+              $('<div style ="font-size:25px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              '<div style ="font-size:25px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
 
             });
 
@@ -1567,7 +1567,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
-            
+
             $("#interest").fadeOut("slow");
               $("#program_title").fadeOut("slow")
 /*
