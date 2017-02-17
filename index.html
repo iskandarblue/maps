@@ -1463,13 +1463,23 @@ setTimeout(function() {
   var features = map.queryRenderedFeatures({layers:['uni']});
 
 
-  console.log(features.properties.code.sort());
 
   if (features) {
       var uniqueFeatures = getUniqueFeatures(features, "code");
+
+            function compare(a,b) {
+        if (a.properties.code < b.properties.code)
+          return -1;
+        if (a.properties.code > b.properties.code)
+          return 1;
+        return 0;
+      }
+
+      sorted = uniqueFeatures.sort(compare);
+
       // Populate features for the listing overlay.
-      renderListings(uniqueFeatures);
-      programs = uniqueFeatures
+      renderListings(sorted);
+      programs = sorted
 
     };
 
@@ -1512,9 +1522,18 @@ setTimeout(function() {
 
           if (features) {
               var uniqueFeatures = getUniqueFeatures(features, "code");
+              function compare(a,b) {
+          if (a.properties.code < b.properties.code)
+            return -1;
+          if (a.properties.code > b.properties.code)
+            return 1;
+          return 0;
+        }
+
+        sorted = uniqueFeatures.sort(compare);
               // Populate features for the listing overlay.
-              renderListings(uniqueFeatures);
-              programs = uniqueFeatures
+              renderListings(sorted);
+              programs = sorted
             };
 
         }, delayMillis);
@@ -1554,12 +1573,21 @@ setTimeout(function() {
 
                 var features = map.queryRenderedFeatures({layers:['uni']});
 
-
                 if (features) {
                     var uniqueFeatures = getUniqueFeatures(features, "code");
+
+                    function compare(a,b) {
+                if (a.properties.code < b.properties.code)
+                  return -1;
+                if (a.properties.code > b.properties.code)
+                  return 1;
+                return 0;
+              }
+
+              sorted = uniqueFeatures.sort(compare);
                     // Populate features for the listing overlay.
-                    renderListings(uniqueFeatures);
-                    programs = uniqueFeatures
+                    renderListings(sorted);
+                    programs = sorted
 
                   };
 
@@ -1593,9 +1621,19 @@ setTimeout(function() {
 
   if (features) {
       var uniqueFeatures = getUniqueFeatures(features, "code");
+
+      function compare(a,b) {
+  if (a.properties.code < b.properties.code)
+    return -1;
+  if (a.properties.code > b.properties.code)
+    return 1;
+  return 0;
+}
+
+sorted = uniqueFeatures.sort(compare);
       // Populate features for the listing overlay.
-      renderListings(uniqueFeatures);
-      programs = uniqueFeatures;
+      renderListings(sorted);
+      programs = sorted;
     };
 
 }, delayMillis);
@@ -1608,15 +1646,25 @@ map.on('moveend', function() {
 
      if (features) {
          var uniqueFeatures = getUniqueFeatures(features, "code");
+
+         function compare(a,b) {
+     if (a.properties.code < b.properties.code)
+       return -1;
+     if (a.properties.code > b.properties.code)
+       return 1;
+     return 0;
+   }
+
+   sorted = uniqueFeatures.sort(compare);
          // Populate features for the listing overlay.
-         renderListings(uniqueFeatures);
+         renderListings(sorted);
 
          // Clear the input container
          filterEl.value = '';
 
          // Store the current features in sn `programs` variable to
          // later use for filtering on `keyup`.
-         programs = uniqueFeatures;
+         programs = sorted;
      }
  });
 
