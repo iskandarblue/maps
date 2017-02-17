@@ -1478,6 +1478,22 @@ for (var i = 0; i < inputs.length; i++) {
     inputs[i].onclick = switchLayer;
 }
 
+var delayMillis = 10;
+
+setTimeout(function() {
+
+  var features = map.queryRenderedFeatures({layers:['uni']});
+  console.log(features);
+
+  if (features) {
+      var uniqueFeatures = getUniqueFeatures(features, "code");
+      // Populate features for the listing overlay.
+      renderListings(uniqueFeatures);
+      programs = uniqueFeatures
+
+    };
+
+}, delayMillis);
 
     document.getElementById('city').addEventListener('click', function () {
           var city = document.getElementById('city');
@@ -1506,7 +1522,7 @@ for (var i = 0; i < inputs.length; i++) {
             map.setLayoutProperty('uni', 'visibility', 'visible');
         };
 
-        var delayMillis = 10;
+        var delayMillis = 250;
 
         setTimeout(function() {
 
@@ -1516,6 +1532,7 @@ for (var i = 0; i < inputs.length; i++) {
               var uniqueFeatures = getUniqueFeatures(features, "code");
               // Populate features for the listing overlay.
               renderListings(uniqueFeatures);
+              programs = uniqueFeatures
             };
 
         }, delayMillis);
@@ -1527,7 +1544,7 @@ for (var i = 0; i < inputs.length; i++) {
             var city = document.getElementById('city');
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
-              renderListings([])
+              listingEl.innerHTML = '';
 
             if (program.className === 'mode') {
               program.className = 'mode-selected'
@@ -1536,8 +1553,7 @@ for (var i = 0; i < inputs.length; i++) {
               map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('uni_code', 'visibility', 'none');
-              document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+        //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
             } else {
               program.className = 'mode'
@@ -1550,16 +1566,19 @@ for (var i = 0; i < inputs.length; i++) {
 
             };
 
-              var delayMillis = 1000;
+              var delayMillis = 250;
 
               setTimeout(function() {
 
-                var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+                var features = map.queryRenderedFeatures({layers:['uni']});
+                console.log(features);
 
                 if (features) {
                     var uniqueFeatures = getUniqueFeatures(features, "code");
                     // Populate features for the listing overlay.
                     renderListings(uniqueFeatures);
+                    programs = uniqueFeatures
+
                   };
 
               }, delayMillis);
