@@ -42,22 +42,102 @@
 </head>
 <style>
 
+
+    #program_title{
+      position: absolute;
+      z-index: 2;
+      background: rgba(12, 12, 12, 0.89);
+      border-style: solid;
+      border-color: #43cea2;
+      color: #fff;
+      font-weight: 600;
+      font-size: 18px;
+      display: none;
+      left: 50%;
+      width: auto;
+      top: 1%;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 10px;
+      -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+       -ms-transform: translateX(-50%);
+       -o-transform: translateX(-50%);
+       transform: translateX(-50%);
+    }
+
+    #go-back {
+      content:url('./back-button.svg');
+      color: #fff;
+      border-radius: 5px;
+      left: 1%;
+      height: 20px;
+      width: 20px;
+      opacity: 0.79;
+      float: left;
+      margin-right: 10px;
+      display:inline-block;
+    }
+
+    #go-back:hover {
+      opacity: 0.99;
+    }
+
+    .mapbox-improve-map {
+        display: none;
+    }
+
+    #interest {
+      position: absolute;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.88);
+      color: #fff;
+      width: 25%;
+      height: 100%;
+      display: none;
+      overflow-x: scroll;
+    }
+
+    #interest-close {
+      right: 0px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 10px;
+      float: right;
+      top: 0px;
+      width: 38px;
+      height: 38px;
+      border-radius: 19px;
+      background-image: url('./back-button.svg');
+      background-size: 38px 38px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      opacity: 0.7;
+      font-size: 13px;
+      display:inline-block;
+    }
+
+    #interest-close:hover {
+      opacity: 0.9;
+    }
+
     #about {
       position: absolute;
       z-index: 20202020;
-      background: rgba(0, 0, 0, 0.88);
+      background: rgba(0, 0, 0, 0.93);
       width: 100%;
       height: 100%;
       display: none;
     }
 
     #about-header {
-      font-weight: 600; font-size: 24px;
+      font-weight: 600; font-size: 26px;
       margin-bottom: 10px;
     }
 
     #about-content {
       margin: 100px 200px;
+      font-size: 18px
     }
 
     #about-text{
@@ -90,8 +170,6 @@
      margin: 25px 0;
     }
 
-
-
     #about-map-button {
       display: inline-block;
       font-weight: 600;
@@ -111,8 +189,29 @@
       color: rgba(250, 250, 250, 0.88);
     }
 
-  #about-link{
-    content:url('./info.svg');
+    #about-link{
+      content:url('./info.svg');
+      position: absolute;
+      background-color: rgba(24, 24, 24, 0.0);
+      z-index: 10;
+      border-radius: 5px;
+      bottom: 1%;
+      left: 1%;
+      height: 35px;
+      width: 35px;
+      opacity: 0.7;
+      display: none
+    }
+
+    #about-link:hover{
+      cursor: pointer;
+      opacity: 0.9;
+  }
+
+  #about-linked{
+    background-image:url('./info.svg');
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
     position: absolute;
     background-color: rgba(24, 24, 24, 0.0);
     z-index: 10;
@@ -122,30 +221,12 @@
     height: 35px;
     width: 35px;
     opacity: 0.7;
-    display: none
   }
 
-  #about-link:hover{
+  #about-linked:hover{
     cursor: pointer;
-}
-
-#about-linked{
-  content:url('./info.svg');
-  position: absolute;
-  background-color: rgba(24, 24, 24, 0.0);
-  z-index: 10;
-  border-radius: 5px;
-  bottom: 1%;
-  left: 1%;
-  height: 35px;
-  width: 35px;
-  opacity: 0.7;
-}
-
-#about-linked:hover{
-  cursor: pointer;
-}
-
+    opacity: 0.9;
+  }
 
   #banner{
     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
@@ -173,16 +254,18 @@
 }
 
     #changeLayer{
-      content:url(https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5049-512.png);
-    	position: relative;
+      background-image:url(https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5049-512.png);
+      background-size: 35px 35px;
+      background-repeat: no-repeat;
+      position: absolute;
       background-color: rgba(24, 24, 24, 0.0);
       z-index: 3;
       border-radius: 5px;
-    	top: 1%;
+    	top: 10%;
       left: 26%;
     	height: 35px;
       width: 35px;
-    	opacity: 0.8;
+    	opacity: 0.7;
     }
     .wrap {
       position: relative;
@@ -205,7 +288,6 @@
     max-height: 200px;
     height: auto;
     background: '#ff4b1f';
-
   }
   .mapboxgl-popup {
     position: absolute;
@@ -258,7 +340,7 @@
   height: 38px;
   line-height: 28px;
   color: #fff;
-  width: 125px;
+  width: 100px;
   border-radius: 25px;
   z-index: 1;
   cursor: pointer;
@@ -274,7 +356,7 @@
 }
 
 .mode-selected {
-  background: #43cea2 ;
+  background: #43cea2;
 }
 
 .mode:hover, .mode:active,
@@ -282,14 +364,15 @@
     color: #fff;
 }
 
-
 .map-overlay {
     position: absolute;
+
     width: 25%;
     top: 0;
     bottom: 0;
     left: 0;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
     background-color: rgba(12, 12, 12, 0.7);
     max-height: 100%;
     overflow: hidden;
@@ -342,39 +425,26 @@
 
 .map-overlay .listing a:hover {
     background: rgba(146, 254, 157, 0.1);
+    cursor: pointer;
 }
 
 .mapboxgl-popup {
 
 max-width: 300px;
-max-height: 250px;
+max-height: 300px;
 font: 12px/20px 'Open Sans', sans-serif;
 border-radius: 5px;
-color: #bce;
+overflow: auto;
 
 }
-
 
 .mapboxgl-popup-content {
     overflow: auto;
     color: #fff;
-    background: rgba(12, 12, 12, 0.1);
+    background: rgba(12, 12, 12, 0.8);
     border-radius: 5px;
 
 }
-
-.coded-cities-popup{
-  overflow: auto;
-  color: #bda;
-  background: rgba(12, 12, 229, 0.2);
-  max-width: 200px;
-  max-height: 25px;
-  font: 12px/20px 'Open Sans', sans-serif;
-  border-radius: 5px;
-  border-color: #F00000;
-
-}
-
 
 .link
 {
@@ -395,22 +465,21 @@ color: #bce;
   display: none;
 }
 
-/*
-#header {
-  position: absolute;
-  z-index: 3;
-  right: 0px;
-  top: 0px;
-  width: 75%;
-  line-height: 50px;
-  height: 50px;
-  background: #fff;
-}
-*/
-
-
 
 @media screen and (max-width: 480px) {
+
+  #interest {
+    position: fixed;
+    bottom:0;
+    z-index: 99;
+    font-size: calc(7px + .5vw);
+    background: rgba(0, 0, 0, 0.98);
+    width: 100%;
+    height: 50vh;
+    display: none;
+    overflow: auto;
+  }
+
 
     .desktop {
         display: none;
@@ -449,7 +518,7 @@ color: #bce;
           height: 38px;
           line-height: 28px;
           color: #eee;
-          border-radius: 2px;
+          border-radius: 10px;
           z-index: 3;
           cursor: pointer;
           margin-top: 0px;
@@ -514,7 +583,7 @@ color: #bce;
         border: none;
         padding: 10px;
         margin: 0;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .map-overlay input {
@@ -558,7 +627,7 @@ color: #bce;
 
 
     #about-link {
-    background: url(img/info.svg) center center no-repeat;
+    background: url('info.svg') center center no-repeat;
     width: 24px;
     /* margin: 0px 10px; */
     height: 27px;
@@ -664,11 +733,12 @@ color: #bce;
       }
 }
 
-
 </style>
 <body>
 
-
+<div id='interest'>
+<div id = 'interest-close'></div>
+</div>
 
 <div class = 'about' id='about'>
 
@@ -677,7 +747,7 @@ color: #bce;
     <div id='about-text'>
     <div id = 'about-header'>EMA web map</div>
       <p>The Erasmus Mundus Association is a professional network for Erasmus Mundus students and graduates. This webmap serves as a search tool for graduate programs by location and links prospective students to program webpages.</p>
-      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program acronym, displaying red markers for all the program locations. The second displays programs and links to individual webpages by city.  For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
+      <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program name and displays markers for all locations of an individual program. The second displays programs and links to individual webpages by city.  Discontinued programs are marked <b>D/C</b>. For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
       <p>We hope that this program exploration tool will serve as a resource for students, faculty, and EMA staff.</p>
       <p>Read more details at <a href='http://www.em-a.eu/'>the EMA website</a></p>
       <div id = 'about-map'><div id = 'about-map-button'>Back to the map</div></div>
@@ -692,17 +762,21 @@ color: #bce;
 <div class="wrap">
 <div id='changeLayer'></div>
 <div id='menu'>
-  <input id='light' type='radio' name='rtoggle' value='light', checked='checked'>
+  <input id='light' type='radio' name='rtoggle' value='light'>
   <label for='light'>light</label>
   <input id='dark' type='radio' name='rtoggle' value='dark'>
   <label for='dark'>dark</label>
-  <input id='bright' type='radio' name='rtoggle' value='bright'>
+  <input id='bright' type='radio' name='rtoggle' value='bright', checked='checked'>
   <label for='bright'>streets</label>
 
 </div>
 </div>
 
   <div id='map'>
+    <div id='program_title'>
+        <span id="myspan">TITLE</span>
+    </div>
+
     <div id ='about-linked'></div>
   </div>
 
@@ -718,26 +792,25 @@ color: #bce;
 </div>
 </div>
     <fieldset>
-        <input id='feature-filter' type='text' placeholder='Filter results by program name' />
+        <input id='feature-filter' type='text' placeholder='Filter reults or click program' />
     </fieldset>
     <div id='feature-listing' class='listing'></div>
 </div>
 
-
-
 <script>
-
+/*
 $(window).load(function() {
 		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+		$(".se-pre-con").fadeOut("fast");;
+	}); */
 
-
+// close about page
 $("#about-link").on('click', function() {
   var display =  $("#about").css("display");
       if(display="none")
       {
           $("#about").attr("style", "display:block");
+          $("#program_title").attr("style", "display:none");
       }
 
 });
@@ -757,14 +830,14 @@ $("#about-close").on('click', function() {
 
 });
 
+
 $("#about-map-button").on('click', function() {
 
           $("#about").attr("style", "display:none");
 
 });
 
-
-// splash page
+// splash page fade in/out
 
 $.fn.center = function () {
   this.css("position","absolute");
@@ -783,14 +856,12 @@ $("#banner").show();
 
 setTimeout(function(){
   $("#banner").fadeOut();
-}, 3000);
-
-
+}, 1500);
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/iskandarblue/cixri3vlr000g2rn2z9fwknj6',
+    style: 'mapbox://styles/iskandarblue/ciy0v11q8004c2sp6qutlk0qp',
     center: [15.2551, 50.5260],
     zoom: 3.0,
     maxZoom: 9,
@@ -807,6 +878,13 @@ var popup = new mapboxgl.Popup({
     anchor: 'top-left'
 });
 
+var popupB = new mapboxgl.Popup({
+        closeButton: false,
+        closeOnClick: true,
+        anchor: 'bottom-left',
+        offset: [0, -1]
+    })
+
 var filterEl = document.getElementById('feature-filter');
 var listingEl = document.getElementById('feature-listing');
 
@@ -815,7 +893,8 @@ function renderListings(features) {
     // Clear any existing listings
     listingEl.innerHTML = '';
     var city = document.getElementById('city');
-    if (features.length && city.className === 'mode' ) {
+    var program = document.getElementById('program');
+    if (features.length && program.className === 'mode-selected' ) {
         features.forEach(function(feature) {
             var prop = feature.properties;
             var xmin = feature.properties.xmin;
@@ -823,71 +902,135 @@ function renderListings(features) {
             var xmax = feature.properties.xmax;
             var ymax = feature.properties.ymax;
             var item = document.createElement('a');
+            var status = feature.properties.status.trim()
+            function hideNulls(str) {
+              if (str === "null" || str === "") {
+                return ""
+            } else {
+                return str
+            }
+          }
+
+          function colored(str){
+              if (str === "NEW"){
+
+                return "#43cea2"
+
+              } else {
+                return "#fa8072"
+              }
+            }
             item.target = '_blank';
-            item.textContent = prop.code;
+            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
 
-
-
-            item.addEventListener('mouseover', function() {
-
-
-    console.log(prop.code);
-
-                    });
-
-
-
+//Program mode - on click zoom to extent with fitBounds
             item.addEventListener('click', function(){
 
-              map.fitBounds([[
-                              xmin,
-                              ymin
-                          ], [
-                              xmax,
-                              ymax
-                          ]]);
+        /*        setTimeout(function() {
 
-                    var codeFilter =  item.textContent;
-              console.log(codeFilter);
+              var selected = document.createElement('p');
+              selected.innerHTML = prop.code + ": " + prop.title;
+              selected.style.marginTop = 25 + "%";
+              selected.style.backgroundColor = "rgba(12, 12, 12, 0.0)";
+              selected.style.textAlign = "center";
+              selected.style.fontSize = 16 + "px";
+              selected.style.fontWeight = 500;
+              selected.id = "selected";
+              selected.style.color = "rgba(240, 240, 240, 0.8)";
+              listingEl.appendChild(selected)
 
-             map.setFilter("uni_select", ["==", "code", codeFilter]);
+          }, 2000); */
 
-              map.setLayoutProperty('uni_select', 'visibility', 'visible');
+              map.fitBounds([[xmin,ymin], [xmax, ymax]]);
+              var codeFilter =  prop.code
+//filter uni_select red markers by program acronym
+             map.setFilter("uni_icon", ["==", "code", codeFilter]);
+//make uni_select visible
+              map.setLayoutProperty('uni_icon', 'visibility', 'visible');
+//hide uni layer
+              map.setLayoutProperty('uni', 'visibility', 'none');
+//fill title block with program acronym
 
+              interest = document.getElementById("interest")
+              document.getElementById("myspan").textContent= prop.code;
+              document.getElementById("program_title").style.display = "inline-block";
+
+              $("#interest").fadeIn("slow")
+
+              $("#interest").children().not('#interest-close').remove();
+              $("#interest-close").appendTo("#interest");
+              $('<div style ="font-size:25px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              '<div style ="font-size:25px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
 
             });
+
             item.addEventListener('mouseover', function() {
+
+              var codeFilter =  prop.code
+              map.setFilter("uni_select", ["==", "code", codeFilter]);
+
+ //make uni_select visible
+               map.setLayoutProperty('uni_select', 'visibility', 'visible');
                 // Highlight corresponding feature on the map
           /*      popup.setLngLat(feature.geometry.coordinates)
                     .setHTML('<div>' + feature.properties.title + '</div>')
                     .addTo(map);    */
-                    console.log(feature.properties);
+
+                    setTimeout(function() {
+
+                      function fadeOut(id, speed) {
+                          var s = item.style;
+                          s.opacity = 1;
+                          (function fade() {(s.opacity-=.1)<.1?s.display="none":setTimeout(fade,speed)})();
+                      }
+
+                            item.style.color = 'rgba(250, 250, 250, 0.8)';
+                            item.textContent = prop.title;
+                            item.style.fontWeight = 600;
+                            item.style.borderRadius = 5 + 'px';
+                          }, 10);
 
             });
+
+          item.addEventListener('mouseout', function() {
+
+              var codeFilter =  prop.code ;
+              map.setFilter("uni_select", ["==", "code", codeFilter]);
+ //make uni_select visible
+               map.setLayoutProperty('uni_select', 'visibility', 'none');
+            setTimeout(function() {
+               item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
+               item.style.fontWeight = 400;
+               item.style.color = 'rgba(255, 255, 255, 0.9)';
+               item.style.borderRadius = 0 + 'px';
+
+             }, 50);
+
+           });
+
+
             listingEl.appendChild(item);
-            console.log(item);
+            var itemList = document.getElementById("feature-listing");
+            console.log(itemList);
         });
 
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
     } else if (features.length && city.className === 'mode-selected' ) {
+
+
         features.forEach(function(feature) {
             var prop = feature.properties;
             var lat = feature.properties.lat;
             var lon = feature.properties.lon;
+            var count = feature.properties.Freq;
             var item = document.createElement('a');
             item.target = '_blank';
-            item.textContent = prop.code;
+            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; color: #43cea2;"><b>' + count + '</b></div>';
+
+//City mode - on click zoom fly to city
+
             item.addEventListener('click', function(){
-
-/*
-            popup.setLngLat(feature.geometry.coordinates)
-            .setHTML(htmlFromProps(feature.properties))
-            .addTo(map);   */
-
-              console.log(lon);
-              console.log(lat);
-
               map.flyTo({
 
                 center: [lon, lat],
@@ -897,65 +1040,92 @@ function renderListings(features) {
 
             });
 
+//City mode - display links and add popup on hover
+
             item.addEventListener('mouseover', function() {
+//Get all links from properties and put them in the popup
 
 
-              function htmlFromProps(props) {
-                var city = "";
-                var courses = [];
-                var websites = [];
-                for (p in props) {
-                  if (props[p] && props[p] != "null" && props[p] != "NA") {
-                    if (isCourse(p)) {
-                      courses[getIndex(p)] = props[p];
-                    } else if (isWebsite(p)) {
-                      websites[getIndex(p)] = props[p];
-                    } else {
-                      city = props[p];
-                    }
+  function htmlFromProps(props) {
+    var city = "";
+    var courses = [];
+    var websites = [];
+    var status = [];
+    for (p in props) {
+      if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
+        if (isCourse(p)) {
+          courses[getIndex(p)] = props[p];
+        } else if (isWebsite(p)) {
+          websites[getIndex(p)] = props[p];
+        } else if (isStatus(p)){
+          status[getIndex(p)] = props[p];
+        } else {
+          city = props[p];
+        }
+      }
+    }
+    return buildHTML(city, courses, websites, status);
+  }
+
+  function isCourse(propname) {
+    return (propname.indexOf("course") != -1);
+  }
+
+  function isWebsite(propname) {
+    return (propname.indexOf("website") != -1);
+  }
+
+  function isStatus(propname) {
+    return (propname.indexOf("status") != -1);
+  }
+
+
+  function getIndex(propname) {
+    var indexRegEx = new RegExp("^.*?(\\d+)$");
+    var matches = indexRegEx.exec(propname);
+    if ((matches != null) && (matches.length == 2)) {
+      return parseInt(matches[1]);
+    } else {
+      return 0;
+    }
+  }
+
+                function hideUndf(str) {
+                  if (str == undefined) {
+                    return ""
+                } else if (str == "DISCONTINUED"){
+                    return "D/C"
+                } else {
+                   return str
+                }
+              }
+
+              function colored(str){
+                  if (str === "NEW"){
+
+                    return "#3399ff"
+
+                  } else {
+                    return "#fa8072"
                   }
                 }
-                return buildHTML(city, courses, websites);
-              }
 
-              function isCourse(propname) {
-                return (propname.indexOf("course") != -1);
-              }
+                function buildHTML(city, courses, websites, status) {
+                  var html = "";
+                  html += "<div><strong>";
+                  html += feature.properties.city;
+                  html += "</strong></div>\n";
 
-              function isWebsite(propname) {
-                return (propname.indexOf("website") != -1);
-              }
-
-              function getIndex(propname) {
-                var indexRegEx = new RegExp("^.*(\\d+)$");
-                var matches = indexRegEx.exec(propname);
-                if ((matches != null) && (matches.length == 2)) {
-                  return parseInt(matches[1]);
-                } else {
-                  return 0;
+                  for (i = 1; i < courses.length; i++) {
+                    if (courses[i]) {
+                    html += "<div class='link'>";
+                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
+                    html += "</div>\n";
+                  }
                 }
-              }
+              return html;
+            }
 
-              function buildHTML(city, courses, websites) {
-                var html = "";
-                html += "<div><strong>";
-                html += city;
-                html += "</strong></div>\n";
-
-                for (i = 1; i < courses.length; i++) {
-                  html += "<div class='link'>";
-                  html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>";
-                  html += "</div>\n";
-                }
-                return html;
-              }
-
-              /*
-                delete feature.properties["field_1"];
-                  delete feature.properties["lon"];
-                    delete feature.properties["lat"];
-                      delete feature.properties["code"];
-                      delete feature.properties["title"]; */
 
                 // Populate the popup and set its coordinates
                 // based on the feature found.
@@ -963,21 +1133,42 @@ function renderListings(features) {
                     .setHTML(htmlFromProps(prop))
                     .addTo(map);
 
-
             });
             listingEl.appendChild(item);
-            console.log(item);
         });
 
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
 
+    } else {
 
-    } else  {
         var empty = document.createElement('p');
-        empty.textContent = 'Drag the map to populate results';
-        empty.style.color = "#FFFFF0";
+        var bb = document.getElementById("program_title")
+
+        var city = document.getElementById('city');
+        var program = document.getElementById('program');
+        var country = document.getElementById('country');
+
+//        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select', 'uni_icon'] });
+//        var cityFeatures = map.queryRenderedFeatures({ layers: ['city'] });
+
+//        if(bb.style.display != "none" && redFeatures.length > 0) {
+
+//          var variable1 = '<p><div>' + 'click ' + '<img src= "./back-button.svg" height="15" width="15">' + ' to see all programs' + '</div></p>';
+
+//            } else if(program.className === 'mode-selected'){
+
+          var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+
+
+        empty.innerHTML = variable1
+        empty.style.color = "rgba(245, 245, 245, 0.9)";
+        empty.style.textAlign = "center";
+        empty.id="appended-p";
+        empty.textAlign = "center";
+        empty.style.fontSize = 125 + "%";
         listingEl.appendChild(empty);
+
 
         // Hide the filter input
         filterEl.parentNode.style.display = 'none';
@@ -985,7 +1176,30 @@ function renderListings(features) {
         // remove features filter
         map.setFilter('uni', ['has', 'code']);
         map.setFilter('city', ['has', 'code']);
-    }
+
+        /*
+
+      } else if (city.className === 'mode-selected') {
+
+                var empty = document.createElement('p');
+
+                empty.innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+                empty.style.color = "rgba(245, 245, 245, 0.9)";
+                empty.style.fontSize = 125 + "%";
+                empty.style.textAlign = "center";
+                listingEl.appendChild(empty);
+
+                // Hide the filter input
+                filterEl.parentNode.style.display = 'none';
+
+                // remove features filter
+                map.setFilter('uni', ['has', 'code']);
+                map.setFilter('city', ['has', 'code']);
+
+    } */
+
+  }
+
 }
 
 function normalize(string) {
@@ -1010,9 +1224,44 @@ function getUniqueFeatures(array, comparatorProperty) {
 }
 
 function addDataLayer(){
+
+  var zoomThreshold = 4;
+
+  map.addSource("states", {
+      "type": "geojson",
+      "data": './countryNEW.geojson'
+  });
+
+  map.addLayer({
+      "id": "state-fills",
+      "type": "fill",
+      "source": "states",
+      "layout": {
+        "visibility": "visible",
+      },
+      "paint": {
+          "fill-color": "#627BC1",
+          "fill-opacity": 0.0
+      }
+  });
+
+
+  map.addLayer({
+      "id": "state-border-hover",
+      "type": "line",
+      "source": "states",
+      "layout": {},
+      "paint": {
+          "line-color": "#627BC1",
+          "line-opacity": 0.5,
+          "line-width": 3
+      },
+      "filter": ["==", "admin", ""]
+  });
+
   map.addSource('city', {
       "type": 'geojson',
-      "data": './final_cities.geojson'
+      "data": 'newCities.geojson'
   });
   map.addLayer({
       "id": "city",
@@ -1027,22 +1276,18 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": './master_extents.geojson'
+        "data": 'updateProgram.geojson'
     });
     map.addLayer({
         "id": "uni",
         "type": "symbol",
         "source": "uni",
-        "paint" :{
-          "icon-opacity": 1.0
-        },
         "layout":{
           "visibility": "visible",
           "icon-image": "marker-11",
           "icon-offset": [0, -7.5],
-          "icon-allow-overlap": true
-        },
-      "filter": ["==", "code", ""]
+          "icon-allow-overlap": true,
+        }
     });
 
     map.addLayer({
@@ -1058,31 +1303,103 @@ function addDataLayer(){
         "filter": ["==", "code", ""]
     });
 
-  }
+    map.addLayer({
+        "id": "uni_icon",
+        "type": "symbol",
+        "source": "uni",
+        "layout":{
+          "visibility": "none",
+          "icon-image": "marker-15redwhite",
+          "icon-offset": [0, -7.5],
+          "icon-allow-overlap": true,
+        },
+        "filter": ["==", "code", ""]
+    });
 
+    map.addLayer({
+        "id": "uni_circle",
+        "type": "circle",
+        "source": "city",
+        "layout":{
+          "visibility": "none",
+        },
+        "paint": {
+          "circle-radius": {
+            stops: [
+
+        [3, 4],
+        [4, 5],
+        [5, 6],
+        [10, 13],
+        [15, 10],
+        [20, 30]
+    ]
+  },
+          "circle-color": "#feb47b",
+          "circle-opacity": 0.85
+      }
+    });
+
+
+
+  map.addLayer({
+    "id": "clusters-label",
+    "type": "symbol",
+    'minzoom': zoomThreshold,
+    "source": "city",
+    "layout": {
+      "visibility": "none",
+      "text-field": "{count}",
+      "text-font": [
+        "DIN Offc Pro Medium",
+        "Arial Unicode MS Bold"
+      ],
+      "text-size": 10
+    }
+  });
+
+
+}
 
 map.on('style.load', function (e) {
 
   addDataLayer();
+
 });
 
 map.on('load', function () {
 
+ map.on("mousemove", function(e) {
+      var features = map.queryRenderedFeatures(e.point, { layers: ["state-fills"] });
+      if (features.length) {
+          map.setFilter("state-border-hover", ["==", "admin", features[0].properties.admin]);
+      } else {
+          map.setFilter("state-border-hover", ["==", "admin", ""]);
+      }
+  });
 
-var delayMillis = 1000;
+  // Reset the state-fills-hover layer's filter when the mouse leaves the map
+  map.on("mouseout", function() {
+      map.setFilter("state-border-hover", ["==", "admin", ""]);
+  });
 
-  setTimeout(function() {
+  map.on("click", function(e) {
+       var features = map.queryRenderedFeatures(e.point, { layers: ["state-fills"] });
 
-    var features = map.queryRenderedFeatures({layers:['uni']});
+       var xmin = features[0].properties.xmin;
+       var ymin = features[0].properties.ymin;
+       var xmax = features[0].properties.xmax;
+       var ymax = features[0].properties.ymax;
 
-    if (features) {
-        var uniqueFeatures = getUniqueFeatures(features, "code");
-        // Populate features for the listing overlay.
-        renderListings(uniqueFeatures);
-      };
+       map.fitBounds([[
+                       xmin,
+                       ymin
+                   ], [
+                       xmax,
+                       ymax
+                   ]]);
 
-}, delayMillis);
-
+     });
 
 
 var layerList = document.getElementById('menu');
@@ -1139,75 +1456,154 @@ for (var i = 0; i < inputs.length; i++) {
     inputs[i].onclick = switchLayer;
 }
 
+var delayMillis = 10;
 
+setTimeout(function() {
+
+  var features = map.queryRenderedFeatures({layers:['uni']});
+
+
+  console.log(features.properties.code.sort());
+
+  if (features) {
+      var uniqueFeatures = getUniqueFeatures(features, "code");
+      // Populate features for the listing overlay.
+      renderListings(uniqueFeatures);
+      programs = uniqueFeatures
+
+    };
+
+}, delayMillis);
 
     document.getElementById('city').addEventListener('click', function () {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
-           renderListings([])
+           listingEl.innerHTML = '';
 
 
 
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
-            ff.placeholder = 'Filter results by city name'
+            ff.placeholder = 'Filter results or click city name'
             program.className = 'mode'
             map.setLayoutProperty('city', 'visibility', 'visible');
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
-
+            map.setLayoutProperty('uni_icon', 'visibility', 'none');
+            document.getElementById("program_title").style.display = "none";
 
 
           } else {
             city.className = 'mode'
             program.className = 'mode-selected'
-            ff.placeholder = 'Filter results by program name'
+            ff.placeholder = 'Filter or click program name'
             map.setLayoutProperty('city', 'visibility', 'none');
             map.setLayoutProperty('uni', 'visibility', 'visible');
-        }
+        };
+
+        var delayMillis = 250;
+
+        setTimeout(function() {
+
+          var features = map.queryRenderedFeatures({layers:['city']});
+
+          console.log(features);
+
+          if (features) {
+              var uniqueFeatures = getUniqueFeatures(features, "code");
+              // Populate features for the listing overlay.
+              renderListings(uniqueFeatures);
+              programs = uniqueFeatures
+            };
+
+        }, delayMillis);
+
+
       });
 
       document.getElementById('program').addEventListener('click', function () {
             var city = document.getElementById('city');
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
-             renderListings([])
-             var delayMillis = 1000;
+              listingEl.innerHTML = '';
 
-               setTimeout(function() {
-
-                 var features = map.queryRenderedFeatures({layers:['uni']});
-
-                 if (features) {
-                     var uniqueFeatures = getUniqueFeatures(features, "code");
-                     // Populate features for the listing overlay.
-                     renderListings(uniqueFeatures);
-                   };
-
-             }, delayMillis);
-
-            if (program.className ===  'mode-selected') {
-              program.className = 'mode'
-              city.className = 'mode-selected'
-              ff.placeholder = 'Filter results by city name'
-              map.setLayoutProperty('city', 'visibility', 'visible');
-              map.setLayoutProperty('uni', 'visibility', 'none');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-
-            } else {
+            if (program.className === 'mode') {
               program.className = 'mode-selected'
               city.className = 'mode'
               ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni', 'visibility', 'visible');
+              map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
+        //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
-          }
+            } else {
+              program.className = 'mode'
+              city.className = 'mode-selected'
+              ff.placeholder = 'Filter or click city name'
+              map.setLayoutProperty('city', 'visibility', 'visible');
+              map.setLayoutProperty('uni', 'visibility', 'none');
+              map.setLayoutProperty('uni_select', 'visibility', 'none');
+              map.setLayoutProperty('uni_code', 'visibility', 'none');
+
+            };
+
+              var delayMillis = 250;
+
+              setTimeout(function() {
+
+                var features = map.queryRenderedFeatures({layers:['uni']});
+
+
+                if (features) {
+                    var uniqueFeatures = getUniqueFeatures(features, "code");
+                    // Populate features for the listing overlay.
+                    renderListings(uniqueFeatures);
+                    programs = uniqueFeatures
+
+                  };
+
+              }, delayMillis);
+
+
+        });
+
+        document.getElementById('interest-close').addEventListener('click', function () {
+          listingEl.innerHTML = '';
+
+            map.setLayoutProperty('uni', 'visibility', 'visible');
+            map.setLayoutProperty('uni_select', 'visibility', 'none');
+            map.setLayoutProperty('uni_icon', 'visibility', 'none');
+
+            $("#interest").fadeOut("slow");
+              $("#program_title").fadeOut("slow")
+/*
+
+            var back = document.createElement('p');
+                back.innerHTML = '<p><div>' + '' + '</div></p>';
+                back.style.color = "#FFFFF0";
+                back.style.fontSize = 125 + "%";
+                listingEl.appendChild(back);   */
+
+                var delayMillis = 250; //1 second
+
+setTimeout(function() {
+
+  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+  if (features) {
+      var uniqueFeatures = getUniqueFeatures(features, "code");
+      // Populate features for the listing overlay.
+      renderListings(uniqueFeatures);
+      programs = uniqueFeatures;
+    };
+
+}, delayMillis);
+
+
         });
 
 map.on('moveend', function() {
-
      var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
      if (features) {
@@ -1226,8 +1622,9 @@ map.on('moveend', function() {
 
  filterEl.addEventListener('keyup', function(e) {
 
-   var programs = getUniqueFeatures(map.queryRenderedFeatures({layers:['uni']}), "code");
 
+
+/*    map.setLayoutProperty('uni_select', 'visibility', 'none');  */
 
      var value = normalize(e.target.value);
 
@@ -1275,7 +1672,7 @@ map.on('moveend', function() {
 
      var feature = features[0];
 
-     console.log(feature);
+
      // Populate the popup and set its coordinates
      // based on the feature found.
      popup.setLngLat(feature.geometry.coordinates)
@@ -1288,10 +1685,12 @@ map.on('moveend', function() {
   map.on('mousemove', function(e) {
 
       var program = document.getElementById('program');
+      var country = document.getElementById('country');
+      var city = document.getElementById('city');
 
   if (program.className === "mode-selected"){
       var features = map.queryRenderedFeatures(e.point, {
-          layers: ['uni_select', 'uni']
+          layers: ['uni_icon', 'uni_select', 'uni']
       });
 
       // Change the cursor style as a UI indicator.
@@ -1310,7 +1709,8 @@ map.on('moveend', function() {
           +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
           .addTo(map);
 
-} else if (program.className === "mode") {
+
+} else if (city.className === "mode-selected") {
 
   var features = map.queryRenderedFeatures(e.point, {
       layers: ['city']
@@ -1324,215 +1724,226 @@ map.on('moveend', function() {
       return;
   }
 
+
+
 //
 
 var feature = features[0];
 
-function htmlFromProps(props) {
-  var city = "";
-  var courses = [];
-  var websites = [];
-  for (p in props) {
-    if (props[p] && props[p] != "null" && props[p] != "NA") {
-      if (isCourse(p)) {
-        courses[getIndex(p)] = props[p];
-      } else if (isWebsite(p)) {
-        websites[getIndex(p)] = props[p];
-      } else {
-        city = props[p];
+
+
+
+  function htmlFromProps(props) {
+    var city = "";
+    var courses = [];
+    var websites = [];
+    var status = [];
+    for (p in props) {
+      if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
+        if (isCourse(p)) {
+          courses[getIndex(p)] = props[p];
+        } else if (isWebsite(p)) {
+          websites[getIndex(p)] = props[p];
+        } else if (isStatus(p)){
+          status[getIndex(p)] = props[p];
+        } else {
+          city = props[p];
+        }
       }
     }
+    return buildHTML(city, courses, websites, status);
   }
-  return buildHTML(city, courses, websites);
-}
 
-function isCourse(propname) {
-  return (propname.indexOf("course") != -1);
-}
-
-function isWebsite(propname) {
-  return (propname.indexOf("website") != -1);
-}
-
-function getIndex(propname) {
-  var indexRegEx = new RegExp("^.*(\\d+)$");
-  var matches = indexRegEx.exec(propname);
-  if ((matches != null) && (matches.length == 2)) {
-    return parseInt(matches[1]);
-  } else {
-    return 0;
+  function isCourse(propname) {
+    return (propname.indexOf("course") != -1);
   }
-}
 
-function buildHTML(city, courses, websites) {
-  var html = "";
-  html += "<div><strong>";
-  html += city;
-  html += "</strong></div>\n";
-
-  for (i = 1; i < courses.length; i++) {
-    html += "<div class='link'>";
-    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>";
-    html += "</div>\n";
+  function isWebsite(propname) {
+    return (propname.indexOf("website") != -1);
   }
-  return html;
-}
 
-/*
-  delete feature.properties["field_1"];
-    delete feature.properties["lon"];
-      delete feature.properties["lat"];
-        delete feature.properties["code"];
-        delete feature.properties["title"]; */
+  function isStatus(propname) {
+    return (propname.indexOf("status") != -1);
+  }
 
-  // Populate the popup and set its coordinates
-  // based on the feature found.
-  popup.setLngLat(feature.geometry.coordinates)
-      .setHTML(htmlFromProps(feature.properties))
-      .addTo(map);
 
-}
+  function getIndex(propname) {
+    var indexRegEx = new RegExp("^.*?(\\d+)$");
+    var matches = indexRegEx.exec(propname);
+    if ((matches != null) && (matches.length == 2)) {
+      return parseInt(matches[1]);
+    } else {
+      return 0;
+    }
+  }
+
+                function hideUndf(str) {
+                  if (str == undefined) {
+                    return ""
+                } else if (str == "DISCONTINUED"){
+                    return "D/C"
+                } else {
+                   return str
+                }
+              }
+
+              function colored(str){
+                  if (str === "NEW"){
+
+                    return "#3399ff"
+
+                  } else {
+                    return "#fa8072"
+                  }
+                }
+
+                function buildHTML(city, courses, websites, status) {
+                  var html = "";
+                  html += "<div><strong>";
+                  html += feature.properties.city;
+                  html += "</strong></div>\n";
+
+                  for (i = 1; i < courses.length; i++) {
+                    if (courses[i]) {
+                    html += "<div class='link'>";
+                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
+                    html += "</div>\n";
+                  }
+                }
+              return html;
+            }
+
+
+                  // Populate the popup and set its coordinates
+                  // based on the feature found.
+                  popup.setLngLat(feature.geometry.coordinates)
+                      .setHTML(htmlFromProps(feature.properties))
+                      .addTo(map);
+
+
+} else if (country.className === "mode-selected") {
+
+  var features = map.queryRenderedFeatures(e.point, {
+      layers: ['uni_circle']
+  });
+
+  if (!features.length) {
+      popupB.remove();
+      return;
+  }
+
+
+  var feature = features[0];
+
+  // Change the cursor style as a UI indicator.
+  map.getCanvas().style.cursor = features.length ? 'pointer' : '';
+
+  if (!features.length) {
+      popup.remove();
+      return;
+  }
+//
+
+              function htmlFromProps(props) {
+                var city = "";
+                var courses = [];
+                var websites = [];
+                var status = [];
+                var index = -1;
+
+                for (p in props) {
+                  if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
+                    if (isCourse(p)) {
+                      //courses[getIndex(p)] = props[p];
+                      courses[index] = props[p];
+                    } else if (isWebsite(p)) {
+                      websites[getIndex(p)] = props[p];
+                    } else if (isStatus(p)) {
+                      status[getIndex(p)] = props[p];
+                    } else {
+                      city = props[p];
+                    }
+                  }
+                  index = index+1;
+                }
+                return buildHTML(city, courses, websites, status);
+              }
+
+              function isCourse(propname) {
+                return (propname.indexOf("course") != -1);
+              }
+
+              function isWebsite(propname) {
+                return (propname.indexOf("website") != -1);
+              }
+
+              function isStatus(propname) {
+                return (propname.indexOf("status") != -1);
+              }
+
+              function getIndex(propname) {
+                var indexRegEx = new RegExp("^.*(\\d+)$");
+                var matches = indexRegEx.exec(propname);
+                if ((matches != null) && (matches.length == 2)) {
+                  return parseInt(matches[1]);
+                } else {
+                  return 0;
+                }
+              }
+
+              function hideUndf(str) {
+                if (str == undefined) {
+                  return ""
+              } else {
+                  return str
+              }
+            }
+
+            function colored(str){
+                if (str === "NEW"){
+
+                  return "#3399ff"
+
+                } else {
+                  return "#fa8072"
+                }
+              }
+
+              function buildHTML(city, courses, websites, status) {
+                var html = "";
+                html += "<div><strong>";
+                html += city;
+                html += "</strong></div>\n";
+
+                for (i = 0; i < courses.length; i++) {
+                  html += "<div class='link'>";
+                  html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
+                  html += "</div>\n";
+                }
+                return html;
+              }
+
+
+                // Populate the popup and set its coordinates
+                // based on the feature found.
+                popup.setLngLat(feature.geometry.coordinates)
+                    .setHTML(htmlFromProps(prop))
+                    .addTo(map);
+
+
+
+
+} else {console.log("wtf");}
+
 
   });
 
 });
-/*
-    map.on('mousemove', function(e) {
-        var features = map.queryRenderedFeatures(e.point, {
-            layers: ['city']
-        });
 
-        // Change the cursor style as a UI indicator.
-        map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-
-        if (!features.length) {
-            popup.remove();
-            return;
-        }
-
-        var feature = features[0];
-        // Populate the popup and set its coordinates
-        // based on the feature found.
-        popup.setLngLat(feature.geometry.coordinates)
-            .setHTML('<div><b>' + feature.properties.city + '</div></b>')
-            .addTo(map);
-    });
-
-
-*/
 
 map.addControl(new mapboxgl.NavigationControl());
 
-<!-- Yandex.Metrika counter -->
-//Clustering
 
-
-/*
-
-map.addLayer({
-    "id": "cluster-count",
-    "type": "symbol",
-    "source": "cluster",
-    "layout": {
-        "visibility": "visible",
-        "text-field": "{point_count}",
-        "text-font": [
-            "DIN Offc Pro Medium",
-            "Arial Unicode MS Bold"
-        ],
-        "text-size": 12
-    }
-});
-
-
-$(function(){
-    $(".dropdown-menu li a").click(function(){
-      $(".btn:first-child").text($(this).text());
-      $(".btn:first-child").val($(this).text());
-
-   });
-
-});
-
-$().ready(function(){
-    $('a').click(function(){
-        var value = $(this).text();
-        console.log(value);
-
- if (value !== "ALL"){
-        popup.remove();
-
-        map.setLayoutProperty('cluster-count','visibility', 'none');
-        map.setLayoutProperty('unclustered-points', 'visibility', 'none');
-        map.setLayoutProperty('cluster-0','visibility', 'none');
-        map.setLayoutProperty('cluster-1', 'visibility','none');
-        map.setLayoutProperty('cluster-2','visibility', 'none');
-        map.setLayoutProperty('uni', 'visibility', 'visible');
-        map.setFilter('uni', '==', 'code', value);
-
-      } else {
-        map.setLayoutProperty('cluster-count','visibility', 'none');
-        map.setLayoutProperty('unclustered-points', 'none');
-        map.setLayoutProperty('cluster-0','visibility', 'none');
-        map.setLayoutProperty('cluster-1', 'visibility','none');
-        map.setLayoutProperty('cluster-2','visibility', 'none');
-        map.setLayoutProperty('uni', 'visibility', 'visible');
-
-      }
-
-    // Add a layer for this symbol type if it hasn't been added already.
-    if (!map.getLayer(layerID)) {
-        map.addLayer({
-            "id": layerID,
-            "type": "circle", #1fddff
-            "source": "uni",#ff4b1f
-            "paint": {
-                "circle-color": "#F0F564",
-            },
-            "filter": ["==", "code", symbol]
-        });
-      }
-
-    });
-  });
-
-map.on('click', function (e) {
-    var cluster_features = map.queryRenderedFeatures(e.point, {
-        layers: ['uni']
-    });
-      var cluster_feature = cluster_features[0];
-      if (cluster_feature && cluster_feature.properties.cluster) {
-          map.jumpTo({
-              center: e.lngLat,
-              zoom: map.getZoom() + 1
-          });
-      }
-  });
-
-
-
-  map.on('mousemove', function(e) {
-      var features = map.queryRenderedFeatures(e.point, {
-        layers: ['uni'] });
-      // Change the cursor style as a UI indicator.
-      map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
-
-      console.log(features[0].properties)
-
-      console.log(features.length);
-
-     if (!features.length) {
-          popup.remove();
-      }
-
-      // Populate the popup and set its coordinates
-      // based on the feature found.
-      popup.setLngLat([features[0].properties.lon, features[0].properties.lat])
-          .setHTML(features[0].properties.title + '<div>' + '<a href="' + features[0].properties.website +'">website</a>' + '</div>')
-          .addTo(map);
-  });
-
-*/
   <!-- Yandex.Metrika counter -->
 
 </script>
