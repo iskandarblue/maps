@@ -1568,6 +1568,7 @@ for (var i = 0; i < inputs.length; i++) {
         });
 
         document.getElementById('interest-close').addEventListener('click', function () {
+          listingEl.innerHTML = '';
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
@@ -1593,6 +1594,7 @@ setTimeout(function() {
       var uniqueFeatures = getUniqueFeatures(features, "code");
       // Populate features for the listing overlay.
       renderListings(uniqueFeatures);
+      programs = uniqueFeatures;
     };
 
 }, delayMillis);
