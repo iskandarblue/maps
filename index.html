@@ -12,7 +12,7 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
 
 
-  <style>
+<style>
 
   body {
     color: #eee;
@@ -25,9 +25,7 @@
              user-select: none;
   }
 
-  .mobile { display: none; }
-
-
+.mobile { display: none; }
 
 .mapboxgl-ctrl-attrib a,.mapboxgl-ctrl-attrib { color: #ddd; }
    .mapboxgl-ctrl-attrib {
@@ -41,7 +39,6 @@
   </style>
 </head>
 <style>
-
 
     #program_title{
       position: absolute;
@@ -821,13 +818,11 @@ $("#about-linked").on('click', function() {
       {
           $("#about").attr("style", "display:block");
       }
-
 });
 
 $("#about-close").on('click', function() {
 
           $("#about").attr("style", "display:none");
-
 });
 
 
@@ -858,6 +853,8 @@ setTimeout(function(){
   $("#banner").fadeOut();
 }, 1500);
 
+// add map
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -867,6 +864,8 @@ var map = new mapboxgl.Map({
     maxZoom: 9,
     minZoom: 1,
 });
+
+// add empty programs array
 
 var programs = [];
 
@@ -878,12 +877,6 @@ var popup = new mapboxgl.Popup({
     anchor: 'top-left'
 });
 
-var popupB = new mapboxgl.Popup({
-        closeButton: false,
-        closeOnClick: true,
-        anchor: 'bottom-left',
-        offset: [0, -1]
-    })
 
 var filterEl = document.getElementById('feature-filter');
 var listingEl = document.getElementById('feature-listing');
@@ -903,6 +896,8 @@ function renderListings(features) {
             var ymax = feature.properties.ymax;
             var item = document.createElement('a');
             var status = feature.properties.status.trim()
+
+
             function hideNulls(str) {
               if (str === "null" || str === "") {
                 return ""
@@ -920,27 +915,16 @@ function renderListings(features) {
                 return "#fa8072"
               }
             }
+
+//Content of the listing
+
             item.target = '_blank';
             item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
 
 //Program mode - on click zoom to extent with fitBounds
             item.addEventListener('click', function(){
 
-        /*        setTimeout(function() {
-
-              var selected = document.createElement('p');
-              selected.innerHTML = prop.code + ": " + prop.title;
-              selected.style.marginTop = 25 + "%";
-              selected.style.backgroundColor = "rgba(12, 12, 12, 0.0)";
-              selected.style.textAlign = "center";
-              selected.style.fontSize = 16 + "px";
-              selected.style.fontWeight = 500;
-              selected.id = "selected";
-              selected.style.color = "rgba(240, 240, 240, 0.8)";
-              listingEl.appendChild(selected)
-
-          }, 2000); */
-
+//Zoom to extent
               map.fitBounds([[xmin,ymin], [xmax, ymax]]);
               var codeFilter =  prop.code
 //filter uni_select red markers by program acronym
@@ -969,12 +953,9 @@ function renderListings(features) {
               var codeFilter =  prop.code
               map.setFilter("uni_select", ["==", "code", codeFilter]);
 
- //make uni_select visible
+ //make selected programs visible
                map.setLayoutProperty('uni_select', 'visibility', 'visible');
-                // Highlight corresponding feature on the map
-          /*      popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML('<div>' + feature.properties.title + '</div>')
-                    .addTo(map);    */
+                // Highlight corresponding features on the map
 
                     setTimeout(function() {
 
@@ -996,7 +977,7 @@ function renderListings(features) {
 
               var codeFilter =  prop.code ;
               map.setFilter("uni_select", ["==", "code", codeFilter]);
- //make uni_select visible
+
                map.setLayoutProperty('uni_select', 'visibility', 'none');
             setTimeout(function() {
                item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
@@ -1008,7 +989,6 @@ function renderListings(features) {
 
            });
 
-
             listingEl.appendChild(item);
             var itemList = document.getElementById("feature-listing");
             console.log(itemList);
@@ -1017,7 +997,6 @@ function renderListings(features) {
         // Show the filter input
         filterEl.parentNode.style.display = 'block';
     } else if (features.length && city.className === 'mode-selected' ) {
-
 
         features.forEach(function(feature) {
             var prop = feature.properties;
@@ -1043,8 +1022,9 @@ function renderListings(features) {
 //City mode - display links and add popup on hover
 
             item.addEventListener('mouseover', function() {
-//Get all links from properties and put them in the popup
 
+
+//Get all links from properties and put them in the popup!
 
   function htmlFromProps(props) {
     var city = "";
@@ -1089,6 +1069,8 @@ function renderListings(features) {
       return 0;
     }
   }
+
+// Add NEW and DISCONTINUED
 
                 function hideUndf(str) {
                   if (str == undefined) {
@@ -1149,16 +1131,7 @@ function renderListings(features) {
         var program = document.getElementById('program');
         var country = document.getElementById('country');
 
-//        var redFeatures = map.queryRenderedFeatures({ layers: ['uni_select', 'uni_icon'] });
-//        var cityFeatures = map.queryRenderedFeatures({ layers: ['city'] });
-
-//        if(bb.style.display != "none" && redFeatures.length > 0) {
-
-//          var variable1 = '<p><div>' + 'click ' + '<img src= "./back-button.svg" height="15" width="15">' + ' to see all programs' + '</div></p>';
-
-//            } else if(program.className === 'mode-selected'){
-
-          var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+        var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
 
         empty.innerHTML = variable1
@@ -1244,7 +1217,6 @@ function addDataLayer(){
           "fill-opacity": 0.0
       }
   });
-
 
   map.addLayer({
       "id": "state-border-hover",
@@ -1339,8 +1311,6 @@ function addDataLayer(){
           "circle-opacity": 0.85
       }
     });
-
-
 
   map.addLayer({
     "id": "clusters-label",
