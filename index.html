@@ -462,7 +462,6 @@ overflow: auto;
   display: none;
 }
 
-
 @media screen and (max-width: 480px) {
 
   #interest {
@@ -622,7 +621,6 @@ overflow: auto;
         background: rgba(146, 254, 157, 0.1);
     }
 
-
     #about-link {
     background: url('info.svg') center center no-repeat;
     width: 24px;
@@ -641,9 +639,7 @@ overflow: auto;
       opacity: 1;
     }
 
-
     .mapboxgl-ctrl-attrib { display: none}
-
 
     #about {
       display: block;
@@ -668,7 +664,6 @@ overflow: auto;
       margin: 0;
       font-size: 13px;
     }
-
 
     #about-close {
       position: fixed;
@@ -704,7 +699,6 @@ overflow: auto;
       border-radius: 5px;
 
     }
-
     #about-map-button:hover {
       background: #0cf;
     }
@@ -1458,7 +1452,7 @@ setTimeout(function() {
 
         setTimeout(function() {
 
-          var features = map.queryRenderedFeatures({layers:['city']});
+          var features = map.queryRenderedFeatures({layers:['city', 'uni']});
 
           console.log(features);
 
@@ -1515,7 +1509,7 @@ setTimeout(function() {
 
               setTimeout(function() {
 
-                var features = map.queryRenderedFeatures({layers:['uni']});
+                var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
                 if (features) {
                     var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -1836,7 +1830,6 @@ map.addControl(new mapboxgl.NavigationControl());
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/42213174" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
 
 </body>
 </html>
