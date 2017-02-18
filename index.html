@@ -1149,30 +1149,7 @@ function renderListings(features) {
         // remove features filter
         map.setFilter('uni', ['has', 'code']);
         map.setFilter('city', ['has', 'code']);
-
-        /*
-
-      } else if (city.className === 'mode-selected') {
-
-                var empty = document.createElement('p');
-
-                empty.innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
-                empty.style.color = "rgba(245, 245, 245, 0.9)";
-                empty.style.fontSize = 125 + "%";
-                empty.style.textAlign = "center";
-                listingEl.appendChild(empty);
-
-                // Hide the filter input
-                filterEl.parentNode.style.display = 'none';
-
-                // remove features filter
-                map.setFilter('uni', ['has', 'code']);
-                map.setFilter('city', ['has', 'code']);
-
-    } */
-
   }
-
 }
 
 function normalize(string) {
@@ -1331,12 +1308,14 @@ function addDataLayer(){
 
 }
 
+// Resets to Program Mode when style is changed
 map.on('style.load', function (e) {
-
   addDataLayer();
 
 });
 
+
+//Create hover effect with countries
 map.on('load', function () {
 
  map.on("mousemove", function(e) {
@@ -1348,11 +1327,12 @@ map.on('load', function () {
       }
   });
 
-  // Reset the state-fills-hover layer's filter when the mouse leaves the map
+// Reset the state-fills-hover layer's filter when the mouse leaves the map
   map.on("mouseout", function() {
       map.setFilter("state-border-hover", ["==", "admin", ""]);
   });
 
+//Zoom to country extent
   map.on("click", function(e) {
        var features = map.queryRenderedFeatures(e.point, { layers: ["state-fills"] });
 
@@ -1361,14 +1341,7 @@ map.on('load', function () {
        var xmax = features[0].properties.xmax;
        var ymax = features[0].properties.ymax;
 
-       map.fitBounds([[
-                       xmin,
-                       ymin
-                   ], [
-                       xmax,
-                       ymax
-                   ]]);
-
+       map.fitBounds([[ xmin, ymin], [xmax, ymax]]);
      });
 
 
@@ -1432,11 +1405,10 @@ setTimeout(function() {
 
   var features = map.queryRenderedFeatures({layers:['uni']});
 
-
-
   if (features) {
       var uniqueFeatures = getUniqueFeatures(features, "code");
 
+// rearranges features in Alphabetical order
             function compare(a,b) {
         if (a.properties.code < b.properties.code)
           return -1;
@@ -1519,7 +1491,6 @@ setTimeout(function() {
               filterEl.value = '';
               listingEl.innerHTML = '';
 
-
             if (program.className === 'mode') {
               program.className = 'mode-selected'
               city.className = 'mode'
@@ -1566,8 +1537,9 @@ setTimeout(function() {
 
               }, delayMillis);
 
-
         });
+
+//closes left panel
 
         document.getElementById('interest-close').addEventListener('click', function () {
           listingEl.innerHTML = '';
@@ -1578,22 +1550,16 @@ setTimeout(function() {
 
             $("#interest").fadeOut("slow");
               $("#program_title").fadeOut("slow")
-/*
 
-            var back = document.createElement('p');
-                back.innerHTML = '<p><div>' + '' + '</div></p>';
-                back.style.color = "#FFFFF0";
-                back.style.fontSize = 125 + "%";
-                listingEl.appendChild(back);   */
-
-                var delayMillis = 250; //1 second
+var delayMillis = 250; // .25 seconds
 
 setTimeout(function() {
 
   var features = map.queryRenderedFeatures({layers:['uni', 'city']});
-
   if (features) {
       var uniqueFeatures = getUniqueFeatures(features, "code");
+
+    //arranges features in alphabetical order
 
       function compare(a,b) {
   if (a.properties.code < b.properties.code)
@@ -1610,7 +1576,6 @@ sorted = uniqueFeatures.sort(compare);
     };
 
 }, delayMillis);
-
 
         });
 
@@ -1642,10 +1607,6 @@ map.on('moveend', function() {
  });
 
  filterEl.addEventListener('keyup', function(e) {
-
-
-
-/*    map.setLayoutProperty('uni_select', 'visibility', 'none');  */
 
      var value = normalize(e.target.value);
 
@@ -1692,7 +1653,6 @@ map.on('moveend', function() {
      }
 
      var feature = features[0];
-
 
      // Populate the popup and set its coordinates
      // based on the feature found.
@@ -1745,14 +1705,9 @@ map.on('moveend', function() {
       return;
   }
 
-
-
 //
 
 var feature = features[0];
-
-
-
 
   function htmlFromProps(props) {
     var city = "";
@@ -1786,7 +1741,6 @@ var feature = features[0];
   function isStatus(propname) {
     return (propname.indexOf("status") != -1);
   }
-
 
   function getIndex(propname) {
     var indexRegEx = new RegExp("^.*?(\\d+)$");
@@ -1842,125 +1796,11 @@ var feature = features[0];
                       .addTo(map);
 
 
-} else if (country.className === "mode-selected") {
-
-  var features = map.queryRenderedFeatures(e.point, {
-      layers: ['uni_circle']
-  });
-
-  if (!features.length) {
-      popupB.remove();
-      return;
-  }
-
-
-  var feature = features[0];
-
-  // Change the cursor style as a UI indicator.
-  map.getCanvas().style.cursor = features.length ? 'pointer' : '';
-
-  if (!features.length) {
-      popup.remove();
-      return;
-  }
-//
-
-              function htmlFromProps(props) {
-                var city = "";
-                var courses = [];
-                var websites = [];
-                var status = [];
-                var index = -1;
-
-                for (p in props) {
-                  if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
-                    if (isCourse(p)) {
-                      //courses[getIndex(p)] = props[p];
-                      courses[index] = props[p];
-                    } else if (isWebsite(p)) {
-                      websites[getIndex(p)] = props[p];
-                    } else if (isStatus(p)) {
-                      status[getIndex(p)] = props[p];
-                    } else {
-                      city = props[p];
-                    }
-                  }
-                  index = index+1;
-                }
-                return buildHTML(city, courses, websites, status);
-              }
-
-              function isCourse(propname) {
-                return (propname.indexOf("course") != -1);
-              }
-
-              function isWebsite(propname) {
-                return (propname.indexOf("website") != -1);
-              }
-
-              function isStatus(propname) {
-                return (propname.indexOf("status") != -1);
-              }
-
-              function getIndex(propname) {
-                var indexRegEx = new RegExp("^.*(\\d+)$");
-                var matches = indexRegEx.exec(propname);
-                if ((matches != null) && (matches.length == 2)) {
-                  return parseInt(matches[1]);
-                } else {
-                  return 0;
-                }
-              }
-
-              function hideUndf(str) {
-                if (str == undefined) {
-                  return ""
-              } else {
-                  return str
-              }
-            }
-
-            function colored(str){
-                if (str === "NEW"){
-
-                  return "#3399ff"
-
-                } else {
-                  return "#fa8072"
-                }
-              }
-
-              function buildHTML(city, courses, websites, status) {
-                var html = "";
-                html += "<div><strong>";
-                html += city;
-                html += "</strong></div>\n";
-
-                for (i = 0; i < courses.length; i++) {
-                  html += "<div class='link'>";
-                  html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
-                  html += "</div>\n";
-                }
-                return html;
-              }
-
-
-                // Populate the popup and set its coordinates
-                // based on the feature found.
-                popup.setLngLat(feature.geometry.coordinates)
-                    .setHTML(htmlFromProps(prop))
-                    .addTo(map);
-
-
-
-
 } else {console.log("wtf");}
-
 
   });
 
 });
-
 
 map.addControl(new mapboxgl.NavigationControl());
 
