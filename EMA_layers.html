@@ -4,7 +4,7 @@
     <meta charset='utf-8' />
     <title>EMA Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -465,6 +465,14 @@ overflow: auto;
   display: none;
 }
 
+.mapbox-attribution-container {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: block;
+  margin: 0 10 5;
+}
+
 
 @media screen and (max-width: 480px) {
 
@@ -863,6 +871,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/iskandarblue/ciy0v11q8004c2sp6qutlk0qp',
     center: [15.2551, 50.5260],
+    attributionControl: false,
     zoom: 3.0,
     maxZoom: 9,
     minZoom: 1,
