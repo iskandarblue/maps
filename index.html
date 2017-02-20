@@ -13,7 +13,27 @@
 
 
 <style>
-
+  #survey{
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    width: 175px;
+    height: 100px;
+    border: 3px solid rgb(65,207,161);
+    border-radius: 20px;
+    color: rgb(39,39,39);
+    background-color: rgba(250,250,250,0.88);
+    text-align:center;
+    font-size: 12px;
+    padding: 5px 5px;
+    font-weight: bold;
+  }
+  #close{
+    position: absolute;
+    top: -5px;
+    left: -25px;
+    border-radius: 1px;
+  }
   body {
     color: #eee;
     overflow: hidden;
@@ -923,8 +943,12 @@ function renderListings(features) {
               var codeFilter =  prop.code
 //filter uni_select red markers by program acronym
              map.setFilter("uni_icon", ["==", "code", codeFilter]);
+             map.setFilter("point", ["==", "code", codeFilter]);
+             map.setFilter("point1", ["==", "code", codeFilter]);
 //make uni_select visible
               map.setLayoutProperty('uni_icon', 'visibility', 'visible');
+              map.setLayoutProperty('point', 'visibility', 'visible');
+              map.setLayoutProperty('point1', 'visibility', 'visible');
 //hide uni layer
               map.setLayoutProperty('uni', 'visibility', 'none');
 //fill title block with program acronym
@@ -1167,6 +1191,14 @@ function getUniqueFeatures(array, comparatorProperty) {
     return uniqueFeatures;
 }
 
+var framesPerSecond = 15;
+var initialOpacity = 0.5
+var opacity = initialOpacity;
+var initialRadius = 3;
+var radius = initialRadius;
+var maxRadius = 18;
+
+
 function addDataLayer(){
 
   var zoomThreshold = 4;
@@ -1247,6 +1279,39 @@ function addDataLayer(){
     });
 
     map.addLayer({
+        "id": "point",
+        "type": "circle",
+        "source": "uni",
+        "layout":{
+          "visibility": "none",
+        },
+        "paint": {
+            "circle-radius": initialRadius,
+            "circle-radius-transition": {duration: 0},
+            "circle-opacity-transition": {duration: 0},
+            "circle-color": "#283048"
+
+        },
+        "filter": ["==", "code", ""]
+    });
+
+
+    map.addLayer({
+    "id": "point1",
+    "source": "uni",
+    "type": "circle",
+    "layout":{
+      "visibility": "none",
+    },
+    "paint": {
+        "circle-radius": initialRadius,
+        "circle-color": "#283048"
+    },
+    "filter": ["==", "code", ""]
+});
+
+
+    map.addLayer({
         "id": "uni_icon",
         "type": "symbol",
         "source": "uni",
@@ -1259,45 +1324,6 @@ function addDataLayer(){
         "filter": ["==", "code", ""]
     });
 
-    map.addLayer({
-        "id": "uni_circle",
-        "type": "circle",
-        "source": "city",
-        "layout":{
-          "visibility": "none",
-        },
-        "paint": {
-          "circle-radius": {
-            stops: [
-
-        [3, 4],
-        [4, 5],
-        [5, 6],
-        [10, 13],
-        [15, 10],
-        [20, 30]
-    ]
-  },
-          "circle-color": "#feb47b",
-          "circle-opacity": 0.85
-      }
-    });
-
-  map.addLayer({
-    "id": "clusters-label",
-    "type": "symbol",
-    'minzoom': zoomThreshold,
-    "source": "city",
-    "layout": {
-      "visibility": "none",
-      "text-field": "{count}",
-      "text-font": [
-        "DIN Offc Pro Medium",
-        "Arial Unicode MS Bold"
-      ],
-      "text-size": 10
-    }
-  });
 
 
 }
@@ -1307,6 +1333,31 @@ map.on('style.load', function (e) {
   addDataLayer();
 
 });
+
+
+
+function animateMarker(timestamp) {
+    setTimeout(function(){
+        requestAnimationFrame(animateMarker);
+
+        radius += (maxRadius - radius) / framesPerSecond;
+        opacity -= ( .9 / framesPerSecond );
+
+        map.setPaintProperty('point', 'circle-radius', radius);
+        map.setPaintProperty('point', 'circle-opacity', opacity);
+
+        if (opacity <= 0) {
+            radius = initialRadius;
+            opacity = initialOpacity;
+        }
+
+    }, 1000 / framesPerSecond);
+
+}
+
+// Start the animation.
+animateMarker(0);
+
 
 
 //Create hover effect with countries
@@ -1541,6 +1592,8 @@ setTimeout(function() {
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
+            map.setLayoutProperty('point', 'visibility', 'none');
+            map.setLayoutProperty('point1', 'visibility', 'none');
 
             $("#interest").fadeOut("slow");
               $("#program_title").fadeOut("slow")
@@ -1632,8 +1685,6 @@ map.on('moveend', function() {
 
  map.on('mousemove', function(e) {
 
-   var visibility = map.getLayoutProperty('uni', 'visibility');
-
      var features = map.queryRenderedFeatures(e.point, {
          layers: ['uni']
      });
@@ -1647,6 +1698,7 @@ map.on('moveend', function() {
      }
 
      var feature = features[0];
+
 
      // Populate the popup and set its coordinates
      // based on the feature found.
@@ -1668,6 +1720,8 @@ map.on('moveend', function() {
           layers: ['uni_icon', 'uni_select', 'uni']
       });
 
+
+     var visibility = map.getLayoutProperty('uni', 'visibility');
       // Change the cursor style as a UI indicator.
       map.getCanvas().style.cursor = features.length ? 'pointer' : '';
 
@@ -1679,10 +1733,21 @@ map.on('moveend', function() {
       var feature = features[0];
       // Populate the popup and set its coordinates
       // based on the feature found.
+
+      if (visibility === "none"){
+
       popup.setLngLat(feature.geometry.coordinates)
           .setHTML('<div><b>' + feature.properties.title + '</div></b>' + '<div>' + feature.properties.uni
           +  '</div></b>' +  '<div>' + feature.properties.city + ', ' + feature.properties.country + '</div>' + '<div><a href="' + feature.properties.website + '" target="_blank">website</a></div>')
           .addTo(map);
+
+        } else {
+
+        popup.setLngLat(feature.geometry.coordinates)
+            .setHTML('<div><b>' + feature.properties.city  + '</b></div>')
+            .addTo(map);
+
+        }
 
 
 } else if (city.className === "mode-selected") {
@@ -1830,6 +1895,13 @@ map.addControl(new mapboxgl.NavigationControl());
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/42213174" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-
+<div id="survey"><button id="close">x</button>Would you like to help us improve the map :)?!<br> Click <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScA28WwmeVASEeid3eQrDqVXf5O9539oZWkef-a9SWtsZYMzA/viewform">here</a> to fill out a short survey.</div>
+<script>
+$(document).ready(function(){
+    $("#close").click(function(){
+        $("#survey").toggle();
+    });
+});
+</script>
 </body>
 </html>
