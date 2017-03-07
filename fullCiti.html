@@ -57,14 +57,14 @@
 
 <div class='map-overlay top'>
     <div class='map-overlay-inner'>
-        <h2>Significant earthquakes in 2015</h2>
+        <h2>Citi Bike Stations (below CC) 2016</h2>
         <label id='month'></label>
         <input id='slider' type='range' min='0' max='23' step='1' value='0' />
     </div>
     <div class='map-overlay-inner'>
         <div id='legend' class='legend'>
             <div class='bar'></div>
-            <div>Magnitude (m)</div>
+            <div>% Full (m)</div>
         </div>
     </div>
 </div>
@@ -75,8 +75,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1N
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v9',
-    center: [31.4606, 20.7927],
-    zoom: 0.5
+    center: [-73.9217, 40.7831],
+    zoom: 12
 });
 
 var months = [
@@ -128,7 +128,7 @@ map.on('load', function() {
     //
     // Here we're using d3 to help us make the ajax request but you can use
     // Any request method (library or otherwise) you wish.
-    d3.json('https://www.mapbox.com/mapbox-gl-js/assets/data/significant-earthquakes-2015.geojson', function(err, data) {
+    d3.json('http://iskandari.github.io/maps/probGEO.geojson', function(err, data) {
         if (err) throw err;
 
         // Create a month property value based on time
