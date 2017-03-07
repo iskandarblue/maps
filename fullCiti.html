@@ -40,7 +40,7 @@
 .map-overlay .legend .bar {
     height: 10px;
     width: 100%;
-    background: linear-gradient(to right, #FCA107, #7F3121);
+    background: linear-gradient(to right, #2DC723, #DC4D32);
 }
 
 .map-overlay input {
@@ -58,13 +58,13 @@
 <div class='map-overlay top'>
     <div class='map-overlay-inner'>
         <h2>Citi Bike Stations (below CC) 2016</h2>
-        <label id='month'></label>
+        <label id='variable'></label>
         <input id='slider' type='range' min='0' max='23' step='1' value='0' />
     </div>
     <div class='map-overlay-inner'>
         <div id='legend' class='legend'>
             <div class='bar'></div>
-            <div>% Full (m)</div>
+            <div>% Full</div>
         </div>
     </div>
 </div>
@@ -74,12 +74,12 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v9',
+    style: 'mapbox://styles/mapbox/dark-v9',
     center: [-73.9217, 40.7831],
     zoom: 12
 });
 
-var months = [
+var variables = [
     '0',
     '1',
     '2',
@@ -106,34 +106,23 @@ var months = [
     '23',
 ];
 
-function filterBy(month) {
+function filterBy(variable) {
 
-    var filters = ['==', 'month', month];
+    var filters = ['==', 'variable', variable];
     map.setFilter('earthquake-circles', filters);
     map.setFilter('earthquake-labels', filters);
 
     // Set the label to the month
-    document.getElementById('month').textContent = months[month];
+    document.getElementById('variable').textContent = variables[variable];
 }
+
 
 map.on('load', function() {
 
-    // Data courtesy of http://earthquake.usgs.gov/
-    // Query for significant earthquakes in 2015 URL request looked like this:
-    // http://earthquake.usgs.gov/fdsnws/event/1/query
-    //    ?format=geojson
-    //    &starttime=2015-01-01
-    //    &endtime=2015-12-31
-    //    &minmagnitude=6'
-    //
-    // Here we're using d3 to help us make the ajax request but you can use
-    // Any request method (library or otherwise) you wish.
-    d3.json('http://iskandari.github.io/maps/FULLGEO.geojson', function(err, data) {
-        if (err) throw err;
 
         map.addSource('earthquakes', {
             'type': 'geojson',
-            'data': data
+            'data': 'melted.geojson'
         });
 
         map.addLayer({
@@ -144,13 +133,18 @@ map.on('load', function() {
                 'circle-color': {
                     property: 'value',
                     stops: [
-                        [0, '#FEE8E7'],
-                        [10, '#FFE8E6'],
-                        [20, '#FA8072'],
-                        [30, '#E64402'],
-                        [40, '#FCA107'],
-                        [50, '#7F3121'],
-                        [100, '#F22C1E']
+                        [0.5, '#2DC723'],
+                        [5, '#48C41F'],
+                        [10, '#64C11B'],
+                        [15, '#80BE18'],
+                        [20, '#9DBB14'],
+                        [25, '#B8B711'],
+                        [30, '#B5940E'],
+                        [40, '#B2710B'],
+                        [50, '#AF4E07'],
+                        [75, '#AD2B05'],
+                        [100, '#AD2C05']
+
                     ]
                 },
                 'circle-opacity': 0.75,
@@ -158,16 +152,16 @@ map.on('load', function() {
                     property: 'value',
                     stops: [
                         [0, 0],
-                        [10, 1],
-                        [20, 2],
-                        [30, 3],
-                        [40, 4],
-                        [50, 5],
-                        [60, 6],
-                        [70, 7],
-                        [80, 8],
-                        [90, 9],
-                        [100,10]
+                        [10, 2],
+                        [20, 4],
+                        [30, 6],
+                        [40, 8],
+                        [50, 10],
+                        [60, 12],
+                        [70, 14],
+                        [80, 16],
+                        [90, 18],
+                        [100,20]
                     ]
                 }
             }
@@ -180,22 +174,48 @@ map.on('load', function() {
             'layout': {
                 'text-field': '{value}%',
                 'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-                'text-size': 12
+                'text-size': 12,
+
             },
             'paint': {
-                'text-color': 'rgba(0,0,0,0.5)'
+                'text-color': 'rgba(250,250,250,1.0)'
             }
         });
 
+        map.setLayerZoomRange('earthquake-labels', 14, 20);
+
         // Set filter to first month of the year
         // 0 = January
-        filterBy(0);
+        filterBy("0");
 
         document.getElementById('slider').addEventListener('input', function(e) {
-            var month = parseInt(e.target.value, 10);
-            filterBy(month);
+            var variable = e.target.value
+            filterBy(variable);
         });
-    });
+
+        map.on('click', function (e) {
+            var features = map.queryRenderedFeatures(e.point, { layers: ['earthquake-circles'] });
+
+            if (!features.length) {
+                return;
+            }
+
+            var feature = features[0];
+
+            // Populate the popup and set its coordinates
+            // based on the feature found.
+            var popup = new mapboxgl.Popup()
+                .setLngLat(feature.geometry.coordinates)
+                .setHTML(feature.properties.value)
+                .addTo(map);
+        });
+
+        // Use the same approach as above to indicate that the symbols are clickable
+        // by changing the cursor style to 'pointer'.
+        map.on('mousemove', function (e) {
+            var features = map.queryRenderedFeatures(e.point, { layers: ['earthquake-circles'] });
+            map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
+        });
 });
 </script>
 
