@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+    <style>
+
+.radSol{
+  background:white;
+}
+
+.circles{
+  color:blue;
+  font-size:29
+}
+
+</style>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
+
+<script>
+
+var h = 595
+
+var w = 595
+
+var xspa = 30
+
+
+var svg = d3.select('body').append('svg').attr('width', w).attr('height', h).attr('class','radSol');
+// look at chp 7 of vizualizing data
+
+var circs = [0,2,4,6,8,10,12,14,16,18,20]
+var texts = ["%","10","20","30","40","50","60","70","80","90","100"]
+
+var rscale = d3.scale.linear()
+
+mycolor = d3.rgb(48, 48, 48);
+
+svg.selectAll('.circles').data(circs)
+.enter()
+.append('circle')
+.attr('r', function(d){
+  return d
+})
+.attr('class','circles')
+.attr('cy', function(d,i) { return 150+ 40 *i; })
+.attr('cx', 50)
+.style("opacity", 0.75)
+.style("color", mycolor)
+
+
+svg.selectAll('text')
+.data(circs).enter().append('text')
+.text(function(d,i) { return texts[i]; })
+.attr('font-size', 10)
+.attr("font-family", "sans-serif")
+.attr('fill', mycolor)
+.attr('x', 100)
+.attr('y', function(d,i){
+  return 150 +40*i;
+  })
+.attr('text-anchor', 'middle')
+
+  </script>
+    </body>

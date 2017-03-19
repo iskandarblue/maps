@@ -5,6 +5,7 @@
     <title></title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
@@ -14,17 +15,143 @@
 <body>
 
 <style>
-.map-overlay {
+
+#legend {
+  position: fixed;
+  z-index: 101010;
+  bottom: 10%;
+  left: 0.0%;
+  width: 15%;
+  height: 450px;
+  border-radius: 3px;
+  background: rgba(12, 12, 12, 0.0);
+  color: #eee;
+  font-family: 'Open Sans', sans-serif;
+
+}
+.radSol{
+  background:rgba(250, 250, 250, 0.0);
+}
+
+.circles{
+  color:blue;
+  font-size:29
+}
+
+
+#map {
+    position: fixed;
+    width:75%;
+}
+
+#features {
+    width: 25%;
+    margin-left: 75%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+section {
+    padding:  25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 13px;
+}
+section.active {
+    opacity: 1;
+}
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+.box{
+  background-color: #30E8BF;
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  border-radius: 1px;
+
+}
+
+.ssbox{
+  background-color: #8080ff;
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  border-radius: 1px;
+
+}
+
+.evbox{
+  background-color: #FC354C;
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  border-radius: 1px;
+
+}
+
+.stbox{
+  background-color: #FF8235;
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  border-radius: 1px;
+
+}
+
+
+.cpsbox{
+  background-color: #FFFF33;
+  position: absolute;
+  display: block;
+  height: 24px;
+  width: 24px;
+  padding: 5px;
+  border-radius: 1px;
+
+}
+
+
+
+.replay {
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     position: absolute;
+    visibility: hidden;
+    width: 5%;
+    top: 30%;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(250, 250, 250, 0.75);
+    border-radius: 3px;
+    display: block;
+    margin: 10px 10px 10px;
+    font-weight: 600;
+}
+
+.map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    position: fixed;
     width: 25%;
     top: 0;
     left: 0;
     padding: 10px;
+
 }
 
 .map-overlay .map-overlay-inner {
-    background-color: #fff;
+    background-color: rgba(12, 12, 12, 0.88);
+    color: rgba(250, 250, 250, 0.95);
     box-shadow:0 1px 2px rgba(0, 0, 0, 0.20);
     border-radius: 3px;
     padding: 10px;
@@ -37,14 +164,16 @@
     margin: 0 0 10px;
 }
 
+
 .map-overlay .legend .bar {
     height: 10px;
     width: 100%;
     background: linear-gradient(to right, #2DC723, #DC4D32);
 }
 
+
 .map-overlay input {
-    background-color: transparent;
+    background-color: #3399ff;
     display: inline-block;
     width: 100%;
     position: relative;
@@ -55,28 +184,77 @@
 
 <div id='map'></div>
 
+<div id='legend'></div>
 <div class='map-overlay top'>
     <div class='map-overlay-inner'>
-        <h2>Citi Bike Stations (below CC) 2016</h2>
+        <h2>Citi Bike stations in Manhattan - Probability of being full in 2016</h2>
         <label id='variable'></label>
         <input id='slider' type='range' min='0' max='23' step='1' value='0' />
     </div>
-    <div class='map-overlay-inner'>
-        <div id='legend' class='legend'>
-            <div class='bar'></div>
-            <div>% Full</div>
-        </div>
-    </div>
+
 </div>
+<div class='replay'>
+    <div>Replay</div>
+</div>
+
+<div id='features'>
+    <section id='nyc' class='active'>
+        <h3>Citi Bike Dockblocking</h3>
+        <p> One way to rate the reliability of a bikeshare is to compute the probability of stations being full.  We used data collected from Citi Bike’s live station GBSF feed at 10-minute intervals, giving frequent “snapshots” of dock status between April and October 2016 (7 months). The data is shared on the public Google group <a href="https://groups.google.com/forum/#!forum/citibike-hackers"> CitiBikeNYC Hackers</a>. Each record shows the available dock count for every station for a total of 17.8 million records. </p>
+    </section>
+    <section id='les'>
+        <div class="box"></div>
+        <br></br>
+        <h3>Lower East Side</h3>
+        <p>Number of stations: 20</p>
+        <p>Dockblocking: evening peak / night </p>
+        <p>One of the most vibrant neighborhoods in Manhattan, the LES experiences heavy dockblocking after 9 pm.  The probability that a station is full rises to <b>25%</b> after 9 pm and climbs to an average of <font color = "#3399ff"><b> 31% </b></font> between 9 pm and 2 am </p>
+    </section>
+    <section id='ss'>
+       <div class="ssbox"></div>
+       <br></br>
+        <h3>Financial District - South Street</h3>
+        <p>Number of stations: 5 </p>
+        <p>Dockblocking: morning peak </p>
+        <p>At the core of the downtown criscrossed by Wall Street and Water Street, this cluster of stations is primarily affected during the morning peak <b> between 9am and noon </b>. The probability of these stations being full during this time period is an average of <font color = "#3399ff"><b> 27% </b></font></p>
+    </section>
+    <section id='ev'>
+      <div class="evbox"></div>
+      <br></br>
+        <h3>East Village</h3>
+        <p>Number of stations: 13 </p>
+        <p>Dockblocking: evening peak / night </p>
+        <p>This neighborhood experiences the worst dockblocking between the hours of <b> 7 pm and 2 am </b>, with the average probability of finding a full station <font color = "#3399ff"><b> 22% </b></font></p><br></br>
+    </section>
+    <section id='st'>
+      <div class="stbox"></div>
+      <br></br>
+        <h3>Stuyvesant Town</h3>
+        <p>Number of stations: 5</p>
+        <p>Dockblocking: evening peak / night </p>
+        <p>This neighborhood experiences the worst dockblocking between the hours of <b> 7 pm and 3 am </b>, with the average probability of finding a full station  <font color = "#3399ff"><b> 33% </b></font></p><br></br><br></br><br></br><br></br>
+    </section>
+    <section id='cps'>
+      <div class="cpsbox"></div>
+      <br></br>
+        <h3>Central Park South - MOMA</h3>
+        <p>Number of stations: 7</p>
+        <p>Dockblocking: morning peak </p>
+        <p>This neighborhood experiences the worst dockblocking between the hours of <b> 8 am and 11 am </b>, with the average probability of finding a full station  <font color = "#3399ff"><b> 26% </b></font>&nbsp;</p><br></br><br></br>
+    </section>
+  </div>
+
 
 <script src='//d3js.org/d3.v3.min.js' charset='utf-8'></script>
 <script>
 mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/dark-v9',
-    center: [-73.9217, 40.7831],
-    zoom: 12
+    style: 'mapbox://styles/mapbox/light-v9',
+    bearing: 27,
+    center: [-73.982, 40.735],
+    zoom: 12,
+    pitch: 20
 });
 
 var variables = [
@@ -113,7 +291,7 @@ function filterBy(variable) {
     map.setFilter('earthquake-labels', filters);
 
     // Set the label to the month
-    document.getElementById('variable').textContent = variables[variable];
+    document.getElementById('variable').textContent = 'Hour: ' +variables[variable];
 }
 
 
@@ -130,23 +308,7 @@ map.on('load', function() {
             'type': 'circle',
             'source': 'earthquakes',
             'paint': {
-                'circle-color': {
-                    property: 'value',
-                    stops: [
-                        [0.5, '#2DC723'],
-                        [5, '#48C41F'],
-                        [10, '#64C11B'],
-                        [15, '#80BE18'],
-                        [20, '#9DBB14'],
-                        [25, '#B8B711'],
-                        [30, '#B5940E'],
-                        [40, '#B2710B'],
-                        [50, '#AF4E07'],
-                        [75, '#AD2B05'],
-                        [100, '#AD2C05']
-
-                    ]
-                },
+                'circle-color': '#303030',
                 'circle-opacity': 0.75,
                 'circle-radius': {
                     property: 'value',
@@ -178,9 +340,110 @@ map.on('load', function() {
 
             },
             'paint': {
-                'text-color': 'rgba(250,250,250,1.0)'
+                'text-color': 'rgba(18,18,18,0.68)'
             }
         });
+
+        map.addSource("nynta", {
+            "type": "geojson",
+            "data": 'socc.geojson'
+        });
+
+        map.addLayer({
+            "id": "nynta",
+            "type": "line",
+            "source": "nynta",
+            "layout": {
+              "visibility": "none"
+            },
+            "paint": {
+                "line-color": "#627BC1",
+                "line-opacity": 0.5,
+                "line-width": 3
+            }
+        }, "buildngs");
+
+        map.addSource("les", {
+            "type": "geojson",
+            "data": 'les.geojson'
+        });
+
+        map.addLayer({
+            "id": "les",
+            "type": "fill",
+            "source": "les",
+            "paint": {
+                "fill-color": "#30E8BF",
+                "fill-opacity": 0.3,
+
+            }
+        }, "water");
+
+        map.addSource("ss", {
+            "type": "geojson",
+            "data": 'southStreet.geojson'
+        });
+
+        map.addLayer({
+            "id": "ss",
+            "type": "fill",
+            "source": "ss",
+            "paint": {
+                "fill-color": "#8080ff",
+                "fill-opacity": 0.3,
+
+            }
+        }, "water");
+
+        map.addSource("ev", {
+            "type": "geojson",
+            "data": 'ev.geojson'
+        });
+
+        map.addLayer({
+            "id": "ev",
+            "type": "fill",
+            "source": "ev",
+            "paint": {
+                "fill-color": "#FC354C",
+                "fill-opacity": 0.3,
+                'fill-outline-color': 'rgba(250, 2, 25, 0.9)'
+
+            }
+        }, "water");
+
+        map.addSource("st", {
+            "type": "geojson",
+            "data": 'st.geojson'
+        });
+
+        map.addLayer({
+            "id": "st",
+            "type": "fill",
+            "source": "st",
+            "paint": {
+                "fill-color": "#FF8235",
+                "fill-opacity": 0.3,
+
+            }
+        }, "water");
+
+
+                map.addSource("cps", {
+                    "type": "geojson",
+                    "data": 'cps.geojson'
+                });
+
+                map.addLayer({
+                    "id": "cps",
+                    "type": "fill",
+                    "source": "cps",
+                    "paint": {
+                        "fill-color": "#FFFF33",
+                        "fill-opacity": 0.3,
+
+                    }
+                }, "water");
 
         map.setLayerZoomRange('earthquake-labels', 14, 20);
 
@@ -216,6 +479,151 @@ map.on('load', function() {
             var features = map.queryRenderedFeatures(e.point, { layers: ['earthquake-circles'] });
             map.getCanvas().style.cursor = (features.length) ? 'pointer' : '';
         });
+
+        var slider = document.getElementById("slider");
+        var variable = document.getElementById('variable');
+
+        slider.addEventListener('input', function(e) {
+            variable.textContent = 'Hour: ' + slider.value;
+        });
+
+        var interval = setInterval(function() {
+          slider.stepUp();
+          slider.dispatchEvent(new Event('input'));
+          if (slider.value == 23) clearInterval(interval);
+        }, 1000);
+
+        var chapters = {
+            'nyc': {
+                bearing: 27,
+                center: [-73.982, 40.735],
+                zoom: 12,
+                pitch: 20
+            },
+            'les': {
+                duration: 5000,
+                center: [-73.9843, 40.7150],
+                bearing: 120,
+                zoom: 14,
+                pitch: 0
+            },
+            'ss': {
+                bearing: 45,
+                center: [-74.0065, 40.7035],
+                zoom: 14.3,
+                speed: 0.6,
+                pitch: 40
+            },
+            'ev': {
+                bearing: 90,
+                center: [-73.9815, 40.7265],
+                zoom: 14.3,
+                pitch: 20
+            },
+            'st': {
+                bearing: 45,
+                center: [-73.9778, 40.7317],
+                zoom: 14.5,
+                pitch: 20,
+                speed: 0.5
+            },
+              'cps':{
+                bearing: 245,
+                center: [-73.9762, 40.7607],
+                zoom: 13.5,
+                pitch: 35,
+                speed: 0.5
+              },
+        };
+
+        // On every scroll event, check which element is on screen
+        window.onscroll = function() {
+            var chapterNames = Object.keys(chapters);
+            for (var i = 0; i < chapterNames.length; i++) {
+                var chapterName = chapterNames[i];
+                if (isElementOnScreen(chapterName)) {
+                    setActiveChapter(chapterName);
+                    break;
+                };
+
+            }
+
+        };
+
+        var activeChapterName = 'nyc';
+        function setActiveChapter(chapterName) {
+            if (chapterName === activeChapterName) return;
+
+            map.flyTo(chapters[chapterName]);
+
+
+
+            document.getElementById(chapterName).setAttribute('class', 'active');
+            document.getElementById(activeChapterName).setAttribute('class', '');
+
+            activeChapterName = chapterName;
+
+
+        }
+
+
+
+
+
+        function isElementOnScreen(id) {
+            var element = document.getElementById(id);
+            var bounds = element.getBoundingClientRect();
+            return bounds.top < window.innerHeight && bounds.bottom > 0;
+        }
+
+
+map.addControl(new mapboxgl.NavigationControl());
+
+
+var h = 435
+
+var w = 225
+
+var xspa = 30
+
+
+var svg = d3.select("#legend").append('svg').attr('width', w).attr('height', h).attr('class','radSol') ;
+// look at chp 7 of vizualizing data
+
+var circs = [0,2,4,6,8,10,12,14,16,18,20]
+var texts = ["%","10","20","30","40","50","60","70","80","90","100"]
+
+var rscale = d3.scale.linear()
+
+mycolor = d3.rgb(48, 48, 48);
+
+svg.selectAll('.circles').data(circs)
+.enter()
+.append('circle')
+.attr('r', function(d){
+  return d
+})
+.attr('class','circles')
+.attr('cy', function(d,i) { return 15+ 40 *i; })
+.attr('cx', 50)
+.style("opacity", 0.65)
+.style("color", mycolor)
+.style("border", "black")
+
+
+
+svg.selectAll('text')
+.data(circs).enter().append('text')
+.text(function(d,i) { return texts[i]; })
+.attr('font-size', 14)
+.attr("font-family", "sans-serif")
+.attr('fill', mycolor)
+.attr('x', 100)
+.attr('y', function(d,i){
+  return 15 +40*i;
+  })
+.attr('text-anchor', 'middle')
+
 });
 </script>
 
