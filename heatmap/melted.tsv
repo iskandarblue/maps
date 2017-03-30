@@ -1,0 +1,6073 @@
+variable	value	label
+1	0	0.56	W 52 St & 11 Ave
+2	12	0	W 52 St & 11 Ave
+3	4	1.09	W 52 St & 11 Ave
+4	20	0	W 52 St & 11 Ave
+5	2	1.64	W 52 St & 11 Ave
+6	3	1.31	W 52 St & 11 Ave
+7	7	1.2	W 52 St & 11 Ave
+8	23	0.9	W 52 St & 11 Ave
+9	17	0.22	W 52 St & 11 Ave
+10	10	0	W 52 St & 11 Ave
+11	13	0	W 52 St & 11 Ave
+12	1	1.55	W 52 St & 11 Ave
+13	8	0	W 52 St & 11 Ave
+14	21	0.88	W 52 St & 11 Ave
+15	6	1.96	W 52 St & 11 Ave
+16	16	0	W 52 St & 11 Ave
+17	11	0	W 52 St & 11 Ave
+18	15	0	W 52 St & 11 Ave
+19	9	0	W 52 St & 11 Ave
+20	19	0.22	W 52 St & 11 Ave
+21	18	0.11	W 52 St & 11 Ave
+22	5	0.76	W 52 St & 11 Ave
+23	14	0	W 52 St & 11 Ave
+24	22	0.44	W 52 St & 11 Ave
+25	21	0.22	Franklin St & W Broadway
+26	4	0	Franklin St & W Broadway
+27	8	2.51	Franklin St & W Broadway
+28	1	0	Franklin St & W Broadway
+29	20	0.22	Franklin St & W Broadway
+30	9	7.41	Franklin St & W Broadway
+31	12	10.36	Franklin St & W Broadway
+32	0	0	Franklin St & W Broadway
+33	5	0	Franklin St & W Broadway
+34	14	8.51	Franklin St & W Broadway
+35	23	0.23	Franklin St & W Broadway
+36	11	15.25	Franklin St & W Broadway
+37	16	7.08	Franklin St & W Broadway
+38	13	9.15	Franklin St & W Broadway
+39	18	0.77	Franklin St & W Broadway
+40	17	3.94	Franklin St & W Broadway
+41	3	0	Franklin St & W Broadway
+42	10	15.58	Franklin St & W Broadway
+43	19	0.11	Franklin St & W Broadway
+44	7	0.33	Franklin St & W Broadway
+45	22	0	Franklin St & W Broadway
+46	6	0	Franklin St & W Broadway
+47	15	7.42	Franklin St & W Broadway
+48	2	0	Franklin St & W Broadway
+49	17	0.44	St James Pl & Pearl St
+50	16	0.87	St James Pl & Pearl St
+51	5	6.54	St James Pl & Pearl St
+52	9	0.98	St James Pl & Pearl St
+53	20	5.37	St James Pl & Pearl St
+54	8	0.76	St James Pl & Pearl St
+55	12	2.07	St James Pl & Pearl St
+56	10	0.65	St James Pl & Pearl St
+57	1	7.96	St James Pl & Pearl St
+58	22	3.95	St James Pl & Pearl St
+59	21	4.61	St James Pl & Pearl St
+60	6	3.49	St James Pl & Pearl St
+61	0	7.44	St James Pl & Pearl St
+62	4	7.84	St James Pl & Pearl St
+63	2	8.31	St James Pl & Pearl St
+64	11	0.76	St James Pl & Pearl St
+65	14	1.42	St James Pl & Pearl St
+66	23	4.95	St James Pl & Pearl St
+67	13	2.4	St James Pl & Pearl St
+68	15	0.98	St James Pl & Pearl St
+69	19	2.63	St James Pl & Pearl St
+70	7	1.63	St James Pl & Pearl St
+71	18	1.43	St James Pl & Pearl St
+72	3	8.39	St James Pl & Pearl St
+73	21	5.15	W 17 St & 8 Ave
+74	8	1.86	W 17 St & 8 Ave
+75	6	0.87	W 17 St & 8 Ave
+76	5	1.09	W 17 St & 8 Ave
+77	4	0.22	W 17 St & 8 Ave
+78	17	0.55	W 17 St & 8 Ave
+79	16	1.42	W 17 St & 8 Ave
+80	18	0.33	W 17 St & 8 Ave
+81	13	8.82	W 17 St & 8 Ave
+82	11	6.75	W 17 St & 8 Ave
+83	20	2.63	W 17 St & 8 Ave
+84	9	7.52	W 17 St & 8 Ave
+85	23	3.94	W 17 St & 8 Ave
+86	22	4.06	W 17 St & 8 Ave
+87	12	11.45	W 17 St & 8 Ave
+88	0	2.44	W 17 St & 8 Ave
+89	1	2.1	W 17 St & 8 Ave
+90	7	2.07	W 17 St & 8 Ave
+91	2	1.42	W 17 St & 8 Ave
+92	14	5.56	W 17 St & 8 Ave
+93	19	1.54	W 17 St & 8 Ave
+94	3	0.65	W 17 St & 8 Ave
+95	10	7.73	W 17 St & 8 Ave
+96	15	2.84	W 17 St & 8 Ave
+97	21	16.56	Barrow St & Hudson St
+98	17	5.04	Barrow St & Hudson St
+99	22	13.05	Barrow St & Hudson St
+100	6	4.36	Barrow St & Hudson St
+101	20	14.02	Barrow St & Hudson St
+102	4	11.55	Barrow St & Hudson St
+103	13	0.87	Barrow St & Hudson St
+104	8	0.11	Barrow St & Hudson St
+105	14	0.87	Barrow St & Hudson St
+106	9	0.98	Barrow St & Hudson St
+107	23	17.91	Barrow St & Hudson St
+108	2	12.24	Barrow St & Hudson St
+109	16	2.72	Barrow St & Hudson St
+110	19	11.29	Barrow St & Hudson St
+111	1	12.15	Barrow St & Hudson St
+112	7	1.42	Barrow St & Hudson St
+113	5	9.48	Barrow St & Hudson St
+114	0	14.89	Barrow St & Hudson St
+115	18	7.61	Barrow St & Hudson St
+116	12	1.2	Barrow St & Hudson St
+117	3	11.66	Barrow St & Hudson St
+118	15	1.96	Barrow St & Hudson St
+119	11	4.36	Barrow St & Hudson St
+120	10	4.9	Barrow St & Hudson St
+121	17	2.85	MacDougal St & Prince St
+122	20	3.4	MacDougal St & Prince St
+123	18	0.77	MacDougal St & Prince St
+124	9	18.63	MacDougal St & Prince St
+125	1	1.33	MacDougal St & Prince St
+126	22	4.17	MacDougal St & Prince St
+127	21	4.06	MacDougal St & Prince St
+128	5	0	MacDougal St & Prince St
+129	0	2.56	MacDougal St & Prince St
+130	4	0	MacDougal St & Prince St
+131	8	2.51	MacDougal St & Prince St
+132	16	7.52	MacDougal St & Prince St
+133	14	9.6	MacDougal St & Prince St
+134	19	0.99	MacDougal St & Prince St
+135	2	0.98	MacDougal St & Prince St
+136	10	32.57	MacDougal St & Prince St
+137	12	16.79	MacDougal St & Prince St
+138	13	14.92	MacDougal St & Prince St
+139	6	0	MacDougal St & Prince St
+140	15	5.89	MacDougal St & Prince St
+141	23	3.04	MacDougal St & Prince St
+142	7	0.11	MacDougal St & Prince St
+143	11	24.29	MacDougal St & Prince St
+144	3	0	MacDougal St & Prince St
+145	14	5.13	Henry St & Grand St
+146	5	0	Henry St & Grand St
+147	16	0.98	Henry St & Grand St
+148	20	0	Henry St & Grand St
+149	21	0	Henry St & Grand St
+150	6	0.11	Henry St & Grand St
+151	19	0	Henry St & Grand St
+152	18	0	Henry St & Grand St
+153	17	0.55	Henry St & Grand St
+154	8	12.66	Henry St & Grand St
+155	12	11.78	Henry St & Grand St
+156	9	37.25	Henry St & Grand St
+157	4	0	Henry St & Grand St
+158	11	18.41	Henry St & Grand St
+159	2	0	Henry St & Grand St
+160	3	0	Henry St & Grand St
+161	1	0	Henry St & Grand St
+162	22	0	Henry St & Grand St
+163	7	0.54	Henry St & Grand St
+164	10	28.98	Henry St & Grand St
+165	0	0	Henry St & Grand St
+166	13	9.8	Henry St & Grand St
+167	15	3.93	Henry St & Grand St
+168	23	0	Henry St & Grand St
+169	21	2.3	Hudson St & Reade St
+170	6	0.55	Hudson St & Reade St
+171	17	4.38	Hudson St & Reade St
+172	20	2.85	Hudson St & Reade St
+173	14	4.36	Hudson St & Reade St
+174	19	0.99	Hudson St & Reade St
+175	4	0.65	Hudson St & Reade St
+176	22	2.3	Hudson St & Reade St
+177	10	5.99	Hudson St & Reade St
+178	5	0.22	Hudson St & Reade St
+179	23	1.24	Hudson St & Reade St
+180	13	6.32	Hudson St & Reade St
+181	8	2.73	Hudson St & Reade St
+182	16	5.01	Hudson St & Reade St
+183	9	4.9	Hudson St & Reade St
+184	7	1.2	Hudson St & Reade St
+185	2	0	Hudson St & Reade St
+186	15	5.23	Hudson St & Reade St
+187	3	0.65	Hudson St & Reade St
+188	18	2.65	Hudson St & Reade St
+189	11	8.17	Hudson St & Reade St
+190	12	8.83	Hudson St & Reade St
+191	1	0	Hudson St & Reade St
+192	0	0.11	Hudson St & Reade St
+193	17	7.23	Greenwich St & Warren St
+194	9	24.84	Greenwich St & Warren St
+195	22	3.95	Greenwich St & Warren St
+196	21	4.39	Greenwich St & Warren St
+197	20	4.82	Greenwich St & Warren St
+198	13	23.75	Greenwich St & Warren St
+199	23	5.41	Greenwich St & Warren St
+200	10	25.27	Greenwich St & Warren St
+201	14	17.23	Greenwich St & Warren St
+202	18	2.21	Greenwich St & Warren St
+203	2	3.39	Greenwich St & Warren St
+204	6	1.53	Greenwich St & Warren St
+205	5	1.2	Greenwich St & Warren St
+206	1	2.87	Greenwich St & Warren St
+207	7	4.36	Greenwich St & Warren St
+208	4	1.31	Greenwich St & Warren St
+209	8	12.12	Greenwich St & Warren St
+210	16	11.76	Greenwich St & Warren St
+211	0	3.22	Greenwich St & Warren St
+212	11	21.35	Greenwich St & Warren St
+213	15	16.03	Greenwich St & Warren St
+214	19	0.99	Greenwich St & Warren St
+215	3	1.74	Greenwich St & Warren St
+216	12	19.41	Greenwich St & Warren St
+217	10	0.33	E 2 St & Avenue C
+218	14	0	E 2 St & Avenue C
+219	5	28.54	E 2 St & Avenue C
+220	1	39.78	E 2 St & Avenue C
+221	9	0.11	E 2 St & Avenue C
+222	18	2.98	E 2 St & Avenue C
+223	23	39.3	E 2 St & Avenue C
+224	12	0.22	E 2 St & Avenue C
+225	4	39.11	E 2 St & Avenue C
+226	7	2.29	E 2 St & Avenue C
+227	22	39.14	E 2 St & Avenue C
+228	15	0	E 2 St & Avenue C
+229	19	24.45	E 2 St & Avenue C
+230	2	39.89	E 2 St & Avenue C
+231	6	7.09	E 2 St & Avenue C
+232	21	35.42	E 2 St & Avenue C
+233	0	36.33	E 2 St & Avenue C
+234	13	0	E 2 St & Avenue C
+235	8	0	E 2 St & Avenue C
+236	11	0.22	E 2 St & Avenue C
+237	3	39.32	E 2 St & Avenue C
+238	16	0	E 2 St & Avenue C
+239	17	0.33	E 2 St & Avenue C
+240	20	29.79	E 2 St & Avenue C
+241	18	1.1	Cleveland Pl & Spring St
+242	22	0.33	Cleveland Pl & Spring St
+243	13	7.84	Cleveland Pl & Spring St
+244	11	8.28	Cleveland Pl & Spring St
+245	23	0	Cleveland Pl & Spring St
+246	15	3.38	Cleveland Pl & Spring St
+247	19	0.33	Cleveland Pl & Spring St
+248	14	4.8	Cleveland Pl & Spring St
+249	1	0	Cleveland Pl & Spring St
+250	3	0	Cleveland Pl & Spring St
+251	7	0	Cleveland Pl & Spring St
+252	17	1.75	Cleveland Pl & Spring St
+253	4	0	Cleveland Pl & Spring St
+254	2	0	Cleveland Pl & Spring St
+255	0	0	Cleveland Pl & Spring St
+256	20	0.11	Cleveland Pl & Spring St
+257	16	3.05	Cleveland Pl & Spring St
+258	8	0.33	Cleveland Pl & Spring St
+259	5	0	Cleveland Pl & Spring St
+260	10	8.71	Cleveland Pl & Spring St
+261	6	0	Cleveland Pl & Spring St
+262	21	0.22	Cleveland Pl & Spring St
+263	12	11.89	Cleveland Pl & Spring St
+264	9	3.7	Cleveland Pl & Spring St
+265	11	10.89	Warren St & Church St
+266	20	4.6	Warren St & Church St
+267	18	4.52	Warren St & Church St
+268	23	3.38	Warren St & Church St
+269	14	8.72	Warren St & Church St
+270	3	2.72	Warren St & Church St
+271	4	2.61	Warren St & Church St
+272	8	6.77	Warren St & Church St
+273	7	4.58	Warren St & Church St
+274	13	13.29	Warren St & Church St
+275	6	3.38	Warren St & Church St
+276	1	2.65	Warren St & Church St
+277	10	10.78	Warren St & Church St
+278	0	2.22	Warren St & Church St
+279	16	12.96	Warren St & Church St
+280	12	12.21	Warren St & Church St
+281	15	9.16	Warren St & Church St
+282	22	3.62	Warren St & Church St
+283	19	1.43	Warren St & Church St
+284	17	9.09	Warren St & Church St
+285	21	2.52	Warren St & Church St
+286	5	3.16	Warren St & Church St
+287	2	2.62	Warren St & Church St
+288	9	9.59	Warren St & Church St
+289	15	0.22	E 40 St & 5 Ave
+290	4	0	E 40 St & 5 Ave
+291	7	0	E 40 St & 5 Ave
+292	23	0	E 40 St & 5 Ave
+293	13	3.7	E 40 St & 5 Ave
+294	8	0.33	E 40 St & 5 Ave
+295	3	0.11	E 40 St & 5 Ave
+296	10	6.21	E 40 St & 5 Ave
+297	19	0	E 40 St & 5 Ave
+298	0	0	E 40 St & 5 Ave
+299	20	0	E 40 St & 5 Ave
+300	11	4.47	E 40 St & 5 Ave
+301	2	0.11	E 40 St & 5 Ave
+302	6	0	E 40 St & 5 Ave
+303	1	0	E 40 St & 5 Ave
+304	22	0	E 40 St & 5 Ave
+305	9	4.36	E 40 St & 5 Ave
+306	17	0	E 40 St & 5 Ave
+307	16	0	E 40 St & 5 Ave
+308	5	0	E 40 St & 5 Ave
+309	14	0.11	E 40 St & 5 Ave
+310	12	4.8	E 40 St & 5 Ave
+311	18	0	E 40 St & 5 Ave
+312	21	0	E 40 St & 5 Ave
+313	7	0	E 37 St & Lexington Ave
+314	3	0	E 37 St & Lexington Ave
+315	8	0	E 37 St & Lexington Ave
+316	12	0.22	E 37 St & Lexington Ave
+317	15	0	E 37 St & Lexington Ave
+318	19	0	E 37 St & Lexington Ave
+319	5	0	E 37 St & Lexington Ave
+320	23	0	E 37 St & Lexington Ave
+321	1	0	E 37 St & Lexington Ave
+322	20	0	E 37 St & Lexington Ave
+323	9	0.44	E 37 St & Lexington Ave
+324	11	0.65	E 37 St & Lexington Ave
+325	4	0	E 37 St & Lexington Ave
+326	18	0	E 37 St & Lexington Ave
+327	22	0	E 37 St & Lexington Ave
+328	16	0	E 37 St & Lexington Ave
+329	6	0	E 37 St & Lexington Ave
+330	21	0	E 37 St & Lexington Ave
+331	0	0	E 37 St & Lexington Ave
+332	10	0.65	E 37 St & Lexington Ave
+333	17	0	E 37 St & Lexington Ave
+334	14	0	E 37 St & Lexington Ave
+335	2	0	E 37 St & Lexington Ave
+336	13	0	E 37 St & Lexington Ave
+337	8	0	LaGuardia Pl & W 3 St
+338	5	0.65	LaGuardia Pl & W 3 St
+339	11	9.48	LaGuardia Pl & W 3 St
+340	20	8.98	LaGuardia Pl & W 3 St
+341	7	0	LaGuardia Pl & W 3 St
+342	19	12.94	LaGuardia Pl & W 3 St
+343	6	0.22	LaGuardia Pl & W 3 St
+344	1	0.66	LaGuardia Pl & W 3 St
+345	12	6.87	LaGuardia Pl & W 3 St
+346	15	4.58	LaGuardia Pl & W 3 St
+347	17	3.18	LaGuardia Pl & W 3 St
+348	4	0.65	LaGuardia Pl & W 3 St
+349	22	1.54	LaGuardia Pl & W 3 St
+350	3	0.65	LaGuardia Pl & W 3 St
+351	23	0.79	LaGuardia Pl & W 3 St
+352	14	5.89	LaGuardia Pl & W 3 St
+353	0	1	LaGuardia Pl & W 3 St
+354	10	5.77	LaGuardia Pl & W 3 St
+355	13	7.73	LaGuardia Pl & W 3 St
+356	18	12.24	LaGuardia Pl & W 3 St
+357	9	1.96	LaGuardia Pl & W 3 St
+358	16	4.58	LaGuardia Pl & W 3 St
+359	21	4.71	LaGuardia Pl & W 3 St
+360	2	0.66	LaGuardia Pl & W 3 St
+361	8	0.11	E 47 St & 2 Ave
+362	19	0	E 47 St & 2 Ave
+363	1	0	E 47 St & 2 Ave
+364	7	0	E 47 St & 2 Ave
+365	23	0	E 47 St & 2 Ave
+366	4	0	E 47 St & 2 Ave
+367	20	0	E 47 St & 2 Ave
+368	15	1.31	E 47 St & 2 Ave
+369	10	12.85	E 47 St & 2 Ave
+370	6	0	E 47 St & 2 Ave
+371	11	10.24	E 47 St & 2 Ave
+372	3	0	E 47 St & 2 Ave
+373	9	5.66	E 47 St & 2 Ave
+374	17	0.11	E 47 St & 2 Ave
+375	18	0	E 47 St & 2 Ave
+376	5	0	E 47 St & 2 Ave
+377	12	7.63	E 47 St & 2 Ave
+378	16	0.11	E 47 St & 2 Ave
+379	21	0	E 47 St & 2 Ave
+380	0	0	E 47 St & 2 Ave
+381	22	0	E 47 St & 2 Ave
+382	2	0	E 47 St & 2 Ave
+383	14	2.18	E 47 St & 2 Ave
+384	13	2.4	E 47 St & 2 Ave
+385	15	0.11	E 39 St & 3 Av
+386	7	0	E 39 St & 3 Av
+387	3	0	E 39 St & 3 Av
+388	6	0	E 39 St & 3 Av
+389	19	0	E 39 St & 3 Av
+390	5	0	E 39 St & 3 Av
+391	23	0	E 39 St & 3 Av
+392	17	0	E 39 St & 3 Av
+393	4	0	E 39 St & 3 Av
+394	8	0	E 39 St & 3 Av
+395	12	0.22	E 39 St & 3 Av
+396	16	0	E 39 St & 3 Av
+397	14	0.11	E 39 St & 3 Av
+398	11	0.65	E 39 St & 3 Av
+399	22	0	E 39 St & 3 Av
+400	10	1.31	E 39 St & 3 Av
+401	13	0.22	E 39 St & 3 Av
+402	1	0	E 39 St & 3 Av
+403	20	0	E 39 St & 3 Av
+404	9	0.44	E 39 St & 3 Av
+405	2	0	E 39 St & 3 Av
+406	21	0	E 39 St & 3 Av
+407	18	0	E 39 St & 3 Av
+408	0	0	E 39 St & 3 Av
+409	3	0	W 18 St & 6 Av
+410	23	0	W 18 St & 6 Av
+411	19	0.11	W 18 St & 6 Av
+412	20	0	W 18 St & 6 Av
+413	8	1.42	W 18 St & 6 Av
+414	10	18.19	W 18 St & 6 Av
+415	15	3.93	W 18 St & 6 Av
+416	11	15.9	W 18 St & 6 Av
+417	5	0	W 18 St & 6 Av
+418	9	14.49	W 18 St & 6 Av
+419	17	0.33	W 18 St & 6 Av
+420	1	0	W 18 St & 6 Av
+421	0	0	W 18 St & 6 Av
+422	12	13.96	W 18 St & 6 Av
+423	16	1.96	W 18 St & 6 Av
+424	4	0	W 18 St & 6 Av
+425	18	0.22	W 18 St & 6 Av
+426	22	0	W 18 St & 6 Av
+427	2	0	W 18 St & 6 Av
+428	6	0	W 18 St & 6 Av
+429	21	0	W 18 St & 6 Av
+430	13	9.69	W 18 St & 6 Av
+431	14	7.2	W 18 St & 6 Av
+432	7	0.22	W 18 St & 6 Av
+433	19	0	Broadway & W 49 St
+434	5	0	Broadway & W 49 St
+435	1	0	Broadway & W 49 St
+436	0	0	Broadway & W 49 St
+437	15	0.22	Broadway & W 49 St
+438	4	0	Broadway & W 49 St
+439	8	4.04	Broadway & W 49 St
+440	20	0	Broadway & W 49 St
+441	23	0	Broadway & W 49 St
+442	6	0	Broadway & W 49 St
+443	18	0	Broadway & W 49 St
+444	22	0	Broadway & W 49 St
+445	9	7.73	Broadway & W 49 St
+446	17	0	Broadway & W 49 St
+447	21	0	Broadway & W 49 St
+448	11	2.51	Broadway & W 49 St
+449	12	0.98	Broadway & W 49 St
+450	16	0.11	Broadway & W 49 St
+451	14	0.33	Broadway & W 49 St
+452	7	0	Broadway & W 49 St
+453	2	0	Broadway & W 49 St
+454	13	0.76	Broadway & W 49 St
+455	10	4.79	Broadway & W 49 St
+456	3	0	Broadway & W 49 St
+457	15	0.11	E 25 St & 1 Ave
+458	1	24.2	E 25 St & 1 Ave
+459	18	0.77	E 25 St & 1 Ave
+460	14	0.44	E 25 St & 1 Ave
+461	17	0.11	E 25 St & 1 Ave
+462	5	7.84	E 25 St & 1 Ave
+463	0	21.78	E 25 St & 1 Ave
+464	10	0	E 25 St & 1 Ave
+465	23	19.37	E 25 St & 1 Ave
+466	11	0	E 25 St & 1 Ave
+467	12	0	E 25 St & 1 Ave
+468	16	0.11	E 25 St & 1 Ave
+469	7	1.96	E 25 St & 1 Ave
+470	8	2.29	E 25 St & 1 Ave
+471	22	10.64	E 25 St & 1 Ave
+472	2	23.72	E 25 St & 1 Ave
+473	13	0.54	E 25 St & 1 Ave
+474	20	1.64	E 25 St & 1 Ave
+475	21	5.15	E 25 St & 1 Ave
+476	9	0	E 25 St & 1 Ave
+477	3	22.77	E 25 St & 1 Ave
+478	4	17.54	E 25 St & 1 Ave
+479	19	3.62	E 25 St & 1 Ave
+480	6	2.07	E 25 St & 1 Ave
+481	9	2.29	Liberty St & Broadway
+482	23	0	Liberty St & Broadway
+483	0	0	Liberty St & Broadway
+484	18	0	Liberty St & Broadway
+485	22	0	Liberty St & Broadway
+486	13	1.85	Liberty St & Broadway
+487	14	1.74	Liberty St & Broadway
+488	10	7.19	Liberty St & Broadway
+489	2	0	Liberty St & Broadway
+490	12	4.58	Liberty St & Broadway
+491	6	0	Liberty St & Broadway
+492	1	0	Liberty St & Broadway
+493	17	0.11	Liberty St & Broadway
+494	15	2.62	Liberty St & Broadway
+495	7	0.22	Liberty St & Broadway
+496	3	0.11	Liberty St & Broadway
+497	11	5.88	Liberty St & Broadway
+498	5	0.11	Liberty St & Broadway
+499	21	0	Liberty St & Broadway
+500	16	0.87	Liberty St & Broadway
+501	4	0	Liberty St & Broadway
+502	8	0.22	Liberty St & Broadway
+503	20	0	Liberty St & Broadway
+504	19	0	Liberty St & Broadway
+505	23	0	W 16 St & The High Line
+506	2	0	W 16 St & The High Line
+507	13	16.34	W 16 St & The High Line
+508	7	0.65	W 16 St & The High Line
+509	14	7.42	W 16 St & The High Line
+510	10	29.3	W 16 St & The High Line
+511	18	0	W 16 St & The High Line
+512	6	0	W 16 St & The High Line
+513	3	0	W 16 St & The High Line
+514	9	18.95	W 16 St & The High Line
+515	4	0	W 16 St & The High Line
+516	17	0.44	W 16 St & The High Line
+517	22	0.99	W 16 St & The High Line
+518	19	0.22	W 16 St & The High Line
+519	16	0.44	W 16 St & The High Line
+520	11	20.15	W 16 St & The High Line
+521	21	0.77	W 16 St & The High Line
+522	5	0	W 16 St & The High Line
+523	12	23.12	W 16 St & The High Line
+524	0	0	W 16 St & The High Line
+525	15	3.49	W 16 St & The High Line
+526	20	0.44	W 16 St & The High Line
+527	1	0	W 16 St & The High Line
+528	8	1.86	W 16 St & The High Line
+529	23	51.8	W 13 St & 7 Ave
+530	10	51.63	W 13 St & 7 Ave
+531	7	51.2	W 13 St & 7 Ave
+532	14	51.58	W 13 St & 7 Ave
+533	11	51.63	W 13 St & 7 Ave
+534	6	51.15	W 13 St & 7 Ave
+535	3	50.98	W 13 St & 7 Ave
+536	22	52.08	W 13 St & 7 Ave
+537	15	51.69	W 13 St & 7 Ave
+538	2	51.04	W 13 St & 7 Ave
+539	21	51.86	W 13 St & 7 Ave
+540	16	51.63	W 13 St & 7 Ave
+541	5	51.63	W 13 St & 7 Ave
+542	18	51.82	W 13 St & 7 Ave
+543	19	52.41	W 13 St & 7 Ave
+544	1	51.6	W 13 St & 7 Ave
+545	0	52.33	W 13 St & 7 Ave
+546	4	51.2	W 13 St & 7 Ave
+547	17	51.92	W 13 St & 7 Ave
+548	20	52.46	W 13 St & 7 Ave
+549	12	51.58	W 13 St & 7 Ave
+550	13	51.63	W 13 St & 7 Ave
+551	9	50.98	W 13 St & 7 Ave
+552	8	50.98	W 13 St & 7 Ave
+553	7	0.11	Spruce St & Nassau St
+554	23	0	Spruce St & Nassau St
+555	2	0	Spruce St & Nassau St
+556	19	0.66	Spruce St & Nassau St
+557	6	0	Spruce St & Nassau St
+558	3	0	Spruce St & Nassau St
+559	14	7.42	Spruce St & Nassau St
+560	10	6.1	Spruce St & Nassau St
+561	11	4.47	Spruce St & Nassau St
+562	20	1.42	Spruce St & Nassau St
+563	16	2.4	Spruce St & Nassau St
+564	18	0.66	Spruce St & Nassau St
+565	17	1.86	Spruce St & Nassau St
+566	8	0.11	Spruce St & Nassau St
+567	21	0.99	Spruce St & Nassau St
+568	5	0	Spruce St & Nassau St
+569	15	3.71	Spruce St & Nassau St
+570	9	3.59	Spruce St & Nassau St
+571	12	4.47	Spruce St & Nassau St
+572	0	0	Spruce St & Nassau St
+573	22	0.44	Spruce St & Nassau St
+574	13	4.9	Spruce St & Nassau St
+575	1	0.33	Spruce St & Nassau St
+576	4	0	Spruce St & Nassau St
+577	2	0.33	W 14 St & The High Line
+578	10	21.57	W 14 St & The High Line
+579	7	0.33	W 14 St & The High Line
+580	3	0	W 14 St & The High Line
+581	16	3.81	W 14 St & The High Line
+582	18	1.21	W 14 St & The High Line
+583	19	1.54	W 14 St & The High Line
+584	6	0	W 14 St & The High Line
+585	21	1.54	W 14 St & The High Line
+586	23	2.03	W 14 St & The High Line
+587	15	7.09	W 14 St & The High Line
+588	11	22.11	W 14 St & The High Line
+589	20	2.85	W 14 St & The High Line
+590	14	11.34	W 14 St & The High Line
+591	22	2.08	W 14 St & The High Line
+592	8	0.98	W 14 St & The High Line
+593	17	1.64	W 14 St & The High Line
+594	0	1.56	W 14 St & The High Line
+595	4	0	W 14 St & The High Line
+596	9	10.46	W 14 St & The High Line
+597	13	16.12	W 14 St & The High Line
+598	1	1.77	W 14 St & The High Line
+599	5	0	W 14 St & The High Line
+600	12	18.32	W 14 St & The High Line
+601	7	0.11	E 48 St & 3 Ave
+602	2	0	E 48 St & 3 Ave
+603	6	0	E 48 St & 3 Ave
+604	23	0	E 48 St & 3 Ave
+605	10	26.14	E 48 St & 3 Ave
+606	19	0	E 48 St & 3 Ave
+607	20	0	E 48 St & 3 Ave
+608	14	2.51	E 48 St & 3 Ave
+609	4	0	E 48 St & 3 Ave
+610	15	3.38	E 48 St & 3 Ave
+611	11	14.49	E 48 St & 3 Ave
+612	3	0	E 48 St & 3 Ave
+613	16	0.44	E 48 St & 3 Ave
+614	18	0	E 48 St & 3 Ave
+615	17	0	E 48 St & 3 Ave
+616	12	7.63	E 48 St & 3 Ave
+617	21	0	E 48 St & 3 Ave
+618	9	21.79	E 48 St & 3 Ave
+619	8	0.76	E 48 St & 3 Ave
+620	5	0	E 48 St & 3 Ave
+621	22	0	E 48 St & 3 Ave
+622	0	0	E 48 St & 3 Ave
+623	13	3.27	E 48 St & 3 Ave
+624	1	0.11	E 48 St & 3 Ave
+625	2	0	Great Jones St
+626	7	2.94	Great Jones St
+627	10	15.03	Great Jones St
+628	6	0.22	Great Jones St
+629	18	3.2	Great Jones St
+630	19	3.29	Great Jones St
+631	23	0.11	Great Jones St
+632	4	0	Great Jones St
+633	8	9.28	Great Jones St
+634	3	0	Great Jones St
+635	16	12.31	Great Jones St
+636	14	9.38	Great Jones St
+637	15	10.25	Great Jones St
+638	11	14.71	Great Jones St
+639	21	0.55	Great Jones St
+640	5	0	Great Jones St
+641	22	0.22	Great Jones St
+642	13	12.09	Great Jones St
+643	20	1.42	Great Jones St
+644	0	0.33	Great Jones St
+645	9	19.06	Great Jones St
+646	17	5.91	Great Jones St
+647	1	0	Great Jones St
+648	12	16.03	Great Jones St
+649	2	15.96	St Marks Pl & 2 Ave
+650	3	13.07	St Marks Pl & 2 Ave
+651	4	9.91	St Marks Pl & 2 Ave
+652	19	34.32	St Marks Pl & 2 Ave
+653	6	0.44	St Marks Pl & 2 Ave
+654	23	16.55	St Marks Pl & 2 Ave
+655	10	0	St Marks Pl & 2 Ave
+656	7	0	St Marks Pl & 2 Ave
+657	21	28.07	St Marks Pl & 2 Ave
+658	14	0	St Marks Pl & 2 Ave
+659	9	0	St Marks Pl & 2 Ave
+660	11	0	St Marks Pl & 2 Ave
+661	20	32.64	St Marks Pl & 2 Ave
+662	16	0	St Marks Pl & 2 Ave
+663	5	5.99	St Marks Pl & 2 Ave
+664	15	0.22	St Marks Pl & 2 Ave
+665	17	0.66	St Marks Pl & 2 Ave
+666	1	17.46	St Marks Pl & 2 Ave
+667	0	18.44	St Marks Pl & 2 Ave
+668	18	9.37	St Marks Pl & 2 Ave
+669	8	0	St Marks Pl & 2 Ave
+670	12	0.11	St Marks Pl & 2 Ave
+671	13	0	St Marks Pl & 2 Ave
+672	22	16.89	St Marks Pl & 2 Ave
+673	3	14.16	E 11 Street & 2 Avenue
+674	2	13.55	E 11 Street & 2 Avenue
+675	6	0.76	E 11 Street & 2 Avenue
+676	20	28.59	E 11 Street & 2 Avenue
+677	10	0.11	E 11 Street & 2 Avenue
+678	7	0	E 11 Street & 2 Avenue
+679	19	22.7	E 11 Street & 2 Avenue
+680	21	25.22	E 11 Street & 2 Avenue
+681	23	15.09	E 11 Street & 2 Avenue
+682	18	5.29	E 11 Street & 2 Avenue
+683	17	0.55	E 11 Street & 2 Avenue
+684	8	0	E 11 Street & 2 Avenue
+685	5	12.09	E 11 Street & 2 Avenue
+686	9	0.11	E 11 Street & 2 Avenue
+687	4	16.01	E 11 Street & 2 Avenue
+688	11	0	E 11 Street & 2 Avenue
+689	16	0	E 11 Street & 2 Avenue
+690	14	0	E 11 Street & 2 Avenue
+691	15	0	E 11 Street & 2 Avenue
+692	1	11.05	E 11 Street & 2 Avenue
+693	0	13.56	E 11 Street & 2 Avenue
+694	22	20.61	E 11 Street & 2 Avenue
+695	12	0	E 11 Street & 2 Avenue
+696	13	0	E 11 Street & 2 Avenue
+697	15	0	Bank St & Washington St
+698	10	0	Bank St & Washington St
+699	20	31.54	Bank St & Washington St
+700	17	2.85	Bank St & Washington St
+701	11	0.11	Bank St & Washington St
+702	1	10.94	Bank St & Washington St
+703	12	0	Bank St & Washington St
+704	16	0	Bank St & Washington St
+705	23	15.54	Bank St & Washington St
+706	8	0	Bank St & Washington St
+707	19	34.65	Bank St & Washington St
+708	14	0.33	Bank St & Washington St
+709	18	15.44	Bank St & Washington St
+710	21	28.95	Bank St & Washington St
+711	2	13.11	Bank St & Washington St
+712	5	6.32	Bank St & Washington St
+713	9	0.11	Bank St & Washington St
+714	22	23.9	Bank St & Washington St
+715	4	12.31	Bank St & Washington St
+716	0	12.44	Bank St & Washington St
+717	6	1.2	Bank St & Washington St
+718	13	0.11	Bank St & Washington St
+719	3	13.07	Bank St & Washington St
+720	7	0	Bank St & Washington St
+721	17	5.48	Perry St & Bleecker St
+722	12	0.33	Perry St & Bleecker St
+723	20	32.75	Perry St & Bleecker St
+724	15	0.65	Perry St & Bleecker St
+725	19	41.34	Perry St & Bleecker St
+726	11	0	Perry St & Bleecker St
+727	14	0	Perry St & Bleecker St
+728	10	0	Perry St & Bleecker St
+729	21	34.32	Perry St & Bleecker St
+730	16	1.42	Perry St & Bleecker St
+731	13	0.44	Perry St & Bleecker St
+732	5	16.01	Perry St & Bleecker St
+733	18	24.81	Perry St & Bleecker St
+734	9	0	Perry St & Bleecker St
+735	1	23.31	Perry St & Bleecker St
+736	22	30.7	Perry St & Bleecker St
+737	23	27.25	Perry St & Bleecker St
+738	0	26	Perry St & Bleecker St
+739	7	0.33	Perry St & Bleecker St
+740	3	24.4	Perry St & Bleecker St
+741	2	24.15	Perry St & Bleecker St
+742	6	6.65	Perry St & Bleecker St
+743	8	0.11	Perry St & Bleecker St
+744	4	23.42	Perry St & Bleecker St
+745	17	1.42	Laight St & Hudson St
+746	14	6	Laight St & Hudson St
+747	13	7.41	Laight St & Hudson St
+748	21	0.77	Laight St & Hudson St
+749	6	0.76	Laight St & Hudson St
+750	1	0.33	Laight St & Hudson St
+751	23	0.79	Laight St & Hudson St
+752	2	0	Laight St & Hudson St
+753	7	2.51	Laight St & Hudson St
+754	5	0	Laight St & Hudson St
+755	10	19.61	Laight St & Hudson St
+756	8	5.79	Laight St & Hudson St
+757	22	1.21	Laight St & Hudson St
+758	18	0	Laight St & Hudson St
+759	9	15.25	Laight St & Hudson St
+760	19	0	Laight St & Hudson St
+761	12	10.8	Laight St & Hudson St
+762	3	0	Laight St & Hudson St
+763	4	0	Laight St & Hudson St
+764	0	0.67	Laight St & Hudson St
+765	20	1.42	Laight St & Hudson St
+766	15	4.47	Laight St & Hudson St
+767	11	15.36	Laight St & Hudson St
+768	16	5.34	Laight St & Hudson St
+769	2	0	Harrison St & Hudson St
+770	5	0	Harrison St & Hudson St
+771	21	1.05	Harrison St & Hudson St
+772	6	1.74	Harrison St & Hudson St
+773	17	6.33	Harrison St & Hudson St
+774	10	43.4	Harrison St & Hudson St
+775	23	0.18	Harrison St & Hudson St
+776	14	14.06	Harrison St & Hudson St
+777	1	0	Harrison St & Hudson St
+778	19	0	Harrison St & Hudson St
+779	13	25.69	Harrison St & Hudson St
+780	7	9.9	Harrison St & Hudson St
+781	22	0.7	Harrison St & Hudson St
+782	9	57.64	Harrison St & Hudson St
+783	11	30.21	Harrison St & Hudson St
+784	20	1.23	Harrison St & Hudson St
+785	3	0	Harrison St & Hudson St
+786	4	0	Harrison St & Hudson St
+787	18	0.53	Harrison St & Hudson St
+788	8	31.94	Harrison St & Hudson St
+789	12	22.74	Harrison St & Hudson St
+790	15	20.74	Harrison St & Hudson St
+791	16	13.68	Harrison St & Hudson St
+792	0	0	Harrison St & Hudson St
+793	2	0	Lafayette St & Jersey St
+794	22	0	Lafayette St & Jersey St
+795	6	0	Lafayette St & Jersey St
+796	10	5.66	Lafayette St & Jersey St
+797	5	0	Lafayette St & Jersey St
+798	21	0	Lafayette St & Jersey St
+799	1	0	Lafayette St & Jersey St
+800	19	0	Lafayette St & Jersey St
+801	23	0	Lafayette St & Jersey St
+802	17	0.33	Lafayette St & Jersey St
+803	13	1.53	Lafayette St & Jersey St
+804	18	0	Lafayette St & Jersey St
+805	9	5.66	Lafayette St & Jersey St
+806	0	0	Lafayette St & Jersey St
+807	7	0	Lafayette St & Jersey St
+808	15	0.76	Lafayette St & Jersey St
+809	11	4.36	Lafayette St & Jersey St
+810	20	0	Lafayette St & Jersey St
+811	14	0.76	Lafayette St & Jersey St
+812	4	0	Lafayette St & Jersey St
+813	8	0.44	Lafayette St & Jersey St
+814	3	0	Lafayette St & Jersey St
+815	16	0.76	Lafayette St & Jersey St
+816	12	1.74	Lafayette St & Jersey St
+817	2	6.23	Mott St & Prince St
+818	5	1.85	Mott St & Prince St
+819	10	10.46	Mott St & Prince St
+820	23	3.83	Mott St & Prince St
+821	14	8.62	Mott St & Prince St
+822	17	13.14	Mott St & Prince St
+823	9	4.25	Mott St & Prince St
+824	21	4.06	Mott St & Prince St
+825	7	0.98	Mott St & Prince St
+826	15	8.29	Mott St & Prince St
+827	19	7.13	Mott St & Prince St
+828	11	9.59	Mott St & Prince St
+829	6	0.98	Mott St & Prince St
+830	22	3.07	Mott St & Prince St
+831	1	6.96	Mott St & Prince St
+832	18	8.82	Mott St & Prince St
+833	8	0.66	Mott St & Prince St
+834	13	11.55	Mott St & Prince St
+835	16	7.3	Mott St & Prince St
+836	4	3.38	Mott St & Prince St
+837	3	4.36	Mott St & Prince St
+838	20	3.83	Mott St & Prince St
+839	0	7	Mott St & Prince St
+840	12	10.03	Mott St & Prince St
+841	5	1.2	MacDougal St & Washington Sq
+842	19	12.06	MacDougal St & Washington Sq
+843	2	0.66	MacDougal St & Washington Sq
+844	7	0.98	MacDougal St & Washington Sq
+845	1	1.1	MacDougal St & Washington Sq
+846	9	0.87	MacDougal St & Washington Sq
+847	6	1.2	MacDougal St & Washington Sq
+848	10	1.85	MacDougal St & Washington Sq
+849	15	3.05	MacDougal St & Washington Sq
+850	11	1.85	MacDougal St & Washington Sq
+851	21	5.7	MacDougal St & Washington Sq
+852	17	2.3	MacDougal St & Washington Sq
+853	14	2.18	MacDougal St & Washington Sq
+854	18	5.51	MacDougal St & Washington Sq
+855	23	1.69	MacDougal St & Washington Sq
+856	3	0.65	MacDougal St & Washington Sq
+857	13	2.29	MacDougal St & Washington Sq
+858	4	0.76	MacDougal St & Washington Sq
+859	16	1.31	MacDougal St & Washington Sq
+860	22	3.95	MacDougal St & Washington Sq
+861	20	11.28	MacDougal St & Washington Sq
+862	0	1.22	MacDougal St & Washington Sq
+863	8	0.44	MacDougal St & Washington Sq
+864	12	1.85	MacDougal St & Washington Sq
+865	17	0.44	W 13 St & 5 Ave
+866	2	0	W 13 St & 5 Ave
+867	15	1.31	W 13 St & 5 Ave
+868	5	0	W 13 St & 5 Ave
+869	14	1.74	W 13 St & 5 Ave
+870	10	3.59	W 13 St & 5 Ave
+871	13	1.74	W 13 St & 5 Ave
+872	1	0.11	W 13 St & 5 Ave
+873	23	0	W 13 St & 5 Ave
+874	7	0	W 13 St & 5 Ave
+875	3	0	W 13 St & 5 Ave
+876	22	0.11	W 13 St & 5 Ave
+877	9	1.31	W 13 St & 5 Ave
+878	21	0	W 13 St & 5 Ave
+879	6	0.11	W 13 St & 5 Ave
+880	16	0.54	W 13 St & 5 Ave
+881	19	0.88	W 13 St & 5 Ave
+882	11	3.38	W 13 St & 5 Ave
+883	20	0.33	W 13 St & 5 Ave
+884	12	2.51	W 13 St & 5 Ave
+885	18	0.99	W 13 St & 5 Ave
+886	4	0.11	W 13 St & 5 Ave
+887	8	0.22	W 13 St & 5 Ave
+888	0	0	W 13 St & 5 Ave
+889	7	0.11	W 11 St & 6 Ave
+890	10	0	W 11 St & 6 Ave
+891	17	1.2	W 11 St & 6 Ave
+892	21	2.96	W 11 St & 6 Ave
+893	3	0	W 11 St & 6 Ave
+894	1	1.33	W 11 St & 6 Ave
+895	19	7.46	W 11 St & 6 Ave
+896	2	0	W 11 St & 6 Ave
+897	6	0.11	W 11 St & 6 Ave
+898	14	0.44	W 11 St & 6 Ave
+899	18	2.43	W 11 St & 6 Ave
+900	5	0	W 11 St & 6 Ave
+901	23	2.36	W 11 St & 6 Ave
+902	16	0	W 11 St & 6 Ave
+903	15	0.33	W 11 St & 6 Ave
+904	11	0	W 11 St & 6 Ave
+905	9	0	W 11 St & 6 Ave
+906	20	4.49	W 11 St & 6 Ave
+907	22	1.75	W 11 St & 6 Ave
+908	4	0	W 11 St & 6 Ave
+909	8	0.22	W 11 St & 6 Ave
+910	13	0.44	W 11 St & 6 Ave
+911	0	2.22	W 11 St & 6 Ave
+912	12	0	W 11 St & 6 Ave
+913	2	0.66	Lispenard St & Broadway
+914	10	22.55	Lispenard St & Broadway
+915	1	0.66	Lispenard St & Broadway
+916	9	7.95	Lispenard St & Broadway
+917	3	0.65	Lispenard St & Broadway
+918	7	0.44	Lispenard St & Broadway
+919	19	0.33	Lispenard St & Broadway
+920	6	0.33	Lispenard St & Broadway
+921	14	9.71	Lispenard St & Broadway
+922	18	0.11	Lispenard St & Broadway
+923	23	1.13	Lispenard St & Broadway
+924	5	0.65	Lispenard St & Broadway
+925	17	1.86	Lispenard St & Broadway
+926	4	0.65	Lispenard St & Broadway
+927	11	18.85	Lispenard St & Broadway
+928	20	0.22	Lispenard St & Broadway
+929	16	7.19	Lispenard St & Broadway
+930	15	10.47	Lispenard St & Broadway
+931	8	1.31	Lispenard St & Broadway
+932	21	0	Lispenard St & Broadway
+933	22	0.33	Lispenard St & Broadway
+934	12	13.2	Lispenard St & Broadway
+935	13	10.89	Lispenard St & Broadway
+936	0	0.67	Lispenard St & Broadway
+937	10	26.03	South St & Whitehall St
+938	6	0	South St & Whitehall St
+939	15	4.03	South St & Whitehall St
+940	1	0	South St & Whitehall St
+941	14	7.96	South St & Whitehall St
+942	19	0	South St & Whitehall St
+943	20	0	South St & Whitehall St
+944	3	0	South St & Whitehall St
+945	11	22.98	South St & Whitehall St
+946	23	0	South St & Whitehall St
+947	21	0	South St & Whitehall St
+948	22	0	South St & Whitehall St
+949	7	0	South St & Whitehall St
+950	2	0	South St & Whitehall St
+951	12	14.39	South St & Whitehall St
+952	9	10.46	South St & Whitehall St
+953	5	0	South St & Whitehall St
+954	17	0	South St & Whitehall St
+955	8	0.33	South St & Whitehall St
+956	16	2.51	South St & Whitehall St
+957	13	13.18	South St & Whitehall St
+958	4	0	South St & Whitehall St
+959	18	0	South St & Whitehall St
+960	0	0	South St & Whitehall St
+961	23	0	Broad St & Bridge St
+962	22	0.13	Broad St & Bridge St
+963	15	3.03	Broad St & Bridge St
+964	18	0	Broad St & Bridge St
+965	12	6.45	Broad St & Bridge St
+966	13	7.45	Broad St & Bridge St
+967	9	11.36	Broad St & Bridge St
+968	1	0	Broad St & Bridge St
+969	19	0	Broad St & Bridge St
+970	0	0	Broad St & Bridge St
+971	16	1.26	Broad St & Bridge St
+972	11	7.2	Broad St & Bridge St
+973	8	1.52	Broad St & Bridge St
+974	20	0.13	Broad St & Bridge St
+975	4	0	Broad St & Bridge St
+976	10	6.06	Broad St & Bridge St
+977	2	0	Broad St & Bridge St
+978	3	0	Broad St & Bridge St
+979	14	7.84	Broad St & Bridge St
+980	7	0	Broad St & Bridge St
+981	5	0	Broad St & Bridge St
+982	17	0.51	Broad St & Bridge St
+983	21	0	Broad St & Bridge St
+984	6	0	Broad St & Bridge St
+985	11	0.98	Elizabeth St & Hester St
+986	1	2.87	Elizabeth St & Hester St
+987	5	2.51	Elizabeth St & Hester St
+988	4	2.72	Elizabeth St & Hester St
+989	20	1.53	Elizabeth St & Hester St
+990	14	1.85	Elizabeth St & Hester St
+991	8	1.64	Elizabeth St & Hester St
+992	17	1.75	Elizabeth St & Hester St
+993	7	1.85	Elizabeth St & Hester St
+994	21	1.54	Elizabeth St & Hester St
+995	15	1.09	Elizabeth St & Hester St
+996	0	2.11	Elizabeth St & Hester St
+997	9	1.09	Elizabeth St & Hester St
+998	16	0.98	Elizabeth St & Hester St
+999	3	3.05	Elizabeth St & Hester St
+1000	2	2.95	Elizabeth St & Hester St
+1001	12	1.31	Elizabeth St & Hester St
+1002	22	0.99	Elizabeth St & Hester St
+1003	23	1.69	Elizabeth St & Hester St
+1004	13	1.31	Elizabeth St & Hester St
+1005	6	0.87	Elizabeth St & Hester St
+1006	19	0.77	Elizabeth St & Hester St
+1007	18	1.65	Elizabeth St & Hester St
+1008	10	2.29	Elizabeth St & Hester St
+1009	1	2.65	Maiden Ln & Pearl St
+1010	5	0.54	Maiden Ln & Pearl St
+1011	0	2.56	Maiden Ln & Pearl St
+1012	20	1.42	Maiden Ln & Pearl St
+1013	7	0.87	Maiden Ln & Pearl St
+1014	9	29.08	Maiden Ln & Pearl St
+1015	13	20.15	Maiden Ln & Pearl St
+1016	16	6.43	Maiden Ln & Pearl St
+1017	21	1.21	Maiden Ln & Pearl St
+1018	4	1.85	Maiden Ln & Pearl St
+1019	8	4.26	Maiden Ln & Pearl St
+1020	3	1.96	Maiden Ln & Pearl St
+1021	18	0	Maiden Ln & Pearl St
+1022	17	0.44	Maiden Ln & Pearl St
+1023	6	0.33	Maiden Ln & Pearl St
+1024	14	16.47	Maiden Ln & Pearl St
+1025	23	3.72	Maiden Ln & Pearl St
+1026	15	18.21	Maiden Ln & Pearl St
+1027	12	18.43	Maiden Ln & Pearl St
+1028	11	25.82	Maiden Ln & Pearl St
+1029	22	3.18	Maiden Ln & Pearl St
+1030	19	0	Maiden Ln & Pearl St
+1031	2	2.62	Maiden Ln & Pearl St
+1032	10	36.38	Maiden Ln & Pearl St
+1033	4	5.23	Stanton St & Chrystie St
+1034	1	8.18	Stanton St & Chrystie St
+1035	5	4.47	Stanton St & Chrystie St
+1036	17	1.53	Stanton St & Chrystie St
+1037	8	1.97	Stanton St & Chrystie St
+1038	0	7.89	Stanton St & Chrystie St
+1039	13	0.65	Stanton St & Chrystie St
+1040	9	0.33	Stanton St & Chrystie St
+1041	6	8.07	Stanton St & Chrystie St
+1042	14	0.65	Stanton St & Chrystie St
+1043	7	9.15	Stanton St & Chrystie St
+1044	20	13.47	Stanton St & Chrystie St
+1045	21	12.17	Stanton St & Chrystie St
+1046	10	0.44	Stanton St & Chrystie St
+1047	16	0.33	Stanton St & Chrystie St
+1048	15	0.65	Stanton St & Chrystie St
+1049	12	0.33	Stanton St & Chrystie St
+1050	2	6.99	Stanton St & Chrystie St
+1051	19	13.49	Stanton St & Chrystie St
+1052	18	4.08	Stanton St & Chrystie St
+1053	11	0.11	Stanton St & Chrystie St
+1054	3	6.43	Stanton St & Chrystie St
+1055	22	9.98	Stanton St & Chrystie St
+1056	23	5.52	Stanton St & Chrystie St
+1057	17	0.55	Avenue D & E 8 St
+1058	8	0.11	Avenue D & E 8 St
+1059	5	40.63	Avenue D & E 8 St
+1060	6	19.3	Avenue D & E 8 St
+1061	13	0.22	Avenue D & E 8 St
+1062	20	39.21	Avenue D & E 8 St
+1063	21	46.38	Avenue D & E 8 St
+1064	10	0	Avenue D & E 8 St
+1065	1	48.18	Avenue D & E 8 St
+1066	18	3.86	Avenue D & E 8 St
+1067	2	50.38	Avenue D & E 8 St
+1068	9	0	Avenue D & E 8 St
+1069	4	45.42	Avenue D & E 8 St
+1070	0	46.78	Avenue D & E 8 St
+1071	22	48.9	Avenue D & E 8 St
+1072	12	0	Avenue D & E 8 St
+1073	11	0	Avenue D & E 8 St
+1074	7	6.54	Avenue D & E 8 St
+1075	3	50.98	Avenue D & E 8 St
+1076	19	21.05	Avenue D & E 8 St
+1077	14	0	Avenue D & E 8 St
+1078	15	0.11	Avenue D & E 8 St
+1079	16	0.54	Avenue D & E 8 St
+1080	23	51.01	Avenue D & E 8 St
+1081	17	8.87	Howard St & Centre St
+1082	1	8.29	Howard St & Centre St
+1083	2	8.52	Howard St & Centre St
+1084	4	8.5	Howard St & Centre St
+1085	5	8.5	Howard St & Centre St
+1086	21	8.55	Howard St & Centre St
+1087	8	11.9	Howard St & Centre St
+1088	18	8.71	Howard St & Centre St
+1089	20	8.76	Howard St & Centre St
+1090	19	8.55	Howard St & Centre St
+1091	6	8.51	Howard St & Centre St
+1092	0	8.11	Howard St & Centre St
+1093	22	9.65	Howard St & Centre St
+1094	15	17.01	Howard St & Centre St
+1095	9	23.86	Howard St & Centre St
+1096	14	17.88	Howard St & Centre St
+1097	7	8.93	Howard St & Centre St
+1098	3	8.5	Howard St & Centre St
+1099	12	19.74	Howard St & Centre St
+1100	13	18.95	Howard St & Centre St
+1101	16	12.64	Howard St & Centre St
+1102	11	24.4	Howard St & Centre St
+1103	10	28	Howard St & Centre St
+1104	23	9.01	Howard St & Centre St
+1105	1	3.31	Duane St & Greenwich St
+1106	8	4.8	Duane St & Greenwich St
+1107	4	3.92	Duane St & Greenwich St
+1108	5	2.51	Duane St & Greenwich St
+1109	6	2.29	Duane St & Greenwich St
+1110	14	7.96	Duane St & Greenwich St
+1111	18	2.43	Duane St & Greenwich St
+1112	20	3.94	Duane St & Greenwich St
+1113	17	8.65	Duane St & Greenwich St
+1114	13	11.55	Duane St & Greenwich St
+1115	0	3.22	Duane St & Greenwich St
+1116	15	14.72	Duane St & Greenwich St
+1117	2	3.93	Duane St & Greenwich St
+1118	10	9.91	Duane St & Greenwich St
+1119	7	4.79	Duane St & Greenwich St
+1120	22	1.97	Duane St & Greenwich St
+1121	23	2.03	Duane St & Greenwich St
+1122	21	3.07	Duane St & Greenwich St
+1123	9	7.63	Duane St & Greenwich St
+1124	3	3.92	Duane St & Greenwich St
+1125	12	13.3	Duane St & Greenwich St
+1126	11	11.66	Duane St & Greenwich St
+1127	16	12.42	Duane St & Greenwich St
+1128	19	2.19	Duane St & Greenwich St
+1129	1	1.44	E 10 St & 5 Ave
+1130	0	2	E 10 St & 5 Ave
+1131	6	0.65	E 10 St & 5 Ave
+1132	8	0	E 10 St & 5 Ave
+1133	7	0	E 10 St & 5 Ave
+1134	18	1.43	E 10 St & 5 Ave
+1135	17	1.75	E 10 St & 5 Ave
+1136	10	1.09	E 10 St & 5 Ave
+1137	14	1.96	E 10 St & 5 Ave
+1138	3	1.31	E 10 St & 5 Ave
+1139	2	1.86	E 10 St & 5 Ave
+1140	21	1.21	E 10 St & 5 Ave
+1141	13	1.09	E 10 St & 5 Ave
+1142	16	2.51	E 10 St & 5 Ave
+1143	20	3.4	E 10 St & 5 Ave
+1144	19	4.17	E 10 St & 5 Ave
+1145	9	0.44	E 10 St & 5 Ave
+1146	22	2.96	E 10 St & 5 Ave
+1147	5	1.31	E 10 St & 5 Ave
+1148	12	1.53	E 10 St & 5 Ave
+1149	23	4.05	E 10 St & 5 Ave
+1150	15	0.76	E 10 St & 5 Ave
+1151	11	1.2	E 10 St & 5 Ave
+1152	4	1.31	E 10 St & 5 Ave
+1153	8	6.33	Grand Army Plaza & Central Park S
+1154	6	0	Grand Army Plaza & Central Park S
+1155	5	0	Grand Army Plaza & Central Park S
+1156	17	0	Grand Army Plaza & Central Park S
+1157	2	0	Grand Army Plaza & Central Park S
+1158	19	0	Grand Army Plaza & Central Park S
+1159	10	19.5	Grand Army Plaza & Central Park S
+1160	0	0	Grand Army Plaza & Central Park S
+1161	18	0	Grand Army Plaza & Central Park S
+1162	20	0	Grand Army Plaza & Central Park S
+1163	21	0	Grand Army Plaza & Central Park S
+1164	14	1.2	Grand Army Plaza & Central Park S
+1165	1	0	Grand Army Plaza & Central Park S
+1166	15	0.33	Grand Army Plaza & Central Park S
+1167	12	2.51	Grand Army Plaza & Central Park S
+1168	13	2.29	Grand Army Plaza & Central Park S
+1169	3	0	Grand Army Plaza & Central Park S
+1170	22	0	Grand Army Plaza & Central Park S
+1171	11	7.19	Grand Army Plaza & Central Park S
+1172	9	30.28	Grand Army Plaza & Central Park S
+1173	7	0.22	Grand Army Plaza & Central Park S
+1174	23	0	Grand Army Plaza & Central Park S
+1175	4	0	Grand Army Plaza & Central Park S
+1176	16	0	Grand Army Plaza & Central Park S
+1177	19	9.1	Greenwich Ave & 8 Ave
+1178	18	7.28	Greenwich Ave & 8 Ave
+1179	7	2.18	Greenwich Ave & 8 Ave
+1180	20	7.01	Greenwich Ave & 8 Ave
+1181	9	0.33	Greenwich Ave & 8 Ave
+1182	21	5.81	Greenwich Ave & 8 Ave
+1183	17	6.79	Greenwich Ave & 8 Ave
+1184	15	2.29	Greenwich Ave & 8 Ave
+1185	8	0.66	Greenwich Ave & 8 Ave
+1186	10	0.76	Greenwich Ave & 8 Ave
+1187	14	1.42	Greenwich Ave & 8 Ave
+1188	22	5.04	Greenwich Ave & 8 Ave
+1189	1	4.86	Greenwich Ave & 8 Ave
+1190	2	2.73	Greenwich Ave & 8 Ave
+1191	13	1.74	Greenwich Ave & 8 Ave
+1192	23	4.84	Greenwich Ave & 8 Ave
+1193	4	1.31	Greenwich Ave & 8 Ave
+1194	12	1.09	Greenwich Ave & 8 Ave
+1195	0	6.44	Greenwich Ave & 8 Ave
+1196	3	1.74	Greenwich Ave & 8 Ave
+1197	11	0.98	Greenwich Ave & 8 Ave
+1198	5	1.09	Greenwich Ave & 8 Ave
+1199	6	2.4	Greenwich Ave & 8 Ave
+1200	16	2.29	Greenwich Ave & 8 Ave
+1201	18	0	Broadway & E 14 St
+1202	14	3.49	Broadway & E 14 St
+1203	22	0	Broadway & E 14 St
+1204	15	2.84	Broadway & E 14 St
+1205	6	0	Broadway & E 14 St
+1206	21	0.44	Broadway & E 14 St
+1207	7	0.11	Broadway & E 14 St
+1208	13	2.07	Broadway & E 14 St
+1209	20	0.22	Broadway & E 14 St
+1210	0	0	Broadway & E 14 St
+1211	23	0	Broadway & E 14 St
+1212	11	1.96	Broadway & E 14 St
+1213	19	0.55	Broadway & E 14 St
+1214	4	0	Broadway & E 14 St
+1215	3	0	Broadway & E 14 St
+1216	10	2.29	Broadway & E 14 St
+1217	2	0	Broadway & E 14 St
+1218	9	3.81	Broadway & E 14 St
+1219	1	0	Broadway & E 14 St
+1220	17	0.55	Broadway & E 14 St
+1221	12	2.07	Broadway & E 14 St
+1222	8	2.4	Broadway & E 14 St
+1223	16	0.98	Broadway & E 14 St
+1224	5	0	Broadway & E 14 St
+1225	22	25.88	Madison St & Montgomery St
+1226	3	44.77	Madison St & Montgomery St
+1227	19	10.86	Madison St & Montgomery St
+1228	4	45.75	Madison St & Montgomery St
+1229	7	3.81	Madison St & Montgomery St
+1230	11	0	Madison St & Montgomery St
+1231	23	36.04	Madison St & Montgomery St
+1232	13	0	Madison St & Montgomery St
+1233	20	10.84	Madison St & Montgomery St
+1234	10	0	Madison St & Montgomery St
+1235	15	0	Madison St & Montgomery St
+1236	12	0	Madison St & Montgomery St
+1237	8	0.22	Madison St & Montgomery St
+1238	17	0.11	Madison St & Montgomery St
+1239	2	44.15	Madison St & Montgomery St
+1240	18	2.76	Madison St & Montgomery St
+1241	6	17.99	Madison St & Montgomery St
+1242	14	0	Madison St & Montgomery St
+1243	1	44.97	Madison St & Montgomery St
+1244	5	35.29	Madison St & Montgomery St
+1245	0	43.56	Madison St & Montgomery St
+1246	16	0	Madison St & Montgomery St
+1247	9	0	Madison St & Montgomery St
+1248	21	13.82	Madison St & Montgomery St
+1249	20	26.61	Lafayette St & E 8 St
+1250	23	25.88	Lafayette St & E 8 St
+1251	15	27.29	Lafayette St & E 8 St
+1252	3	25.96	Lafayette St & E 8 St
+1253	11	26.8	Lafayette St & E 8 St
+1254	4	25.96	Lafayette St & E 8 St
+1255	8	27.13	Lafayette St & E 8 St
+1256	7	26.76	Lafayette St & E 8 St
+1257	12	27.82	Lafayette St & E 8 St
+1258	19	26.81	Lafayette St & E 8 St
+1259	6	25.96	Lafayette St & E 8 St
+1260	0	26.47	Lafayette St & E 8 St
+1261	10	26.67	Lafayette St & E 8 St
+1262	16	26.92	Lafayette St & E 8 St
+1263	21	26.21	Lafayette St & E 8 St
+1264	13	27.23	Lafayette St & E 8 St
+1265	17	26.85	Lafayette St & E 8 St
+1266	2	25.96	Lafayette St & E 8 St
+1267	5	25.96	Lafayette St & E 8 St
+1268	9	27.3	Lafayette St & E 8 St
+1269	14	26.92	Lafayette St & E 8 St
+1270	1	26.26	Lafayette St & E 8 St
+1271	18	26.57	Lafayette St & E 8 St
+1272	22	26.21	Lafayette St & E 8 St
+1273	23	8.9	Pike St & E Broadway
+1274	4	3.92	Pike St & E Broadway
+1275	3	14.49	Pike St & E Broadway
+1276	16	0.44	Pike St & E Broadway
+1277	21	3.29	Pike St & E Broadway
+1278	20	1.42	Pike St & E Broadway
+1279	7	1.2	Pike St & E Broadway
+1280	2	20.87	Pike St & E Broadway
+1281	0	13.33	Pike St & E Broadway
+1282	15	0.22	Pike St & E Broadway
+1283	10	0.11	Pike St & E Broadway
+1284	12	0	Pike St & E Broadway
+1285	5	14.81	Pike St & E Broadway
+1286	8	0.87	Pike St & E Broadway
+1287	11	0	Pike St & E Broadway
+1288	19	0.44	Pike St & E Broadway
+1289	1	20.11	Pike St & E Broadway
+1290	9	0	Pike St & E Broadway
+1291	13	0.22	Pike St & E Broadway
+1292	17	0	Pike St & E Broadway
+1293	18	0	Pike St & E Broadway
+1294	6	6.32	Pike St & E Broadway
+1295	14	0.44	Pike St & E Broadway
+1296	22	6.58	Pike St & E Broadway
+1297	3	4.14	Division St & Bowery
+1298	10	0.11	Division St & Bowery
+1299	16	0.87	Division St & Bowery
+1300	8	0	Division St & Bowery
+1301	20	4.82	Division St & Bowery
+1302	7	0	Division St & Bowery
+1303	4	3.92	Division St & Bowery
+1304	23	1.35	Division St & Bowery
+1305	15	2.62	Division St & Bowery
+1306	19	2.3	Division St & Bowery
+1307	0	1.78	Division St & Bowery
+1308	21	0.77	Division St & Bowery
+1309	13	1.53	Division St & Bowery
+1310	17	0.55	Division St & Bowery
+1311	5	2.4	Division St & Bowery
+1312	2	2.84	Division St & Bowery
+1313	6	0	Division St & Bowery
+1314	11	1.63	Division St & Bowery
+1315	12	1.53	Division St & Bowery
+1316	18	2.43	Division St & Bowery
+1317	9	0	Division St & Bowery
+1318	1	3.54	Division St & Bowery
+1319	14	2.62	Division St & Bowery
+1320	22	1.32	Division St & Bowery
+1321	4	1.85	E 15 St & 3 Ave
+1322	21	4.28	E 15 St & 3 Ave
+1323	15	0	E 15 St & 3 Ave
+1324	7	0.54	E 15 St & 3 Ave
+1325	3	1.31	E 15 St & 3 Ave
+1326	16	0	E 15 St & 3 Ave
+1327	8	0.33	E 15 St & 3 Ave
+1328	17	0.22	E 15 St & 3 Ave
+1329	12	0	E 15 St & 3 Ave
+1330	2	1.31	E 15 St & 3 Ave
+1331	23	2.93	E 15 St & 3 Ave
+1332	20	4.71	E 15 St & 3 Ave
+1333	10	0	E 15 St & 3 Ave
+1334	5	2.07	E 15 St & 3 Ave
+1335	9	0.11	E 15 St & 3 Ave
+1336	11	0	E 15 St & 3 Ave
+1337	1	0.66	E 15 St & 3 Ave
+1338	19	3.4	E 15 St & 3 Ave
+1339	0	1.11	E 15 St & 3 Ave
+1340	13	0	E 15 St & 3 Ave
+1341	6	1.85	E 15 St & 3 Ave
+1342	18	1.21	E 15 St & 3 Ave
+1343	22	3.18	E 15 St & 3 Ave
+1344	14	0	E 15 St & 3 Ave
+1345	3	3.47	Cooper Square & E 7 St
+1346	4	2.26	Cooper Square & E 7 St
+1347	10	0	Cooper Square & E 7 St
+1348	5	1.74	Cooper Square & E 7 St
+1349	23	3.42	Cooper Square & E 7 St
+1350	20	2.63	Cooper Square & E 7 St
+1351	17	0	Cooper Square & E 7 St
+1352	7	0	Cooper Square & E 7 St
+1353	21	2.63	Cooper Square & E 7 St
+1354	8	0.52	Cooper Square & E 7 St
+1355	15	0	Cooper Square & E 7 St
+1356	19	1.23	Cooper Square & E 7 St
+1357	16	0	Cooper Square & E 7 St
+1358	9	0	Cooper Square & E 7 St
+1359	13	0	Cooper Square & E 7 St
+1360	1	2.46	Cooper Square & E 7 St
+1361	12	0	Cooper Square & E 7 St
+1362	0	1.6	Cooper Square & E 7 St
+1363	6	0.52	Cooper Square & E 7 St
+1364	11	0	Cooper Square & E 7 St
+1365	18	0.18	Cooper Square & E 7 St
+1366	2	3.65	Cooper Square & E 7 St
+1367	14	0	Cooper Square & E 7 St
+1368	22	2.28	Cooper Square & E 7 St
+1369	4	36.93	E 2 St & Avenue B
+1370	17	0.99	E 2 St & Avenue B
+1371	16	0.33	E 2 St & Avenue B
+1372	8	0.44	E 2 St & Avenue B
+1373	15	0	E 2 St & Avenue B
+1374	3	38.89	E 2 St & Avenue B
+1375	5	20.15	E 2 St & Avenue B
+1376	21	31.8	E 2 St & Avenue B
+1377	13	0	E 2 St & Avenue B
+1378	1	30.5	E 2 St & Avenue B
+1379	7	0	E 2 St & Avenue B
+1380	0	29.89	E 2 St & Avenue B
+1381	23	29.95	E 2 St & Avenue B
+1382	20	32.2	E 2 St & Avenue B
+1383	10	0	E 2 St & Avenue B
+1384	2	32.13	E 2 St & Avenue B
+1385	6	1.42	E 2 St & Avenue B
+1386	11	0	E 2 St & Avenue B
+1387	18	16.32	E 2 St & Avenue B
+1388	12	0	E 2 St & Avenue B
+1389	9	0	E 2 St & Avenue B
+1390	14	0	E 2 St & Avenue B
+1391	19	37.5	E 2 St & Avenue B
+1392	22	27.96	E 2 St & Avenue B
+1393	21	48.03	Avenue D & E 3 St
+1394	7	0.44	Avenue D & E 3 St
+1395	3	51.53	Avenue D & E 3 St
+1396	8	0	Avenue D & E 3 St
+1397	10	0	Avenue D & E 3 St
+1398	2	54.1	Avenue D & E 3 St
+1399	23	47.75	Avenue D & E 3 St
+1400	17	0	Avenue D & E 3 St
+1401	1	52.71	Avenue D & E 3 St
+1402	5	37.36	Avenue D & E 3 St
+1403	9	0	Avenue D & E 3 St
+1404	13	0	Avenue D & E 3 St
+1405	20	34.61	Avenue D & E 3 St
+1406	4	49.67	Avenue D & E 3 St
+1407	16	0	Avenue D & E 3 St
+1408	6	6.54	Avenue D & E 3 St
+1409	15	0	Avenue D & E 3 St
+1410	19	11.4	Avenue D & E 3 St
+1411	12	0	Avenue D & E 3 St
+1412	0	54	Avenue D & E 3 St
+1413	14	0	Avenue D & E 3 St
+1414	18	1.98	Avenue D & E 3 St
+1415	22	43.2	Avenue D & E 3 St
+1416	11	0	Avenue D & E 3 St
+1417	8	0.98	Mercer St & Spring St
+1418	21	0.99	Mercer St & Spring St
+1419	10	29.08	Mercer St & Spring St
+1420	5	0.65	Mercer St & Spring St
+1421	12	21.81	Mercer St & Spring St
+1422	17	4.6	Mercer St & Spring St
+1423	1	0.22	Mercer St & Spring St
+1424	7	0.44	Mercer St & Spring St
+1425	2	0.66	Mercer St & Spring St
+1426	6	0.65	Mercer St & Spring St
+1427	23	0.34	Mercer St & Spring St
+1428	18	0.55	Mercer St & Spring St
+1429	20	1.75	Mercer St & Spring St
+1430	9	8.82	Mercer St & Spring St
+1431	13	15.14	Mercer St & Spring St
+1432	11	25.82	Mercer St & Spring St
+1433	15	9.81	Mercer St & Spring St
+1434	0	0.56	Mercer St & Spring St
+1435	16	9.59	Mercer St & Spring St
+1436	14	11.78	Mercer St & Spring St
+1437	22	0.99	Mercer St & Spring St
+1438	19	0.33	Mercer St & Spring St
+1439	3	0.65	Mercer St & Spring St
+1440	4	0.65	Mercer St & Spring St
+1441	21	0	Broadway & Battery Pl
+1442	11	0.44	Broadway & Battery Pl
+1443	7	0.54	Broadway & Battery Pl
+1444	9	0	Broadway & Battery Pl
+1445	10	0.33	Broadway & Battery Pl
+1446	18	0.66	Broadway & Battery Pl
+1447	17	0.33	Broadway & Battery Pl
+1448	12	0.33	Broadway & Battery Pl
+1449	13	0.22	Broadway & Battery Pl
+1450	2	0	Broadway & Battery Pl
+1451	19	1.21	Broadway & Battery Pl
+1452	15	0.22	Broadway & Battery Pl
+1453	16	0	Broadway & Battery Pl
+1454	14	0.11	Broadway & Battery Pl
+1455	22	0	Broadway & Battery Pl
+1456	20	0.55	Broadway & Battery Pl
+1457	3	0	Broadway & Battery Pl
+1458	6	0	Broadway & Battery Pl
+1459	1	0	Broadway & Battery Pl
+1460	8	0	Broadway & Battery Pl
+1461	0	0.33	Broadway & Battery Pl
+1462	23	0	Broadway & Battery Pl
+1463	4	0	Broadway & Battery Pl
+1464	5	0	Broadway & Battery Pl
+1465	14	2.4	E 58 St and 3 Ave
+1466	21	0.44	E 58 St and 3 Ave
+1467	13	4.14	E 58 St and 3 Ave
+1468	10	19.28	E 58 St and 3 Ave
+1469	2	0	E 58 St and 3 Ave
+1470	18	0	E 58 St and 3 Ave
+1471	3	0	E 58 St and 3 Ave
+1472	23	0	E 58 St and 3 Ave
+1473	22	0	E 58 St and 3 Ave
+1474	17	0.11	E 58 St and 3 Ave
+1475	20	0.44	E 58 St and 3 Ave
+1476	16	0.65	E 58 St and 3 Ave
+1477	6	1.09	E 58 St and 3 Ave
+1478	15	2.4	E 58 St and 3 Ave
+1479	7	3.05	E 58 St and 3 Ave
+1480	9	15.25	E 58 St and 3 Ave
+1481	4	0	E 58 St and 3 Ave
+1482	1	0	E 58 St and 3 Ave
+1483	5	0	E 58 St and 3 Ave
+1484	0	0	E 58 St and 3 Ave
+1485	11	12.53	E 58 St and 3 Ave
+1486	19	0	E 58 St and 3 Ave
+1487	12	7.31	E 58 St and 3 Ave
+1488	8	8.95	E 58 St and 3 Ave
+1489	22	3.51	Cliff St & Fulton St
+1490	3	2.07	Cliff St & Fulton St
+1491	10	12.09	Cliff St & Fulton St
+1492	14	7.09	Cliff St & Fulton St
+1493	23	5.29	Cliff St & Fulton St
+1494	15	5.56	Cliff St & Fulton St
+1495	2	1.97	Cliff St & Fulton St
+1496	7	1.53	Cliff St & Fulton St
+1497	1	3.2	Cliff St & Fulton St
+1498	11	14.38	Cliff St & Fulton St
+1499	18	0.11	Cliff St & Fulton St
+1500	6	1.2	Cliff St & Fulton St
+1501	19	0.33	Cliff St & Fulton St
+1502	5	1.31	Cliff St & Fulton St
+1503	20	1.2	Cliff St & Fulton St
+1504	17	0.66	Cliff St & Fulton St
+1505	8	4.04	Cliff St & Fulton St
+1506	16	2.94	Cliff St & Fulton St
+1507	21	2.96	Cliff St & Fulton St
+1508	4	1.74	Cliff St & Fulton St
+1509	13	10.89	Cliff St & Fulton St
+1510	9	6.75	Cliff St & Fulton St
+1511	0	3.44	Cliff St & Fulton St
+1512	12	12.32	Cliff St & Fulton St
+1513	15	0	Canal St & Rutgers St
+1514	2	13.66	Canal St & Rutgers St
+1515	3	13.83	Canal St & Rutgers St
+1516	19	7.68	Canal St & Rutgers St
+1517	10	0	Canal St & Rutgers St
+1518	18	2.76	Canal St & Rutgers St
+1519	14	0	Canal St & Rutgers St
+1520	6	6.98	Canal St & Rutgers St
+1521	11	0	Canal St & Rutgers St
+1522	22	17.11	Canal St & Rutgers St
+1523	23	16.33	Canal St & Rutgers St
+1524	7	1.74	Canal St & Rutgers St
+1525	20	12.27	Canal St & Rutgers St
+1526	21	14.91	Canal St & Rutgers St
+1527	4	15.9	Canal St & Rutgers St
+1528	17	0.11	Canal St & Rutgers St
+1529	16	0.11	Canal St & Rutgers St
+1530	5	14.71	Canal St & Rutgers St
+1531	9	0.11	Canal St & Rutgers St
+1532	12	0	Canal St & Rutgers St
+1533	1	23.76	Canal St & Rutgers St
+1534	0	14.67	Canal St & Rutgers St
+1535	8	0.44	Canal St & Rutgers St
+1536	13	0.22	Canal St & Rutgers St
+1537	10	0.22	St James Pl & Oliver St
+1538	3	7.84	St James Pl & Oliver St
+1539	22	5.48	St James Pl & Oliver St
+1540	23	9.01	St James Pl & Oliver St
+1541	14	0.98	St James Pl & Oliver St
+1542	6	4.03	St James Pl & Oliver St
+1543	20	4.71	St James Pl & Oliver St
+1544	15	2.4	St James Pl & Oliver St
+1545	2	8.42	St James Pl & Oliver St
+1546	7	2.83	St James Pl & Oliver St
+1547	18	2.76	St James Pl & Oliver St
+1548	9	0.22	St James Pl & Oliver St
+1549	19	2.19	St James Pl & Oliver St
+1550	8	0.11	St James Pl & Oliver St
+1551	5	6.54	St James Pl & Oliver St
+1552	0	9.56	St James Pl & Oliver St
+1553	4	7.95	St James Pl & Oliver St
+1554	21	2.41	St James Pl & Oliver St
+1555	16	0.76	St James Pl & Oliver St
+1556	17	0.88	St James Pl & Oliver St
+1557	11	1.42	St James Pl & Oliver St
+1558	12	2.4	St James Pl & Oliver St
+1559	1	11.05	St James Pl & Oliver St
+1560	13	1.09	St James Pl & Oliver St
+1561	10	22.98	Murray St & West St
+1562	14	6.54	Murray St & West St
+1563	15	5.02	Murray St & West St
+1564	7	7.3	Murray St & West St
+1565	6	3.38	Murray St & West St
+1566	22	2.63	Murray St & West St
+1567	23	3.6	Murray St & West St
+1568	2	1.53	Murray St & West St
+1569	16	2.94	Murray St & West St
+1570	3	1.31	Murray St & West St
+1571	11	21.24	Murray St & West St
+1572	19	0.22	Murray St & West St
+1573	17	0.77	Murray St & West St
+1574	18	0.33	Murray St & West St
+1575	20	3.83	Murray St & West St
+1576	4	1.31	Murray St & West St
+1577	12	11.78	Murray St & West St
+1578	0	2.44	Murray St & West St
+1579	5	1.31	Murray St & West St
+1580	21	3.4	Murray St & West St
+1581	8	11.9	Murray St & West St
+1582	1	2.21	Murray St & West St
+1583	9	25.93	Murray St & West St
+1584	13	13.73	Murray St & West St
+1585	14	0	Norfolk St & Broome St
+1586	10	0.65	Norfolk St & Broome St
+1587	2	12.13	Norfolk St & Broome St
+1588	3	12.53	Norfolk St & Broome St
+1589	15	0.22	Norfolk St & Broome St
+1590	23	11.49	Norfolk St & Broome St
+1591	12	0.65	Norfolk St & Broome St
+1592	6	11.56	Norfolk St & Broome St
+1593	20	2.52	Norfolk St & Broome St
+1594	4	12.31	Norfolk St & Broome St
+1595	19	1.43	Norfolk St & Broome St
+1596	7	4.47	Norfolk St & Broome St
+1597	18	0.22	Norfolk St & Broome St
+1598	11	0.65	Norfolk St & Broome St
+1599	8	1.97	Norfolk St & Broome St
+1600	13	0.22	Norfolk St & Broome St
+1601	5	11.98	Norfolk St & Broome St
+1602	22	10.31	Norfolk St & Broome St
+1603	21	4.28	Norfolk St & Broome St
+1604	16	0	Norfolk St & Broome St
+1605	9	0.22	Norfolk St & Broome St
+1606	17	0	Norfolk St & Broome St
+1607	0	11.78	Norfolk St & Broome St
+1608	1	14.14	Norfolk St & Broome St
+1609	10	18.41	Allen St & E Houston St
+1610	22	31.25	Allen St & E Houston St
+1611	4	20.15	Allen St & E Houston St
+1612	3	21.02	Allen St & E Houston St
+1613	15	18.76	Allen St & E Houston St
+1614	23	28.27	Allen St & E Houston St
+1615	14	19.19	Allen St & E Houston St
+1616	20	40.31	Allen St & E Houston St
+1617	8	18.45	Allen St & E Houston St
+1618	7	18.74	Allen St & E Houston St
+1619	16	18.3	Allen St & E Houston St
+1620	6	19.96	Allen St & E Houston St
+1621	11	18.3	Allen St & E Houston St
+1622	2	24.15	Allen St & E Houston St
+1623	17	18.73	Allen St & E Houston St
+1624	5	18.52	Allen St & E Houston St
+1625	21	35.86	Allen St & E Houston St
+1626	19	39.04	Allen St & E Houston St
+1627	12	18.54	Allen St & E Houston St
+1628	0	25.33	Allen St & E Houston St
+1629	18	22.05	Allen St & E Houston St
+1630	13	18.95	Allen St & E Houston St
+1631	1	25.75	Allen St & E Houston St
+1632	9	18.85	Allen St & E Houston St
+1633	7	0	South St & Gouverneur Ln
+1634	3	0	South St & Gouverneur Ln
+1635	15	15.92	South St & Gouverneur Ln
+1636	2	0	South St & Gouverneur Ln
+1637	6	0	South St & Gouverneur Ln
+1638	18	0.77	South St & Gouverneur Ln
+1639	14	16.47	South St & Gouverneur Ln
+1640	23	0	South St & Gouverneur Ln
+1641	16	10.78	South St & Gouverneur Ln
+1642	17	1.86	South St & Gouverneur Ln
+1643	21	0	South St & Gouverneur Ln
+1644	8	0.66	South St & Gouverneur Ln
+1645	4	0	South St & Gouverneur Ln
+1646	0	0.22	South St & Gouverneur Ln
+1647	20	0.55	South St & Gouverneur Ln
+1648	11	22.88	South St & Gouverneur Ln
+1649	19	0.66	South St & Gouverneur Ln
+1650	1	0.22	South St & Gouverneur Ln
+1651	5	0	South St & Gouverneur Ln
+1652	22	0	South St & Gouverneur Ln
+1653	10	28.65	South St & Gouverneur Ln
+1654	12	18.54	South St & Gouverneur Ln
+1655	9	15.8	South St & Gouverneur Ln
+1656	13	16.01	South St & Gouverneur Ln
+1657	7	0	Fulton St & William St
+1658	3	0	Fulton St & William St
+1659	12	3.71	Fulton St & William St
+1660	1	0	Fulton St & William St
+1661	8	0.11	Fulton St & William St
+1662	11	5.12	Fulton St & William St
+1663	23	0	Fulton St & William St
+1664	16	0.76	Fulton St & William St
+1665	18	0	Fulton St & William St
+1666	22	0	Fulton St & William St
+1667	10	3.38	Fulton St & William St
+1668	15	3.71	Fulton St & William St
+1669	9	1.96	Fulton St & William St
+1670	5	0	Fulton St & William St
+1671	17	0.11	Fulton St & William St
+1672	19	0	Fulton St & William St
+1673	0	0	Fulton St & William St
+1674	20	0	Fulton St & William St
+1675	21	0	Fulton St & William St
+1676	6	0	Fulton St & William St
+1677	4	0	Fulton St & William St
+1678	14	3.6	Fulton St & William St
+1679	13	2.83	Fulton St & William St
+1680	2	0	Fulton St & William St
+1681	12	0	E 6 St & Avenue B
+1682	11	0	E 6 St & Avenue B
+1683	18	26.13	E 6 St & Avenue B
+1684	1	48.62	E 6 St & Avenue B
+1685	9	0	E 6 St & Avenue B
+1686	10	0	E 6 St & Avenue B
+1687	0	47.11	E 6 St & Avenue B
+1688	20	39.87	E 6 St & Avenue B
+1689	16	0	E 6 St & Avenue B
+1690	5	20.92	E 6 St & Avenue B
+1691	23	38.51	E 6 St & Avenue B
+1692	15	0	E 6 St & Avenue B
+1693	22	36.18	E 6 St & Avenue B
+1694	19	44.41	E 6 St & Avenue B
+1695	6	4.47	E 6 St & Avenue B
+1696	2	51.48	E 6 St & Avenue B
+1697	21	40.13	E 6 St & Avenue B
+1698	13	0	E 6 St & Avenue B
+1699	4	36.49	E 6 St & Avenue B
+1700	7	0.65	E 6 St & Avenue B
+1701	17	2.41	E 6 St & Avenue B
+1702	14	0	E 6 St & Avenue B
+1703	8	0	E 6 St & Avenue B
+1704	3	52.4	E 6 St & Avenue B
+1705	13	5.34	Park Pl & Church St
+1706	9	6.1	Park Pl & Church St
+1707	21	0	Park Pl & Church St
+1708	1	1.33	Park Pl & Church St
+1709	10	8.28	Park Pl & Church St
+1710	8	1.42	Park Pl & Church St
+1711	6	0.98	Park Pl & Church St
+1712	17	0.11	Park Pl & Church St
+1713	2	1.31	Park Pl & Church St
+1714	11	5.23	Park Pl & Church St
+1715	5	1.31	Park Pl & Church St
+1716	0	0.67	Park Pl & Church St
+1717	4	1.31	Park Pl & Church St
+1718	18	0.11	Park Pl & Church St
+1719	12	5.23	Park Pl & Church St
+1720	23	0.9	Park Pl & Church St
+1721	22	0.77	Park Pl & Church St
+1722	20	0	Park Pl & Church St
+1723	3	1.31	Park Pl & Church St
+1724	7	0.87	Park Pl & Church St
+1725	16	1.53	Park Pl & Church St
+1726	19	0	Park Pl & Church St
+1727	14	4.36	Park Pl & Church St
+1728	15	2.84	Park Pl & Church St
+1729	1	0	Church St & Leonard St
+1730	2	0	Church St & Leonard St
+1731	10	8.71	Church St & Leonard St
+1732	18	0.33	Church St & Leonard St
+1733	21	0	Church St & Leonard St
+1734	17	1.64	Church St & Leonard St
+1735	4	0	Church St & Leonard St
+1736	9	3.92	Church St & Leonard St
+1737	13	4.68	Church St & Leonard St
+1738	5	0	Church St & Leonard St
+1739	16	1.2	Church St & Leonard St
+1740	6	0	Church St & Leonard St
+1741	3	0	Church St & Leonard St
+1742	22	0	Church St & Leonard St
+1743	23	0	Church St & Leonard St
+1744	20	0	Church St & Leonard St
+1745	14	3.05	Church St & Leonard St
+1746	7	0	Church St & Leonard St
+1747	12	6.32	Church St & Leonard St
+1748	19	0.22	Church St & Leonard St
+1749	11	7.52	Church St & Leonard St
+1750	15	1.53	Church St & Leonard St
+1751	8	0	Church St & Leonard St
+1752	0	0	Church St & Leonard St
+1753	1	3.43	E 19 St & 3 Ave
+1754	21	3.62	E 19 St & 3 Ave
+1755	22	4.5	E 19 St & 3 Ave
+1756	6	2.51	E 19 St & 3 Ave
+1757	17	0	E 19 St & 3 Ave
+1758	9	0	E 19 St & 3 Ave
+1759	18	0.88	E 19 St & 3 Ave
+1760	3	5.12	E 19 St & 3 Ave
+1761	13	0	E 19 St & 3 Ave
+1762	19	3.29	E 19 St & 3 Ave
+1763	5	4.36	E 19 St & 3 Ave
+1764	15	0	E 19 St & 3 Ave
+1765	23	3.27	E 19 St & 3 Ave
+1766	14	0	E 19 St & 3 Ave
+1767	2	5.03	E 19 St & 3 Ave
+1768	0	2.44	E 19 St & 3 Ave
+1769	7	0	E 19 St & 3 Ave
+1770	16	0	E 19 St & 3 Ave
+1771	4	5.01	E 19 St & 3 Ave
+1772	10	0	E 19 St & 3 Ave
+1773	11	0	E 19 St & 3 Ave
+1774	12	0	E 19 St & 3 Ave
+1775	20	3.83	E 19 St & 3 Ave
+1776	8	0	E 19 St & 3 Ave
+1777	21	31.69	E 11 St & 1 Ave
+1778	1	25.86	E 11 St & 1 Ave
+1779	23	22.86	E 11 St & 1 Ave
+1780	9	0	E 11 St & 1 Ave
+1781	18	13.67	E 11 St & 1 Ave
+1782	13	0	E 11 St & 1 Ave
+1783	22	23.57	E 11 St & 1 Ave
+1784	17	0.77	E 11 St & 1 Ave
+1785	5	7.84	E 11 St & 1 Ave
+1786	15	0	E 11 St & 1 Ave
+1787	3	22.33	E 11 St & 1 Ave
+1788	14	0	E 11 St & 1 Ave
+1789	2	23.39	E 11 St & 1 Ave
+1790	10	0	E 11 St & 1 Ave
+1791	0	20.56	E 11 St & 1 Ave
+1792	16	0.11	E 11 St & 1 Ave
+1793	4	21.68	E 11 St & 1 Ave
+1794	20	32.97	E 11 St & 1 Ave
+1795	11	0	E 11 St & 1 Ave
+1796	7	0.87	E 11 St & 1 Ave
+1797	6	4.25	E 11 St & 1 Ave
+1798	19	33	E 11 St & 1 Ave
+1799	8	0	E 11 St & 1 Ave
+1800	12	0	E 11 St & 1 Ave
+1801	18	0	Vesey Pl & River Terrace
+1802	17	0.55	Vesey Pl & River Terrace
+1803	9	14.16	Vesey Pl & River Terrace
+1804	5	1.96	Vesey Pl & River Terrace
+1805	1	2.76	Vesey Pl & River Terrace
+1806	21	2.08	Vesey Pl & River Terrace
+1807	2	2.62	Vesey Pl & River Terrace
+1808	10	12.2	Vesey Pl & River Terrace
+1809	3	2.61	Vesey Pl & River Terrace
+1810	22	1.86	Vesey Pl & River Terrace
+1811	14	3.71	Vesey Pl & River Terrace
+1812	4	2.29	Vesey Pl & River Terrace
+1813	15	2.94	Vesey Pl & River Terrace
+1814	13	5.99	Vesey Pl & River Terrace
+1815	23	2.59	Vesey Pl & River Terrace
+1816	19	0.22	Vesey Pl & River Terrace
+1817	11	8.82	Vesey Pl & River Terrace
+1818	7	3.7	Vesey Pl & River Terrace
+1819	12	4.69	Vesey Pl & River Terrace
+1820	6	2.51	Vesey Pl & River Terrace
+1821	20	2.41	Vesey Pl & River Terrace
+1822	0	2.89	Vesey Pl & River Terrace
+1823	16	2.72	Vesey Pl & River Terrace
+1824	8	10.04	Vesey Pl & River Terrace
+1825	1	14.7	Watts St & Greenwich St
+1826	17	15.55	Watts St & Greenwich St
+1827	18	13.1	Watts St & Greenwich St
+1828	21	16.23	Watts St & Greenwich St
+1829	14	21.3	Watts St & Greenwich St
+1830	2	14.75	Watts St & Greenwich St
+1831	9	26.8	Watts St & Greenwich St
+1832	13	20.72	Watts St & Greenwich St
+1833	23	17.34	Watts St & Greenwich St
+1834	19	13.91	Watts St & Greenwich St
+1835	10	28.54	Watts St & Greenwich St
+1836	15	20.2	Watts St & Greenwich St
+1837	22	16.45	Watts St & Greenwich St
+1838	6	15.27	Watts St & Greenwich St
+1839	4	14.81	Watts St & Greenwich St
+1840	5	14.49	Watts St & Greenwich St
+1841	3	15.03	Watts St & Greenwich St
+1842	16	20.61	Watts St & Greenwich St
+1843	12	19.54	Watts St & Greenwich St
+1844	0	16.11	Watts St & Greenwich St
+1845	8	21.29	Watts St & Greenwich St
+1846	7	16.12	Watts St & Greenwich St
+1847	11	24.29	Watts St & Greenwich St
+1848	20	16.54	Watts St & Greenwich St
+1849	21	1.78	Greenwich St & N Moore St
+1850	9	30.68	Greenwich St & N Moore St
+1851	1	0.77	Greenwich St & N Moore St
+1852	23	0.78	Greenwich St & N Moore St
+1853	2	0.76	Greenwich St & N Moore St
+1854	18	0	Greenwich St & N Moore St
+1855	22	0.76	Greenwich St & N Moore St
+1856	14	1.64	Greenwich St & N Moore St
+1857	17	0	Greenwich St & N Moore St
+1858	5	0.76	Greenwich St & N Moore St
+1859	13	1.52	Greenwich St & N Moore St
+1860	16	0.76	Greenwich St & N Moore St
+1861	4	0.76	Greenwich St & N Moore St
+1862	10	29.8	Greenwich St & N Moore St
+1863	3	0.76	Greenwich St & N Moore St
+1864	7	25.25	Greenwich St & N Moore St
+1865	19	0	Greenwich St & N Moore St
+1866	20	1.53	Greenwich St & N Moore St
+1867	15	1.39	Greenwich St & N Moore St
+1868	0	0.78	Greenwich St & N Moore St
+1869	6	2.4	Greenwich St & N Moore St
+1870	11	9.34	Greenwich St & N Moore St
+1871	12	1.77	Greenwich St & N Moore St
+1872	8	19.34	Greenwich St & N Moore St
+1873	21	0	Reade St & Broadway
+1874	18	0	Reade St & Broadway
+1875	23	0	Reade St & Broadway
+1876	9	4.47	Reade St & Broadway
+1877	3	0.65	Reade St & Broadway
+1878	22	0	Reade St & Broadway
+1879	17	0.22	Reade St & Broadway
+1880	2	0.33	Reade St & Broadway
+1881	15	5.23	Reade St & Broadway
+1882	13	3.49	Reade St & Broadway
+1883	14	4.58	Reade St & Broadway
+1884	19	0	Reade St & Broadway
+1885	5	0.65	Reade St & Broadway
+1886	7	0	Reade St & Broadway
+1887	16	2.51	Reade St & Broadway
+1888	6	0.44	Reade St & Broadway
+1889	10	5.45	Reade St & Broadway
+1890	0	0	Reade St & Broadway
+1891	12	4.8	Reade St & Broadway
+1892	1	0	Reade St & Broadway
+1893	20	0	Reade St & Broadway
+1894	11	7.08	Reade St & Broadway
+1895	4	0.65	Reade St & Broadway
+1896	8	0.66	Reade St & Broadway
+1897	18	0.44	Pike St & Monroe St
+1898	21	3.07	Pike St & Monroe St
+1899	9	0	Pike St & Monroe St
+1900	7	8.06	Pike St & Monroe St
+1901	14	0	Pike St & Monroe St
+1902	10	0	Pike St & Monroe St
+1903	11	0	Pike St & Monroe St
+1904	3	21.9	Pike St & Monroe St
+1905	22	7.79	Pike St & Monroe St
+1906	17	0.11	Pike St & Monroe St
+1907	8	1.2	Pike St & Monroe St
+1908	5	12.09	Pike St & Monroe St
+1909	13	0	Pike St & Monroe St
+1910	6	10.36	Pike St & Monroe St
+1911	19	0.88	Pike St & Monroe St
+1912	20	1.42	Pike St & Monroe St
+1913	12	0	Pike St & Monroe St
+1914	23	14.86	Pike St & Monroe St
+1915	16	0	Pike St & Monroe St
+1916	4	14.92	Pike St & Monroe St
+1917	15	0.11	Pike St & Monroe St
+1918	1	20.88	Pike St & Monroe St
+1919	2	22.08	Pike St & Monroe St
+1920	0	19.11	Pike St & Monroe St
+1921	7	1.2	Cherry St
+1922	22	28.4	Cherry St
+1923	5	23.09	Cherry St
+1924	18	7.28	Cherry St
+1925	6	12.76	Cherry St
+1926	8	0	Cherry St
+1927	17	0.44	Cherry St
+1928	20	23	Cherry St
+1929	19	22.59	Cherry St
+1930	11	0	Cherry St
+1931	15	0.11	Cherry St
+1932	23	33	Cherry St
+1933	3	39.43	Cherry St
+1934	14	0	Cherry St
+1935	10	0	Cherry St
+1936	13	0	Cherry St
+1937	9	0	Cherry St
+1938	21	25.44	Cherry St
+1939	1	39.34	Cherry St
+1940	12	0	Cherry St
+1941	16	0	Cherry St
+1942	0	38	Cherry St
+1943	2	40.11	Cherry St
+1944	4	33.88	Cherry St
+1945	4	1.42	W 20 St & 7 Ave
+1946	8	0.33	W 20 St & 7 Ave
+1947	0	2.44	W 20 St & 7 Ave
+1948	6	0.76	W 20 St & 7 Ave
+1949	19	0.55	W 20 St & 7 Ave
+1950	7	0.22	W 20 St & 7 Ave
+1951	20	1.97	W 20 St & 7 Ave
+1952	21	1.75	W 20 St & 7 Ave
+1953	10	1.74	W 20 St & 7 Ave
+1954	13	3.38	W 20 St & 7 Ave
+1955	5	1.31	W 20 St & 7 Ave
+1956	16	3.7	W 20 St & 7 Ave
+1957	17	5.59	W 20 St & 7 Ave
+1958	22	1.97	W 20 St & 7 Ave
+1959	12	4.14	W 20 St & 7 Ave
+1960	23	1.91	W 20 St & 7 Ave
+1961	15	1.31	W 20 St & 7 Ave
+1962	1	1.99	W 20 St & 7 Ave
+1963	11	2.72	W 20 St & 7 Ave
+1964	14	1.85	W 20 St & 7 Ave
+1965	9	1.2	W 20 St & 7 Ave
+1966	18	2.65	W 20 St & 7 Ave
+1967	2	1.86	W 20 St & 7 Ave
+1968	3	1.31	W 20 St & 7 Ave
+1969	17	0.11	Washington Pl & Broadway
+1970	16	1.31	Washington Pl & Broadway
+1971	5	0	Washington Pl & Broadway
+1972	20	0	Washington Pl & Broadway
+1973	8	2.84	Washington Pl & Broadway
+1974	12	12.98	Washington Pl & Broadway
+1975	19	0.11	Washington Pl & Broadway
+1976	9	23.2	Washington Pl & Broadway
+1977	4	0	Washington Pl & Broadway
+1978	23	0	Washington Pl & Broadway
+1979	21	0	Washington Pl & Broadway
+1980	0	0	Washington Pl & Broadway
+1981	18	0.11	Washington Pl & Broadway
+1982	22	0	Washington Pl & Broadway
+1983	6	0.11	Washington Pl & Broadway
+1984	3	0	Washington Pl & Broadway
+1985	1	0	Washington Pl & Broadway
+1986	13	15.58	Washington Pl & Broadway
+1987	14	13.3	Washington Pl & Broadway
+1988	10	25.38	Washington Pl & Broadway
+1989	7	0.11	Washington Pl & Broadway
+1990	2	0	Washington Pl & Broadway
+1991	15	6.54	Washington Pl & Broadway
+1992	11	23.75	Washington Pl & Broadway
+1993	20	12.27	Sullivan St & Washington Sq
+1994	1	2.87	Sullivan St & Washington Sq
+1995	21	9.76	Sullivan St & Washington Sq
+1996	7	0	Sullivan St & Washington Sq
+1997	8	0	Sullivan St & Washington Sq
+1998	12	6.76	Sullivan St & Washington Sq
+1999	9	1.74	Sullivan St & Washington Sq
+2000	0	2.22	Sullivan St & Washington Sq
+2001	14	11.23	Sullivan St & Washington Sq
+2002	17	5.15	Sullivan St & Washington Sq
+2003	16	4.36	Sullivan St & Washington Sq
+2004	18	13.12	Sullivan St & Washington Sq
+2005	4	1.09	Sullivan St & Washington Sq
+2006	6	0	Sullivan St & Washington Sq
+2007	10	4.68	Sullivan St & Washington Sq
+2008	5	1.09	Sullivan St & Washington Sq
+2009	23	2.82	Sullivan St & Washington Sq
+2010	13	7.52	Sullivan St & Washington Sq
+2011	2	1.09	Sullivan St & Washington Sq
+2012	11	8.06	Sullivan St & Washington Sq
+2013	15	7.52	Sullivan St & Washington Sq
+2014	22	5.81	Sullivan St & Washington Sq
+2015	19	16.01	Sullivan St & Washington Sq
+2016	3	0.65	Sullivan St & Washington Sq
+2017	9	23.53	Old Slip & Front St
+2018	5	0	Old Slip & Front St
+2019	8	1.64	Old Slip & Front St
+2020	12	14.5	Old Slip & Front St
+2021	16	3.27	Old Slip & Front St
+2022	20	0.11	Old Slip & Front St
+2023	22	0.11	Old Slip & Front St
+2024	21	0	Old Slip & Front St
+2025	17	0.22	Old Slip & Front St
+2026	7	0.65	Old Slip & Front St
+2027	1	0	Old Slip & Front St
+2028	4	0	Old Slip & Front St
+2029	19	0	Old Slip & Front St
+2030	2	0	Old Slip & Front St
+2031	0	0	Old Slip & Front St
+2032	23	0	Old Slip & Front St
+2033	14	20.72	Old Slip & Front St
+2034	6	0	Old Slip & Front St
+2035	18	0	Old Slip & Front St
+2036	15	12.98	Old Slip & Front St
+2037	13	15.03	Old Slip & Front St
+2038	10	43.79	Old Slip & Front St
+2039	11	30.17	Old Slip & Front St
+2040	3	0	Old Slip & Front St
+2041	17	0.66	Avenue D & E 12 St
+2042	12	0.44	Avenue D & E 12 St
+2043	2	28.63	Avenue D & E 12 St
+2044	18	1.65	Avenue D & E 12 St
+2045	20	14.46	Avenue D & E 12 St
+2046	8	1.42	Avenue D & E 12 St
+2047	21	23.14	Avenue D & E 12 St
+2048	9	0	Avenue D & E 12 St
+2049	7	14.81	Avenue D & E 12 St
+2050	23	28.15	Avenue D & E 12 St
+2051	4	31.37	Avenue D & E 12 St
+2052	16	0.22	Avenue D & E 12 St
+2053	15	0.33	Avenue D & E 12 St
+2054	1	29.83	Avenue D & E 12 St
+2055	22	27.19	Avenue D & E 12 St
+2056	14	0.44	Avenue D & E 12 St
+2057	5	29.63	Avenue D & E 12 St
+2058	0	27.78	Avenue D & E 12 St
+2059	11	0	Avenue D & E 12 St
+2060	13	0.11	Avenue D & E 12 St
+2061	19	5.26	Avenue D & E 12 St
+2062	3	30.39	Avenue D & E 12 St
+2063	6	26.83	Avenue D & E 12 St
+2064	10	0	Avenue D & E 12 St
+2065	20	5.7	Madison St & Clinton St
+2066	21	13.6	Madison St & Clinton St
+2067	7	0.33	Madison St & Clinton St
+2068	8	0.76	Madison St & Clinton St
+2069	12	0	Madison St & Clinton St
+2070	17	0.22	Madison St & Clinton St
+2071	9	0.44	Madison St & Clinton St
+2072	0	37.33	Madison St & Clinton St
+2073	14	0.11	Madison St & Clinton St
+2074	6	0.22	Madison St & Clinton St
+2075	16	0	Madison St & Clinton St
+2076	18	0.55	Madison St & Clinton St
+2077	4	37.91	Madison St & Clinton St
+2078	13	0	Madison St & Clinton St
+2079	10	0	Madison St & Clinton St
+2080	5	6.32	Madison St & Clinton St
+2081	1	41.88	Madison St & Clinton St
+2082	23	32.21	Madison St & Clinton St
+2083	2	45.03	Madison St & Clinton St
+2084	11	0	Madison St & Clinton St
+2085	15	0	Madison St & Clinton St
+2086	22	23.36	Madison St & Clinton St
+2087	19	5.04	Madison St & Clinton St
+2088	3	43.36	Madison St & Clinton St
+2089	8	4.91	Stanton St & Mangin St
+2090	16	0	Stanton St & Mangin St
+2091	22	20.83	Stanton St & Mangin St
+2092	12	0.65	Stanton St & Mangin St
+2093	17	0.55	Stanton St & Mangin St
+2094	20	23.88	Stanton St & Mangin St
+2095	1	34.14	Stanton St & Mangin St
+2096	21	19.3	Stanton St & Mangin St
+2097	19	13.6	Stanton St & Mangin St
+2098	9	4.25	Stanton St & Mangin St
+2099	7	11.87	Stanton St & Mangin St
+2100	4	37.91	Stanton St & Mangin St
+2101	14	0.44	Stanton St & Mangin St
+2102	2	38.25	Stanton St & Mangin St
+2103	18	4.63	Stanton St & Mangin St
+2104	0	31.11	Stanton St & Mangin St
+2105	13	0.65	Stanton St & Mangin St
+2106	6	29.77	Stanton St & Mangin St
+2107	5	32.57	Stanton St & Mangin St
+2108	15	0	Stanton St & Mangin St
+2109	23	29.28	Stanton St & Mangin St
+2110	10	1.09	Stanton St & Mangin St
+2111	11	0.65	Stanton St & Mangin St
+2112	3	39.22	Stanton St & Mangin St
+2113	20	17.74	Columbia St & Rivington St
+2114	4	36.06	Columbia St & Rivington St
+2115	12	0	Columbia St & Rivington St
+2116	18	2.87	Columbia St & Rivington St
+2117	8	0	Columbia St & Rivington St
+2118	23	35.25	Columbia St & Rivington St
+2119	21	30.48	Columbia St & Rivington St
+2120	9	0	Columbia St & Rivington St
+2121	15	0.44	Columbia St & Rivington St
+2122	1	38.45	Columbia St & Rivington St
+2123	13	0.44	Columbia St & Rivington St
+2124	17	0.88	Columbia St & Rivington St
+2125	5	20.04	Columbia St & Rivington St
+2126	7	0.33	Columbia St & Rivington St
+2127	22	34.32	Columbia St & Rivington St
+2128	14	0.11	Columbia St & Rivington St
+2129	16	0.11	Columbia St & Rivington St
+2130	3	41.07	Columbia St & Rivington St
+2131	0	38	Columbia St & Rivington St
+2132	2	41.2	Columbia St & Rivington St
+2133	10	0	Columbia St & Rivington St
+2134	11	0.22	Columbia St & Rivington St
+2135	19	10.09	Columbia St & Rivington St
+2136	6	6.87	Columbia St & Rivington St
+2137	4	0	W 13 St & 6 Ave
+2138	9	0	W 13 St & 6 Ave
+2139	21	0.22	W 13 St & 6 Ave
+2140	7	0.44	W 13 St & 6 Ave
+2141	20	0.88	W 13 St & 6 Ave
+2142	8	0	W 13 St & 6 Ave
+2143	17	1.86	W 13 St & 6 Ave
+2144	18	2.87	W 13 St & 6 Ave
+2145	13	0.22	W 13 St & 6 Ave
+2146	14	0.87	W 13 St & 6 Ave
+2147	10	0.22	W 13 St & 6 Ave
+2148	5	0	W 13 St & 6 Ave
+2149	1	0	W 13 St & 6 Ave
+2150	23	0.34	W 13 St & 6 Ave
+2151	2	0	W 13 St & 6 Ave
+2152	16	0.22	W 13 St & 6 Ave
+2153	0	0	W 13 St & 6 Ave
+2154	22	0.22	W 13 St & 6 Ave
+2155	12	0.87	W 13 St & 6 Ave
+2156	11	0.54	W 13 St & 6 Ave
+2157	15	0.22	W 13 St & 6 Ave
+2158	3	0	W 13 St & 6 Ave
+2159	6	0	W 13 St & 6 Ave
+2160	19	3.73	W 13 St & 6 Ave
+2161	22	26.64	Bank St & Hudson St
+2162	17	2.63	Bank St & Hudson St
+2163	5	3.38	Bank St & Hudson St
+2164	18	19.85	Bank St & Hudson St
+2165	4	5.77	Bank St & Hudson St
+2166	10	0	Bank St & Hudson St
+2167	12	0	Bank St & Hudson St
+2168	9	0.44	Bank St & Hudson St
+2169	7	0.33	Bank St & Hudson St
+2170	16	1.2	Bank St & Hudson St
+2171	11	0.22	Bank St & Hudson St
+2172	15	0.11	Bank St & Hudson St
+2173	6	0	Bank St & Hudson St
+2174	2	9.07	Bank St & Hudson St
+2175	14	0.33	Bank St & Hudson St
+2176	0	17.89	Bank St & Hudson St
+2177	13	0.54	Bank St & Hudson St
+2178	1	11.93	Bank St & Hudson St
+2179	21	36.4	Bank St & Hudson St
+2180	3	7.3	Bank St & Hudson St
+2181	20	35.82	Bank St & Hudson St
+2182	8	0.33	Bank St & Hudson St
+2183	19	39.58	Bank St & Hudson St
+2184	23	24.77	Bank St & Hudson St
+2185	18	0.11	W Houston St & Hudson St
+2186	16	0.33	W Houston St & Hudson St
+2187	15	2.94	W Houston St & Hudson St
+2188	3	0.65	W Houston St & Hudson St
+2189	19	0.55	W Houston St & Hudson St
+2190	7	4.47	W Houston St & Hudson St
+2191	22	0.55	W Houston St & Hudson St
+2192	5	0.98	W Houston St & Hudson St
+2193	11	25.6	W Houston St & Hudson St
+2194	17	0.22	W Houston St & Hudson St
+2195	21	2.08	W Houston St & Hudson St
+2196	8	12.12	W Houston St & Hudson St
+2197	6	0.98	W Houston St & Hudson St
+2198	20	1.64	W Houston St & Hudson St
+2199	4	0.65	W Houston St & Hudson St
+2200	14	8.29	W Houston St & Hudson St
+2201	13	9.8	W Houston St & Hudson St
+2202	23	0.79	W Houston St & Hudson St
+2203	10	38.02	W Houston St & Hudson St
+2204	0	0.89	W Houston St & Hudson St
+2205	12	11.34	W Houston St & Hudson St
+2206	9	28.87	W Houston St & Hudson St
+2207	1	0.77	W Houston St & Hudson St
+2208	2	0.55	W Houston St & Hudson St
+2209	8	1.31	W Broadway & Spring St
+2210	22	2.3	W Broadway & Spring St
+2211	3	1.31	W Broadway & Spring St
+2212	18	0.88	W Broadway & Spring St
+2213	23	2.59	W Broadway & Spring St
+2214	15	13.09	W Broadway & Spring St
+2215	12	17.78	W Broadway & Spring St
+2216	7	1.09	W Broadway & Spring St
+2217	11	27.56	W Broadway & Spring St
+2218	14	11.56	W Broadway & Spring St
+2219	5	0.76	W Broadway & Spring St
+2220	19	1.1	W Broadway & Spring St
+2221	10	24.73	W Broadway & Spring St
+2222	21	1.64	W Broadway & Spring St
+2223	4	1.31	W Broadway & Spring St
+2224	16	8.28	W Broadway & Spring St
+2225	1	1.22	W Broadway & Spring St
+2226	6	0.87	W Broadway & Spring St
+2227	17	3.72	W Broadway & Spring St
+2228	0	2.22	W Broadway & Spring St
+2229	20	1.53	W Broadway & Spring St
+2230	9	6.75	W Broadway & Spring St
+2231	2	1.31	W Broadway & Spring St
+2232	13	14.92	W Broadway & Spring St
+2233	7	3.7	Rivington St and Ridge St
+2234	19	4.82	Rivington St and Ridge St
+2235	23	31.64	Rivington St and Ridge St
+2236	22	22.7	Rivington St and Ridge St
+2237	11	0	Rivington St and Ridge St
+2238	8	4.69	Rivington St and Ridge St
+2239	9	0.22	Rivington St and Ridge St
+2240	16	0	Rivington St and Ridge St
+2241	3	35.95	Rivington St and Ridge St
+2242	12	0	Rivington St and Ridge St
+2243	20	11.94	Rivington St and Ridge St
+2244	15	0	Rivington St and Ridge St
+2245	4	36.71	Rivington St and Ridge St
+2246	5	21.02	Rivington St and Ridge St
+2247	2	37.16	Rivington St and Ridge St
+2248	10	0.22	Rivington St and Ridge St
+2249	0	33.78	Rivington St and Ridge St
+2250	13	0	Rivington St and Ridge St
+2251	17	0	Rivington St and Ridge St
+2252	1	36.02	Rivington St and Ridge St
+2253	14	0	Rivington St and Ridge St
+2254	6	4.8	Rivington St and Ridge St
+2255	18	1.32	Rivington St and Ridge St
+2256	21	19.41	Rivington St and Ridge St
+2257	23	34.46	Clinton St & Grand St
+2258	7	1.42	Clinton St & Grand St
+2259	19	8.11	Clinton St & Grand St
+2260	12	0	Clinton St & Grand St
+2261	9	0	Clinton St & Grand St
+2262	3	38.67	Clinton St & Grand St
+2263	5	31.81	Clinton St & Grand St
+2264	2	40.11	Clinton St & Grand St
+2265	16	0	Clinton St & Grand St
+2266	11	0	Clinton St & Grand St
+2267	8	0	Clinton St & Grand St
+2268	4	37.04	Clinton St & Grand St
+2269	18	1.76	Clinton St & Grand St
+2270	20	14.46	Clinton St & Grand St
+2271	15	0	Clinton St & Grand St
+2272	21	21.71	Clinton St & Grand St
+2273	13	0	Clinton St & Grand St
+2274	22	27.3	Clinton St & Grand St
+2275	0	35	Clinton St & Grand St
+2276	10	0	Clinton St & Grand St
+2277	14	0	Clinton St & Grand St
+2278	17	0.11	Clinton St & Grand St
+2279	1	40.44	Clinton St & Grand St
+2280	6	12.21	Clinton St & Grand St
+2281	23	0.68	Front St & Maiden Ln
+2282	19	0	Front St & Maiden Ln
+2283	12	12.98	Front St & Maiden Ln
+2284	7	1.74	Front St & Maiden Ln
+2285	3	0.65	Front St & Maiden Ln
+2286	15	13.41	Front St & Maiden Ln
+2287	5	0.65	Front St & Maiden Ln
+2288	20	0.66	Front St & Maiden Ln
+2289	11	29.41	Front St & Maiden Ln
+2290	8	7.86	Front St & Maiden Ln
+2291	4	0.65	Front St & Maiden Ln
+2292	9	38.89	Front St & Maiden Ln
+2293	1	0.66	Front St & Maiden Ln
+2294	14	17.78	Front St & Maiden Ln
+2295	6	0.76	Front St & Maiden Ln
+2296	2	0.66	Front St & Maiden Ln
+2297	16	5.66	Front St & Maiden Ln
+2298	0	0.67	Front St & Maiden Ln
+2299	21	0.66	Front St & Maiden Ln
+2300	13	13.07	Front St & Maiden Ln
+2301	22	0.66	Front St & Maiden Ln
+2302	10	38.02	Front St & Maiden Ln
+2303	18	0.22	Front St & Maiden Ln
+2304	17	0.22	Front St & Maiden Ln
+2305	7	22.22	W 56 St & 6 Ave
+2306	8	38.43	W 56 St & 6 Ave
+2307	9	40.09	W 56 St & 6 Ave
+2308	23	20.27	W 56 St & 6 Ave
+2309	3	20.26	W 56 St & 6 Ave
+2310	12	25.95	W 56 St & 6 Ave
+2311	11	33.12	W 56 St & 6 Ave
+2312	0	20	W 56 St & 6 Ave
+2313	19	19.85	W 56 St & 6 Ave
+2314	15	21.48	W 56 St & 6 Ave
+2315	20	20.26	W 56 St & 6 Ave
+2316	10	40.41	W 56 St & 6 Ave
+2317	4	20.26	W 56 St & 6 Ave
+2318	5	20.26	W 56 St & 6 Ave
+2319	22	20.39	W 56 St & 6 Ave
+2320	1	19.89	W 56 St & 6 Ave
+2321	13	24.18	W 56 St & 6 Ave
+2322	2	20	W 56 St & 6 Ave
+2323	16	20.37	W 56 St & 6 Ave
+2324	14	22.79	W 56 St & 6 Ave
+2325	17	19.93	W 56 St & 6 Ave
+2326	18	19.4	W 56 St & 6 Ave
+2327	21	20.39	W 56 St & 6 Ave
+2328	6	20.28	W 56 St & 6 Ave
+2329	7	0	Bayard St & Baxter St
+2330	20	0.33	Bayard St & Baxter St
+2331	9	1.42	Bayard St & Baxter St
+2332	19	0.33	Bayard St & Baxter St
+2333	12	4.8	Bayard St & Baxter St
+2334	11	3.16	Bayard St & Baxter St
+2335	8	0	Bayard St & Baxter St
+2336	5	0	Bayard St & Baxter St
+2337	15	2.94	Bayard St & Baxter St
+2338	16	0.87	Bayard St & Baxter St
+2339	23	0.45	Bayard St & Baxter St
+2340	4	0.33	Bayard St & Baxter St
+2341	2	0.77	Bayard St & Baxter St
+2342	22	0.44	Bayard St & Baxter St
+2343	0	1.22	Bayard St & Baxter St
+2344	3	0.65	Bayard St & Baxter St
+2345	13	1.85	Bayard St & Baxter St
+2346	18	0.22	Bayard St & Baxter St
+2347	1	1.66	Bayard St & Baxter St
+2348	21	0.11	Bayard St & Baxter St
+2349	14	3.38	Bayard St & Baxter St
+2350	17	0.11	Bayard St & Baxter St
+2351	10	4.03	Bayard St & Baxter St
+2352	6	0	Bayard St & Baxter St
+2353	8	6.77	Bialystoker Pl & Delancey St
+2354	19	5.81	Bialystoker Pl & Delancey St
+2355	5	19.17	Bialystoker Pl & Delancey St
+2356	20	4.93	Bialystoker Pl & Delancey St
+2357	11	0.22	Bialystoker Pl & Delancey St
+2358	15	0	Bialystoker Pl & Delancey St
+2359	13	0.22	Bialystoker Pl & Delancey St
+2360	9	1.42	Bialystoker Pl & Delancey St
+2361	1	26.08	Bialystoker Pl & Delancey St
+2362	4	17.97	Bialystoker Pl & Delancey St
+2363	3	21.24	Bialystoker Pl & Delancey St
+2364	12	0.11	Bialystoker Pl & Delancey St
+2365	16	0.33	Bialystoker Pl & Delancey St
+2366	23	11.49	Bialystoker Pl & Delancey St
+2367	14	0	Bialystoker Pl & Delancey St
+2368	2	26.12	Bialystoker Pl & Delancey St
+2369	10	0.44	Bialystoker Pl & Delancey St
+2370	0	21.56	Bialystoker Pl & Delancey St
+2371	21	6.69	Bialystoker Pl & Delancey St
+2372	17	0.44	Bialystoker Pl & Delancey St
+2373	18	4.08	Bialystoker Pl & Delancey St
+2374	22	10.2	Bialystoker Pl & Delancey St
+2375	7	14.05	Bialystoker Pl & Delancey St
+2376	6	17.99	Bialystoker Pl & Delancey St
+2377	23	0	E 11 St & Broadway
+2378	5	0	E 11 St & Broadway
+2379	11	1.63	E 11 St & Broadway
+2380	3	0	E 11 St & Broadway
+2381	13	1.42	E 11 St & Broadway
+2382	12	0.87	E 11 St & Broadway
+2383	20	0.22	E 11 St & Broadway
+2384	4	0	E 11 St & Broadway
+2385	8	0.98	E 11 St & Broadway
+2386	19	0.11	E 11 St & Broadway
+2387	14	0.98	E 11 St & Broadway
+2388	1	0	E 11 St & Broadway
+2389	9	2.4	E 11 St & Broadway
+2390	17	0	E 11 St & Broadway
+2391	15	0.98	E 11 St & Broadway
+2392	16	0.65	E 11 St & Broadway
+2393	0	0	E 11 St & Broadway
+2394	6	0	E 11 St & Broadway
+2395	2	0	E 11 St & Broadway
+2396	22	0	E 11 St & Broadway
+2397	7	0.22	E 11 St & Broadway
+2398	21	0.22	E 11 St & Broadway
+2399	18	0.22	E 11 St & Broadway
+2400	10	2.94	E 11 St & Broadway
+2401	5	9.69	Christopher St & Greenwich St
+2402	20	23.66	Christopher St & Greenwich St
+2403	1	19.01	Christopher St & Greenwich St
+2404	19	31.25	Christopher St & Greenwich St
+2405	9	0	Christopher St & Greenwich St
+2406	16	4.25	Christopher St & Greenwich St
+2407	21	21.05	Christopher St & Greenwich St
+2408	13	0.22	Christopher St & Greenwich St
+2409	15	1.74	Christopher St & Greenwich St
+2410	3	15.47	Christopher St & Greenwich St
+2411	11	0	Christopher St & Greenwich St
+2412	4	11.66	Christopher St & Greenwich St
+2413	18	21.5	Christopher St & Greenwich St
+2414	2	17.81	Christopher St & Greenwich St
+2415	6	2.18	Christopher St & Greenwich St
+2416	14	0.87	Christopher St & Greenwich St
+2417	17	11.06	Christopher St & Greenwich St
+2418	10	0.44	Christopher St & Greenwich St
+2419	22	19.52	Christopher St & Greenwich St
+2420	23	20.05	Christopher St & Greenwich St
+2421	0	21.33	Christopher St & Greenwich St
+2422	12	0	Christopher St & Greenwich St
+2423	8	0	Christopher St & Greenwich St
+2424	7	0	Christopher St & Greenwich St
+2425	13	0	E 47 St & Park Av
+2426	16	0	E 47 St & Park Av
+2427	15	0	E 47 St & Park Av
+2428	18	0	E 47 St & Park Av
+2429	6	0	E 47 St & Park Av
+2430	2	0.11	E 47 St & Park Av
+2431	17	0	E 47 St & Park Av
+2432	10	0.44	E 47 St & Park Av
+2433	1	0.11	E 47 St & Park Av
+2434	9	0.44	E 47 St & Park Av
+2435	5	0.33	E 47 St & Park Av
+2436	21	0.22	E 47 St & Park Av
+2437	11	0.33	E 47 St & Park Av
+2438	3	0.22	E 47 St & Park Av
+2439	8	0	E 47 St & Park Av
+2440	19	0	E 47 St & Park Av
+2441	14	0.11	E 47 St & Park Av
+2442	7	0	E 47 St & Park Av
+2443	23	0.11	E 47 St & Park Av
+2444	22	0.11	E 47 St & Park Av
+2445	0	0.22	E 47 St & Park Av
+2446	20	0.11	E 47 St & Park Av
+2447	4	0.22	E 47 St & Park Av
+2448	12	0	E 47 St & Park Av
+2449	14	1.96	William St & Pine St
+2450	10	9.48	William St & Pine St
+2451	1	0	William St & Pine St
+2452	22	0	William St & Pine St
+2453	5	0	William St & Pine St
+2454	6	0	William St & Pine St
+2455	3	0	William St & Pine St
+2456	7	0	William St & Pine St
+2457	23	0	William St & Pine St
+2458	16	0.22	William St & Pine St
+2459	2	0	William St & Pine St
+2460	18	0	William St & Pine St
+2461	19	0	William St & Pine St
+2462	11	7.63	William St & Pine St
+2463	9	4.58	William St & Pine St
+2464	21	0	William St & Pine St
+2465	17	0.11	William St & Pine St
+2466	12	2.73	William St & Pine St
+2467	15	1.53	William St & Pine St
+2468	20	0	William St & Pine St
+2469	4	0	William St & Pine St
+2470	8	0.76	William St & Pine St
+2471	13	1.63	William St & Pine St
+2472	0	0	William St & Pine St
+2473	23	12.05	Allen St & Hester St
+2474	14	0.11	Allen St & Hester St
+2475	18	0.55	Allen St & Hester St
+2476	11	0	Allen St & Hester St
+2477	1	11.6	Allen St & Hester St
+2478	21	4.39	Allen St & Hester St
+2479	2	13.99	Allen St & Hester St
+2480	19	0.66	Allen St & Hester St
+2481	10	0	Allen St & Hester St
+2482	6	10.36	Allen St & Hester St
+2483	7	2.07	Allen St & Hester St
+2484	3	14.27	Allen St & Hester St
+2485	15	0.11	Allen St & Hester St
+2486	0	12.67	Allen St & Hester St
+2487	5	12.85	Allen St & Hester St
+2488	9	0	Allen St & Hester St
+2489	22	6.58	Allen St & Hester St
+2490	17	0.55	Allen St & Hester St
+2491	20	1.97	Allen St & Hester St
+2492	12	0	Allen St & Hester St
+2493	8	0.33	Allen St & Hester St
+2494	13	0	Allen St & Hester St
+2495	4	15.14	Allen St & Hester St
+2496	16	0	Allen St & Hester St
+2497	10	1.85	Broadway & W 37 St
+2498	6	0.65	Broadway & W 37 St
+2499	22	0.22	Broadway & W 37 St
+2500	19	0.11	Broadway & W 37 St
+2501	7	0.65	Broadway & W 37 St
+2502	23	0.11	Broadway & W 37 St
+2503	2	0.44	Broadway & W 37 St
+2504	14	1.31	Broadway & W 37 St
+2505	1	0	Broadway & W 37 St
+2506	18	0	Broadway & W 37 St
+2507	8	0.76	Broadway & W 37 St
+2508	15	1.09	Broadway & W 37 St
+2509	0	0	Broadway & W 37 St
+2510	12	0.87	Broadway & W 37 St
+2511	11	0.98	Broadway & W 37 St
+2512	3	0.65	Broadway & W 37 St
+2513	21	0	Broadway & W 37 St
+2514	9	1.63	Broadway & W 37 St
+2515	17	0.22	Broadway & W 37 St
+2516	20	0	Broadway & W 37 St
+2517	4	0.65	Broadway & W 37 St
+2518	16	0.65	Broadway & W 37 St
+2519	13	0.54	Broadway & W 37 St
+2520	5	0.65	Broadway & W 37 St
+2521	10	0.54	West Thames St
+2522	19	1.43	West Thames St
+2523	22	4.82	West Thames St
+2524	18	0.33	West Thames St
+2525	23	9.01	West Thames St
+2526	6	0.22	West Thames St
+2527	14	1.2	West Thames St
+2528	7	0.33	West Thames St
+2529	9	0.33	West Thames St
+2530	3	7.84	West Thames St
+2531	15	0.65	West Thames St
+2532	1	8.62	West Thames St
+2533	12	0.76	West Thames St
+2534	2	8.85	West Thames St
+2535	0	9.67	West Thames St
+2536	13	0.33	West Thames St
+2537	21	3.62	West Thames St
+2538	11	0.98	West Thames St
+2539	8	0.22	West Thames St
+2540	17	1.53	West Thames St
+2541	20	2.08	West Thames St
+2542	4	4.9	West Thames St
+2543	16	0.76	West Thames St
+2544	5	1.31	West Thames St
+2545	10	0	E 53 St and Lexington Ave
+2546	14	0	E 53 St and Lexington Ave
+2547	23	0	E 53 St and Lexington Ave
+2548	19	0.11	E 53 St and Lexington Ave
+2549	6	0	E 53 St and Lexington Ave
+2550	1	0	E 53 St and Lexington Ave
+2551	18	0.33	E 53 St and Lexington Ave
+2552	22	0	E 53 St and Lexington Ave
+2553	3	0	E 53 St and Lexington Ave
+2554	15	0	E 53 St and Lexington Ave
+2555	7	0.76	E 53 St and Lexington Ave
+2556	11	0.22	E 53 St and Lexington Ave
+2557	2	0	E 53 St and Lexington Ave
+2558	0	0	E 53 St and Lexington Ave
+2559	21	0	E 53 St and Lexington Ave
+2560	12	0.22	E 53 St and Lexington Ave
+2561	8	0.33	E 53 St and Lexington Ave
+2562	17	0.11	E 53 St and Lexington Ave
+2563	13	0	E 53 St and Lexington Ave
+2564	5	0	E 53 St and Lexington Ave
+2565	9	0	E 53 St and Lexington Ave
+2566	16	0	E 53 St and Lexington Ave
+2567	20	0	E 53 St and Lexington Ave
+2568	4	0	E 53 St and Lexington Ave
+2569	6	0.33	Carmine St & 6 Ave
+2570	10	1.85	Carmine St & 6 Ave
+2571	19	16.01	Carmine St & 6 Ave
+2572	14	3.16	Carmine St & 6 Ave
+2573	7	1.31	Carmine St & 6 Ave
+2574	23	1.91	Carmine St & 6 Ave
+2575	22	5.7	Carmine St & 6 Ave
+2576	15	3.71	Carmine St & 6 Ave
+2577	0	3.11	Carmine St & 6 Ave
+2578	18	10.92	Carmine St & 6 Ave
+2579	11	0.33	Carmine St & 6 Ave
+2580	3	0.65	Carmine St & 6 Ave
+2581	17	6.35	Carmine St & 6 Ave
+2582	12	3.05	Carmine St & 6 Ave
+2583	9	1.31	Carmine St & 6 Ave
+2584	2	1.86	Carmine St & 6 Ave
+2585	1	1.55	Carmine St & 6 Ave
+2586	4	0.98	Carmine St & 6 Ave
+2587	8	0.87	Carmine St & 6 Ave
+2588	13	3.38	Carmine St & 6 Ave
+2589	21	11.51	Carmine St & 6 Ave
+2590	16	3.59	Carmine St & 6 Ave
+2591	20	11.72	Carmine St & 6 Ave
+2592	5	0.44	Carmine St & 6 Ave
+2593	10	0	Washington Pl & 6 Ave
+2594	19	8	Washington Pl & 6 Ave
+2595	22	2.96	Washington Pl & 6 Ave
+2596	6	0	Washington Pl & 6 Ave
+2597	23	1.69	Washington Pl & 6 Ave
+2598	3	0.65	Washington Pl & 6 Ave
+2599	14	1.42	Washington Pl & 6 Ave
+2600	7	0	Washington Pl & 6 Ave
+2601	18	2.54	Washington Pl & 6 Ave
+2602	2	0.22	Washington Pl & 6 Ave
+2603	15	1.53	Washington Pl & 6 Ave
+2604	21	7.46	Washington Pl & 6 Ave
+2605	12	0.33	Washington Pl & 6 Ave
+2606	11	0	Washington Pl & 6 Ave
+2607	8	0	Washington Pl & 6 Ave
+2608	0	1.67	Washington Pl & 6 Ave
+2609	5	0	Washington Pl & 6 Ave
+2610	1	0.55	Washington Pl & 6 Ave
+2611	9	0	Washington Pl & 6 Ave
+2612	17	0.55	Washington Pl & 6 Ave
+2613	20	8.32	Washington Pl & 6 Ave
+2614	4	0.65	Washington Pl & 6 Ave
+2615	16	0.44	Washington Pl & 6 Ave
+2616	13	1.09	Washington Pl & 6 Ave
+2617	6	3.27	Mercer St & Bleecker St
+2618	14	3.27	Mercer St & Bleecker St
+2619	7	3.27	Mercer St & Bleecker St
+2620	23	3.49	Mercer St & Bleecker St
+2621	8	3.28	Mercer St & Bleecker St
+2622	15	3.16	Mercer St & Bleecker St
+2623	10	3.27	Mercer St & Bleecker St
+2624	11	3.27	Mercer St & Bleecker St
+2625	19	2.63	Mercer St & Bleecker St
+2626	0	4	Mercer St & Bleecker St
+2627	12	3.27	Mercer St & Bleecker St
+2628	18	2.65	Mercer St & Bleecker St
+2629	22	2.85	Mercer St & Bleecker St
+2630	3	3.59	Mercer St & Bleecker St
+2631	13	3.27	Mercer St & Bleecker St
+2632	4	3.27	Mercer St & Bleecker St
+2633	21	2.63	Mercer St & Bleecker St
+2634	2	3.93	Mercer St & Bleecker St
+2635	5	3.27	Mercer St & Bleecker St
+2636	1	3.98	Mercer St & Bleecker St
+2637	17	2.74	Mercer St & Bleecker St
+2638	20	2.63	Mercer St & Bleecker St
+2639	9	3.27	Mercer St & Bleecker St
+2640	16	3.27	Mercer St & Bleecker St
+2641	23	1.35	John St & William St
+2642	11	5.45	John St & William St
+2643	20	0.44	John St & William St
+2644	2	1.42	John St & William St
+2645	19	0	John St & William St
+2646	15	3.93	John St & William St
+2647	12	5.02	John St & William St
+2648	3	1.96	John St & William St
+2649	22	1.64	John St & William St
+2650	18	0	John St & William St
+2651	14	3.49	John St & William St
+2652	8	0.76	John St & William St
+2653	13	6.75	John St & William St
+2654	4	1.74	John St & William St
+2655	5	0	John St & William St
+2656	21	1.64	John St & William St
+2657	9	2.94	John St & William St
+2658	0	0.89	John St & William St
+2659	16	1.42	John St & William St
+2660	1	0.88	John St & William St
+2661	17	0.11	John St & William St
+2662	10	5.45	John St & William St
+2663	6	0	John St & William St
+2664	7	0.11	John St & William St
+2665	15	0.87	6 Ave & Canal St
+2666	18	0	6 Ave & Canal St
+2667	0	0	6 Ave & Canal St
+2668	20	0.88	6 Ave & Canal St
+2669	19	0.11	6 Ave & Canal St
+2670	17	0	6 Ave & Canal St
+2671	22	0	6 Ave & Canal St
+2672	10	5.88	6 Ave & Canal St
+2673	14	2.73	6 Ave & Canal St
+2674	1	0	6 Ave & Canal St
+2675	21	0.11	6 Ave & Canal St
+2676	9	1.53	6 Ave & Canal St
+2677	16	0.87	6 Ave & Canal St
+2678	23	0	6 Ave & Canal St
+2679	8	0.87	6 Ave & Canal St
+2680	3	0	6 Ave & Canal St
+2681	6	0	6 Ave & Canal St
+2682	7	0.11	6 Ave & Canal St
+2683	2	0	6 Ave & Canal St
+2684	13	1.31	6 Ave & Canal St
+2685	12	2.51	6 Ave & Canal St
+2686	11	3.05	6 Ave & Canal St
+2687	5	0	6 Ave & Canal St
+2688	4	0	6 Ave & Canal St
+2689	10	0.11	W 31 St & 7 Ave
+2690	15	4.69	W 31 St & 7 Ave
+2691	5	0.11	W 31 St & 7 Ave
+2692	16	23.75	W 31 St & 7 Ave
+2693	21	0.99	W 31 St & 7 Ave
+2694	20	1.42	W 31 St & 7 Ave
+2695	9	0	W 31 St & 7 Ave
+2696	7	0	W 31 St & 7 Ave
+2697	18	7.83	W 31 St & 7 Ave
+2698	17	27.27	W 31 St & 7 Ave
+2699	6	0.11	W 31 St & 7 Ave
+2700	14	0.44	W 31 St & 7 Ave
+2701	22	0.88	W 31 St & 7 Ave
+2702	1	0.11	W 31 St & 7 Ave
+2703	13	0.22	W 31 St & 7 Ave
+2704	12	0.22	W 31 St & 7 Ave
+2705	11	0.33	W 31 St & 7 Ave
+2706	8	0.22	W 31 St & 7 Ave
+2707	0	0.11	W 31 St & 7 Ave
+2708	2	0	W 31 St & 7 Ave
+2709	23	0.23	W 31 St & 7 Ave
+2710	4	0	W 31 St & 7 Ave
+2711	3	0	W 31 St & 7 Ave
+2712	19	4.17	W 31 St & 7 Ave
+2713	9	0	W 4 St & 7 Ave S
+2714	5	0	W 4 St & 7 Ave S
+2715	10	0	W 4 St & 7 Ave S
+2716	21	17.32	W 4 St & 7 Ave S
+2717	20	25.41	W 4 St & 7 Ave S
+2718	14	0.11	W 4 St & 7 Ave S
+2719	23	6.42	W 4 St & 7 Ave S
+2720	8	0	W 4 St & 7 Ave S
+2721	19	32.89	W 4 St & 7 Ave S
+2722	13	0.11	W 4 St & 7 Ave S
+2723	18	14.77	W 4 St & 7 Ave S
+2724	11	0	W 4 St & 7 Ave S
+2725	1	1.99	W 4 St & 7 Ave S
+2726	6	0	W 4 St & 7 Ave S
+2727	12	0.22	W 4 St & 7 Ave S
+2728	2	1.75	W 4 St & 7 Ave S
+2729	3	1.09	W 4 St & 7 Ave S
+2730	16	0.11	W 4 St & 7 Ave S
+2731	17	0.88	W 4 St & 7 Ave S
+2732	0	3.44	W 4 St & 7 Ave S
+2733	15	0.33	W 4 St & 7 Ave S
+2734	7	0	W 4 St & 7 Ave S
+2735	22	9.76	W 4 St & 7 Ave S
+2736	4	0.54	W 4 St & 7 Ave S
+2737	10	10.78	University Pl & E 14 St
+2738	5	0.65	University Pl & E 14 St
+2739	21	1.21	University Pl & E 14 St
+2740	19	5.04	University Pl & E 14 St
+2741	17	8.21	University Pl & E 14 St
+2742	1	0.44	University Pl & E 14 St
+2743	22	0.88	University Pl & E 14 St
+2744	6	0.98	University Pl & E 14 St
+2745	14	13.96	University Pl & E 14 St
+2746	13	14.49	University Pl & E 14 St
+2747	8	2.84	University Pl & E 14 St
+2748	3	0.65	University Pl & E 14 St
+2749	9	8.82	University Pl & E 14 St
+2750	7	2.18	University Pl & E 14 St
+2751	23	0.68	University Pl & E 14 St
+2752	2	0.22	University Pl & E 14 St
+2753	15	10.58	University Pl & E 14 St
+2754	12	15.59	University Pl & E 14 St
+2755	18	9.04	University Pl & E 14 St
+2756	11	14.27	University Pl & E 14 St
+2757	20	4.27	University Pl & E 14 St
+2758	0	0	University Pl & E 14 St
+2759	16	10.46	University Pl & E 14 St
+2760	4	0.65	University Pl & E 14 St
+2761	10	0	Greenwich Ave & 7 Ave
+2762	1	2.54	Greenwich Ave & 7 Ave
+2763	5	0.33	Greenwich Ave & 7 Ave
+2764	21	6.25	Greenwich Ave & 7 Ave
+2765	23	4.17	Greenwich Ave & 7 Ave
+2766	19	10.09	Greenwich Ave & 7 Ave
+2767	9	0	Greenwich Ave & 7 Ave
+2768	17	1.2	Greenwich Ave & 7 Ave
+2769	18	5.73	Greenwich Ave & 7 Ave
+2770	22	4.17	Greenwich Ave & 7 Ave
+2771	6	0.11	Greenwich Ave & 7 Ave
+2772	14	0	Greenwich Ave & 7 Ave
+2773	13	0	Greenwich Ave & 7 Ave
+2774	8	0.22	Greenwich Ave & 7 Ave
+2775	3	1.31	Greenwich Ave & 7 Ave
+2776	15	0.33	Greenwich Ave & 7 Ave
+2777	7	0.11	Greenwich Ave & 7 Ave
+2778	11	0	Greenwich Ave & 7 Ave
+2779	2	1.42	Greenwich Ave & 7 Ave
+2780	20	10.51	Greenwich Ave & 7 Ave
+2781	12	0	Greenwich Ave & 7 Ave
+2782	0	3	Greenwich Ave & 7 Ave
+2783	16	0.11	Greenwich Ave & 7 Ave
+2784	4	1.31	Greenwich Ave & 7 Ave
+2785	5	2.18	E 55 St & 2 Ave
+2786	10	1.63	E 55 St & 2 Ave
+2787	21	1.86	E 55 St & 2 Ave
+2788	1	3.54	E 55 St & 2 Ave
+2789	19	1.54	E 55 St & 2 Ave
+2790	14	1.42	E 55 St & 2 Ave
+2791	17	1.31	E 55 St & 2 Ave
+2792	23	2.03	E 55 St & 2 Ave
+2793	22	2.08	E 55 St & 2 Ave
+2794	9	1.85	E 55 St & 2 Ave
+2795	7	2.18	E 55 St & 2 Ave
+2796	18	0.55	E 55 St & 2 Ave
+2797	8	1.2	E 55 St & 2 Ave
+2798	6	2.18	E 55 St & 2 Ave
+2799	15	1.64	E 55 St & 2 Ave
+2800	13	1.53	E 55 St & 2 Ave
+2801	11	1.74	E 55 St & 2 Ave
+2802	3	2.72	E 55 St & 2 Ave
+2803	20	1.31	E 55 St & 2 Ave
+2804	0	2.78	E 55 St & 2 Ave
+2805	16	1.85	E 55 St & 2 Ave
+2806	2	3.06	E 55 St & 2 Ave
+2807	12	0.98	E 55 St & 2 Ave
+2808	4	3.92	E 55 St & 2 Ave
+2809	10	14.38	Centre St & Worth St
+2810	1	0	Centre St & Worth St
+2811	5	0	Centre St & Worth St
+2812	6	0	Centre St & Worth St
+2813	21	0	Centre St & Worth St
+2814	17	0.44	Centre St & Worth St
+2815	22	0	Centre St & Worth St
+2816	19	0	Centre St & Worth St
+2817	14	7.09	Centre St & Worth St
+2818	7	0	Centre St & Worth St
+2819	23	0	Centre St & Worth St
+2820	2	0	Centre St & Worth St
+2821	9	9.59	Centre St & Worth St
+2822	12	6.87	Centre St & Worth St
+2823	18	0.11	Centre St & Worth St
+2824	8	1.2	Centre St & Worth St
+2825	15	4.47	Centre St & Worth St
+2826	20	0	Centre St & Worth St
+2827	13	3.81	Centre St & Worth St
+2828	11	9.26	Centre St & Worth St
+2829	3	0	Centre St & Worth St
+2830	0	0	Centre St & Worth St
+2831	16	1.09	Centre St & Worth St
+2832	4	0	Centre St & Worth St
+2833	10	11	Centre St & Chambers St
+2834	1	0	Centre St & Chambers St
+2835	5	0.33	Centre St & Chambers St
+2836	21	1.64	Centre St & Chambers St
+2837	18	0.77	Centre St & Chambers St
+2838	19	0.55	Centre St & Chambers St
+2839	6	1.31	Centre St & Chambers St
+2840	14	7.2	Centre St & Chambers St
+2841	17	0.88	Centre St & Chambers St
+2842	22	0.22	Centre St & Chambers St
+2843	3	0	Centre St & Chambers St
+2844	9	13.73	Centre St & Chambers St
+2845	7	1.85	Centre St & Chambers St
+2846	23	0.45	Centre St & Chambers St
+2847	2	0	Centre St & Chambers St
+2848	15	5.89	Centre St & Chambers St
+2849	12	6	Centre St & Chambers St
+2850	13	5.34	Centre St & Chambers St
+2851	8	5.35	Centre St & Chambers St
+2852	20	1.53	Centre St & Chambers St
+2853	0	0	Centre St & Chambers St
+2854	11	7.41	Centre St & Chambers St
+2855	4	0	Centre St & Chambers St
+2856	16	5.23	Centre St & Chambers St
+2857	6	0.65	W 26 St & 10 Ave
+2858	22	1.54	W 26 St & 10 Ave
+2859	5	0.65	W 26 St & 10 Ave
+2860	23	1.46	W 26 St & 10 Ave
+2861	19	0	W 26 St & 10 Ave
+2862	10	36.82	W 26 St & 10 Ave
+2863	1	1.1	W 26 St & 10 Ave
+2864	18	0	W 26 St & 10 Ave
+2865	2	0.66	W 26 St & 10 Ave
+2866	15	9.71	W 26 St & 10 Ave
+2867	14	9.16	W 26 St & 10 Ave
+2868	17	1.1	W 26 St & 10 Ave
+2869	11	27.02	W 26 St & 10 Ave
+2870	3	0.65	W 26 St & 10 Ave
+2871	21	0.77	W 26 St & 10 Ave
+2872	0	1.33	W 26 St & 10 Ave
+2873	13	7.08	W 26 St & 10 Ave
+2874	8	0.22	W 26 St & 10 Ave
+2875	20	0.33	W 26 St & 10 Ave
+2876	7	0.44	W 26 St & 10 Ave
+2877	16	3.92	W 26 St & 10 Ave
+2878	9	15.47	W 26 St & 10 Ave
+2879	4	0.65	W 26 St & 10 Ave
+2880	12	12.21	W 26 St & 10 Ave
+2881	18	2.98	E 5 St & Avenue C
+2882	19	25.55	E 5 St & Avenue C
+2883	14	0	E 5 St & Avenue C
+2884	2	44.37	E 5 St & Avenue C
+2885	1	40.55	E 5 St & Avenue C
+2886	17	0	E 5 St & Avenue C
+2887	11	0	E 5 St & Avenue C
+2888	3	45.53	E 5 St & Avenue C
+2889	6	7.52	E 5 St & Avenue C
+2890	23	31.53	E 5 St & Avenue C
+2891	7	1.31	E 5 St & Avenue C
+2892	5	30.94	E 5 St & Avenue C
+2893	15	0	E 5 St & Avenue C
+2894	9	0	E 5 St & Avenue C
+2895	13	0	E 5 St & Avenue C
+2896	12	0	E 5 St & Avenue C
+2897	22	28.73	E 5 St & Avenue C
+2898	4	41.61	E 5 St & Avenue C
+2899	0	33.33	E 5 St & Avenue C
+2900	8	0.76	E 5 St & Avenue C
+2901	20	29.79	E 5 St & Avenue C
+2902	21	31.03	E 5 St & Avenue C
+2903	10	0.44	E 5 St & Avenue C
+2904	16	0	E 5 St & Avenue C
+2905	15	0	E 9 St & Avenue C
+2906	11	0.33	E 9 St & Avenue C
+2907	3	34.31	E 9 St & Avenue C
+2908	22	14.69	E 9 St & Avenue C
+2909	13	0.11	E 9 St & Avenue C
+2910	18	13.45	E 9 St & Avenue C
+2911	5	16.34	E 9 St & Avenue C
+2912	2	32.02	E 9 St & Avenue C
+2913	16	0.11	E 9 St & Avenue C
+2914	1	24.31	E 9 St & Avenue C
+2915	4	30.17	E 9 St & Avenue C
+2916	0	23.56	E 9 St & Avenue C
+2917	20	23.88	E 9 St & Avenue C
+2918	8	0.11	E 9 St & Avenue C
+2919	19	34.1	E 9 St & Avenue C
+2920	23	17	E 9 St & Avenue C
+2921	17	1.42	E 9 St & Avenue C
+2922	14	0	E 9 St & Avenue C
+2923	7	0.11	E 9 St & Avenue C
+2924	6	0.44	E 9 St & Avenue C
+2925	12	0	E 9 St & Avenue C
+2926	21	22.37	E 9 St & Avenue C
+2927	9	0	E 9 St & Avenue C
+2928	10	0	E 9 St & Avenue C
+2929	14	0.22	Pitt St & Stanton St
+2930	3	62.96	Pitt St & Stanton St
+2931	16	0.33	Pitt St & Stanton St
+2932	8	12.88	Pitt St & Stanton St
+2933	20	25.08	Pitt St & Stanton St
+2934	15	0.55	Pitt St & Stanton St
+2935	0	61.67	Pitt St & Stanton St
+2936	7	26.47	Pitt St & Stanton St
+2937	18	3.2	Pitt St & Stanton St
+2938	19	13.16	Pitt St & Stanton St
+2939	10	0	Pitt St & Stanton St
+2940	17	0.55	Pitt St & Stanton St
+2941	1	61.99	Pitt St & Stanton St
+2942	5	60.57	Pitt St & Stanton St
+2943	9	0.44	Pitt St & Stanton St
+2944	21	46.27	Pitt St & Stanton St
+2945	4	62.53	Pitt St & Stanton St
+2946	12	0	Pitt St & Stanton St
+2947	2	60.66	Pitt St & Stanton St
+2948	23	58.45	Pitt St & Stanton St
+2949	11	0	Pitt St & Stanton St
+2950	13	0	Pitt St & Stanton St
+2951	6	50.49	Pitt St & Stanton St
+2952	22	53.18	Pitt St & Stanton St
+2953	8	18.34	Allen St & Rivington St
+2954	20	26.18	Allen St & Rivington St
+2955	7	18.85	Allen St & Rivington St
+2956	1	30.17	Allen St & Rivington St
+2957	10	18.3	Allen St & Rivington St
+2958	13	19.28	Allen St & Rivington St
+2959	4	26.36	Allen St & Rivington St
+2960	5	24.51	Allen St & Rivington St
+2961	16	18.95	Allen St & Rivington St
+2962	19	23.03	Allen St & Rivington St
+2963	11	18.95	Allen St & Rivington St
+2964	0	30.44	Allen St & Rivington St
+2965	15	19.19	Allen St & Rivington St
+2966	6	21.59	Allen St & Rivington St
+2967	14	19.08	Allen St & Rivington St
+2968	17	18.73	Allen St & Rivington St
+2969	23	30.63	Allen St & Rivington St
+2970	9	18.3	Allen St & Rivington St
+2971	21	28.95	Allen St & Rivington St
+2972	3	27.23	Allen St & Rivington St
+2973	18	19.51	Allen St & Rivington St
+2974	12	19.08	Allen St & Rivington St
+2975	2	29.18	Allen St & Rivington St
+2976	22	29.82	Allen St & Rivington St
+2977	16	0.23	Broadway & E 22 St
+2978	1	0	Broadway & E 22 St
+2979	12	1.88	Broadway & E 22 St
+2980	10	0.47	Broadway & E 22 St
+2981	8	0	Broadway & E 22 St
+2982	18	0	Broadway & E 22 St
+2983	5	0.46	Broadway & E 22 St
+2984	9	0	Broadway & E 22 St
+2985	21	0	Broadway & E 22 St
+2986	4	0.69	Broadway & E 22 St
+2987	20	0	Broadway & E 22 St
+2988	19	0.23	Broadway & E 22 St
+2989	6	0.93	Broadway & E 22 St
+2990	7	0	Broadway & E 22 St
+2991	23	0.48	Broadway & E 22 St
+2992	22	0.47	Broadway & E 22 St
+2993	13	0.47	Broadway & E 22 St
+2994	14	0.7	Broadway & E 22 St
+2995	11	0.7	Broadway & E 22 St
+2996	0	0.48	Broadway & E 22 St
+2997	17	0.24	Broadway & E 22 St
+2998	3	1.39	Broadway & E 22 St
+2999	2	1.39	Broadway & E 22 St
+3000	15	0	Broadway & E 22 St
+3001	12	0.11	Washington St & Gansevoort St
+3002	14	1.31	Washington St & Gansevoort St
+3003	0	1.22	Washington St & Gansevoort St
+3004	21	2.08	Washington St & Gansevoort St
+3005	23	3.15	Washington St & Gansevoort St
+3006	16	0.54	Washington St & Gansevoort St
+3007	10	1.09	Washington St & Gansevoort St
+3008	20	3.18	Washington St & Gansevoort St
+3009	1	0.44	Washington St & Gansevoort St
+3010	5	0.44	Washington St & Gansevoort St
+3011	9	0.22	Washington St & Gansevoort St
+3012	17	0.66	Washington St & Gansevoort St
+3013	8	0	Washington St & Gansevoort St
+3014	3	0.65	Washington St & Gansevoort St
+3015	19	4.61	Washington St & Gansevoort St
+3016	6	0	Washington St & Gansevoort St
+3017	7	0	Washington St & Gansevoort St
+3018	18	1.76	Washington St & Gansevoort St
+3019	22	4.28	Washington St & Gansevoort St
+3020	15	0.87	Washington St & Gansevoort St
+3021	13	0.65	Washington St & Gansevoort St
+3022	4	0.65	Washington St & Gansevoort St
+3023	2	0.66	Washington St & Gansevoort St
+3024	11	1.09	Washington St & Gansevoort St
+3025	20	17.74	Market St & Cherry St
+3026	10	0	Market St & Cherry St
+3027	4	29.85	Market St & Cherry St
+3028	5	29.52	Market St & Cherry St
+3029	6	23.45	Market St & Cherry St
+3030	8	0.98	Market St & Cherry St
+3031	7	5.34	Market St & Cherry St
+3032	0	25.78	Market St & Cherry St
+3033	12	0	Market St & Cherry St
+3034	2	27.43	Market St & Cherry St
+3035	14	0	Market St & Cherry St
+3036	1	27.62	Market St & Cherry St
+3037	22	13.6	Market St & Cherry St
+3038	9	0	Market St & Cherry St
+3039	21	18.09	Market St & Cherry St
+3040	11	0	Market St & Cherry St
+3041	23	16.22	Market St & Cherry St
+3042	16	0	Market St & Cherry St
+3043	15	0	Market St & Cherry St
+3044	17	1.1	Market St & Cherry St
+3045	18	6.5	Market St & Cherry St
+3046	19	15.57	Market St & Cherry St
+3047	13	0	Market St & Cherry St
+3048	3	29.63	Market St & Cherry St
+3049	12	0	Suffolk St & Stanton St
+3050	21	29.17	Suffolk St & Stanton St
+3051	19	20.07	Suffolk St & Stanton St
+3052	10	0	Suffolk St & Stanton St
+3053	8	1.2	Suffolk St & Stanton St
+3054	1	31.38	Suffolk St & Stanton St
+3055	5	23.09	Suffolk St & Stanton St
+3056	16	0	Suffolk St & Stanton St
+3057	17	0	Suffolk St & Stanton St
+3058	4	30.72	Suffolk St & Stanton St
+3059	20	27.93	Suffolk St & Stanton St
+3060	15	0	Suffolk St & Stanton St
+3061	6	12.43	Suffolk St & Stanton St
+3062	14	0	Suffolk St & Stanton St
+3063	18	4.08	Suffolk St & Stanton St
+3064	22	30.04	Suffolk St & Stanton St
+3065	3	33.99	Suffolk St & Stanton St
+3066	13	0	Suffolk St & Stanton St
+3067	7	2.18	Suffolk St & Stanton St
+3068	0	26.22	Suffolk St & Stanton St
+3069	2	32.68	Suffolk St & Stanton St
+3070	23	27.14	Suffolk St & Stanton St
+3071	9	0	Suffolk St & Stanton St
+3072	11	0	Suffolk St & Stanton St
+3073	8	1.09	E 6 St & Avenue D
+3074	21	35.96	E 6 St & Avenue D
+3075	20	23	E 6 St & Avenue D
+3076	6	9.38	E 6 St & Avenue D
+3077	23	43.58	E 6 St & Avenue D
+3078	12	0	E 6 St & Avenue D
+3079	9	0.22	E 6 St & Avenue D
+3080	10	0	E 6 St & Avenue D
+3081	1	53.48	E 6 St & Avenue D
+3082	0	49.78	E 6 St & Avenue D
+3083	16	0	E 6 St & Avenue D
+3084	17	0.22	E 6 St & Avenue D
+3085	4	14.27	E 6 St & Avenue D
+3086	3	34.1	E 6 St & Avenue D
+3087	19	23.68	E 6 St & Avenue D
+3088	2	56.17	E 6 St & Avenue D
+3089	14	0	E 6 St & Avenue D
+3090	18	4.63	E 6 St & Avenue D
+3091	5	14.6	E 6 St & Avenue D
+3092	15	0	E 6 St & Avenue D
+3093	13	0	E 6 St & Avenue D
+3094	11	0	E 6 St & Avenue D
+3095	22	37.61	E 6 St & Avenue D
+3096	7	6.54	E 6 St & Avenue D
+3097	1	2.1	Forsyth St & Canal St
+3098	21	1.75	Forsyth St & Canal St
+3099	11	1.85	Forsyth St & Canal St
+3100	5	3.7	Forsyth St & Canal St
+3101	20	2.52	Forsyth St & Canal St
+3102	2	1.53	Forsyth St & Canal St
+3103	14	1.96	Forsyth St & Canal St
+3104	0	2.11	Forsyth St & Canal St
+3105	6	2.73	Forsyth St & Canal St
+3106	9	1.2	Forsyth St & Canal St
+3107	17	0.88	Forsyth St & Canal St
+3108	8	3.28	Forsyth St & Canal St
+3109	23	1.35	Forsyth St & Canal St
+3110	12	1.74	Forsyth St & Canal St
+3111	4	3.59	Forsyth St & Canal St
+3112	7	4.25	Forsyth St & Canal St
+3113	18	0.55	Forsyth St & Canal St
+3114	19	0.77	Forsyth St & Canal St
+3115	10	1.42	Forsyth St & Canal St
+3116	13	0.87	Forsyth St & Canal St
+3117	22	1.32	Forsyth St & Canal St
+3118	16	1.74	Forsyth St & Canal St
+3119	3	2.72	Forsyth St & Canal St
+3120	15	1.09	Forsyth St & Canal St
+3121	1	0	Pearl St & Hanover Square
+3122	17	0	Pearl St & Hanover Square
+3123	10	16.99	Pearl St & Hanover Square
+3124	12	16.36	Pearl St & Hanover Square
+3125	0	0	Pearl St & Hanover Square
+3126	21	0	Pearl St & Hanover Square
+3127	11	20.92	Pearl St & Hanover Square
+3128	19	0	Pearl St & Hanover Square
+3129	2	0	Pearl St & Hanover Square
+3130	14	14.29	Pearl St & Hanover Square
+3131	18	0	Pearl St & Hanover Square
+3132	22	0	Pearl St & Hanover Square
+3133	6	0	Pearl St & Hanover Square
+3134	13	12.96	Pearl St & Hanover Square
+3135	4	0	Pearl St & Hanover Square
+3136	5	0	Pearl St & Hanover Square
+3137	16	3.49	Pearl St & Hanover Square
+3138	23	0	Pearl St & Hanover Square
+3139	8	0.55	Pearl St & Hanover Square
+3140	3	0	Pearl St & Hanover Square
+3141	15	9.81	Pearl St & Hanover Square
+3142	7	0	Pearl St & Hanover Square
+3143	20	0	Pearl St & Hanover Square
+3144	9	6.21	Pearl St & Hanover Square
+3145	13	14.38	Barclay St & Church St
+3146	14	13.96	Barclay St & Church St
+3147	2	6.67	Barclay St & Church St
+3148	11	20.7	Barclay St & Church St
+3149	17	5.04	Barclay St & Church St
+3150	16	7.3	Barclay St & Church St
+3151	9	14.6	Barclay St & Church St
+3152	6	3.6	Barclay St & Church St
+3153	0	4.67	Barclay St & Church St
+3154	4	5.23	Barclay St & Church St
+3155	15	13.3	Barclay St & Church St
+3156	3	5.45	Barclay St & Church St
+3157	23	3.94	Barclay St & Church St
+3158	19	0.55	Barclay St & Church St
+3159	22	6.14	Barclay St & Church St
+3160	7	4.79	Barclay St & Church St
+3161	21	4.82	Barclay St & Church St
+3162	18	1.98	Barclay St & Church St
+3163	5	4.14	Barclay St & Church St
+3164	10	17.43	Barclay St & Church St
+3165	1	4.86	Barclay St & Church St
+3166	20	4.16	Barclay St & Church St
+3167	12	13.2	Barclay St & Church St
+3168	8	11.03	Barclay St & Church St
+3169	7	0	W 59 St & 10 Ave
+3170	13	0	W 59 St & 10 Ave
+3171	2	0	W 59 St & 10 Ave
+3172	3	0	W 59 St & 10 Ave
+3173	15	0	W 59 St & 10 Ave
+3174	23	0	W 59 St & 10 Ave
+3175	19	0	W 59 St & 10 Ave
+3176	1	0	W 59 St & 10 Ave
+3177	11	0	W 59 St & 10 Ave
+3178	10	0	W 59 St & 10 Ave
+3179	14	0.11	W 59 St & 10 Ave
+3180	8	0	W 59 St & 10 Ave
+3181	18	0.11	W 59 St & 10 Ave
+3182	16	0	W 59 St & 10 Ave
+3183	0	0	W 59 St & 10 Ave
+3184	17	0	W 59 St & 10 Ave
+3185	20	0	W 59 St & 10 Ave
+3186	12	0	W 59 St & 10 Ave
+3187	6	0	W 59 St & 10 Ave
+3188	22	0	W 59 St & 10 Ave
+3189	21	0	W 59 St & 10 Ave
+3190	9	0	W 59 St & 10 Ave
+3191	4	0	W 59 St & 10 Ave
+3192	5	0	W 59 St & 10 Ave
+3193	11	0	W 54 St & 9 Ave
+3194	19	0	W 54 St & 9 Ave
+3195	14	0.44	W 54 St & 9 Ave
+3196	7	0	W 54 St & 9 Ave
+3197	16	0	W 54 St & 9 Ave
+3198	3	0	W 54 St & 9 Ave
+3199	15	0	W 54 St & 9 Ave
+3200	10	0.11	W 54 St & 9 Ave
+3201	23	0	W 54 St & 9 Ave
+3202	2	0	W 54 St & 9 Ave
+3203	20	0	W 54 St & 9 Ave
+3204	12	0	W 54 St & 9 Ave
+3205	6	0	W 54 St & 9 Ave
+3206	9	0	W 54 St & 9 Ave
+3207	8	0	W 54 St & 9 Ave
+3208	21	0.11	W 54 St & 9 Ave
+3209	5	0	W 54 St & 9 Ave
+3210	22	0.11	W 54 St & 9 Ave
+3211	13	0.22	W 54 St & 9 Ave
+3212	4	0	W 54 St & 9 Ave
+3213	0	0	W 54 St & 9 Ave
+3214	18	0	W 54 St & 9 Ave
+3215	1	0.11	W 54 St & 9 Ave
+3216	17	0	W 54 St & 9 Ave
+3217	7	6.97	West St & Chambers St
+3218	19	0.66	West St & Chambers St
+3219	12	8.83	West St & Chambers St
+3220	23	2.25	West St & Chambers St
+3221	3	1.63	West St & Chambers St
+3222	15	4.69	West St & Chambers St
+3223	10	15.03	West St & Chambers St
+3224	11	9.69	West St & Chambers St
+3225	8	10.7	West St & Chambers St
+3226	21	1.32	West St & Chambers St
+3227	0	1.44	West St & Chambers St
+3228	16	7.19	West St & Chambers St
+3229	14	7.09	West St & Chambers St
+3230	20	1.97	West St & Chambers St
+3231	1	0.66	West St & Chambers St
+3232	6	2.62	West St & Chambers St
+3233	9	17.54	West St & Chambers St
+3234	17	3.5	West St & Chambers St
+3235	4	1.96	West St & Chambers St
+3236	5	1.53	West St & Chambers St
+3237	2	0.33	West St & Chambers St
+3238	18	0.88	West St & Chambers St
+3239	22	1.43	West St & Chambers St
+3240	13	7.95	West St & Chambers St
+3241	19	0	State St
+3242	7	0	State St
+3243	23	0	State St
+3244	20	0	State St
+3245	12	0.65	State St
+3246	10	2.4	State St
+3247	3	0	State St
+3248	8	0	State St
+3249	15	0.55	State St
+3250	5	0	State St
+3251	11	0.98	State St
+3252	14	0.76	State St
+3253	21	0	State St
+3254	0	0	State St
+3255	16	0.54	State St
+3256	9	1.42	State St
+3257	4	0	State St
+3258	1	0	State St
+3259	6	0	State St
+3260	2	0	State St
+3261	17	0.33	State St
+3262	18	0	State St
+3263	22	0	State St
+3264	13	1.09	State St
+3265	19	29.39	E 3 St & 1 Ave
+3266	11	0	E 3 St & 1 Ave
+3267	21	20.39	E 3 St & 1 Ave
+3268	7	0.11	E 3 St & 1 Ave
+3269	23	10.36	E 3 St & 1 Ave
+3270	3	10.89	E 3 St & 1 Ave
+3271	20	26.62	E 3 St & 1 Ave
+3272	12	0.11	E 3 St & 1 Ave
+3273	10	0.22	E 3 St & 1 Ave
+3274	8	0	E 3 St & 1 Ave
+3275	17	1.97	E 3 St & 1 Ave
+3276	15	0.44	E 3 St & 1 Ave
+3277	5	5.23	E 3 St & 1 Ave
+3278	16	0.87	E 3 St & 1 Ave
+3279	14	0.11	E 3 St & 1 Ave
+3280	1	7.73	E 3 St & 1 Ave
+3281	0	8.44	E 3 St & 1 Ave
+3282	6	0.33	E 3 St & 1 Ave
+3283	9	0	E 3 St & 1 Ave
+3284	4	9.69	E 3 St & 1 Ave
+3285	22	12.39	E 3 St & 1 Ave
+3286	2	10.71	E 3 St & 1 Ave
+3287	13	0.11	E 3 St & 1 Ave
+3288	18	10.8	E 3 St & 1 Ave
+3289	19	12.61	E 7 St & Avenue A
+3290	7	11.76	E 7 St & Avenue A
+3291	23	20.27	E 7 St & Avenue A
+3292	11	12.2	E 7 St & Avenue A
+3293	3	34.1	E 7 St & Avenue A
+3294	21	13.82	E 7 St & Avenue A
+3295	12	11.67	E 7 St & Avenue A
+3296	16	11.11	E 7 St & Avenue A
+3297	8	12.12	E 7 St & Avenue A
+3298	20	13.58	E 7 St & Avenue A
+3299	15	11.45	E 7 St & Avenue A
+3300	10	12.09	E 7 St & Avenue A
+3301	9	11.76	E 7 St & Avenue A
+3302	17	11.5	E 7 St & Avenue A
+3303	1	33.81	E 7 St & Avenue A
+3304	5	22.22	E 7 St & Avenue A
+3305	6	11.67	E 7 St & Avenue A
+3306	14	11.34	E 7 St & Avenue A
+3307	4	31.05	E 7 St & Avenue A
+3308	0	28.22	E 7 St & Avenue A
+3309	2	32.79	E 7 St & Avenue A
+3310	18	29.33	E 7 St & Avenue A
+3311	22	14.25	E 7 St & Avenue A
+3312	13	11.44	E 7 St & Avenue A
+3313	19	27.96	E 13 St & Avenue A
+3314	7	0.54	E 13 St & Avenue A
+3315	23	30.07	E 13 St & Avenue A
+3316	3	33.01	E 13 St & Avenue A
+3317	12	0.33	E 13 St & Avenue A
+3318	5	20.48	E 13 St & Avenue A
+3319	11	0.76	E 13 St & Avenue A
+3320	8	0	E 13 St & Avenue A
+3321	21	32.13	E 13 St & Avenue A
+3322	0	32.89	E 13 St & Avenue A
+3323	16	0.11	E 13 St & Avenue A
+3324	14	0.44	E 13 St & Avenue A
+3325	20	24.21	E 13 St & Avenue A
+3326	15	0	E 13 St & Avenue A
+3327	10	0.44	E 13 St & Avenue A
+3328	9	0.11	E 13 St & Avenue A
+3329	17	1.31	E 13 St & Avenue A
+3330	1	32.6	E 13 St & Avenue A
+3331	22	30.48	E 13 St & Avenue A
+3332	6	5.23	E 13 St & Avenue A
+3333	4	28.98	E 13 St & Avenue A
+3334	2	37.6	E 13 St & Avenue A
+3335	18	11.14	E 13 St & Avenue A
+3336	13	0.54	E 13 St & Avenue A
+3337	19	4.5	9 Ave & W 18 St
+3338	1	1.44	9 Ave & W 18 St
+3339	16	3.81	9 Ave & W 18 St
+3340	8	4.04	9 Ave & W 18 St
+3341	23	4.95	9 Ave & W 18 St
+3342	6	0.65	9 Ave & W 18 St
+3343	7	1.31	9 Ave & W 18 St
+3344	20	8.11	9 Ave & W 18 St
+3345	21	10.42	9 Ave & W 18 St
+3346	11	20.48	9 Ave & W 18 St
+3347	17	2.19	9 Ave & W 18 St
+3348	22	7.89	9 Ave & W 18 St
+3349	12	18.43	9 Ave & W 18 St
+3350	5	0.87	9 Ave & W 18 St
+3351	10	20.92	9 Ave & W 18 St
+3352	4	1.31	9 Ave & W 18 St
+3353	15	10.25	9 Ave & W 18 St
+3354	0	3.78	9 Ave & W 18 St
+3355	9	11.11	9 Ave & W 18 St
+3356	3	1.31	9 Ave & W 18 St
+3357	2	0.77	9 Ave & W 18 St
+3358	13	17.86	9 Ave & W 18 St
+3359	18	4.08	9 Ave & W 18 St
+3360	14	13.96	9 Ave & W 18 St
+3361	4	0	W 21 St & 6 Ave
+3362	20	0.33	W 21 St & 6 Ave
+3363	19	0.33	W 21 St & 6 Ave
+3364	0	0	W 21 St & 6 Ave
+3365	21	0	W 21 St & 6 Ave
+3366	23	0	W 21 St & 6 Ave
+3367	15	3.93	W 21 St & 6 Ave
+3368	12	11.34	W 21 St & 6 Ave
+3369	11	11.33	W 21 St & 6 Ave
+3370	10	18.74	W 21 St & 6 Ave
+3371	22	0	W 21 St & 6 Ave
+3372	1	0	W 21 St & 6 Ave
+3373	9	10.02	W 21 St & 6 Ave
+3374	17	0.88	W 21 St & 6 Ave
+3375	6	0.44	W 21 St & 6 Ave
+3376	5	0	W 21 St & 6 Ave
+3377	16	2.18	W 21 St & 6 Ave
+3378	14	4.58	W 21 St & 6 Ave
+3379	3	0	W 21 St & 6 Ave
+3380	2	0	W 21 St & 6 Ave
+3381	7	0.98	W 21 St & 6 Ave
+3382	18	0.33	W 21 St & 6 Ave
+3383	8	1.31	W 21 St & 6 Ave
+3384	13	10.02	W 21 St & 6 Ave
+3385	19	44.52	St Marks Pl & 1 Ave
+3386	18	16.76	St Marks Pl & 1 Ave
+3387	12	0.44	St Marks Pl & 1 Ave
+3388	11	0.22	St Marks Pl & 1 Ave
+3389	10	0.11	St Marks Pl & 1 Ave
+3390	21	30.81	St Marks Pl & 1 Ave
+3391	16	1.2	St Marks Pl & 1 Ave
+3392	17	2.74	St Marks Pl & 1 Ave
+3393	20	39.54	St Marks Pl & 1 Ave
+3394	15	0.55	St Marks Pl & 1 Ave
+3395	0	25.67	St Marks Pl & 1 Ave
+3396	7	0	St Marks Pl & 1 Ave
+3397	14	0.22	St Marks Pl & 1 Ave
+3398	2	25.79	St Marks Pl & 1 Ave
+3399	22	25.55	St Marks Pl & 1 Ave
+3400	9	0	St Marks Pl & 1 Ave
+3401	13	0.33	St Marks Pl & 1 Ave
+3402	1	24.53	St Marks Pl & 1 Ave
+3403	6	2.18	St Marks Pl & 1 Ave
+3404	4	28.98	St Marks Pl & 1 Ave
+3405	3	31.59	St Marks Pl & 1 Ave
+3406	23	20.27	St Marks Pl & 1 Ave
+3407	5	13.83	St Marks Pl & 1 Ave
+3408	8	0	St Marks Pl & 1 Ave
+3409	16	0	E 4 St & 2 Ave
+3410	17	0.99	E 4 St & 2 Ave
+3411	13	0.44	E 4 St & 2 Ave
+3412	6	0.65	E 4 St & 2 Ave
+3413	22	5.48	E 4 St & 2 Ave
+3414	7	0.22	E 4 St & 2 Ave
+3415	23	4.84	E 4 St & 2 Ave
+3416	14	0	E 4 St & 2 Ave
+3417	2	2.51	E 4 St & 2 Ave
+3418	18	6.28	E 4 St & 2 Ave
+3419	19	14.47	E 4 St & 2 Ave
+3420	10	0.11	E 4 St & 2 Ave
+3421	15	0	E 4 St & 2 Ave
+3422	9	0.54	E 4 St & 2 Ave
+3423	5	1.53	E 4 St & 2 Ave
+3424	1	2.54	E 4 St & 2 Ave
+3425	20	11.39	E 4 St & 2 Ave
+3426	11	0	E 4 St & 2 Ave
+3427	8	0.44	E 4 St & 2 Ave
+3428	4	2.18	E 4 St & 2 Ave
+3429	21	6.58	E 4 St & 2 Ave
+3430	3	3.27	E 4 St & 2 Ave
+3431	12	0.11	E 4 St & 2 Ave
+3432	0	2.67	E 4 St & 2 Ave
+3433	7	0.76	E 45 St & 3 Ave
+3434	14	4.36	E 45 St & 3 Ave
+3435	3	0	E 45 St & 3 Ave
+3436	6	0.55	E 45 St & 3 Ave
+3437	22	0	E 45 St & 3 Ave
+3438	18	0	E 45 St & 3 Ave
+3439	21	0	E 45 St & 3 Ave
+3440	2	0	E 45 St & 3 Ave
+3441	19	0	E 45 St & 3 Ave
+3442	10	25.27	E 45 St & 3 Ave
+3443	20	0	E 45 St & 3 Ave
+3444	1	0	E 45 St & 3 Ave
+3445	5	0	E 45 St & 3 Ave
+3446	11	13.73	E 45 St & 3 Ave
+3447	23	0	E 45 St & 3 Ave
+3448	4	0	E 45 St & 3 Ave
+3449	12	4.91	E 45 St & 3 Ave
+3450	13	6.21	E 45 St & 3 Ave
+3451	8	9.93	E 45 St & 3 Ave
+3452	15	0.76	E 45 St & 3 Ave
+3453	0	0	E 45 St & 3 Ave
+3454	16	0	E 45 St & 3 Ave
+3455	9	22	E 45 St & 3 Ave
+3456	17	0	E 45 St & 3 Ave
+3457	10	0.65	E 52 St & 2 Ave
+3458	7	0.65	E 52 St & 2 Ave
+3459	19	0	E 52 St & 2 Ave
+3460	3	0.65	E 52 St & 2 Ave
+3461	6	0.65	E 52 St & 2 Ave
+3462	14	0.87	E 52 St & 2 Ave
+3463	22	0	E 52 St & 2 Ave
+3464	18	0	E 52 St & 2 Ave
+3465	23	0	E 52 St & 2 Ave
+3466	15	0.44	E 52 St & 2 Ave
+3467	12	0.33	E 52 St & 2 Ave
+3468	11	0.54	E 52 St & 2 Ave
+3469	2	0	E 52 St & 2 Ave
+3470	8	0.66	E 52 St & 2 Ave
+3471	21	0	E 52 St & 2 Ave
+3472	5	0.65	E 52 St & 2 Ave
+3473	16	0.11	E 52 St & 2 Ave
+3474	9	0.65	E 52 St & 2 Ave
+3475	20	0.11	E 52 St & 2 Ave
+3476	0	0	E 52 St & 2 Ave
+3477	17	0	E 52 St & 2 Ave
+3478	1	0	E 52 St & 2 Ave
+3479	4	0.65	E 52 St & 2 Ave
+3480	13	0.54	E 52 St & 2 Ave
+3481	18	21.28	W 27 St & 7 Ave
+3482	3	20.26	W 27 St & 7 Ave
+3483	7	20.92	W 27 St & 7 Ave
+3484	2	20.33	W 27 St & 7 Ave
+3485	10	21.46	W 27 St & 7 Ave
+3486	15	21.16	W 27 St & 7 Ave
+3487	19	21.05	W 27 St & 7 Ave
+3488	22	20.39	W 27 St & 7 Ave
+3489	21	20.39	W 27 St & 7 Ave
+3490	14	21.16	W 27 St & 7 Ave
+3491	11	21.24	W 27 St & 7 Ave
+3492	6	20.94	W 27 St & 7 Ave
+3493	20	20.7	W 27 St & 7 Ave
+3494	12	21.37	W 27 St & 7 Ave
+3495	5	20.26	W 27 St & 7 Ave
+3496	23	20.72	W 27 St & 7 Ave
+3497	8	20.96	W 27 St & 7 Ave
+3498	1	20.55	W 27 St & 7 Ave
+3499	0	20.67	W 27 St & 7 Ave
+3500	16	21.24	W 27 St & 7 Ave
+3501	9	21.13	W 27 St & 7 Ave
+3502	4	20.26	W 27 St & 7 Ave
+3503	13	21.57	W 27 St & 7 Ave
+3504	17	21.47	W 27 St & 7 Ave
+3505	19	0	Broadway & W 24 St
+3506	3	0.65	Broadway & W 24 St
+3507	7	0.65	Broadway & W 24 St
+3508	14	4.25	Broadway & W 24 St
+3509	18	0	Broadway & W 24 St
+3510	10	26.36	Broadway & W 24 St
+3511	6	0.65	Broadway & W 24 St
+3512	15	2.18	Broadway & W 24 St
+3513	11	17.21	Broadway & W 24 St
+3514	2	0.66	Broadway & W 24 St
+3515	23	0.79	Broadway & W 24 St
+3516	21	1.21	Broadway & W 24 St
+3517	12	14.39	Broadway & W 24 St
+3518	16	1.31	Broadway & W 24 St
+3519	8	2.73	Broadway & W 24 St
+3520	20	0.22	Broadway & W 24 St
+3521	1	0.99	Broadway & W 24 St
+3522	5	0.65	Broadway & W 24 St
+3523	22	1.32	Broadway & W 24 St
+3524	17	0	Broadway & W 24 St
+3525	4	0.65	Broadway & W 24 St
+3526	0	1.11	Broadway & W 24 St
+3527	9	24.18	Broadway & W 24 St
+3528	13	6.97	Broadway & W 24 St
+3529	18	22.05	E 10 St & Avenue A
+3530	7	0	E 10 St & Avenue A
+3531	19	31.91	E 10 St & Avenue A
+3532	3	38.67	E 10 St & Avenue A
+3533	6	2.94	E 10 St & Avenue A
+3534	15	0.11	E 10 St & Avenue A
+3535	12	0.11	E 10 St & Avenue A
+3536	2	43.39	E 10 St & Avenue A
+3537	10	0.44	E 10 St & Avenue A
+3538	23	34.01	E 10 St & Avenue A
+3539	21	25.33	E 10 St & Avenue A
+3540	11	0.54	E 10 St & Avenue A
+3541	22	25.88	E 10 St & Avenue A
+3542	8	0	E 10 St & Avenue A
+3543	20	24.42	E 10 St & Avenue A
+3544	14	0.33	E 10 St & Avenue A
+3545	16	0	E 10 St & Avenue A
+3546	9	0.11	E 10 St & Avenue A
+3547	17	2.08	E 10 St & Avenue A
+3548	0	38	E 10 St & Avenue A
+3549	5	29.08	E 10 St & Avenue A
+3550	1	43.2	E 10 St & Avenue A
+3551	4	36.49	E 10 St & Avenue A
+3552	13	0	E 10 St & Avenue A
+3553	18	10.36	W 24 St & 7 Ave
+3554	10	10.02	W 24 St & 7 Ave
+3555	7	9.8	W 24 St & 7 Ave
+3556	19	10.64	W 24 St & 7 Ave
+3557	3	9.8	W 24 St & 7 Ave
+3558	6	9.81	W 24 St & 7 Ave
+3559	14	10.25	W 24 St & 7 Ave
+3560	2	9.84	W 24 St & 7 Ave
+3561	20	10.3	W 24 St & 7 Ave
+3562	12	10.8	W 24 St & 7 Ave
+3563	11	10.78	W 24 St & 7 Ave
+3564	23	9.91	W 24 St & 7 Ave
+3565	8	9.93	W 24 St & 7 Ave
+3566	15	10.14	W 24 St & 7 Ave
+3567	5	10.24	W 24 St & 7 Ave
+3568	22	10.2	W 24 St & 7 Ave
+3569	9	9.8	W 24 St & 7 Ave
+3570	21	10.31	W 24 St & 7 Ave
+3571	0	10	W 24 St & 7 Ave
+3572	16	10.02	W 24 St & 7 Ave
+3573	4	9.8	W 24 St & 7 Ave
+3574	1	9.94	W 24 St & 7 Ave
+3575	17	10.08	W 24 St & 7 Ave
+3576	13	11.22	W 24 St & 7 Ave
+3577	7	0.11	8  Ave & W 52 St
+3578	19	0	8  Ave & W 52 St
+3579	10	0.44	8  Ave & W 52 St
+3580	15	0	8  Ave & W 52 St
+3581	11	0.33	8  Ave & W 52 St
+3582	3	0.65	8  Ave & W 52 St
+3583	6	0.11	8  Ave & W 52 St
+3584	1	0.55	8  Ave & W 52 St
+3585	14	0	8  Ave & W 52 St
+3586	18	0.22	8  Ave & W 52 St
+3587	23	0	8  Ave & W 52 St
+3588	8	0.33	8  Ave & W 52 St
+3589	20	0.11	8  Ave & W 52 St
+3590	16	0	8  Ave & W 52 St
+3591	17	0	8  Ave & W 52 St
+3592	13	0	8  Ave & W 52 St
+3593	4	0.11	8  Ave & W 52 St
+3594	21	0	8  Ave & W 52 St
+3595	2	0.66	8  Ave & W 52 St
+3596	22	0	8  Ave & W 52 St
+3597	12	0.11	8  Ave & W 52 St
+3598	5	0	8  Ave & W 52 St
+3599	9	0.65	8  Ave & W 52 St
+3600	0	0	8  Ave & W 52 St
+3601	23	22.97	W 37 St & 10 Ave
+3602	10	12.42	W 37 St & 10 Ave
+3603	15	12.54	W 37 St & 10 Ave
+3604	19	13.93	W 37 St & 10 Ave
+3605	3	27.78	W 37 St & 10 Ave
+3606	8	12.23	W 37 St & 10 Ave
+3607	11	12.42	W 37 St & 10 Ave
+3608	6	13.63	W 37 St & 10 Ave
+3609	2	26.78	W 37 St & 10 Ave
+3610	14	12.54	W 37 St & 10 Ave
+3611	12	12.43	W 37 St & 10 Ave
+3612	4	26.8	W 37 St & 10 Ave
+3613	5	21.68	W 37 St & 10 Ave
+3614	21	17.43	W 37 St & 10 Ave
+3615	7	11.87	W 37 St & 10 Ave
+3616	0	26.67	W 37 St & 10 Ave
+3617	16	11.76	W 37 St & 10 Ave
+3618	20	14.9	W 37 St & 10 Ave
+3619	17	11.61	W 37 St & 10 Ave
+3620	18	12.02	W 37 St & 10 Ave
+3621	1	27.51	W 37 St & 10 Ave
+3622	22	22.48	W 37 St & 10 Ave
+3623	13	12.42	W 37 St & 10 Ave
+3624	9	12.42	W 37 St & 10 Ave
+3625	11	0	52 St & 9 Ave
+3626	19	0.66	52 St & 9 Ave
+3627	3	0	52 St & 9 Ave
+3628	23	0	52 St & 9 Ave
+3629	1	0	52 St & 9 Ave
+3630	0	0	52 St & 9 Ave
+3631	16	0	52 St & 9 Ave
+3632	9	0	52 St & 9 Ave
+3633	4	0	52 St & 9 Ave
+3634	15	0	52 St & 9 Ave
+3635	20	0.66	52 St & 9 Ave
+3636	12	0	52 St & 9 Ave
+3637	2	0	52 St & 9 Ave
+3638	18	0.33	52 St & 9 Ave
+3639	14	0	52 St & 9 Ave
+3640	22	0	52 St & 9 Ave
+3641	13	0	52 St & 9 Ave
+3642	6	0	52 St & 9 Ave
+3643	21	0.33	52 St & 9 Ave
+3644	17	0.11	52 St & 9 Ave
+3645	5	0	52 St & 9 Ave
+3646	8	0	52 St & 9 Ave
+3647	7	0	52 St & 9 Ave
+3648	10	0	52 St & 9 Ave
+3649	16	5.56	W 22 St & 8 Ave
+3650	15	5.56	W 22 St & 8 Ave
+3651	11	4.58	W 22 St & 8 Ave
+3652	23	19.03	W 22 St & 8 Ave
+3653	0	18.78	W 22 St & 8 Ave
+3654	1	17.9	W 22 St & 8 Ave
+3655	13	5.45	W 22 St & 8 Ave
+3656	6	5.67	W 22 St & 8 Ave
+3657	9	4.58	W 22 St & 8 Ave
+3658	17	7.56	W 22 St & 8 Ave
+3659	21	18.86	W 22 St & 8 Ave
+3660	5	10.13	W 22 St & 8 Ave
+3661	19	24.23	W 22 St & 8 Ave
+3662	12	4.91	W 22 St & 8 Ave
+3663	20	18.07	W 22 St & 8 Ave
+3664	8	4.69	W 22 St & 8 Ave
+3665	10	4.58	W 22 St & 8 Ave
+3666	2	19.23	W 22 St & 8 Ave
+3667	7	4.58	W 22 St & 8 Ave
+3668	14	5.23	W 22 St & 8 Ave
+3669	4	18.41	W 22 St & 8 Ave
+3670	22	17.21	W 22 St & 8 Ave
+3671	3	21.46	W 22 St & 8 Ave
+3672	18	18.52	W 22 St & 8 Ave
+3673	13	4.68	1 Ave & E 44 St
+3674	5	1.96	1 Ave & E 44 St
+3675	2	1.97	1 Ave & E 44 St
+3676	16	2.51	1 Ave & E 44 St
+3677	1	1.99	1 Ave & E 44 St
+3678	21	1.97	1 Ave & E 44 St
+3679	17	1.86	1 Ave & E 44 St
+3680	23	2.03	1 Ave & E 44 St
+3681	7	1.31	1 Ave & E 44 St
+3682	8	1.86	1 Ave & E 44 St
+3683	6	1.85	1 Ave & E 44 St
+3684	14	6.43	1 Ave & E 44 St
+3685	22	1.97	1 Ave & E 44 St
+3686	9	18.74	1 Ave & E 44 St
+3687	4	1.96	1 Ave & E 44 St
+3688	15	6.98	1 Ave & E 44 St
+3689	19	1.97	1 Ave & E 44 St
+3690	3	1.96	1 Ave & E 44 St
+3691	11	19.93	1 Ave & E 44 St
+3692	10	24.51	1 Ave & E 44 St
+3693	20	1.97	1 Ave & E 44 St
+3694	12	8.07	1 Ave & E 44 St
+3695	18	1.98	1 Ave & E 44 St
+3696	0	2	1 Ave & E 44 St
+3697	17	0	E 53 St & Madison Ave
+3698	16	0	E 53 St & Madison Ave
+3699	1	0	E 53 St & Madison Ave
+3700	5	0	E 53 St & Madison Ave
+3701	6	0.33	E 53 St & Madison Ave
+3702	2	0	E 53 St & Madison Ave
+3703	23	0	E 53 St & Madison Ave
+3704	13	3.59	E 53 St & Madison Ave
+3705	21	0	E 53 St & Madison Ave
+3706	9	25.05	E 53 St & Madison Ave
+3707	0	0	E 53 St & Madison Ave
+3708	7	9.59	E 53 St & Madison Ave
+3709	11	16.88	E 53 St & Madison Ave
+3710	20	0	E 53 St & Madison Ave
+3711	19	0	E 53 St & Madison Ave
+3712	22	0	E 53 St & Madison Ave
+3713	14	1.53	E 53 St & Madison Ave
+3714	10	20.37	E 53 St & Madison Ave
+3715	8	26.53	E 53 St & Madison Ave
+3716	12	5.78	E 53 St & Madison Ave
+3717	3	0	E 53 St & Madison Ave
+3718	18	0	E 53 St & Madison Ave
+3719	4	0	E 53 St & Madison Ave
+3720	15	1.96	E 53 St & Madison Ave
+3721	17	0	Broadway & W 57 St
+3722	13	0.54	Broadway & W 57 St
+3723	6	0	Broadway & W 57 St
+3724	9	0.22	Broadway & W 57 St
+3725	2	0	Broadway & W 57 St
+3726	22	0.66	Broadway & W 57 St
+3727	5	0	Broadway & W 57 St
+3728	10	0.54	Broadway & W 57 St
+3729	20	0.66	Broadway & W 57 St
+3730	23	0.68	Broadway & W 57 St
+3731	1	0.11	Broadway & W 57 St
+3732	21	0.66	Broadway & W 57 St
+3733	19	0	Broadway & W 57 St
+3734	0	0.67	Broadway & W 57 St
+3735	7	0	Broadway & W 57 St
+3736	8	0	Broadway & W 57 St
+3737	18	0	Broadway & W 57 St
+3738	15	0	Broadway & W 57 St
+3739	12	0.22	Broadway & W 57 St
+3740	11	0.44	Broadway & W 57 St
+3741	4	0	Broadway & W 57 St
+3742	14	0.55	Broadway & W 57 St
+3743	3	0	Broadway & W 57 St
+3744	16	0	Broadway & W 57 St
+3745	17	0	W 22 St & 11 Ave
+3746	2	0.66	W 22 St & 11 Ave
+3747	5	0	W 22 St & 11 Ave
+3748	6	0	W 22 St & 11 Ave
+3749	9	26.47	W 22 St & 11 Ave
+3750	7	0.33	W 22 St & 11 Ave
+3751	21	0.77	W 22 St & 11 Ave
+3752	10	35.62	W 22 St & 11 Ave
+3753	22	0.11	W 22 St & 11 Ave
+3754	1	0.66	W 22 St & 11 Ave
+3755	18	0	W 22 St & 11 Ave
+3756	19	0	W 22 St & 11 Ave
+3757	13	3.81	W 22 St & 11 Ave
+3758	3	0.65	W 22 St & 11 Ave
+3759	8	4.48	W 22 St & 11 Ave
+3760	4	0.54	W 22 St & 11 Ave
+3761	23	0.11	W 22 St & 11 Ave
+3762	12	9.05	W 22 St & 11 Ave
+3763	11	20.81	W 22 St & 11 Ave
+3764	20	1.1	W 22 St & 11 Ave
+3765	0	0.44	W 22 St & 11 Ave
+3766	14	4.8	W 22 St & 11 Ave
+3767	15	2.51	W 22 St & 11 Ave
+3768	16	0.54	W 22 St & 11 Ave
+3769	6	0	W 18 St & 11 Ave
+3770	5	0	W 18 St & 11 Ave
+3771	13	7.3	W 18 St & 11 Ave
+3772	1	0	W 18 St & 11 Ave
+3773	10	22.33	W 18 St & 11 Ave
+3774	2	0	W 18 St & 11 Ave
+3775	23	0	W 18 St & 11 Ave
+3776	7	0.65	W 18 St & 11 Ave
+3777	21	0	W 18 St & 11 Ave
+3778	17	4.16	W 18 St & 11 Ave
+3779	9	10.24	W 18 St & 11 Ave
+3780	22	0	W 18 St & 11 Ave
+3781	14	8.07	W 18 St & 11 Ave
+3782	19	1.54	W 18 St & 11 Ave
+3783	15	11.23	W 18 St & 11 Ave
+3784	12	12.21	W 18 St & 11 Ave
+3785	3	0	W 18 St & 11 Ave
+3786	18	5.07	W 18 St & 11 Ave
+3787	8	0.98	W 18 St & 11 Ave
+3788	20	0.55	W 18 St & 11 Ave
+3789	16	6.21	W 18 St & 11 Ave
+3790	11	19.5	W 18 St & 11 Ave
+3791	4	0	W 18 St & 11 Ave
+3792	0	0	W 18 St & 11 Ave
+3793	17	0.33	E 20 St & 2 Ave
+3794	22	14.25	E 20 St & 2 Ave
+3795	6	2.51	E 20 St & 2 Ave
+3796	9	0	E 20 St & 2 Ave
+3797	13	0.11	E 20 St & 2 Ave
+3798	23	18.69	E 20 St & 2 Ave
+3799	1	19.34	E 20 St & 2 Ave
+3800	10	0	E 20 St & 2 Ave
+3801	2	19.78	E 20 St & 2 Ave
+3802	8	0.11	E 20 St & 2 Ave
+3803	3	17.86	E 20 St & 2 Ave
+3804	5	8.82	E 20 St & 2 Ave
+3805	19	10.64	E 20 St & 2 Ave
+3806	15	0	E 20 St & 2 Ave
+3807	12	0.11	E 20 St & 2 Ave
+3808	7	0.22	E 20 St & 2 Ave
+3809	21	11.29	E 20 St & 2 Ave
+3810	18	5.51	E 20 St & 2 Ave
+3811	20	10.95	E 20 St & 2 Ave
+3812	14	0	E 20 St & 2 Ave
+3813	11	0	E 20 St & 2 Ave
+3814	4	15.69	E 20 St & 2 Ave
+3815	16	0.11	E 20 St & 2 Ave
+3816	0	20.89	E 20 St & 2 Ave
+3817	2	8.31	W 22 St & 10 Ave
+3818	5	5.23	W 22 St & 10 Ave
+3819	17	10.08	W 22 St & 10 Ave
+3820	9	4.9	W 22 St & 10 Ave
+3821	22	12.17	W 22 St & 10 Ave
+3822	6	5.78	W 22 St & 10 Ave
+3823	10	6.86	W 22 St & 10 Ave
+3824	23	10.25	W 22 St & 10 Ave
+3825	13	7.08	W 22 St & 10 Ave
+3826	21	12.39	W 22 St & 10 Ave
+3827	18	11.91	W 22 St & 10 Ave
+3828	19	15.68	W 22 St & 10 Ave
+3829	8	4.59	W 22 St & 10 Ave
+3830	3	5.12	W 22 St & 10 Ave
+3831	11	7.84	W 22 St & 10 Ave
+3832	20	14.79	W 22 St & 10 Ave
+3833	7	4.79	W 22 St & 10 Ave
+3834	14	7.74	W 22 St & 10 Ave
+3835	15	6.65	W 22 St & 10 Ave
+3836	12	6.65	W 22 St & 10 Ave
+3837	1	7.29	W 22 St & 10 Ave
+3838	0	6.78	W 22 St & 10 Ave
+3839	4	5.23	W 22 St & 10 Ave
+3840	16	8.06	W 22 St & 10 Ave
+3841	10	9.48	9 Ave & W 16 St
+3842	21	2.08	9 Ave & W 16 St
+3843	14	4.47	9 Ave & W 16 St
+3844	3	1.96	9 Ave & W 16 St
+3845	23	2.03	9 Ave & W 16 St
+3846	6	2.18	9 Ave & W 16 St
+3847	17	1.97	9 Ave & W 16 St
+3848	22	1.97	9 Ave & W 16 St
+3849	7	3.05	9 Ave & W 16 St
+3850	19	1.97	9 Ave & W 16 St
+3851	2	1.97	9 Ave & W 16 St
+3852	13	5.12	9 Ave & W 16 St
+3853	4	1.96	9 Ave & W 16 St
+3854	18	1.98	9 Ave & W 16 St
+3855	9	8.06	9 Ave & W 16 St
+3856	12	5.13	9 Ave & W 16 St
+3857	16	2.51	9 Ave & W 16 St
+3858	11	7.19	9 Ave & W 16 St
+3859	8	3.06	9 Ave & W 16 St
+3860	0	2	9 Ave & W 16 St
+3861	5	1.96	9 Ave & W 16 St
+3862	20	2.19	9 Ave & W 16 St
+3863	1	1.99	9 Ave & W 16 St
+3864	15	3.49	9 Ave & W 16 St
+3865	21	21.05	Broadway & W 41 St
+3866	22	21.05	Broadway & W 41 St
+3867	14	21.59	Broadway & W 41 St
+3868	11	21.79	Broadway & W 41 St
+3869	23	20.61	Broadway & W 41 St
+3870	13	21.68	Broadway & W 41 St
+3871	0	20.67	Broadway & W 41 St
+3872	10	21.57	Broadway & W 41 St
+3873	9	21.57	Broadway & W 41 St
+3874	19	21.71	Broadway & W 41 St
+3875	3	20.92	Broadway & W 41 St
+3876	17	21.36	Broadway & W 41 St
+3877	15	21.59	Broadway & W 41 St
+3878	2	20.66	Broadway & W 41 St
+3879	6	22.25	Broadway & W 41 St
+3880	12	21.92	Broadway & W 41 St
+3881	18	21.5	Broadway & W 41 St
+3882	1	20.55	Broadway & W 41 St
+3883	16	21.57	Broadway & W 41 St
+3884	4	20.92	Broadway & W 41 St
+3885	20	21.36	Broadway & W 41 St
+3886	8	21.51	Broadway & W 41 St
+3887	7	22.22	Broadway & W 41 St
+3888	5	21.46	Broadway & W 41 St
+3889	0	0	W 25 St & 6 Ave
+3890	4	0	W 25 St & 6 Ave
+3891	15	5.95	W 25 St & 6 Ave
+3892	3	0	W 25 St & 6 Ave
+3893	20	1.03	W 25 St & 6 Ave
+3894	2	0	W 25 St & 6 Ave
+3895	22	1.02	W 25 St & 6 Ave
+3896	10	28.41	W 25 St & 6 Ave
+3897	23	0.6	W 25 St & 6 Ave
+3898	9	7.83	W 25 St & 6 Ave
+3899	21	0.88	W 25 St & 6 Ave
+3900	17	0.44	W 25 St & 6 Ave
+3901	8	0.29	W 25 St & 6 Ave
+3902	12	14.22	W 25 St & 6 Ave
+3903	7	0	W 25 St & 6 Ave
+3904	16	1.31	W 25 St & 6 Ave
+3905	14	4.93	W 25 St & 6 Ave
+3906	11	20.72	W 25 St & 6 Ave
+3907	13	9.71	W 25 St & 6 Ave
+3908	19	0	W 25 St & 6 Ave
+3909	5	0	W 25 St & 6 Ave
+3910	18	0	W 25 St & 6 Ave
+3911	6	0	W 25 St & 6 Ave
+3912	1	0	W 25 St & 6 Ave
+3913	4	0	Broadway & W 55 St
+3914	17	0.66	Broadway & W 55 St
+3915	20	0	Broadway & W 55 St
+3916	8	0.11	Broadway & W 55 St
+3917	12	0.55	Broadway & W 55 St
+3918	11	1.09	Broadway & W 55 St
+3919	1	0	Broadway & W 55 St
+3920	23	0	Broadway & W 55 St
+3921	7	0	Broadway & W 55 St
+3922	21	0	Broadway & W 55 St
+3923	0	0	Broadway & W 55 St
+3924	22	0	Broadway & W 55 St
+3925	18	0.66	Broadway & W 55 St
+3926	13	0.22	Broadway & W 55 St
+3927	9	1.09	Broadway & W 55 St
+3928	10	1.09	Broadway & W 55 St
+3929	5	0	Broadway & W 55 St
+3930	6	0	Broadway & W 55 St
+3931	15	0.65	Broadway & W 55 St
+3932	3	0	Broadway & W 55 St
+3933	16	0.65	Broadway & W 55 St
+3934	2	0	Broadway & W 55 St
+3935	14	0.65	Broadway & W 55 St
+3936	19	0.66	Broadway & W 55 St
+3937	17	0	Broadway & W 53 St
+3938	4	0	Broadway & W 53 St
+3939	12	0.87	Broadway & W 53 St
+3940	13	0.54	Broadway & W 53 St
+3941	21	0	Broadway & W 53 St
+3942	23	0	Broadway & W 53 St
+3943	20	0	Broadway & W 53 St
+3944	7	0	Broadway & W 53 St
+3945	9	9.26	Broadway & W 53 St
+3946	1	0	Broadway & W 53 St
+3947	16	0	Broadway & W 53 St
+3948	18	0	Broadway & W 53 St
+3949	6	0	Broadway & W 53 St
+3950	10	7.73	Broadway & W 53 St
+3951	22	0	Broadway & W 53 St
+3952	8	1.53	Broadway & W 53 St
+3953	14	0.22	Broadway & W 53 St
+3954	2	0	Broadway & W 53 St
+3955	0	0	Broadway & W 53 St
+3956	15	0	Broadway & W 53 St
+3957	5	0	Broadway & W 53 St
+3958	11	3.38	Broadway & W 53 St
+3959	19	0	Broadway & W 53 St
+3960	3	0	Broadway & W 53 St
+3961	20	11.83	W 20 St & 8 Ave
+3962	12	0	W 20 St & 8 Ave
+3963	13	0	W 20 St & 8 Ave
+3964	0	9.89	W 20 St & 8 Ave
+3965	8	0	W 20 St & 8 Ave
+3966	18	9.7	W 20 St & 8 Ave
+3967	17	1.86	W 20 St & 8 Ave
+3968	10	0.44	W 20 St & 8 Ave
+3969	23	9.91	W 20 St & 8 Ave
+3970	5	5.45	W 20 St & 8 Ave
+3971	21	11.73	W 20 St & 8 Ave
+3972	9	0	W 20 St & 8 Ave
+3973	19	11.29	W 20 St & 8 Ave
+3974	16	0.76	W 20 St & 8 Ave
+3975	14	0.22	W 20 St & 8 Ave
+3976	4	7.52	W 20 St & 8 Ave
+3977	2	8.2	W 20 St & 8 Ave
+3978	22	12.61	W 20 St & 8 Ave
+3979	3	7.84	W 20 St & 8 Ave
+3980	6	0.22	W 20 St & 8 Ave
+3981	11	0.11	W 20 St & 8 Ave
+3982	1	8.84	W 20 St & 8 Ave
+3983	7	0	W 20 St & 8 Ave
+3984	15	0.33	W 20 St & 8 Ave
+3985	20	0	E 32 St & Park Av
+3986	4	0	E 32 St & Park Av
+3987	1	0	E 32 St & Park Av
+3988	8	0	E 32 St & Park Av
+3989	12	2.62	E 32 St & Park Av
+3990	21	0	E 32 St & Park Av
+3991	0	0	E 32 St & Park Av
+3992	22	0	E 32 St & Park Av
+3993	18	0	E 32 St & Park Av
+3994	13	1.2	E 32 St & Park Av
+3995	10	2.83	E 32 St & Park Av
+3996	19	0.11	E 32 St & Park Av
+3997	5	0	E 32 St & Park Av
+3998	7	0	E 32 St & Park Av
+3999	17	0	E 32 St & Park Av
+4000	9	0.76	E 32 St & Park Av
+4001	23	0	E 32 St & Park Av
+4002	14	0.33	E 32 St & Park Av
+4003	6	0	E 32 St & Park Av
+4004	11	2.07	E 32 St & Park Av
+4005	15	0	E 32 St & Park Av
+4006	16	0	E 32 St & Park Av
+4007	2	0	E 32 St & Park Av
+4008	3	0	E 32 St & Park Av
+4009	13	0.44	Rivington St & Chrystie St
+4010	17	1.2	Rivington St & Chrystie St
+4011	20	11.83	Rivington St & Chrystie St
+4012	4	8.39	Rivington St & Chrystie St
+4013	10	0	Rivington St & Chrystie St
+4014	12	0.98	Rivington St & Chrystie St
+4015	23	11.94	Rivington St & Chrystie St
+4016	18	2.87	Rivington St & Chrystie St
+4017	9	0.22	Rivington St & Chrystie St
+4018	1	11.38	Rivington St & Chrystie St
+4019	22	11.95	Rivington St & Chrystie St
+4020	8	0.66	Rivington St & Chrystie St
+4021	7	4.03	Rivington St & Chrystie St
+4022	19	8.66	Rivington St & Chrystie St
+4023	0	9.44	Rivington St & Chrystie St
+4024	16	0.54	Rivington St & Chrystie St
+4025	14	0.33	Rivington St & Chrystie St
+4026	2	11.15	Rivington St & Chrystie St
+4027	15	0.44	Rivington St & Chrystie St
+4028	3	8.93	Rivington St & Chrystie St
+4029	5	8.06	Rivington St & Chrystie St
+4030	21	13.27	Rivington St & Chrystie St
+4031	11	0	Rivington St & Chrystie St
+4032	6	6.98	Rivington St & Chrystie St
+4033	20	0	5 Ave & E 29 St
+4034	12	10.69	5 Ave & E 29 St
+4035	13	4.9	5 Ave & E 29 St
+4036	10	18.74	5 Ave & E 29 St
+4037	8	0	5 Ave & E 29 St
+4038	5	0	5 Ave & E 29 St
+4039	17	0	5 Ave & E 29 St
+4040	9	8.28	5 Ave & E 29 St
+4041	0	0	5 Ave & E 29 St
+4042	23	0	5 Ave & E 29 St
+4043	21	0	5 Ave & E 29 St
+4044	4	0	5 Ave & E 29 St
+4045	19	0	5 Ave & E 29 St
+4046	22	0	5 Ave & E 29 St
+4047	16	0.76	5 Ave & E 29 St
+4048	6	0	5 Ave & E 29 St
+4049	2	0	5 Ave & E 29 St
+4050	1	0	5 Ave & E 29 St
+4051	3	0	5 Ave & E 29 St
+4052	7	0	5 Ave & E 29 St
+4053	11	13.18	5 Ave & E 29 St
+4054	15	0.87	5 Ave & E 29 St
+4055	18	0	5 Ave & E 29 St
+4056	14	2.62	5 Ave & E 29 St
+4057	20	0.55	E 16 St & Irving Pl
+4058	4	0.22	E 16 St & Irving Pl
+4059	1	0.66	E 16 St & Irving Pl
+4060	8	1.2	E 16 St & Irving Pl
+4061	12	0.98	E 16 St & Irving Pl
+4062	21	0.66	E 16 St & Irving Pl
+4063	10	2.07	E 16 St & Irving Pl
+4064	0	0.78	E 16 St & Irving Pl
+4065	18	0	E 16 St & Irving Pl
+4066	13	0.11	E 16 St & Irving Pl
+4067	17	0	E 16 St & Irving Pl
+4068	19	0.22	E 16 St & Irving Pl
+4069	5	0	E 16 St & Irving Pl
+4070	7	1.09	E 16 St & Irving Pl
+4071	6	0.11	E 16 St & Irving Pl
+4072	9	2.51	E 16 St & Irving Pl
+4073	23	1.01	E 16 St & Irving Pl
+4074	14	0.76	E 16 St & Irving Pl
+4075	11	1.2	E 16 St & Irving Pl
+4076	15	0.22	E 16 St & Irving Pl
+4077	16	0.11	E 16 St & Irving Pl
+4078	2	0.66	E 16 St & Irving Pl
+4079	22	1.1	E 16 St & Irving Pl
+4080	3	0.65	E 16 St & Irving Pl
+4081	12	0.65	E 31 St & 3 Ave
+4082	8	0.11	E 31 St & 3 Ave
+4083	21	1.32	E 31 St & 3 Ave
+4084	16	1.2	E 31 St & 3 Ave
+4085	13	0.44	E 31 St & 3 Ave
+4086	9	0	E 31 St & 3 Ave
+4087	10	0	E 31 St & 3 Ave
+4088	22	1.32	E 31 St & 3 Ave
+4089	20	1.31	E 31 St & 3 Ave
+4090	17	1.42	E 31 St & 3 Ave
+4091	1	0.66	E 31 St & 3 Ave
+4092	5	0.33	E 31 St & 3 Ave
+4093	23	0.79	E 31 St & 3 Ave
+4094	2	0.44	E 31 St & 3 Ave
+4095	0	0.89	E 31 St & 3 Ave
+4096	19	1.86	E 31 St & 3 Ave
+4097	14	0.98	E 31 St & 3 Ave
+4098	4	0	E 31 St & 3 Ave
+4099	11	0.11	E 31 St & 3 Ave
+4100	15	0.65	E 31 St & 3 Ave
+4101	3	0	E 31 St & 3 Ave
+4102	18	1.76	E 31 St & 3 Ave
+4103	7	0.22	E 31 St & 3 Ave
+4104	6	0.55	E 31 St & 3 Ave
+4105	20	1.75	W 41 St & 8 Ave
+4106	21	0.77	W 41 St & 8 Ave
+4107	5	0.65	W 41 St & 8 Ave
+4108	14	0	W 41 St & 8 Ave
+4109	9	0	W 41 St & 8 Ave
+4110	12	0	W 41 St & 8 Ave
+4111	22	0.88	W 41 St & 8 Ave
+4112	8	0	W 41 St & 8 Ave
+4113	0	3.11	W 41 St & 8 Ave
+4114	11	0	W 41 St & 8 Ave
+4115	1	4.09	W 41 St & 8 Ave
+4116	6	0	W 41 St & 8 Ave
+4117	7	0	W 41 St & 8 Ave
+4118	18	7.39	W 41 St & 8 Ave
+4119	10	0	W 41 St & 8 Ave
+4120	13	0	W 41 St & 8 Ave
+4121	2	2.95	W 41 St & 8 Ave
+4122	3	2.4	W 41 St & 8 Ave
+4123	16	8.28	W 41 St & 8 Ave
+4124	4	1.85	W 41 St & 8 Ave
+4125	17	16.1	W 41 St & 8 Ave
+4126	23	2.59	W 41 St & 8 Ave
+4127	15	0.22	W 41 St & 8 Ave
+4128	19	2.96	W 41 St & 8 Ave
+4129	19	10.53	11 Ave & W 41 St
+4130	21	17.43	11 Ave & W 41 St
+4131	23	24.66	11 Ave & W 41 St
+4132	7	0.54	11 Ave & W 41 St
+4133	11	0	11 Ave & W 41 St
+4134	22	25.11	11 Ave & W 41 St
+4135	2	15.85	11 Ave & W 41 St
+4136	14	0	11 Ave & W 41 St
+4137	10	0	11 Ave & W 41 St
+4138	13	0	11 Ave & W 41 St
+4139	9	0	11 Ave & W 41 St
+4140	20	8.76	11 Ave & W 41 St
+4141	0	19.67	11 Ave & W 41 St
+4142	8	0	11 Ave & W 41 St
+4143	12	0	11 Ave & W 41 St
+4144	4	13.18	11 Ave & W 41 St
+4145	3	16.45	11 Ave & W 41 St
+4146	6	3.71	11 Ave & W 41 St
+4147	15	0	11 Ave & W 41 St
+4148	17	4.05	11 Ave & W 41 St
+4149	5	11.55	11 Ave & W 41 St
+4150	18	10.58	11 Ave & W 41 St
+4151	1	16.35	11 Ave & W 41 St
+4152	16	0.11	11 Ave & W 41 St
+4153	23	4.17	9 Ave & W 45 St
+4154	21	2.63	9 Ave & W 45 St
+4155	22	3.84	9 Ave & W 45 St
+4156	8	0	9 Ave & W 45 St
+4157	19	3.62	9 Ave & W 45 St
+4158	7	0	9 Ave & W 45 St
+4159	0	3.44	9 Ave & W 45 St
+4160	11	0	9 Ave & W 45 St
+4161	3	3.38	9 Ave & W 45 St
+4162	4	3.27	9 Ave & W 45 St
+4163	17	0.88	9 Ave & W 45 St
+4164	10	0	9 Ave & W 45 St
+4165	18	2.32	9 Ave & W 45 St
+4166	15	0	9 Ave & W 45 St
+4167	6	0	9 Ave & W 45 St
+4168	1	4.09	9 Ave & W 45 St
+4169	20	3.4	9 Ave & W 45 St
+4170	12	0.11	9 Ave & W 45 St
+4171	13	0	9 Ave & W 45 St
+4172	9	0	9 Ave & W 45 St
+4173	16	0	9 Ave & W 45 St
+4174	14	0	9 Ave & W 45 St
+4175	2	2.08	9 Ave & W 45 St
+4176	5	1.74	9 Ave & W 45 St
+4177	15	0.44	W 53 St & 10 Ave
+4178	19	2.74	W 53 St & 10 Ave
+4179	12	0.33	W 53 St & 10 Ave
+4180	3	14.6	W 53 St & 10 Ave
+4181	22	7.79	W 53 St & 10 Ave
+4182	11	0	W 53 St & 10 Ave
+4183	23	8.56	W 53 St & 10 Ave
+4184	13	0.65	W 53 St & 10 Ave
+4185	17	0.44	W 53 St & 10 Ave
+4186	7	0.65	W 53 St & 10 Ave
+4187	16	0.11	W 53 St & 10 Ave
+4188	18	2.21	W 53 St & 10 Ave
+4189	4	12.75	W 53 St & 10 Ave
+4190	9	0	W 53 St & 10 Ave
+4191	10	0	W 53 St & 10 Ave
+4192	8	0.22	W 53 St & 10 Ave
+4193	21	4.5	W 53 St & 10 Ave
+4194	6	3.71	W 53 St & 10 Ave
+4195	1	13.26	W 53 St & 10 Ave
+4196	20	2.63	W 53 St & 10 Ave
+4197	14	0.22	W 53 St & 10 Ave
+4198	0	11.67	W 53 St & 10 Ave
+4199	5	10.57	W 53 St & 10 Ave
+4200	2	13.55	W 53 St & 10 Ave
+4201	15	1.2	W 15 St & 7 Ave
+4202	11	1.09	W 15 St & 7 Ave
+4203	12	0.98	W 15 St & 7 Ave
+4204	17	2.19	W 15 St & 7 Ave
+4205	23	11.6	W 15 St & 7 Ave
+4206	8	0.66	W 15 St & 7 Ave
+4207	3	11.44	W 15 St & 7 Ave
+4208	4	9.37	W 15 St & 7 Ave
+4209	16	1.85	W 15 St & 7 Ave
+4210	20	7.78	W 15 St & 7 Ave
+4211	13	1.2	W 15 St & 7 Ave
+4212	19	6.58	W 15 St & 7 Ave
+4213	7	0	W 15 St & 7 Ave
+4214	10	0.76	W 15 St & 7 Ave
+4215	18	8.82	W 15 St & 7 Ave
+4216	6	1.31	W 15 St & 7 Ave
+4217	9	0.87	W 15 St & 7 Ave
+4218	1	12.82	W 15 St & 7 Ave
+4219	5	5.23	W 15 St & 7 Ave
+4220	21	8.11	W 15 St & 7 Ave
+4221	0	14	W 15 St & 7 Ave
+4222	22	9.76	W 15 St & 7 Ave
+4223	14	0.87	W 15 St & 7 Ave
+4224	2	13.22	W 15 St & 7 Ave
+4225	3	2.07	E 12 St & 3 Ave
+4226	12	0	E 12 St & 3 Ave
+4227	16	0	E 12 St & 3 Ave
+4228	15	0	E 12 St & 3 Ave
+4229	23	3.27	E 12 St & 3 Ave
+4230	11	0	E 12 St & 3 Ave
+4231	7	3.38	E 12 St & 3 Ave
+4232	20	12.05	E 12 St & 3 Ave
+4233	18	3.97	E 12 St & 3 Ave
+4234	19	13.93	E 12 St & 3 Ave
+4235	17	0.55	E 12 St & 3 Ave
+4236	1	3.43	E 12 St & 3 Ave
+4237	8	0.22	E 12 St & 3 Ave
+4238	13	0.11	E 12 St & 3 Ave
+4239	4	2.07	E 12 St & 3 Ave
+4240	0	3.89	E 12 St & 3 Ave
+4241	10	0	E 12 St & 3 Ave
+4242	14	0.11	E 12 St & 3 Ave
+4243	21	8.66	E 12 St & 3 Ave
+4244	9	0.11	E 12 St & 3 Ave
+4245	2	4.04	E 12 St & 3 Ave
+4246	5	1.53	E 12 St & 3 Ave
+4247	6	3.49	E 12 St & 3 Ave
+4248	22	2.85	E 12 St & 3 Ave
+4249	15	0.98	W 44 St & 5 Ave
+4250	7	0.76	W 44 St & 5 Ave
+4251	23	0	W 44 St & 5 Ave
+4252	3	0	W 44 St & 5 Ave
+4253	17	0	W 44 St & 5 Ave
+4254	11	12.96	W 44 St & 5 Ave
+4255	16	0	W 44 St & 5 Ave
+4256	12	9.05	W 44 St & 5 Ave
+4257	4	0	W 44 St & 5 Ave
+4258	0	0	W 44 St & 5 Ave
+4259	10	17.97	W 44 St & 5 Ave
+4260	8	5.9	W 44 St & 5 Ave
+4261	19	0	W 44 St & 5 Ave
+4262	9	13.62	W 44 St & 5 Ave
+4263	1	0	W 44 St & 5 Ave
+4264	20	0	W 44 St & 5 Ave
+4265	13	7.41	W 44 St & 5 Ave
+4266	21	0	W 44 St & 5 Ave
+4267	2	0	W 44 St & 5 Ave
+4268	22	0	W 44 St & 5 Ave
+4269	18	0	W 44 St & 5 Ave
+4270	14	2.51	W 44 St & 5 Ave
+4271	6	0	W 44 St & 5 Ave
+4272	5	0	W 44 St & 5 Ave
+4273	11	1.42	W 37 St & 5 Ave
+4274	15	0.11	W 37 St & 5 Ave
+4275	4	0	W 37 St & 5 Ave
+4276	17	0	W 37 St & 5 Ave
+4277	16	0.11	W 37 St & 5 Ave
+4278	12	2.4	W 37 St & 5 Ave
+4279	3	0	W 37 St & 5 Ave
+4280	19	0	W 37 St & 5 Ave
+4281	7	0	W 37 St & 5 Ave
+4282	23	0	W 37 St & 5 Ave
+4283	13	1.09	W 37 St & 5 Ave
+4284	21	0	W 37 St & 5 Ave
+4285	9	0.87	W 37 St & 5 Ave
+4286	20	0	W 37 St & 5 Ave
+4287	8	0	W 37 St & 5 Ave
+4288	18	0	W 37 St & 5 Ave
+4289	6	0	W 37 St & 5 Ave
+4290	1	0	W 37 St & 5 Ave
+4291	10	2.4	W 37 St & 5 Ave
+4292	5	0	W 37 St & 5 Ave
+4293	14	0.87	W 37 St & 5 Ave
+4294	0	0	W 37 St & 5 Ave
+4295	22	0	W 37 St & 5 Ave
+4296	2	0	W 37 St & 5 Ave
+4297	15	0.33	Broadway & W 29 St
+4298	3	0	Broadway & W 29 St
+4299	11	1.09	Broadway & W 29 St
+4300	12	1.42	Broadway & W 29 St
+4301	13	2.18	Broadway & W 29 St
+4302	19	0	Broadway & W 29 St
+4303	7	0	Broadway & W 29 St
+4304	16	0	Broadway & W 29 St
+4305	23	0	Broadway & W 29 St
+4306	21	0	Broadway & W 29 St
+4307	9	0	Broadway & W 29 St
+4308	0	0	Broadway & W 29 St
+4309	8	0	Broadway & W 29 St
+4310	18	0	Broadway & W 29 St
+4311	4	0	Broadway & W 29 St
+4312	10	0.54	Broadway & W 29 St
+4313	20	0	Broadway & W 29 St
+4314	5	0	Broadway & W 29 St
+4315	14	0.33	Broadway & W 29 St
+4316	6	0	Broadway & W 29 St
+4317	17	0.22	Broadway & W 29 St
+4318	1	0	Broadway & W 29 St
+4319	2	0	Broadway & W 29 St
+4320	22	0	Broadway & W 29 St
+4321	23	30.29	E 20 St & FDR Drive
+4322	15	13.74	E 20 St & FDR Drive
+4323	8	14.19	E 20 St & FDR Drive
+4324	12	13.2	E 20 St & FDR Drive
+4325	4	26.58	E 20 St & FDR Drive
+4326	11	13.4	E 20 St & FDR Drive
+4327	16	14.38	E 20 St & FDR Drive
+4328	9	13.73	E 20 St & FDR Drive
+4329	3	34.97	E 20 St & FDR Drive
+4330	0	35.56	E 20 St & FDR Drive
+4331	1	37.79	E 20 St & FDR Drive
+4332	20	24.21	E 20 St & FDR Drive
+4333	17	15.12	E 20 St & FDR Drive
+4334	7	14.05	E 20 St & FDR Drive
+4335	18	31.31	E 20 St & FDR Drive
+4336	10	14.16	E 20 St & FDR Drive
+4337	14	13.74	E 20 St & FDR Drive
+4338	19	35.53	E 20 St & FDR Drive
+4339	6	13.74	E 20 St & FDR Drive
+4340	2	37.38	E 20 St & FDR Drive
+4341	5	15.47	E 20 St & FDR Drive
+4342	13	13.73	E 20 St & FDR Drive
+4343	21	23.68	E 20 St & FDR Drive
+4344	22	21.6	E 20 St & FDR Drive
+4345	8	0	W 39 St & 9 Ave
+4346	9	0.11	W 39 St & 9 Ave
+4347	4	5.23	W 39 St & 9 Ave
+4348	7	0	W 39 St & 9 Ave
+4349	16	4.47	W 39 St & 9 Ave
+4350	20	5.37	W 39 St & 9 Ave
+4351	3	5.34	W 39 St & 9 Ave
+4352	1	5.64	W 39 St & 9 Ave
+4353	0	8.33	W 39 St & 9 Ave
+4354	11	0	W 39 St & 9 Ave
+4355	5	1.74	W 39 St & 9 Ave
+4356	19	5.48	W 39 St & 9 Ave
+4357	23	6.42	W 39 St & 9 Ave
+4358	18	8.05	W 39 St & 9 Ave
+4359	12	0	W 39 St & 9 Ave
+4360	21	4.17	W 39 St & 9 Ave
+4361	6	0	W 39 St & 9 Ave
+4362	17	11.06	W 39 St & 9 Ave
+4363	15	1.09	W 39 St & 9 Ave
+4364	13	0	W 39 St & 9 Ave
+4365	22	4.82	W 39 St & 9 Ave
+4366	2	7.1	W 39 St & 9 Ave
+4367	14	0.11	W 39 St & 9 Ave
+4368	10	0	W 39 St & 9 Ave
+4369	20	0.66	10 Ave & W 28 St
+4370	15	1.31	10 Ave & W 28 St
+4371	9	1.31	10 Ave & W 28 St
+4372	6	0.65	10 Ave & W 28 St
+4373	16	1.42	10 Ave & W 28 St
+4374	19	1.1	10 Ave & W 28 St
+4375	10	1.31	10 Ave & W 28 St
+4376	2	0.66	10 Ave & W 28 St
+4377	21	0.66	10 Ave & W 28 St
+4378	17	1.53	10 Ave & W 28 St
+4379	4	0.65	10 Ave & W 28 St
+4380	1	0.66	10 Ave & W 28 St
+4381	8	0.66	10 Ave & W 28 St
+4382	0	0.67	10 Ave & W 28 St
+4383	18	1.21	10 Ave & W 28 St
+4384	7	0.65	10 Ave & W 28 St
+4385	3	0.65	10 Ave & W 28 St
+4386	23	0.68	10 Ave & W 28 St
+4387	13	1.31	10 Ave & W 28 St
+4388	14	1.31	10 Ave & W 28 St
+4389	22	0.66	10 Ave & W 28 St
+4390	5	0.65	10 Ave & W 28 St
+4391	12	1.31	10 Ave & W 28 St
+4392	11	1.31	10 Ave & W 28 St
+4393	21	1.43	W 33 St & 8 Ave
+4394	10	0	W 33 St & 8 Ave
+4395	9	0	W 33 St & 8 Ave
+4396	19	2.63	W 33 St & 8 Ave
+4397	17	11.28	W 33 St & 8 Ave
+4398	2	1.64	W 33 St & 8 Ave
+4399	3	1.2	W 33 St & 8 Ave
+4400	23	0.68	W 33 St & 8 Ave
+4401	4	0.98	W 33 St & 8 Ave
+4402	6	0.65	W 33 St & 8 Ave
+4403	18	4.63	W 33 St & 8 Ave
+4404	14	0	W 33 St & 8 Ave
+4405	8	0	W 33 St & 8 Ave
+4406	13	0.22	W 33 St & 8 Ave
+4407	1	1.88	W 33 St & 8 Ave
+4408	5	0.98	W 33 St & 8 Ave
+4409	7	0.65	W 33 St & 8 Ave
+4410	0	1.33	W 33 St & 8 Ave
+4411	12	0	W 33 St & 8 Ave
+4412	15	0	W 33 St & 8 Ave
+4413	22	1.21	W 33 St & 8 Ave
+4414	11	0	W 33 St & 8 Ave
+4415	20	1.42	W 33 St & 8 Ave
+4416	16	4.47	W 33 St & 8 Ave
+4417	10	19.39	E 24 St & Park Ave S
+4418	14	1.74	E 24 St & Park Ave S
+4419	11	9.48	E 24 St & Park Ave S
+4420	13	0.76	E 24 St & Park Ave S
+4421	1	0	E 24 St & Park Ave S
+4422	18	0	E 24 St & Park Ave S
+4423	22	0	E 24 St & Park Ave S
+4424	4	0	E 24 St & Park Ave S
+4425	12	3.27	E 24 St & Park Ave S
+4426	3	0	E 24 St & Park Ave S
+4427	23	0	E 24 St & Park Ave S
+4428	19	0	E 24 St & Park Ave S
+4429	15	1.31	E 24 St & Park Ave S
+4430	2	0	E 24 St & Park Ave S
+4431	6	0	E 24 St & Park Ave S
+4432	7	0.54	E 24 St & Park Ave S
+4433	0	0	E 24 St & Park Ave S
+4434	9	19.17	E 24 St & Park Ave S
+4435	5	0	E 24 St & Park Ave S
+4436	17	0	E 24 St & Park Ave S
+4437	21	0	E 24 St & Park Ave S
+4438	8	9.17	E 24 St & Park Ave S
+4439	20	0	E 24 St & Park Ave S
+4440	16	0	E 24 St & Park Ave S
+4441	14	1.31	W 33 St & 7 Ave
+4442	22	0.33	W 33 St & 7 Ave
+4443	10	0	W 33 St & 7 Ave
+4444	5	0	W 33 St & 7 Ave
+4445	23	0.45	W 33 St & 7 Ave
+4446	11	0	W 33 St & 7 Ave
+4447	4	0.65	W 33 St & 7 Ave
+4448	2	0.87	W 33 St & 7 Ave
+4449	18	12.46	W 33 St & 7 Ave
+4450	6	0	W 33 St & 7 Ave
+4451	21	1.21	W 33 St & 7 Ave
+4452	12	0	W 33 St & 7 Ave
+4453	17	21.36	W 33 St & 7 Ave
+4454	7	0	W 33 St & 7 Ave
+4455	16	21.02	W 33 St & 7 Ave
+4456	15	8.62	W 33 St & 7 Ave
+4457	3	0.98	W 33 St & 7 Ave
+4458	9	0	W 33 St & 7 Ave
+4459	0	0.22	W 33 St & 7 Ave
+4460	8	0	W 33 St & 7 Ave
+4461	20	0.88	W 33 St & 7 Ave
+4462	19	5.59	W 33 St & 7 Ave
+4463	1	0.44	W 33 St & 7 Ave
+4464	13	0	W 33 St & 7 Ave
+4465	22	0	W 45 St & 6 Ave
+4466	23	0	W 45 St & 6 Ave
+4467	6	0	W 45 St & 6 Ave
+4468	14	1.74	W 45 St & 6 Ave
+4469	7	0	W 45 St & 6 Ave
+4470	2	0	W 45 St & 6 Ave
+4471	1	0	W 45 St & 6 Ave
+4472	18	0	W 45 St & 6 Ave
+4473	10	29.96	W 45 St & 6 Ave
+4474	15	0.98	W 45 St & 6 Ave
+4475	12	7.74	W 45 St & 6 Ave
+4476	5	0	W 45 St & 6 Ave
+4477	16	0.11	W 45 St & 6 Ave
+4478	4	0	W 45 St & 6 Ave
+4479	19	0	W 45 St & 6 Ave
+4480	3	0	W 45 St & 6 Ave
+4481	17	0	W 45 St & 6 Ave
+4482	11	16.01	W 45 St & 6 Ave
+4483	0	0	W 45 St & 6 Ave
+4484	8	6.33	W 45 St & 6 Ave
+4485	20	0	W 45 St & 6 Ave
+4486	21	0	W 45 St & 6 Ave
+4487	13	2.07	W 45 St & 6 Ave
+4488	9	33.66	W 45 St & 6 Ave
+4489	10	0.87	W 26 St & 8 Ave
+4490	14	0.33	W 26 St & 8 Ave
+4491	22	2.52	W 26 St & 8 Ave
+4492	15	0.55	W 26 St & 8 Ave
+4493	2	2.73	W 26 St & 8 Ave
+4494	18	5.51	W 26 St & 8 Ave
+4495	23	4.5	W 26 St & 8 Ave
+4496	11	0.54	W 26 St & 8 Ave
+4497	19	5.26	W 26 St & 8 Ave
+4498	3	3.27	W 26 St & 8 Ave
+4499	5	1.63	W 26 St & 8 Ave
+4500	6	1.53	W 26 St & 8 Ave
+4501	4	2.07	W 26 St & 8 Ave
+4502	12	0.33	W 26 St & 8 Ave
+4503	20	2.96	W 26 St & 8 Ave
+4504	7	0.65	W 26 St & 8 Ave
+4505	21	2.08	W 26 St & 8 Ave
+4506	0	2	W 26 St & 8 Ave
+4507	1	2.32	W 26 St & 8 Ave
+4508	17	5.59	W 26 St & 8 Ave
+4509	16	0.87	W 26 St & 8 Ave
+4510	8	0	W 26 St & 8 Ave
+4511	9	0.22	W 26 St & 8 Ave
+4512	13	0.11	W 26 St & 8 Ave
+4513	10	0.11	W 47 St & 10 Ave
+4514	22	19.3	W 47 St & 10 Ave
+4515	11	0.44	W 47 St & 10 Ave
+4516	12	0.33	W 47 St & 10 Ave
+4517	6	3.16	W 47 St & 10 Ave
+4518	7	0	W 47 St & 10 Ave
+4519	2	23.17	W 47 St & 10 Ave
+4520	19	6.91	W 47 St & 10 Ave
+4521	23	19.59	W 47 St & 10 Ave
+4522	18	4.74	W 47 St & 10 Ave
+4523	15	0.65	W 47 St & 10 Ave
+4524	4	22.98	W 47 St & 10 Ave
+4525	14	0.55	W 47 St & 10 Ave
+4526	5	13.18	W 47 St & 10 Ave
+4527	16	1.09	W 47 St & 10 Ave
+4528	21	13.93	W 47 St & 10 Ave
+4529	8	0.33	W 47 St & 10 Ave
+4530	3	22.77	W 47 St & 10 Ave
+4531	17	0.99	W 47 St & 10 Ave
+4532	9	0	W 47 St & 10 Ave
+4533	0	29.22	W 47 St & 10 Ave
+4534	1	27.4	W 47 St & 10 Ave
+4535	20	9.2	W 47 St & 10 Ave
+4536	13	0.44	W 47 St & 10 Ave
+4537	10	22.11	E 16 St & 5 Ave
+4538	15	6.76	E 16 St & 5 Ave
+4539	23	0.11	E 16 St & 5 Ave
+4540	22	0.11	E 16 St & 5 Ave
+4541	11	20.48	E 16 St & 5 Ave
+4542	14	10.47	E 16 St & 5 Ave
+4543	18	0	E 16 St & 5 Ave
+4544	7	0.44	E 16 St & 5 Ave
+4545	6	0.33	E 16 St & 5 Ave
+4546	19	0.11	E 16 St & 5 Ave
+4547	2	0.66	E 16 St & 5 Ave
+4548	3	0.65	E 16 St & 5 Ave
+4549	16	4.68	E 16 St & 5 Ave
+4550	0	0.44	E 16 St & 5 Ave
+4551	1	0.11	E 16 St & 5 Ave
+4552	12	13.3	E 16 St & 5 Ave
+4553	17	0.99	E 16 St & 5 Ave
+4554	9	9.26	E 16 St & 5 Ave
+4555	5	0.22	E 16 St & 5 Ave
+4556	13	9.8	E 16 St & 5 Ave
+4557	4	0.65	E 16 St & 5 Ave
+4558	20	0.22	E 16 St & 5 Ave
+4559	21	0	E 16 St & 5 Ave
+4560	8	0.66	E 16 St & 5 Ave
+4561	11	10.68	E 17 St & Broadway
+4562	23	0	E 17 St & Broadway
+4563	14	9.27	E 17 St & Broadway
+4564	10	17.54	E 17 St & Broadway
+4565	19	0	E 17 St & Broadway
+4566	2	0	E 17 St & Broadway
+4567	7	0	E 17 St & Broadway
+4568	15	8.18	E 17 St & Broadway
+4569	6	0	E 17 St & Broadway
+4570	3	0	E 17 St & Broadway
+4571	18	0.11	E 17 St & Broadway
+4572	4	0	E 17 St & Broadway
+4573	17	1.53	E 17 St & Broadway
+4574	5	0	E 17 St & Broadway
+4575	12	12.98	E 17 St & Broadway
+4576	22	0	E 17 St & Broadway
+4577	16	4.58	E 17 St & Broadway
+4578	21	0	E 17 St & Broadway
+4579	8	1.31	E 17 St & Broadway
+4580	0	0	E 17 St & Broadway
+4581	9	18.3	E 17 St & Broadway
+4582	13	12.64	E 17 St & Broadway
+4583	20	0	E 17 St & Broadway
+4584	1	0	E 17 St & Broadway
+4585	15	0	Broadway & W 32 St
+4586	11	0	Broadway & W 32 St
+4587	4	0	Broadway & W 32 St
+4588	12	0	Broadway & W 32 St
+4589	23	0.11	Broadway & W 32 St
+4590	18	1.76	Broadway & W 32 St
+4591	22	0.11	Broadway & W 32 St
+4592	19	0	Broadway & W 32 St
+4593	14	0.11	Broadway & W 32 St
+4594	16	0.22	Broadway & W 32 St
+4595	8	0.44	Broadway & W 32 St
+4596	17	3.5	Broadway & W 32 St
+4597	7	0	Broadway & W 32 St
+4598	3	0	Broadway & W 32 St
+4599	6	0.11	Broadway & W 32 St
+4600	1	0	Broadway & W 32 St
+4601	0	0	Broadway & W 32 St
+4602	20	0	Broadway & W 32 St
+4603	5	0.11	Broadway & W 32 St
+4604	21	0	Broadway & W 32 St
+4605	13	0	Broadway & W 32 St
+4606	10	0	Broadway & W 32 St
+4607	2	0	Broadway & W 32 St
+4608	9	0.22	Broadway & W 32 St
+4609	18	0	Broadway & W 60 St
+4610	19	0	Broadway & W 60 St
+4611	0	0	Broadway & W 60 St
+4612	23	0	Broadway & W 60 St
+4613	15	0	Broadway & W 60 St
+4614	22	0	Broadway & W 60 St
+4615	17	0	Broadway & W 60 St
+4616	20	0.11	Broadway & W 60 St
+4617	3	0	Broadway & W 60 St
+4618	1	0	Broadway & W 60 St
+4619	9	0.11	Broadway & W 60 St
+4620	7	0.22	Broadway & W 60 St
+4621	8	0.22	Broadway & W 60 St
+4622	4	0	Broadway & W 60 St
+4623	21	0	Broadway & W 60 St
+4624	10	0.11	Broadway & W 60 St
+4625	11	0.22	Broadway & W 60 St
+4626	6	0.11	Broadway & W 60 St
+4627	5	0	Broadway & W 60 St
+4628	13	0	Broadway & W 60 St
+4629	14	0	Broadway & W 60 St
+4630	16	0	Broadway & W 60 St
+4631	12	0	Broadway & W 60 St
+4632	2	0	Broadway & W 60 St
+4633	19	0	Broadway & W 51 St
+4634	20	0	Broadway & W 51 St
+4635	4	0	Broadway & W 51 St
+4636	1	0	Broadway & W 51 St
+4637	9	17.76	Broadway & W 51 St
+4638	7	0.54	Broadway & W 51 St
+4639	23	0	Broadway & W 51 St
+4640	8	6.33	Broadway & W 51 St
+4641	12	4.47	Broadway & W 51 St
+4642	10	12.31	Broadway & W 51 St
+4643	14	1.53	Broadway & W 51 St
+4644	3	0	Broadway & W 51 St
+4645	5	0	Broadway & W 51 St
+4646	0	0	Broadway & W 51 St
+4647	17	0.22	Broadway & W 51 St
+4648	21	0	Broadway & W 51 St
+4649	16	0.33	Broadway & W 51 St
+4650	22	0	Broadway & W 51 St
+4651	6	0	Broadway & W 51 St
+4652	11	4.9	Broadway & W 51 St
+4653	18	0	Broadway & W 51 St
+4654	13	2.61	Broadway & W 51 St
+4655	2	0	Broadway & W 51 St
+4656	15	0.44	Broadway & W 51 St
+4657	12	0.11	FDR Drive & E 35 St
+4658	1	0	FDR Drive & E 35 St
+4659	5	0	FDR Drive & E 35 St
+4660	9	0	FDR Drive & E 35 St
+4661	23	0.79	FDR Drive & E 35 St
+4662	11	0	FDR Drive & E 35 St
+4663	4	0	FDR Drive & E 35 St
+4664	8	0	FDR Drive & E 35 St
+4665	17	1.1	FDR Drive & E 35 St
+4666	7	0	FDR Drive & E 35 St
+4667	19	2.08	FDR Drive & E 35 St
+4668	3	0	FDR Drive & E 35 St
+4669	10	0	FDR Drive & E 35 St
+4670	14	0.55	FDR Drive & E 35 St
+4671	18	1.1	FDR Drive & E 35 St
+4672	22	0.66	FDR Drive & E 35 St
+4673	6	0.22	FDR Drive & E 35 St
+4674	0	0.67	FDR Drive & E 35 St
+4675	21	0.33	FDR Drive & E 35 St
+4676	13	0	FDR Drive & E 35 St
+4677	15	1.09	FDR Drive & E 35 St
+4678	20	0.66	FDR Drive & E 35 St
+4679	16	2.18	FDR Drive & E 35 St
+4680	2	0	FDR Drive & E 35 St
+4681	1	0	E 20 St & Park Ave
+4682	4	0	E 20 St & Park Ave
+4683	9	7.84	E 20 St & Park Ave
+4684	14	2.4	E 20 St & Park Ave
+4685	11	5.66	E 20 St & Park Ave
+4686	5	0	E 20 St & Park Ave
+4687	12	4.58	E 20 St & Park Ave
+4688	17	0.11	E 20 St & Park Ave
+4689	21	0	E 20 St & Park Ave
+4690	13	2.18	E 20 St & Park Ave
+4691	3	0	E 20 St & Park Ave
+4692	0	0	E 20 St & Park Ave
+4693	23	0	E 20 St & Park Ave
+4694	16	0.87	E 20 St & Park Ave
+4695	22	0	E 20 St & Park Ave
+4696	10	7.3	E 20 St & Park Ave
+4697	2	0	E 20 St & Park Ave
+4698	18	0	E 20 St & Park Ave
+4699	20	0.22	E 20 St & Park Ave
+4700	8	1.2	E 20 St & Park Ave
+4701	15	1.53	E 20 St & Park Ave
+4702	7	0.98	E 20 St & Park Ave
+4703	6	0.11	E 20 St & Park Ave
+4704	19	0	E 20 St & Park Ave
+4705	1	33.48	1 Ave & E 15 St
+4706	9	18.95	1 Ave & E 15 St
+4707	21	35.31	1 Ave & E 15 St
+4708	5	24.18	1 Ave & E 15 St
+4709	12	17.99	1 Ave & E 15 St
+4710	17	18.07	1 Ave & E 15 St
+4711	23	33.56	1 Ave & E 15 St
+4712	11	18.3	1 Ave & E 15 St
+4713	22	31.91	1 Ave & E 15 St
+4714	10	18.74	1 Ave & E 15 St
+4715	14	18.32	1 Ave & E 15 St
+4716	7	18.85	1 Ave & E 15 St
+4717	4	26.14	1 Ave & E 15 St
+4718	8	19	1 Ave & E 15 St
+4719	15	18.32	1 Ave & E 15 St
+4720	2	30.82	1 Ave & E 15 St
+4721	16	18.3	1 Ave & E 15 St
+4722	6	20.5	1 Ave & E 15 St
+4723	3	27.23	1 Ave & E 15 St
+4724	0	32.78	1 Ave & E 15 St
+4725	18	19.63	1 Ave & E 15 St
+4726	13	18.3	1 Ave & E 15 St
+4727	19	29.06	1 Ave & E 15 St
+4728	20	35.05	1 Ave & E 15 St
+4729	9	0	6 Ave & W 33 St
+4730	1	0	6 Ave & W 33 St
+4731	5	1.31	6 Ave & W 33 St
+4732	17	10.51	6 Ave & W 33 St
+4733	10	0.11	6 Ave & W 33 St
+4734	23	0.34	6 Ave & W 33 St
+4735	4	0.98	6 Ave & W 33 St
+4736	22	0.11	6 Ave & W 33 St
+4737	12	0	6 Ave & W 33 St
+4738	14	0.33	6 Ave & W 33 St
+4739	18	4.41	6 Ave & W 33 St
+4740	13	0	6 Ave & W 33 St
+4741	3	0.65	6 Ave & W 33 St
+4742	0	0.33	6 Ave & W 33 St
+4743	21	0.11	6 Ave & W 33 St
+4744	11	0	6 Ave & W 33 St
+4745	6	0.33	6 Ave & W 33 St
+4746	15	0.33	6 Ave & W 33 St
+4747	7	0.33	6 Ave & W 33 St
+4748	20	0.22	6 Ave & W 33 St
+4749	16	2.83	6 Ave & W 33 St
+4750	8	0.22	6 Ave & W 33 St
+4751	2	0.44	6 Ave & W 33 St
+4752	19	0.44	6 Ave & W 33 St
+4753	1	3.98	E 25 St & 2 Ave
+4754	9	0.22	E 25 St & 2 Ave
+4755	22	2.52	E 25 St & 2 Ave
+4756	14	0	E 25 St & 2 Ave
+4757	5	2.29	E 25 St & 2 Ave
+4758	11	0.65	E 25 St & 2 Ave
+4759	12	0.22	E 25 St & 2 Ave
+4760	17	0	E 25 St & 2 Ave
+4761	21	0.55	E 25 St & 2 Ave
+4762	18	0	E 25 St & 2 Ave
+4763	6	0.11	E 25 St & 2 Ave
+4764	10	0.33	E 25 St & 2 Ave
+4765	2	3.83	E 25 St & 2 Ave
+4766	23	4.28	E 25 St & 2 Ave
+4767	4	4.03	E 25 St & 2 Ave
+4768	8	0.22	E 25 St & 2 Ave
+4769	0	3.56	E 25 St & 2 Ave
+4770	19	0.66	E 25 St & 2 Ave
+4771	16	0	E 25 St & 2 Ave
+4772	3	5.01	E 25 St & 2 Ave
+4773	15	0	E 25 St & 2 Ave
+4774	7	0	E 25 St & 2 Ave
+4775	13	0.54	E 25 St & 2 Ave
+4776	20	0.77	E 25 St & 2 Ave
+4777	1	15.91	W 46 St & 11 Ave
+4778	9	1.96	W 46 St & 11 Ave
+4779	17	0	W 46 St & 11 Ave
+4780	5	15.58	W 46 St & 11 Ave
+4781	6	18.21	W 46 St & 11 Ave
+4782	10	3.27	W 46 St & 11 Ave
+4783	14	0.55	W 46 St & 11 Ave
+4784	22	9.43	W 46 St & 11 Ave
+4785	4	19.61	W 46 St & 11 Ave
+4786	12	0.44	W 46 St & 11 Ave
+4787	15	0.44	W 46 St & 11 Ave
+4788	18	0.88	W 46 St & 11 Ave
+4789	11	2.29	W 46 St & 11 Ave
+4790	13	0.22	W 46 St & 11 Ave
+4791	8	1.75	W 46 St & 11 Ave
+4792	23	14.3	W 46 St & 11 Ave
+4793	21	4.06	W 46 St & 11 Ave
+4794	16	0.44	W 46 St & 11 Ave
+4795	3	19.5	W 46 St & 11 Ave
+4796	2	17.49	W 46 St & 11 Ave
+4797	7	9.8	W 46 St & 11 Ave
+4798	20	1.42	W 46 St & 11 Ave
+4799	19	1.54	W 46 St & 11 Ave
+4800	0	15	W 46 St & 11 Ave
+4801	1	19.45	9 Ave & W 22 St
+4802	5	4.58	9 Ave & W 22 St
+4803	22	24.12	9 Ave & W 22 St
+4804	9	0	9 Ave & W 22 St
+4805	14	1.53	9 Ave & W 22 St
+4806	18	25.03	9 Ave & W 22 St
+4807	21	23.36	9 Ave & W 22 St
+4808	6	0.55	9 Ave & W 22 St
+4809	10	0.22	9 Ave & W 22 St
+4810	2	13.22	9 Ave & W 22 St
+4811	7	0	9 Ave & W 22 St
+4812	13	0.44	9 Ave & W 22 St
+4813	23	26.58	9 Ave & W 22 St
+4814	17	14.02	9 Ave & W 22 St
+4815	4	11.55	9 Ave & W 22 St
+4816	11	0.98	9 Ave & W 22 St
+4817	16	3.7	9 Ave & W 22 St
+4818	15	2.18	9 Ave & W 22 St
+4819	19	23.46	9 Ave & W 22 St
+4820	12	0.11	9 Ave & W 22 St
+4821	20	21.8	9 Ave & W 22 St
+4822	8	0	9 Ave & W 22 St
+4823	0	23.67	9 Ave & W 22 St
+4824	3	12.09	9 Ave & W 22 St
+4825	2	35.74	W 51 St & 6 Ave
+4826	14	37.3	W 51 St & 6 Ave
+4827	7	37.04	W 51 St & 6 Ave
+4828	23	36.04	W 51 St & 6 Ave
+4829	18	35.94	W 51 St & 6 Ave
+4830	22	36.18	W 51 St & 6 Ave
+4831	9	54.47	W 51 St & 6 Ave
+4832	17	36.36	W 51 St & 6 Ave
+4833	5	35.95	W 51 St & 6 Ave
+4834	21	36.18	W 51 St & 6 Ave
+4835	6	35.99	W 51 St & 6 Ave
+4836	15	36.86	W 51 St & 6 Ave
+4837	11	45.42	W 51 St & 6 Ave
+4838	8	46.18	W 51 St & 6 Ave
+4839	13	37.91	W 51 St & 6 Ave
+4840	3	35.95	W 51 St & 6 Ave
+4841	10	50	W 51 St & 6 Ave
+4842	0	36	W 51 St & 6 Ave
+4843	12	39.69	W 51 St & 6 Ave
+4844	16	36.6	W 51 St & 6 Ave
+4845	19	36.18	W 51 St & 6 Ave
+4846	4	35.95	W 51 St & 6 Ave
+4847	20	36.25	W 51 St & 6 Ave
+4848	1	35.8	W 51 St & 6 Ave
+4849	18	20.84	E 14 St & Avenue B
+4850	7	6.43	E 14 St & Avenue B
+4851	15	0	E 14 St & Avenue B
+4852	11	1.2	E 14 St & Avenue B
+4853	6	3.16	E 14 St & Avenue B
+4854	22	2.19	E 14 St & Avenue B
+4855	14	0	E 14 St & Avenue B
+4856	21	1.1	E 14 St & Avenue B
+4857	13	0	E 14 St & Avenue B
+4858	20	1.2	E 14 St & Avenue B
+4859	19	5.37	E 14 St & Avenue B
+4860	4	35.19	E 14 St & Avenue B
+4861	12	0	E 14 St & Avenue B
+4862	0	24.33	E 14 St & Avenue B
+4863	23	12.27	E 14 St & Avenue B
+4864	3	35.62	E 14 St & Avenue B
+4865	10	1.53	E 14 St & Avenue B
+4866	16	0.11	E 14 St & Avenue B
+4867	2	34.75	E 14 St & Avenue B
+4868	17	3.18	E 14 St & Avenue B
+4869	8	1.2	E 14 St & Avenue B
+4870	1	32.38	E 14 St & Avenue B
+4871	9	0.11	E 14 St & Avenue B
+4872	5	15.14	E 14 St & Avenue B
+4873	7	0.33	W 56 St & 10 Ave
+4874	17	0	W 56 St & 10 Ave
+4875	18	0	W 56 St & 10 Ave
+4876	12	0	W 56 St & 10 Ave
+4877	20	0	W 56 St & 10 Ave
+4878	23	0	W 56 St & 10 Ave
+4879	11	0	W 56 St & 10 Ave
+4880	19	0	W 56 St & 10 Ave
+4881	0	0	W 56 St & 10 Ave
+4882	10	0	W 56 St & 10 Ave
+4883	21	0	W 56 St & 10 Ave
+4884	22	0	W 56 St & 10 Ave
+4885	1	0.33	W 56 St & 10 Ave
+4886	9	0	W 56 St & 10 Ave
+4887	13	0	W 56 St & 10 Ave
+4888	15	0	W 56 St & 10 Ave
+4889	8	0	W 56 St & 10 Ave
+4890	6	1.53	W 56 St & 10 Ave
+4891	2	0.22	W 56 St & 10 Ave
+4892	14	0	W 56 St & 10 Ave
+4893	3	0	W 56 St & 10 Ave
+4894	16	0	W 56 St & 10 Ave
+4895	5	0.11	W 56 St & 10 Ave
+4896	4	0	W 56 St & 10 Ave
+4897	7	3.16	12 Ave & W 40 St
+4898	19	5.15	12 Ave & W 40 St
+4899	0	11.44	12 Ave & W 40 St
+4900	16	0.54	12 Ave & W 40 St
+4901	14	1.2	12 Ave & W 40 St
+4902	12	0.98	12 Ave & W 40 St
+4903	1	10.5	12 Ave & W 40 St
+4904	20	6.13	12 Ave & W 40 St
+4905	10	0.76	12 Ave & W 40 St
+4906	11	0.65	12 Ave & W 40 St
+4907	8	0.55	12 Ave & W 40 St
+4908	22	8.44	12 Ave & W 40 St
+4909	9	0.11	12 Ave & W 40 St
+4910	2	9.73	12 Ave & W 40 St
+4911	3	8.93	12 Ave & W 40 St
+4912	5	8.93	12 Ave & W 40 St
+4913	23	10.36	12 Ave & W 40 St
+4914	13	0.54	12 Ave & W 40 St
+4915	4	10.57	12 Ave & W 40 St
+4916	21	9.21	12 Ave & W 40 St
+4917	6	4.36	12 Ave & W 40 St
+4918	18	3.75	12 Ave & W 40 St
+4919	17	0.66	12 Ave & W 40 St
+4920	15	0.22	12 Ave & W 40 St
+4921	19	5.92	W 43 St & 10 Ave
+4922	12	0	W 43 St & 10 Ave
+4923	8	0.66	W 43 St & 10 Ave
+4924	0	14.67	W 43 St & 10 Ave
+4925	11	0	W 43 St & 10 Ave
+4926	18	2.54	W 43 St & 10 Ave
+4927	1	18.56	W 43 St & 10 Ave
+4928	14	0	W 43 St & 10 Ave
+4929	4	19.06	W 43 St & 10 Ave
+4930	3	23.09	W 43 St & 10 Ave
+4931	7	1.09	W 43 St & 10 Ave
+4932	10	0	W 43 St & 10 Ave
+4933	2	21.2	W 43 St & 10 Ave
+4934	21	9.21	W 43 St & 10 Ave
+4935	20	7.78	W 43 St & 10 Ave
+4936	9	0	W 43 St & 10 Ave
+4937	13	0	W 43 St & 10 Ave
+4938	6	4.03	W 43 St & 10 Ave
+4939	5	3.81	W 43 St & 10 Ave
+4940	16	0	W 43 St & 10 Ave
+4941	15	0	W 43 St & 10 Ave
+4942	17	0.88	W 43 St & 10 Ave
+4943	23	13.63	W 43 St & 10 Ave
+4944	22	12.83	W 43 St & 10 Ave
+4945	4	5.88	E 47 St & 1 Ave
+4946	7	5.77	E 47 St & 1 Ave
+4947	12	10.69	E 47 St & 1 Ave
+4948	11	11.11	E 47 St & 1 Ave
+4949	20	5.91	E 47 St & 1 Ave
+4950	14	8.07	E 47 St & 1 Ave
+4951	2	5.9	E 47 St & 1 Ave
+4952	0	6	E 47 St & 1 Ave
+4953	1	5.97	E 47 St & 1 Ave
+4954	16	6.43	E 47 St & 1 Ave
+4955	13	9.37	E 47 St & 1 Ave
+4956	21	5.92	E 47 St & 1 Ave
+4957	8	5.57	E 47 St & 1 Ave
+4958	23	6.08	E 47 St & 1 Ave
+4959	10	12.42	E 47 St & 1 Ave
+4960	6	5.89	E 47 St & 1 Ave
+4961	3	5.88	E 47 St & 1 Ave
+4962	5	5.88	E 47 St & 1 Ave
+4963	9	8.61	E 47 St & 1 Ave
+4964	17	6.13	E 47 St & 1 Ave
+4965	18	5.95	E 47 St & 1 Ave
+4966	19	5.81	E 47 St & 1 Ave
+4967	15	8.4	E 47 St & 1 Ave
+4968	22	5.92	E 47 St & 1 Ave
+4969	0	0.89	Pershing Square S
+4970	13	1.2	Pershing Square S
+4971	12	0.76	Pershing Square S
+4972	7	0.44	Pershing Square S
+4973	10	0.87	Pershing Square S
+4974	11	0.54	Pershing Square S
+4975	20	0.44	Pershing Square S
+4976	16	1.31	Pershing Square S
+4977	9	0	Pershing Square S
+4978	14	0.33	Pershing Square S
+4979	8	0.33	Pershing Square S
+4980	1	1.33	Pershing Square S
+4981	23	0.9	Pershing Square S
+4982	17	0.77	Pershing Square S
+4983	4	0.65	Pershing Square S
+4984	3	0.98	Pershing Square S
+4985	5	1.31	Pershing Square S
+4986	15	0.65	Pershing Square S
+4987	2	1.2	Pershing Square S
+4988	18	0.22	Pershing Square S
+4989	19	0.11	Pershing Square S
+4990	21	1.21	Pershing Square S
+4991	22	0.22	Pershing Square S
+4992	6	0.65	Pershing Square S
+4993	0	0	E 39 St & 2 Ave
+4994	7	0	E 39 St & 2 Ave
+4995	8	0	E 39 St & 2 Ave
+4996	9	0.98	E 39 St & 2 Ave
+4997	4	0	E 39 St & 2 Ave
+4998	20	0	E 39 St & 2 Ave
+4999	16	0.22	E 39 St & 2 Ave
+5000	12	0	E 39 St & 2 Ave
+5001	11	0.54	E 39 St & 2 Ave
+5002	1	0	E 39 St & 2 Ave
+5003	23	0	E 39 St & 2 Ave
+5004	19	0	E 39 St & 2 Ave
+5005	14	0.44	E 39 St & 2 Ave
+5006	21	0	E 39 St & 2 Ave
+5007	5	0	E 39 St & 2 Ave
+5008	22	0	E 39 St & 2 Ave
+5009	13	0.11	E 39 St & 2 Ave
+5010	2	0	E 39 St & 2 Ave
+5011	3	0	E 39 St & 2 Ave
+5012	10	1.09	E 39 St & 2 Ave
+5013	17	0.22	E 39 St & 2 Ave
+5014	18	0	E 39 St & 2 Ave
+5015	15	0.11	E 39 St & 2 Ave
+5016	6	0	E 39 St & 2 Ave
+5017	0	0	Pershing Square N
+5018	1	0	Pershing Square N
+5019	20	0	Pershing Square N
+5020	12	0	Pershing Square N
+5021	5	0	Pershing Square N
+5022	4	0	Pershing Square N
+5023	21	0	Pershing Square N
+5024	11	0	Pershing Square N
+5025	8	0	Pershing Square N
+5026	7	0	Pershing Square N
+5027	13	0	Pershing Square N
+5028	2	0	Pershing Square N
+5029	3	0	Pershing Square N
+5030	16	1.63	Pershing Square N
+5031	9	0	Pershing Square N
+5032	17	1.1	Pershing Square N
+5033	14	0.11	Pershing Square N
+5034	10	0	Pershing Square N
+5035	23	0	Pershing Square N
+5036	15	1.09	Pershing Square N
+5037	6	0	Pershing Square N
+5038	18	0.33	Pershing Square N
+5039	22	0	Pershing Square N
+5040	19	0	Pershing Square N
+5041	13	0	W 52 St & 5 Ave
+5042	21	0	W 52 St & 5 Ave
+5043	4	0	W 52 St & 5 Ave
+5044	1	0	W 52 St & 5 Ave
+5045	12	0	W 52 St & 5 Ave
+5046	11	0	W 52 St & 5 Ave
+5047	8	0	W 52 St & 5 Ave
+5048	0	0	W 52 St & 5 Ave
+5049	9	0.11	W 52 St & 5 Ave
+5050	17	0	W 52 St & 5 Ave
+5051	6	0.76	W 52 St & 5 Ave
+5052	5	0.11	W 52 St & 5 Ave
+5053	20	0	W 52 St & 5 Ave
+5054	15	0.11	W 52 St & 5 Ave
+5055	19	0.11	W 52 St & 5 Ave
+5056	2	0	W 52 St & 5 Ave
+5057	7	5.88	W 52 St & 5 Ave
+5058	10	0.44	W 52 St & 5 Ave
+5059	14	0	W 52 St & 5 Ave
+5060	16	0	W 52 St & 5 Ave
+5061	3	0	W 52 St & 5 Ave
+5062	23	0	W 52 St & 5 Ave
+5063	18	0.11	W 52 St & 5 Ave
+5064	22	0	W 52 St & 5 Ave
+5065	13	0	8 Ave & W 31 St
+5066	5	0.87	8 Ave & W 31 St
+5067	4	0.65	8 Ave & W 31 St
+5068	17	8	8 Ave & W 31 St
+5069	10	0	8 Ave & W 31 St
+5070	0	0.44	8 Ave & W 31 St
+5071	1	1.33	8 Ave & W 31 St
+5072	11	0	8 Ave & W 31 St
+5073	21	3.62	8 Ave & W 31 St
+5074	20	3.5	8 Ave & W 31 St
+5075	7	0	8 Ave & W 31 St
+5076	14	0	8 Ave & W 31 St
+5077	23	2.36	8 Ave & W 31 St
+5078	8	0	8 Ave & W 31 St
+5079	2	0.55	8 Ave & W 31 St
+5080	16	6.21	8 Ave & W 31 St
+5081	6	0.22	8 Ave & W 31 St
+5082	15	0.44	8 Ave & W 31 St
+5083	9	0	8 Ave & W 31 St
+5084	3	0.65	8 Ave & W 31 St
+5085	19	5.59	8 Ave & W 31 St
+5086	18	5.18	8 Ave & W 31 St
+5087	22	2.63	8 Ave & W 31 St
+5088	12	0	8 Ave & W 31 St
+5089	17	14.35	E 51 St & Lexington Ave
+5090	2	14.97	E 51 St & Lexington Ave
+5091	6	14.5	E 51 St & Lexington Ave
+5092	18	14.44	E 51 St & Lexington Ave
+5093	16	15.03	E 51 St & Lexington Ave
+5094	9	31.59	E 51 St & Lexington Ave
+5095	20	15.12	E 51 St & Lexington Ave
+5096	21	15.13	E 51 St & Lexington Ave
+5097	13	17.76	E 51 St & Lexington Ave
+5098	19	15.02	E 51 St & Lexington Ave
+5099	3	14.71	E 51 St & Lexington Ave
+5100	15	15.7	E 51 St & Lexington Ave
+5101	12	16.79	E 51 St & Lexington Ave
+5102	7	15.14	E 51 St & Lexington Ave
+5103	23	15.32	E 51 St & Lexington Ave
+5104	4	15.03	E 51 St & Lexington Ave
+5105	22	15.13	E 51 St & Lexington Ave
+5106	14	15.92	E 51 St & Lexington Ave
+5107	10	22.88	E 51 St & Lexington Ave
+5108	11	20.59	E 51 St & Lexington Ave
+5109	5	14.49	E 51 St & Lexington Ave
+5110	8	18.78	E 51 St & Lexington Ave
+5111	1	15.25	E 51 St & Lexington Ave
+5112	0	15.33	E 51 St & Lexington Ave
+5113	23	0.68	W 38 St & 8 Ave
+5114	5	1.74	W 38 St & 8 Ave
+5115	19	1.43	W 38 St & 8 Ave
+5116	10	0	W 38 St & 8 Ave
+5117	7	0	W 38 St & 8 Ave
+5118	15	0	W 38 St & 8 Ave
+5119	6	0.33	W 38 St & 8 Ave
+5120	18	1.21	W 38 St & 8 Ave
+5121	14	0	W 38 St & 8 Ave
+5122	11	0	W 38 St & 8 Ave
+5123	21	0.88	W 38 St & 8 Ave
+5124	16	0.11	W 38 St & 8 Ave
+5125	1	1.22	W 38 St & 8 Ave
+5126	2	1.86	W 38 St & 8 Ave
+5127	0	1.56	W 38 St & 8 Ave
+5128	12	0	W 38 St & 8 Ave
+5129	20	0.99	W 38 St & 8 Ave
+5130	3	1.42	W 38 St & 8 Ave
+5131	4	1.85	W 38 St & 8 Ave
+5132	9	0	W 38 St & 8 Ave
+5133	22	0.22	W 38 St & 8 Ave
+5134	8	0	W 38 St & 8 Ave
+5135	17	1.1	W 38 St & 8 Ave
+5136	13	0	W 38 St & 8 Ave
+5137	23	0.11	W 43 St & 6 Ave
+5138	10	11.55	W 43 St & 6 Ave
+5139	11	8.93	W 43 St & 6 Ave
+5140	1	0.66	W 43 St & 6 Ave
+5141	2	0.98	W 43 St & 6 Ave
+5142	15	2.29	W 43 St & 6 Ave
+5143	8	4.04	W 43 St & 6 Ave
+5144	7	2.4	W 43 St & 6 Ave
+5145	3	1.31	W 43 St & 6 Ave
+5146	12	6.65	W 43 St & 6 Ave
+5147	19	0.11	W 43 St & 6 Ave
+5148	6	1.64	W 43 St & 6 Ave
+5149	18	0.11	W 43 St & 6 Ave
+5150	0	0.78	W 43 St & 6 Ave
+5151	5	1.09	W 43 St & 6 Ave
+5152	9	5.66	W 43 St & 6 Ave
+5153	17	0.22	W 43 St & 6 Ave
+5154	4	1.09	W 43 St & 6 Ave
+5155	16	0.98	W 43 St & 6 Ave
+5156	20	0.33	W 43 St & 6 Ave
+5157	14	2.73	W 43 St & 6 Ave
+5158	22	0.11	W 43 St & 6 Ave
+5159	13	2.83	W 43 St & 6 Ave
+5160	21	0	W 43 St & 6 Ave
+5161	11	0.33	W 34 St & 11 Ave
+5162	23	0	W 34 St & 11 Ave
+5163	10	0.65	W 34 St & 11 Ave
+5164	15	0.44	W 34 St & 11 Ave
+5165	19	0	W 34 St & 11 Ave
+5166	1	0	W 34 St & 11 Ave
+5167	3	0	W 34 St & 11 Ave
+5168	14	0.87	W 34 St & 11 Ave
+5169	12	1.09	W 34 St & 11 Ave
+5170	8	0.87	W 34 St & 11 Ave
+5171	7	1.09	W 34 St & 11 Ave
+5172	0	0	W 34 St & 11 Ave
+5173	18	0	W 34 St & 11 Ave
+5174	5	0	W 34 St & 11 Ave
+5175	9	1.42	W 34 St & 11 Ave
+5176	17	0	W 34 St & 11 Ave
+5177	21	0	W 34 St & 11 Ave
+5178	4	0	W 34 St & 11 Ave
+5179	22	0	W 34 St & 11 Ave
+5180	20	0	W 34 St & 11 Ave
+5181	2	0	W 34 St & 11 Ave
+5182	6	0.22	W 34 St & 11 Ave
+5183	13	1.31	W 34 St & 11 Ave
+5184	16	0	W 34 St & 11 Ave
+5185	23	0.68	E 33 St & 5 Ave
+5186	15	0.55	E 33 St & 5 Ave
+5187	19	0	E 33 St & 5 Ave
+5188	5	0.65	E 33 St & 5 Ave
+5189	11	4.36	E 33 St & 5 Ave
+5190	3	0.98	E 33 St & 5 Ave
+5191	12	2.4	E 33 St & 5 Ave
+5192	4	0.76	E 33 St & 5 Ave
+5193	7	0.76	E 33 St & 5 Ave
+5194	17	0	E 33 St & 5 Ave
+5195	2	1.31	E 33 St & 5 Ave
+5196	14	0.44	E 33 St & 5 Ave
+5197	1	1.44	E 33 St & 5 Ave
+5198	20	0.22	E 33 St & 5 Ave
+5199	16	0.22	E 33 St & 5 Ave
+5200	0	1.11	E 33 St & 5 Ave
+5201	22	0.55	E 33 St & 5 Ave
+5202	10	4.36	E 33 St & 5 Ave
+5203	13	1.2	E 33 St & 5 Ave
+5204	9	1.31	E 33 St & 5 Ave
+5205	18	0	E 33 St & 5 Ave
+5206	8	0.55	E 33 St & 5 Ave
+5207	21	0.55	E 33 St & 5 Ave
+5208	6	1.09	E 33 St & 5 Ave
+5209	11	0.33	E 33 St & 1 Ave
+5210	15	0	E 33 St & 1 Ave
+5211	23	0	E 33 St & 1 Ave
+5212	3	0	E 33 St & 1 Ave
+5213	1	0	E 33 St & 1 Ave
+5214	7	0.11	E 33 St & 1 Ave
+5215	19	0	E 33 St & 1 Ave
+5216	10	0.44	E 33 St & 1 Ave
+5217	20	0	E 33 St & 1 Ave
+5218	0	0	E 33 St & 1 Ave
+5219	5	0	E 33 St & 1 Ave
+5220	9	0.22	E 33 St & 1 Ave
+5221	6	0.33	E 33 St & 1 Ave
+5222	2	0	E 33 St & 1 Ave
+5223	12	0.66	E 33 St & 1 Ave
+5224	8	0	E 33 St & 1 Ave
+5225	13	0	E 33 St & 1 Ave
+5226	17	0	E 33 St & 1 Ave
+5227	14	0	E 33 St & 1 Ave
+5228	22	0	E 33 St & 1 Ave
+5229	16	0	E 33 St & 1 Ave
+5230	21	0	E 33 St & 1 Ave
+5231	4	0	E 33 St & 1 Ave
+5232	18	0	E 33 St & 1 Ave
+5233	11	0.65	2 Ave & E 30 St
+5234	23	0.11	2 Ave & E 30 St
+5235	3	0.33	2 Ave & E 30 St
+5236	20	0	2 Ave & E 30 St
+5237	19	0.11	2 Ave & E 30 St
+5238	7	1.2	2 Ave & E 30 St
+5239	10	0.65	2 Ave & E 30 St
+5240	15	0.22	2 Ave & E 30 St
+5241	5	0.54	2 Ave & E 30 St
+5242	22	0.11	2 Ave & E 30 St
+5243	1	0.11	2 Ave & E 30 St
+5244	17	0	2 Ave & E 30 St
+5245	12	0.76	2 Ave & E 30 St
+5246	4	0.33	2 Ave & E 30 St
+5247	8	1.42	2 Ave & E 30 St
+5248	16	0	2 Ave & E 30 St
+5249	2	0	2 Ave & E 30 St
+5250	14	0.65	2 Ave & E 30 St
+5251	6	0.76	2 Ave & E 30 St
+5252	9	0.65	2 Ave & E 30 St
+5253	0	0.33	2 Ave & E 30 St
+5254	13	0.65	2 Ave & E 30 St
+5255	18	0.33	2 Ave & E 30 St
+5256	21	0	2 Ave & E 30 St
+5257	11	0	W 42 St & 8 Ave
+5258	7	0	W 42 St & 8 Ave
+5259	20	7.45	W 42 St & 8 Ave
+5260	15	1.96	W 42 St & 8 Ave
+5261	19	9.54	W 42 St & 8 Ave
+5262	9	0	W 42 St & 8 Ave
+5263	3	5.45	W 42 St & 8 Ave
+5264	12	0	W 42 St & 8 Ave
+5265	8	0	W 42 St & 8 Ave
+5266	16	13.07	W 42 St & 8 Ave
+5267	23	5.86	W 42 St & 8 Ave
+5268	14	0.11	W 42 St & 8 Ave
+5269	5	1.09	W 42 St & 8 Ave
+5270	10	0	W 42 St & 8 Ave
+5271	6	0	W 42 St & 8 Ave
+5272	0	9.56	W 42 St & 8 Ave
+5273	4	5.23	W 42 St & 8 Ave
+5274	22	4.61	W 42 St & 8 Ave
+5275	2	9.07	W 42 St & 8 Ave
+5276	18	16.76	W 42 St & 8 Ave
+5277	13	0	W 42 St & 8 Ave
+5278	17	33.52	W 42 St & 8 Ave
+5279	1	9.61	W 42 St & 8 Ave
+5280	21	5.92	W 42 St & 8 Ave
+5281	23	8	11 Av & 59 St
+5282	7	7.41	11 Av & 59 St
+5283	8	0.87	11 Av & 59 St
+5284	11	0	11 Av & 59 St
+5285	15	0	11 Av & 59 St
+5286	5	2.51	11 Av & 59 St
+5287	19	1.54	11 Av & 59 St
+5288	20	2.74	11 Av & 59 St
+5289	3	5.56	11 Av & 59 St
+5290	12	0	11 Av & 59 St
+5291	14	0	11 Av & 59 St
+5292	1	10.39	11 Av & 59 St
+5293	16	0	11 Av & 59 St
+5294	10	0	11 Av & 59 St
+5295	4	3.81	11 Av & 59 St
+5296	22	5.95	11 Av & 59 St
+5297	9	0	11 Av & 59 St
+5298	0	12.89	11 Av & 59 St
+5299	13	0	11 Av & 59 St
+5300	6	9.81	11 Av & 59 St
+5301	17	0	11 Av & 59 St
+5302	2	7.54	11 Av & 59 St
+5303	18	0.44	11 Av & 59 St
+5304	21	3.74	11 Av & 59 St
+5305	7	0.54	Forsyth St & Broome St
+5306	12	0	Forsyth St & Broome St
+5307	8	0.33	Forsyth St & Broome St
+5308	3	5.99	Forsyth St & Broome St
+5309	23	5.29	Forsyth St & Broome St
+5310	19	1.54	Forsyth St & Broome St
+5311	20	2.85	Forsyth St & Broome St
+5312	11	0	Forsyth St & Broome St
+5313	4	6.54	Forsyth St & Broome St
+5314	14	0	Forsyth St & Broome St
+5315	5	4.9	Forsyth St & Broome St
+5316	1	5.52	Forsyth St & Broome St
+5317	15	0	Forsyth St & Broome St
+5318	13	0	Forsyth St & Broome St
+5319	18	0.44	Forsyth St & Broome St
+5320	16	0.22	Forsyth St & Broome St
+5321	21	3.73	Forsyth St & Broome St
+5322	0	4.22	Forsyth St & Broome St
+5323	22	3.51	Forsyth St & Broome St
+5324	17	0	Forsyth St & Broome St
+5325	2	4.92	Forsyth St & Broome St
+5326	10	0.11	Forsyth St & Broome St
+5327	9	0	Forsyth St & Broome St
+5328	6	3.05	Forsyth St & Broome St
+5329	19	0	Broadway & W 39 St
+5330	15	0	Broadway & W 39 St
+5331	17	0	Broadway & W 39 St
+5332	21	0	Broadway & W 39 St
+5333	20	0	Broadway & W 39 St
+5334	16	0	Broadway & W 39 St
+5335	23	0	Broadway & W 39 St
+5336	0	0	Broadway & W 39 St
+5337	1	0	Broadway & W 39 St
+5338	22	0	Broadway & W 39 St
+5339	14	0.33	Broadway & W 39 St
+5340	5	0	Broadway & W 39 St
+5341	18	0	Broadway & W 39 St
+5342	10	1.96	Broadway & W 39 St
+5343	7	0	Broadway & W 39 St
+5344	2	0	Broadway & W 39 St
+5345	13	0.65	Broadway & W 39 St
+5346	9	2.07	Broadway & W 39 St
+5347	12	1.31	Broadway & W 39 St
+5348	4	0	Broadway & W 39 St
+5349	8	0	Broadway & W 39 St
+5350	3	0	Broadway & W 39 St
+5351	11	1.53	Broadway & W 39 St
+5352	6	0	Broadway & W 39 St
+5353	16	2.4	Water - Whitehall Plaza
+5354	20	0	Water - Whitehall Plaza
+5355	10	24.4	Water - Whitehall Plaza
+5356	17	0.22	Water - Whitehall Plaza
+5357	23	0	Water - Whitehall Plaza
+5358	19	0	Water - Whitehall Plaza
+5359	1	0	Water - Whitehall Plaza
+5360	14	6.22	Water - Whitehall Plaza
+5361	18	0	Water - Whitehall Plaza
+5362	21	0	Water - Whitehall Plaza
+5363	2	0	Water - Whitehall Plaza
+5364	5	0	Water - Whitehall Plaza
+5365	9	16.56	Water - Whitehall Plaza
+5366	4	0	Water - Whitehall Plaza
+5367	15	5.56	Water - Whitehall Plaza
+5368	0	0	Water - Whitehall Plaza
+5369	7	0	Water - Whitehall Plaza
+5370	11	19.93	Water - Whitehall Plaza
+5371	22	0	Water - Whitehall Plaza
+5372	12	11.89	Water - Whitehall Plaza
+5373	6	0	Water - Whitehall Plaza
+5374	3	0	Water - Whitehall Plaza
+5375	13	6.75	Water - Whitehall Plaza
+5376	8	1.09	Water - Whitehall Plaza
+5377	10	7.19	1 Ave & E 30 St
+5378	11	3.27	1 Ave & E 30 St
+5379	1	0	1 Ave & E 30 St
+5380	23	0	1 Ave & E 30 St
+5381	22	0.44	1 Ave & E 30 St
+5382	8	9.5	1 Ave & E 30 St
+5383	9	9.37	1 Ave & E 30 St
+5384	7	12.31	1 Ave & E 30 St
+5385	12	2.84	1 Ave & E 30 St
+5386	19	0.33	1 Ave & E 30 St
+5387	14	0.11	1 Ave & E 30 St
+5388	18	0	1 Ave & E 30 St
+5389	15	0	1 Ave & E 30 St
+5390	6	5.56	1 Ave & E 30 St
+5391	5	0.11	1 Ave & E 30 St
+5392	0	0	1 Ave & E 30 St
+5393	2	0	1 Ave & E 30 St
+5394	4	0	1 Ave & E 30 St
+5395	16	0	1 Ave & E 30 St
+5396	13	1.2	1 Ave & E 30 St
+5397	3	0	1 Ave & E 30 St
+5398	17	0.11	1 Ave & E 30 St
+5399	21	0.44	1 Ave & E 30 St
+5400	20	0.44	1 Ave & E 30 St
+5401	1	5.3	Lexington Ave & E 24 St
+5402	10	12.85	Lexington Ave & E 24 St
+5403	11	9.48	Lexington Ave & E 24 St
+5404	15	7.2	Lexington Ave & E 24 St
+5405	5	5.23	Lexington Ave & E 24 St
+5406	23	5.07	Lexington Ave & E 24 St
+5407	22	5.26	Lexington Ave & E 24 St
+5408	6	5.23	Lexington Ave & E 24 St
+5409	8	6.22	Lexington Ave & E 24 St
+5410	18	5.96	Lexington Ave & E 24 St
+5411	7	5.34	Lexington Ave & E 24 St
+5412	3	5.23	Lexington Ave & E 24 St
+5413	12	8.29	Lexington Ave & E 24 St
+5414	14	7.42	Lexington Ave & E 24 St
+5415	9	9.69	Lexington Ave & E 24 St
+5416	2	5.25	Lexington Ave & E 24 St
+5417	16	6.43	Lexington Ave & E 24 St
+5418	13	8.06	Lexington Ave & E 24 St
+5419	0	5.33	Lexington Ave & E 24 St
+5420	17	5.91	Lexington Ave & E 24 St
+5421	4	5.23	Lexington Ave & E 24 St
+5422	19	5.91	Lexington Ave & E 24 St
+5423	20	5.7	Lexington Ave & E 24 St
+5424	21	5.26	Lexington Ave & E 24 St
+5425	11	0.76	Lexington Ave & E 26 St
+5426	22	0.22	Lexington Ave & E 26 St
+5427	6	0	Lexington Ave & E 26 St
+5428	14	0.87	Lexington Ave & E 26 St
+5429	23	0.34	Lexington Ave & E 26 St
+5430	3	0	Lexington Ave & E 26 St
+5431	10	0.33	Lexington Ave & E 26 St
+5432	1	1.33	Lexington Ave & E 26 St
+5433	18	0	Lexington Ave & E 26 St
+5434	2	0.22	Lexington Ave & E 26 St
+5435	12	1.64	Lexington Ave & E 26 St
+5436	8	0	Lexington Ave & E 26 St
+5437	9	0.65	Lexington Ave & E 26 St
+5438	7	0.11	Lexington Ave & E 26 St
+5439	20	0	Lexington Ave & E 26 St
+5440	15	0.22	Lexington Ave & E 26 St
+5441	19	0.11	Lexington Ave & E 26 St
+5442	0	1.33	Lexington Ave & E 26 St
+5443	4	0	Lexington Ave & E 26 St
+5444	5	0	Lexington Ave & E 26 St
+5445	17	0.88	Lexington Ave & E 26 St
+5446	13	0.87	Lexington Ave & E 26 St
+5447	16	0.33	Lexington Ave & E 26 St
+5448	21	0	Lexington Ave & E 26 St
+5449	22	41.89	E 23 St & 1 Ave
+5450	10	26.36	E 23 St & 1 Ave
+5451	23	42.68	E 23 St & 1 Ave
+5452	1	47.85	E 23 St & 1 Ave
+5453	18	26.71	E 23 St & 1 Ave
+5454	15	26.5	E 23 St & 1 Ave
+5455	14	26.94	E 23 St & 1 Ave
+5456	2	47.54	E 23 St & 1 Ave
+5457	11	27.12	E 23 St & 1 Ave
+5458	6	26.72	E 23 St & 1 Ave
+5459	5	30.94	E 23 St & 1 Ave
+5460	7	28.54	E 23 St & 1 Ave
+5461	20	36.91	E 23 St & 1 Ave
+5462	12	26.61	E 23 St & 1 Ave
+5463	8	29.04	E 23 St & 1 Ave
+5464	19	34.39	E 23 St & 1 Ave
+5465	9	25.93	E 23 St & 1 Ave
+5466	3	47.93	E 23 St & 1 Ave
+5467	4	45.75	E 23 St & 1 Ave
+5468	13	26.69	E 23 St & 1 Ave
+5469	0	45.11	E 23 St & 1 Ave
+5470	17	26.18	E 23 St & 1 Ave
+5471	21	37.94	E 23 St & 1 Ave
+5472	16	26.69	E 23 St & 1 Ave
+5473	11	4.14	E 30 St & Park Ave S
+5474	18	0.22	E 30 St & Park Ave S
+5475	22	0	E 30 St & Park Ave S
+5476	10	2.83	E 30 St & Park Ave S
+5477	14	2.84	E 30 St & Park Ave S
+5478	19	0	E 30 St & Park Ave S
+5479	23	0	E 30 St & Park Ave S
+5480	6	0	E 30 St & Park Ave S
+5481	15	1.31	E 30 St & Park Ave S
+5482	1	0	E 30 St & Park Ave S
+5483	9	1.74	E 30 St & Park Ave S
+5484	3	0	E 30 St & Park Ave S
+5485	12	3.16	E 30 St & Park Ave S
+5486	8	0.11	E 30 St & Park Ave S
+5487	0	0	E 30 St & Park Ave S
+5488	2	0	E 30 St & Park Ave S
+5489	17	0.33	E 30 St & Park Ave S
+5490	4	0	E 30 St & Park Ave S
+5491	5	0	E 30 St & Park Ave S
+5492	7	0	E 30 St & Park Ave S
+5493	20	0	E 30 St & Park Ave S
+5494	16	0.54	E 30 St & Park Ave S
+5495	13	2.94	E 30 St & Park Ave S
+5496	21	0	E 30 St & Park Ave S
+5497	19	39.54	1 Ave & 18 St
+5498	22	45.61	1 Ave & 18 St
+5499	10	15.03	1 Ave & 18 St
+5500	1	48.62	1 Ave & 18 St
+5501	23	48.76	1 Ave & 18 St
+5502	11	15.14	1 Ave & 18 St
+5503	14	15.05	1 Ave & 18 St
+5504	8	15.72	1 Ave & 18 St
+5505	18	18.87	1 Ave & 18 St
+5506	2	48.74	1 Ave & 18 St
+5507	15	15.05	1 Ave & 18 St
+5508	6	18.32	1 Ave & 18 St
+5509	5	26.47	1 Ave & 18 St
+5510	7	15.69	1 Ave & 18 St
+5511	3	49.46	1 Ave & 18 St
+5512	12	15.05	1 Ave & 18 St
+5513	13	15.03	1 Ave & 18 St
+5514	9	15.58	1 Ave & 18 St
+5515	20	39.65	1 Ave & 18 St
+5516	17	14.9	1 Ave & 18 St
+5517	4	44.23	1 Ave & 18 St
+5518	21	39.8	1 Ave & 18 St
+5519	0	44.56	1 Ave & 18 St
+5520	16	15.03	1 Ave & 18 St
+5521	15	10.91	Spring St & 6 Ave
+5522	14	10.8	Spring St & 6 Ave
+5523	10	36.27	Spring St & 6 Ave
+5524	11	27.67	Spring St & 6 Ave
+5525	3	0.65	Spring St & 6 Ave
+5526	6	0.33	Spring St & 6 Ave
+5527	19	0.22	Spring St & 6 Ave
+5528	23	2.82	Spring St & 6 Ave
+5529	22	0.77	Spring St & 6 Ave
+5530	4	0.65	Spring St & 6 Ave
+5531	5	0.65	Spring St & 6 Ave
+5532	18	0.33	Spring St & 6 Ave
+5533	7	0.44	Spring St & 6 Ave
+5534	2	0.66	Spring St & 6 Ave
+5535	21	1.1	Spring St & 6 Ave
+5536	8	2.51	Spring St & 6 Ave
+5537	1	1.33	Spring St & 6 Ave
+5538	20	0.33	Spring St & 6 Ave
+5539	17	0.33	Spring St & 6 Ave
+5540	12	14.39	Spring St & 6 Ave
+5541	9	18.95	Spring St & 6 Ave
+5542	16	4.36	Spring St & 6 Ave
+5543	13	11.76	Spring St & 6 Ave
+5544	0	2	Spring St & 6 Ave
+5545	15	0.76	Central Park S & 6 Ave
+5546	22	0	Central Park S & 6 Ave
+5547	3	0	Central Park S & 6 Ave
+5548	8	9.72	Central Park S & 6 Ave
+5549	23	0	Central Park S & 6 Ave
+5550	11	2.29	Central Park S & 6 Ave
+5551	18	0.22	Central Park S & 6 Ave
+5552	2	0	Central Park S & 6 Ave
+5553	12	1.31	Central Park S & 6 Ave
+5554	7	0.98	Central Park S & 6 Ave
+5555	4	0	Central Park S & 6 Ave
+5556	1	0	Central Park S & 6 Ave
+5557	6	0.65	Central Park S & 6 Ave
+5558	19	0	Central Park S & 6 Ave
+5559	14	1.96	Central Park S & 6 Ave
+5560	20	0.55	Central Park S & 6 Ave
+5561	17	0.33	Central Park S & 6 Ave
+5562	5	0.54	Central Park S & 6 Ave
+5563	13	0.76	Central Park S & 6 Ave
+5564	9	23.86	Central Park S & 6 Ave
+5565	16	0.87	Central Park S & 6 Ave
+5566	10	9.04	Central Park S & 6 Ave
+5567	21	0.66	Central Park S & 6 Ave
+5568	0	0	Central Park S & 6 Ave
+5569	4	0	E 43 St & 2 Ave
+5570	3	0	E 43 St & 2 Ave
+5571	15	0	E 43 St & 2 Ave
+5572	19	0	E 43 St & 2 Ave
+5573	7	0	E 43 St & 2 Ave
+5574	2	0	E 43 St & 2 Ave
+5575	18	0	E 43 St & 2 Ave
+5576	12	0.65	E 43 St & 2 Ave
+5577	20	0	E 43 St & 2 Ave
+5578	16	0	E 43 St & 2 Ave
+5579	8	0	E 43 St & 2 Ave
+5580	6	0	E 43 St & 2 Ave
+5581	22	0	E 43 St & 2 Ave
+5582	17	0	E 43 St & 2 Ave
+5583	11	2.51	E 43 St & 2 Ave
+5584	21	0	E 43 St & 2 Ave
+5585	13	0.33	E 43 St & 2 Ave
+5586	9	1.53	E 43 St & 2 Ave
+5587	10	3.81	E 43 St & 2 Ave
+5588	1	0	E 43 St & 2 Ave
+5589	5	0	E 43 St & 2 Ave
+5590	23	0	E 43 St & 2 Ave
+5591	0	0	E 43 St & 2 Ave
+5592	14	0.11	E 43 St & 2 Ave
+5593	17	0	W 45 St & 8 Ave
+5594	4	0.11	W 45 St & 8 Ave
+5595	19	0	W 45 St & 8 Ave
+5596	20	0.11	W 45 St & 8 Ave
+5597	14	0.11	W 45 St & 8 Ave
+5598	2	0.22	W 45 St & 8 Ave
+5599	3	0	W 45 St & 8 Ave
+5600	10	0.44	W 45 St & 8 Ave
+5601	21	0.11	W 45 St & 8 Ave
+5602	1	0	W 45 St & 8 Ave
+5603	15	0.33	W 45 St & 8 Ave
+5604	16	0.11	W 45 St & 8 Ave
+5605	7	0.22	W 45 St & 8 Ave
+5606	11	0.11	W 45 St & 8 Ave
+5607	12	0	W 45 St & 8 Ave
+5608	0	0.33	W 45 St & 8 Ave
+5609	13	0.11	W 45 St & 8 Ave
+5610	23	0.23	W 45 St & 8 Ave
+5611	18	0.11	W 45 St & 8 Ave
+5612	6	0	W 45 St & 8 Ave
+5613	9	0.11	W 45 St & 8 Ave
+5614	5	0	W 45 St & 8 Ave
+5615	22	0.11	W 45 St & 8 Ave
+5616	8	0	W 45 St & 8 Ave
+5617	20	0	E 55 St & Lexington Ave
+5618	13	6.1	E 55 St & Lexington Ave
+5619	10	26.91	E 55 St & Lexington Ave
+5620	21	0	E 55 St & Lexington Ave
+5621	16	0.22	E 55 St & Lexington Ave
+5622	9	24.51	E 55 St & Lexington Ave
+5623	7	0.11	E 55 St & Lexington Ave
+5624	11	17.54	E 55 St & Lexington Ave
+5625	12	11.34	E 55 St & Lexington Ave
+5626	2	0	E 55 St & Lexington Ave
+5627	6	0	E 55 St & Lexington Ave
+5628	14	3.82	E 55 St & Lexington Ave
+5629	1	0	E 55 St & Lexington Ave
+5630	5	0	E 55 St & Lexington Ave
+5631	17	0	E 55 St & Lexington Ave
+5632	0	0	E 55 St & Lexington Ave
+5633	3	0	E 55 St & Lexington Ave
+5634	15	1.53	E 55 St & Lexington Ave
+5635	19	0	E 55 St & Lexington Ave
+5636	8	4.59	E 55 St & Lexington Ave
+5637	23	0	E 55 St & Lexington Ave
+5638	22	0	E 55 St & Lexington Ave
+5639	18	0	E 55 St & Lexington Ave
+5640	4	0	E 55 St & Lexington Ave
+5641	16	3.49	South End Av & Liberty St
+5642	9	20.7	South End Av & Liberty St
+5643	10	15.58	South End Av & Liberty St
+5644	2	11.58	South End Av & Liberty St
+5645	17	0.99	South End Av & Liberty St
+5646	21	2.96	South End Av & Liberty St
+5647	1	12.27	South End Av & Liberty St
+5648	5	4.14	South End Av & Liberty St
+5649	19	0.11	South End Av & Liberty St
+5650	7	6.75	South End Av & Liberty St
+5651	11	11.33	South End Av & Liberty St
+5652	23	5.74	South End Av & Liberty St
+5653	22	2.85	South End Av & Liberty St
+5654	6	4.47	South End Av & Liberty St
+5655	14	4.36	South End Av & Liberty St
+5656	18	0.22	South End Av & Liberty St
+5657	12	6.98	South End Av & Liberty St
+5658	8	13.32	South End Av & Liberty St
+5659	13	11	South End Av & Liberty St
+5660	15	2.51	South End Av & Liberty St
+5661	3	11.11	South End Av & Liberty St
+5662	4	9.69	South End Av & Liberty St
+5663	0	10.56	South End Av & Liberty St
+5664	20	1.2	South End Av & Liberty St
+5665	23	14.19	Catherine St & Monroe St
+5666	5	18.19	Catherine St & Monroe St
+5667	2	20.55	Catherine St & Monroe St
+5668	21	6.36	Catherine St & Monroe St
+5669	14	0	Catherine St & Monroe St
+5670	3	23.97	Catherine St & Monroe St
+5671	22	9.76	Catherine St & Monroe St
+5672	10	0	Catherine St & Monroe St
+5673	13	0	Catherine St & Monroe St
+5674	1	20.22	Catherine St & Monroe St
+5675	12	0	Catherine St & Monroe St
+5676	9	0	Catherine St & Monroe St
+5677	7	0.65	Catherine St & Monroe St
+5678	11	0	Catherine St & Monroe St
+5679	15	0	Catherine St & Monroe St
+5680	19	2.19	Catherine St & Monroe St
+5681	6	10.58	Catherine St & Monroe St
+5682	0	18.56	Catherine St & Monroe St
+5683	18	1.77	Catherine St & Monroe St
+5684	4	19.61	Catherine St & Monroe St
+5685	17	0.33	Catherine St & Monroe St
+5686	20	3.4	Catherine St & Monroe St
+5687	16	0	Catherine St & Monroe St
+5688	8	0	Catherine St & Monroe St
+5689	10	11.22	Grand St & Greene St
+5690	9	3.92	Grand St & Greene St
+5691	21	0.11	Grand St & Greene St
+5692	1	0	Grand St & Greene St
+5693	23	0.56	Grand St & Greene St
+5694	2	0	Grand St & Greene St
+5695	7	0	Grand St & Greene St
+5696	11	12.31	Grand St & Greene St
+5697	18	0	Grand St & Greene St
+5698	5	0	Grand St & Greene St
+5699	6	0	Grand St & Greene St
+5700	14	12.32	Grand St & Greene St
+5701	20	0	Grand St & Greene St
+5702	12	12.1	Grand St & Greene St
+5703	17	1.53	Grand St & Greene St
+5704	13	10.57	Grand St & Greene St
+5705	8	0.66	Grand St & Greene St
+5706	3	0	Grand St & Greene St
+5707	19	0	Grand St & Greene St
+5708	0	0	Grand St & Greene St
+5709	16	3.81	Grand St & Greene St
+5710	22	0.66	Grand St & Greene St
+5711	4	0	Grand St & Greene St
+5712	15	6.98	Grand St & Greene St
+5713	21	0.44	E 59 St & Sutton Pl
+5714	2	0.66	E 59 St & Sutton Pl
+5715	7	0.22	E 59 St & Sutton Pl
+5716	14	0	E 59 St & Sutton Pl
+5717	5	0.65	E 59 St & Sutton Pl
+5718	10	0	E 59 St & Sutton Pl
+5719	13	0.11	E 59 St & Sutton Pl
+5720	23	0.68	E 59 St & Sutton Pl
+5721	9	0.22	E 59 St & Sutton Pl
+5722	0	0.67	E 59 St & Sutton Pl
+5723	20	0.44	E 59 St & Sutton Pl
+5724	1	0.44	E 59 St & Sutton Pl
+5725	19	0	E 59 St & Sutton Pl
+5726	6	0.65	E 59 St & Sutton Pl
+5727	8	0.11	E 59 St & Sutton Pl
+5728	11	0	E 59 St & Sutton Pl
+5729	22	0.66	E 59 St & Sutton Pl
+5730	17	0	E 59 St & Sutton Pl
+5731	4	0.65	E 59 St & Sutton Pl
+5732	16	0.22	E 59 St & Sutton Pl
+5733	3	0.65	E 59 St & Sutton Pl
+5734	12	0	E 59 St & Sutton Pl
+5735	18	0	E 59 St & Sutton Pl
+5736	15	0.22	E 59 St & Sutton Pl
+5737	10	0	E Broadway & Grand St
+5738	21	40.79	E Broadway & Grand St
+5739	9	0	E Broadway & Grand St
+5740	6	5.02	E Broadway & Grand St
+5741	13	0	E Broadway & Grand St
+5742	23	47.41	E Broadway & Grand St
+5743	2	45.68	E Broadway & Grand St
+5744	17	0.55	E Broadway & Grand St
+5745	7	0.33	E Broadway & Grand St
+5746	1	43.09	E Broadway & Grand St
+5747	5	19.83	E Broadway & Grand St
+5748	19	24.45	E Broadway & Grand St
+5749	12	0	E Broadway & Grand St
+5750	14	0	E Broadway & Grand St
+5751	3	48.15	E Broadway & Grand St
+5752	22	44.85	E Broadway & Grand St
+5753	0	48.33	E Broadway & Grand St
+5754	18	6.39	E Broadway & Grand St
+5755	4	37.69	E Broadway & Grand St
+5756	8	0	E Broadway & Grand St
+5757	11	0	E Broadway & Grand St
+5758	15	0	E Broadway & Grand St
+5759	20	31.33	E Broadway & Grand St
+5760	16	0	E Broadway & Grand St
+5761	2	0.33	E 27 St & 1 Ave
+5762	5	0	E 27 St & 1 Ave
+5763	11	1.42	E 27 St & 1 Ave
+5764	9	6.43	E 27 St & 1 Ave
+5765	18	0	E 27 St & 1 Ave
+5766	7	8.39	E 27 St & 1 Ave
+5767	6	0.33	E 27 St & 1 Ave
+5768	14	0.22	E 27 St & 1 Ave
+5769	1	0.66	E 27 St & 1 Ave
+5770	22	0.55	E 27 St & 1 Ave
+5771	17	0.11	E 27 St & 1 Ave
+5772	21	0.88	E 27 St & 1 Ave
+5773	12	1.64	E 27 St & 1 Ave
+5774	3	0	E 27 St & 1 Ave
+5775	23	0.45	E 27 St & 1 Ave
+5776	4	0	E 27 St & 1 Ave
+5777	13	0.33	E 27 St & 1 Ave
+5778	20	0	E 27 St & 1 Ave
+5779	15	0	E 27 St & 1 Ave
+5780	10	2.29	E 27 St & 1 Ave
+5781	0	0.22	E 27 St & 1 Ave
+5782	16	0	E 27 St & 1 Ave
+5783	19	0	E 27 St & 1 Ave
+5784	8	17.58	E 27 St & 1 Ave
+5785	14	5.13	Little West St & 1 Pl
+5786	21	5.48	Little West St & 1 Pl
+5787	18	4.64	Little West St & 1 Pl
+5788	2	10.27	Little West St & 1 Pl
+5789	6	3.38	Little West St & 1 Pl
+5790	4	10.02	Little West St & 1 Pl
+5791	1	10.28	Little West St & 1 Pl
+5792	8	0	Little West St & 1 Pl
+5793	11	1.85	Little West St & 1 Pl
+5794	7	0.22	Little West St & 1 Pl
+5795	23	8.78	Little West St & 1 Pl
+5796	13	3.81	Little West St & 1 Pl
+5797	22	8.55	Little West St & 1 Pl
+5798	17	4.38	Little West St & 1 Pl
+5799	10	0.98	Little West St & 1 Pl
+5800	16	3.92	Little West St & 1 Pl
+5801	15	5.23	Little West St & 1 Pl
+5802	19	3.72	Little West St & 1 Pl
+5803	20	5.48	Little West St & 1 Pl
+5804	9	0.22	Little West St & 1 Pl
+5805	0	10.78	Little West St & 1 Pl
+5806	5	8.39	Little West St & 1 Pl
+5807	3	10.57	Little West St & 1 Pl
+5808	12	2.4	Little West St & 1 Pl
+5809	14	4.14	W 23 & 8 Ave
+5810	11	5.01	W 23 & 8 Ave
+5811	2	6.67	W 23 & 8 Ave
+5812	17	4.38	W 23 & 8 Ave
+5813	13	3.7	W 23 & 8 Ave
+5814	18	8.39	W 23 & 8 Ave
+5815	15	5.45	W 23 & 8 Ave
+5816	7	4.58	W 23 & 8 Ave
+5817	3	5.45	W 23 & 8 Ave
+5818	23	5.86	W 23 & 8 Ave
+5819	21	11.51	W 23 & 8 Ave
+5820	19	8.54	W 23 & 8 Ave
+5821	6	5.67	W 23 & 8 Ave
+5822	16	5.45	W 23 & 8 Ave
+5823	20	13.14	W 23 & 8 Ave
+5824	22	8.88	W 23 & 8 Ave
+5825	9	6.97	W 23 & 8 Ave
+5826	4	5.23	W 23 & 8 Ave
+5827	8	5.13	W 23 & 8 Ave
+5828	0	4.56	W 23 & 8 Ave
+5829	12	4.58	W 23 & 8 Ave
+5830	10	6.64	W 23 & 8 Ave
+5831	1	6.96	W 23 & 8 Ave
+5832	5	5.66	W 23 & 8 Ave
+5833	3	5.56	Coming soon: E 63 St & York Ave 
+5834	6	5.56	Coming soon: E 63 St & York Ave 
+5835	7	5.56	Coming soon: E 63 St & York Ave 
+5836	20	5.55	Coming soon: E 63 St & York Ave 
+5837	12	4.87	Coming soon: E 63 St & York Ave 
+5838	15	6.45	Coming soon: E 63 St & York Ave 
+5839	10	4.98	Coming soon: E 63 St & York Ave 
+5840	23	4.77	Coming soon: E 63 St & York Ave 
+5841	2	5.57	Coming soon: E 63 St & York Ave 
+5842	17	5.66	Coming soon: E 63 St & York Ave 
+5843	21	5.56	Coming soon: E 63 St & York Ave 
+5844	4	5.56	Coming soon: E 63 St & York Ave 
+5845	8	5.57	Coming soon: E 63 St & York Ave 
+5846	1	4.82	Coming soon: E 63 St & York Ave 
+5847	16	6.21	Coming soon: E 63 St & York Ave 
+5848	19	5.55	Coming soon: E 63 St & York Ave 
+5849	11	4.98	Coming soon: E 63 St & York Ave 
+5850	0	4.37	Coming soon: E 63 St & York Ave 
+5851	5	5.56	Coming soon: E 63 St & York Ave 
+5852	14	5.68	Coming soon: E 63 St & York Ave 
+5853	22	5.56	Coming soon: E 63 St & York Ave 
+5854	18	5.59	Coming soon: E 63 St & York Ave 
+5855	9	5.21	Coming soon: E 63 St & York Ave 
+5856	13	5.09	Coming soon: E 63 St & York Ave 
+5857	11	26.03	E 59 St & Madison Ave
+5858	20	0	E 59 St & Madison Ave
+5859	4	0.11	E 59 St & Madison Ave
+5860	8	11.57	E 59 St & Madison Ave
+5861	12	11.78	E 59 St & Madison Ave
+5862	23	0.11	E 59 St & Madison Ave
+5863	7	0.54	E 59 St & Madison Ave
+5864	15	2.18	E 59 St & Madison Ave
+5865	19	0	E 59 St & Madison Ave
+5866	16	0.22	E 59 St & Madison Ave
+5867	22	0.33	E 59 St & Madison Ave
+5868	18	0	E 59 St & Madison Ave
+5869	17	0	E 59 St & Madison Ave
+5870	21	0	E 59 St & Madison Ave
+5871	5	0.11	E 59 St & Madison Ave
+5872	9	45.53	E 59 St & Madison Ave
+5873	13	5.45	E 59 St & Madison Ave
+5874	0	0	E 59 St & Madison Ave
+5875	10	32.79	E 59 St & Madison Ave
+5876	3	0.11	E 59 St & Madison Ave
+5877	2	0	E 59 St & Madison Ave
+5878	1	0.11	E 59 St & Madison Ave
+5879	14	3.49	E 59 St & Madison Ave
+5880	6	0.55	E 59 St & Madison Ave
+5881	23	0.11	3 Ave & E 62 St
+5882	22	0.22	3 Ave & E 62 St
+5883	11	0.11	3 Ave & E 62 St
+5884	12	0.11	3 Ave & E 62 St
+5885	5	0.33	3 Ave & E 62 St
+5886	20	0.22	3 Ave & E 62 St
+5887	8	0.11	3 Ave & E 62 St
+5888	21	0.33	3 Ave & E 62 St
+5889	16	0.33	3 Ave & E 62 St
+5890	14	0.87	3 Ave & E 62 St
+5891	7	0.11	3 Ave & E 62 St
+5892	15	0.33	3 Ave & E 62 St
+5893	10	0.11	3 Ave & E 62 St
+5894	0	0.11	3 Ave & E 62 St
+5895	18	0.33	3 Ave & E 62 St
+5896	13	0.76	3 Ave & E 62 St
+5897	1	0.66	3 Ave & E 62 St
+5898	19	0.22	3 Ave & E 62 St
+5899	4	0.33	3 Ave & E 62 St
+5900	9	0.11	3 Ave & E 62 St
+5901	3	0.11	3 Ave & E 62 St
+5902	6	0	3 Ave & E 62 St
+5903	17	0.55	3 Ave & E 62 St
+5904	2	0.33	3 Ave & E 62 St
+5905	0	0	1 Ave & E 62 St
+5906	8	0	1 Ave & E 62 St
+5907	10	0.22	1 Ave & E 62 St
+5908	23	0	1 Ave & E 62 St
+5909	13	0.11	1 Ave & E 62 St
+5910	16	0.11	1 Ave & E 62 St
+5911	1	0	1 Ave & E 62 St
+5912	22	0	1 Ave & E 62 St
+5913	20	0.11	1 Ave & E 62 St
+5914	21	0.11	1 Ave & E 62 St
+5915	12	0.11	1 Ave & E 62 St
+5916	19	0	1 Ave & E 62 St
+5917	14	0	1 Ave & E 62 St
+5918	11	0.33	1 Ave & E 62 St
+5919	15	0	1 Ave & E 62 St
+5920	6	0	1 Ave & E 62 St
+5921	5	0.22	1 Ave & E 62 St
+5922	4	0	1 Ave & E 62 St
+5923	17	0	1 Ave & E 62 St
+5924	2	0	1 Ave & E 62 St
+5925	3	0	1 Ave & E 62 St
+5926	7	0	1 Ave & E 62 St
+5927	18	0.11	1 Ave & E 62 St
+5928	9	0.22	1 Ave & E 62 St
+5929	20	0	E 55 St & 3 Ave
+5930	12	3.82	E 55 St & 3 Ave
+5931	16	0	E 55 St & 3 Ave
+5932	0	0	E 55 St & 3 Ave
+5933	8	0.22	E 55 St & 3 Ave
+5934	17	0	E 55 St & 3 Ave
+5935	10	9.91	E 55 St & 3 Ave
+5936	11	8.06	E 55 St & 3 Ave
+5937	13	3.05	E 55 St & 3 Ave
+5938	21	0.11	E 55 St & 3 Ave
+5939	4	0	E 55 St & 3 Ave
+5940	9	4.47	E 55 St & 3 Ave
+5941	7	0	E 55 St & 3 Ave
+5942	15	0	E 55 St & 3 Ave
+5943	19	0	E 55 St & 3 Ave
+5944	23	0	E 55 St & 3 Ave
+5945	18	0	E 55 St & 3 Ave
+5946	2	0	E 55 St & 3 Ave
+5947	1	0	E 55 St & 3 Ave
+5948	22	0	E 55 St & 3 Ave
+5949	14	0.76	E 55 St & 3 Ave
+5950	5	0	E 55 St & 3 Ave
+5951	3	0	E 55 St & 3 Ave
+5952	6	0	E 55 St & 3 Ave
+5953	13	11.55	W 13 St & Hudson St
+5954	12	9.81	W 13 St & Hudson St
+5955	8	0.98	W 13 St & Hudson St
+5956	20	6.69	W 13 St & Hudson St
+5957	11	13.62	W 13 St & Hudson St
+5958	5	0.11	W 13 St & Hudson St
+5959	23	2.36	W 13 St & Hudson St
+5960	18	2.21	W 13 St & Hudson St
+5961	16	4.03	W 13 St & Hudson St
+5962	22	2.96	W 13 St & Hudson St
+5963	4	0.76	W 13 St & Hudson St
+5964	7	0.22	W 13 St & Hudson St
+5965	21	4.93	W 13 St & Hudson St
+5966	0	1.33	W 13 St & Hudson St
+5967	14	10.03	W 13 St & Hudson St
+5968	9	5.34	W 13 St & Hudson St
+5969	15	7.09	W 13 St & Hudson St
+5970	10	13.51	W 13 St & Hudson St
+5971	19	5.48	W 13 St & Hudson St
+5972	3	0.54	W 13 St & Hudson St
+5973	17	4.05	W 13 St & Hudson St
+5974	1	0.22	W 13 St & Hudson St
+5975	6	0.65	W 13 St & Hudson St
+5976	2	0	W 13 St & Hudson St
+5977	8	31	Penn Station Valet
+5978	13	0.44	Penn Station Valet
+5979	20	0	Penn Station Valet
+5980	4	0	Penn Station Valet
+5981	9	16.34	Penn Station Valet
+5982	21	0	Penn Station Valet
+5983	16	0	Penn Station Valet
+5984	22	0	Penn Station Valet
+5985	23	0	Penn Station Valet
+5986	11	0.22	Penn Station Valet
+5987	1	0	Penn Station Valet
+5988	0	0	Penn Station Valet
+5989	14	0	Penn Station Valet
+5990	3	0	Penn Station Valet
+5991	12	0.11	Penn Station Valet
+5992	10	0.44	Penn Station Valet
+5993	5	7.41	Penn Station Valet
+5994	7	36.6	Penn Station Valet
+5995	6	56.49	Penn Station Valet
+5996	19	0	Penn Station Valet
+5997	18	0	Penn Station Valet
+5998	17	0.33	Penn Station Valet
+5999	15	0	Penn Station Valet
+6000	2	0	Penn Station Valet
+6001	20	0	E 48 St & 5 Ave
+6002	5	0	E 48 St & 5 Ave
+6003	16	0	E 48 St & 5 Ave
+6004	4	0	E 48 St & 5 Ave
+6005	8	6.88	E 48 St & 5 Ave
+6006	10	8.06	E 48 St & 5 Ave
+6007	0	0	E 48 St & 5 Ave
+6008	9	17.21	E 48 St & 5 Ave
+6009	12	3.05	E 48 St & 5 Ave
+6010	21	0	E 48 St & 5 Ave
+6011	19	0	E 48 St & 5 Ave
+6012	23	0	E 48 St & 5 Ave
+6013	17	0.11	E 48 St & 5 Ave
+6014	2	0	E 48 St & 5 Ave
+6015	1	0	E 48 St & 5 Ave
+6016	22	0	E 48 St & 5 Ave
+6017	13	3.16	E 48 St & 5 Ave
+6018	11	4.68	E 48 St & 5 Ave
+6019	15	0.33	E 48 St & 5 Ave
+6020	3	0	E 48 St & 5 Ave
+6021	14	1.53	E 48 St & 5 Ave
+6022	18	0	E 48 St & 5 Ave
+6023	7	0	E 48 St & 5 Ave
+6024	6	0	E 48 St & 5 Ave
+6025	21	0	E 41 St & Madison Ave
+6026	8	0	E 41 St & Madison Ave
+6027	17	0	E 41 St & Madison Ave
+6028	1	0	E 41 St & Madison Ave
+6029	16	0	E 41 St & Madison Ave
+6030	4	0	E 41 St & Madison Ave
+6031	13	2.29	E 41 St & Madison Ave
+6032	20	0	E 41 St & Madison Ave
+6033	6	0	E 41 St & Madison Ave
+6034	5	0	E 41 St & Madison Ave
+6035	10	2.18	E 41 St & Madison Ave
+6036	7	0	E 41 St & Madison Ave
+6037	12	0.65	E 41 St & Madison Ave
+6038	0	0	E 41 St & Madison Ave
+6039	9	0.98	E 41 St & Madison Ave
+6040	18	0	E 41 St & Madison Ave
+6041	23	0	E 41 St & Madison Ave
+6042	11	2.94	E 41 St & Madison Ave
+6043	14	0.98	E 41 St & Madison Ave
+6044	3	0	E 41 St & Madison Ave
+6045	22	0	E 41 St & Madison Ave
+6046	15	0.22	E 41 St & Madison Ave
+6047	19	0	E 41 St & Madison Ave
+6048	2	0	E 41 St & Madison Ave
+6049	1	21.22	PABT Valet
+6050	9	1.09	PABT Valet
+6051	18	1.32	PABT Valet
+6052	5	4.25	PABT Valet
+6053	4	22.11	PABT Valet
+6054	14	0	PABT Valet
+6055	8	0	PABT Valet
+6056	12	0.11	PABT Valet
+6057	7	0.44	PABT Valet
+6058	17	1.53	PABT Valet
+6059	2	22.19	PABT Valet
+6060	15	0.22	PABT Valet
+6061	22	10.09	PABT Valet
+6062	10	1.2	PABT Valet
+6063	13	0	PABT Valet
+6064	6	1.96	PABT Valet
+6065	0	19.56	PABT Valet
+6066	16	1.09	PABT Valet
+6067	20	9.76	PABT Valet
+6068	21	8.99	PABT Valet
+6069	3	22.55	PABT Valet
+6070	19	5.7	PABT Valet
+6071	11	0.65	PABT Valet
+6072	23	15.43	PABT Valet
