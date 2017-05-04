@@ -6,9 +6,42 @@
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.17.4/mapbox-gl-draw.css' type='text/css'/>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.17.4/mapbox-gl-draw.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
+
+        #export, #updateDataset {
+           position: absolute;
+           content:url('icon.png');
+           top:240px;
+           right:10px;
+           z-index:100;
+           background-color:white;
+           color:black;
+           padding:6px;
+           border-radius:4px;
+           font-family: 'Helvetica Neue';
+           cursor: pointer;
+           font-size:12px;
+           text-decoration:none;
+           background-image: url('icon.png');
+           background-repeat: no-repeat;
+           background-position: -4245px -3px;
+           height: 20px;
+           width: 20px;
+       }
+       #export:hover, #updateDataset:hover {
+           background-color: #ddd;
+       }
+       #updateDataset {
+           background-position: -4324px -3px;
+           top: 200px;
+           background-image: url(refresh.png);
+           content:url('reload.png');
+       }
 
         #features {
             position: absolute;
@@ -75,7 +108,7 @@
    }
 
    #menu a:hover {
-       background-color: rgba(250,250,250,0.25);
+       background: #909090;
        color: #404040;
    }
 
@@ -85,9 +118,10 @@
    }
 
    #menu a.active:hover {
-       background: #FFFFFF;
+       background: #909090;
        color: #404040;
    }
+
 
    .calculation-box {
        height: 140px;
@@ -138,6 +172,8 @@
     <div id='calculated-area'></div>
 </div>
 <pre id='features'></pre>
+<a href='#' id='export'></a>
+<a href="#" id='updateDataset'></a>
 
 
 <script>
@@ -148,6 +184,8 @@ var map = new mapboxgl.Map({
     center: [-74.0059, 40.7328], // starting position
     zoom: 12 // starting zoom
 });
+
+
 
 
 map.on('load', function () {
@@ -344,12 +382,9 @@ map.on('mousemove', function (e) {
 
 
 var draw = new MapboxDraw({
-    displayControlsDefault: false,
-    controls: {
-        polygon: true,
-        trash: true
-    }
+    displayControlsDefault: true
 });
+
 map.addControl(draw);
 
 var calcButton = document.getElementById('calculate');
