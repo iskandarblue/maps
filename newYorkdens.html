@@ -53,7 +53,7 @@
        top: 10px;
        right: 10px;
        border-radius: 3px;
-       width: 187px;
+       width: 212px;
        border: 1px solid rgba(0,0,0,0.4);
        font-family: 'Open Sans', sans-serif;
    }
@@ -159,6 +159,23 @@ map.addLayer({
             }
     });
 
+    map.addSource('bikeways', {
+        'type': 'geojson',
+        'data': 'nycbikeways.geojson'
+    });
+
+    map.addLayer({
+     "id": "greenway",
+     "type": "line",
+     "source": "bikeways",
+     "paint": {
+         "line-color": "rgba(76, 196, 23, 1)",
+         "line-width": 3,
+         "line-opacity": 0.8
+
+     }
+ });
+
     map.addSource('censusTracts', {
         'type': 'geojson',
         'data': 'wgs84.geojson'
@@ -211,7 +228,7 @@ map.addLayer({
 
 
     map.addLayer({
-        'id': 'citibike_stations',
+        'id': 'citibike',
         'type': 'circle',
         'source': 'stations',
 
@@ -242,7 +259,7 @@ map.addLayer({
 });
 
 
-var toggleableLayerIds = [ 'contours', 'citibike_stations' ];
+var toggleableLayerIds = [ 'contours', 'citibike', 'greenway' ];
 
 for (var i = 0; i < toggleableLayerIds.length; i++) {
     var id = toggleableLayerIds[i];
@@ -280,7 +297,7 @@ var popup = new mapboxgl.Popup({
 
 map.on('mousemove', function (e) {
     var features = map.queryRenderedFeatures(e.point, {layers: ['dens_invis']});
-    document.getElementById('features').innerHTML = 'Pop density (km'+ '<sup>2</sup>' + '): ' + JSON.stringify(features[0].properties.Pdens2010, null, 2) + '<div>' + 
+    document.getElementById('features').innerHTML = 'Pop density (km'+ '<sup>2</sup>' + '): ' + JSON.stringify(features[0].properties.Pdens2010, null, 2) + '<div>' +
     'Population: ' + JSON.stringify(features[0].properties.census2010_Pop2010, null, 2) + '</div>';
 });
 
