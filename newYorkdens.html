@@ -4,8 +4,8 @@
     <meta charset='utf-8' />
     <title>New York Snapshots</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
@@ -13,11 +13,12 @@
         #features {
             position: absolute;
             top: 50px;
-            right: 10px;
-            width: 200px;
+            right: 50px;
+            width: 190px;
             overflow: auto;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
             padding: 10px;
+            border-radius: 3px;
         }
 
         #full { background: #e55e5e}
@@ -51,7 +52,7 @@
        position: absolute;
        z-index: 1;
        top: 10px;
-       right: 10px;
+       right: 50px;
        border-radius: 3px;
        width: 212px;
        border: 1px solid rgba(0,0,0,0.4);
@@ -88,14 +89,54 @@
        color: #404040;
    }
 
+   .calculation-box {
+       height: 140px;
+       width: 180px;
+       position: absolute;
+       top: 130px;
+       right: 50px;
+       background-color: rgba(255, 255, 255, .9);
+       padding: 15px;
+       border-radius: 3px;
+       text-align: center;
+   }
+
+   #calculate {
+       min-height: 20px;
+       background-color: #404040;
+       color: #fff;
+       font-family: 'Open Sans';
+       border-radius: 5px;
+       padding: 10px;
+       cursor: pointer;
+       margin: 10px 0;
+       top: 200px;
+   }
+
+   p {
+       font-family: 'Open Sans';
+       margin: 0;
+       font-size: 13px;
+   }
+
+
     </style>
 </head>
 <body>
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.17.4/mapbox-gl-draw.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v0.17.4/mapbox-gl-draw.css' type='text/css'/>
 
 
 <div id="logo"></div>
 <nav id="menu"></nav>
 <div id='map'></div>
+<div class='calculation-box'>
+    <p>Draw a polygon using the draw tools.</p>
+    <div id='calculate' class='button button'>Calculate area</div>
+    <div id='calculated-area'></div>
+</div>
 <pre id='features'></pre>
 
 
@@ -300,6 +341,31 @@ map.on('mousemove', function (e) {
     document.getElementById('features').innerHTML = 'Pop density (km'+ '<sup>2</sup>' + '): ' + JSON.stringify(features[0].properties.Pdens2010, null, 2) + '<div>' +
     'Population: ' + JSON.stringify(features[0].properties.census2010_Pop2010, null, 2) + '</div>';
 });
+
+
+var draw = new MapboxDraw({
+    displayControlsDefault: false,
+    controls: {
+        polygon: true,
+        trash: true
+    }
+});
+map.addControl(draw);
+
+var calcButton = document.getElementById('calculate');
+calcButton.onclick = function() {
+    var data = draw.getAll();
+    if (data.features.length > 0) {
+        var area = turf.area(data);
+        // restrict to area to 2 decimal points
+        var rounded_area = Math.round(area*100)/100;
+        var answer = document.getElementById('calculated-area');
+        answer.innerHTML = '<p><strong>' + rounded_area/1000000 + '</strong></p><p>square km</p>';
+    } else {
+        alert("Use the draw tools to draw a polygon!");
+    }
+};
+
 
 
 </script>
