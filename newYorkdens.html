@@ -264,20 +264,23 @@ map.addLayer({
                 'id': 'density',
                 'type': 'fill',
                 'source': 'censusTracts',
+                'layout': {
+            'visibility': 'visible'
+        },
                 "paint": {
                   "fill-color" : {
 
                     "property": "Pdens2010",
                     "stops": [
-                        [1, "yellow"],
-                        [82200, "red"]
+                        [1, "#FFFFFF"],
+                        [82200, "#404040"]
                     ]
                 },
-                'fill-opacity': 0.7,
-                'fill-outline-color': 'rgba(250, 250, 250, 0.0)'
+                'fill-opacity': 0.9,
+                'fill-outline-color': 'rgba(0, 0, 0, 1)'
               }
 
-            }, 'water');
+            }, "water");
 
 
                     map.addLayer({
@@ -293,7 +296,7 @@ map.addLayer({
                                 [82200, "red"]
                             ]
                         },
-                        'fill-opacity': 0.1,
+                        'fill-opacity': 0.0,
                         'fill-outline-color': 'rgba(250, 250, 250, 0.0)'
                       }
 
@@ -380,6 +383,16 @@ map.on('mousemove', function (e) {
     'Population: ' + JSON.stringify(features[0].properties.census2010_Pop2010, null, 2) + '</div>';
 });
 
+
+
+
+$.getJSON('wgs84.geojson', function(data){
+
+    feature = data.features[1].coordinates;
+
+    console.log(feature)
+
+});
 
 var draw = new MapboxDraw({
     displayControlsDefault: true

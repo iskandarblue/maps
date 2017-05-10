@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapbox Vector Tiles</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.1/css/ol.css" type="text/css">
+    <!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+    <script src="https://openlayers.org/en/v4.1.1/build/ol.js"></script>
+    <script src="https://openlayers.org/en/v4.1.1/examples/resources/mapbox-streets-v6-style.js"></script>
+    <style>
+      .map {
+        background: #f8f4f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script>
+      /* eslint-disable openlayers-internal/no-unused-requires */
+
+      var key = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
+
+      var map = new ol.Map({
+        layers: [
+          new ol.layer.VectorTile({
+            source: new ol.source.VectorTile({
+              attributions: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> ' +
+                '© <a href="https://www.openstreetmap.org/copyright">' +
+                'OpenStreetMap contributors</a>',
+              format: new ol.format.MVT(),
+              tileGrid: ol.tilegrid.createXYZ({maxZoom: 22}),
+              tilePixelRatio: 16,
+              url: 'https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/' +
+                  '{z}/{x}/{y}.vector.pbf?access_token=' + key
+            }),
+            style: createMapboxStreetsV6Style()
+          })
+        ],
+        target: 'map',
+        view: new ol.View({
+          center:  ol.proj.fromLonLat([-74.0059, 40.7328]),
+          zoom: 13
+        })
+      });
+
+      // ol.style.Fill, ol.style.Icon, ol.style.Stroke, ol.style.Style and
+      // ol.style.Text are required for createMapboxStreetsV6Style()
+    </script>
+  </body>
+</html>

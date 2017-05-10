@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v9',
+    zoom: 12,
+    center: [-74.0059, 40.7328]
+});
+
+
+  map.on('load', function () {
+
+      map.addLayer({
+          "id": "terrain-data",
+          "type": "fill",
+          "source": {
+              type: 'vector',
+              url: 'mapbox://iskandarblue.560trt95'
+          },
+          "source-layer": "nycPopgeojson",
+          "paint": {
+            "fill-outline-color": "#484896",
+            "fill-color": "#FFFFFF",
+            "fill-opacity": 0.75
+          }
+      });
+  });
+
+
+</script>
+
+</body>
+</html>
