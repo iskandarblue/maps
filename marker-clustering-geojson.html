@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet debug page</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="screen.css" />
+
+	<link rel="stylesheet" href="../dist/MarkerCluster.css" />
+	<link rel="stylesheet" href="../dist/MarkerCluster.Default.css" />
+	<link rel="stylesheet" href="https://cdn.rawgit.com/olton/Metro-UI-CSS/master/build/css/metro-icons.min.css">
+	<script src="../dist/leaflet.markercluster-src.js"></script>
+	<script type="text/javascript" src="geojson-sample.js"></script>
+<script type="text/javascript" src="../dist/leaflet.ajax.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/Leaflet.Icon.Glyph.js"></script>
+
+<style>
+button {
+  position:absolute;
+  top:610px;
+}
+</style>
+
+</head>
+<body>
+
+	<div id="map"></div>
+	<button onclick="togglePoints();">toggle some data!</button>
+	<span>Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds</span>
+	<script type="text/javascript">
+
+		var tiles = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+				maxZoom: 20,
+				attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+			}),
+			latlng = L.latLng(50.0647, 19.9450);
+
+		var map = L.map('map', {center: latlng, zoom: 12, layers: [tiles]});
+
+		//var geojsonLayer = new L.GeoJSON.AJAX("newmap.geojson");
+
+		$.getJSON("newmap.geojson",function(data){
+	    // add GeoJSON layer to the map once the file is loaded
+	    var incidents = L.geoJson(data,{
+	      pointToLayer: function(feature,latlng){
+	        var marker = L.marker(latlng, {icon: L.icon.glyph({ prefix: 'mif', glyph: 'bicycle' }) });
+	        marker.bindPopup('Out of hub at ' + feature.properties.st_x + feature.properties.st_y);
+	        return marker;
+	      }
+
+	    });
+
+//			var pts = L.geoJSON(data, {
+//	pointToLayer: function (feature, latlng) {
+//			return L.circleMarker(latlng, geojsonMarkerOptions);
+//							}
+//					});
+
+	    var clusters = L.markerClusterGroup({maxClusterRadius:25, spiderfyOnMaxZoom:false});
+	    clusters.addLayer(incidents);
+	    map.addLayer(clusters);
+
+
+ });
+
+
+
+
+	</script>
+</body>
+</html>
