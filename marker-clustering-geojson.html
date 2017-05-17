@@ -47,7 +47,7 @@ button {
 	    // add GeoJSON layer to the map once the file is loaded
 	    var incidents = L.geoJson(data,{
 	      pointToLayer: function(feature,latlng){
-	        var marker = L.marker(latlng, {icon: L.Icon.Glyph({ prefix: 'mif', glyph: 'bicycle' }) });
+	        var marker = L.marker(latlng, {icon: L.icon.glyph({ prefix: 'mif', glyph: 'bicycle' }) });
 	        marker.bindPopup('Out of hub at ' + feature.properties.st_x + feature.properties.st_y);
 	        return marker;
 	      }
