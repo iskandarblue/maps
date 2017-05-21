@@ -1240,7 +1240,7 @@ function addDataLayer(){
 
   map.addSource('city', {
       "type": 'geojson',
-      "data": 'bycity1805.geojson'
+      "data": 'bycitiesALL.geojson'
   });
   map.addLayer({
       "id": "city",
@@ -1253,6 +1253,39 @@ function addDataLayer(){
         "icon-allow-overlap": true,
       }
   });
+
+  map.addSource('cityPHD', {
+      "type": 'geojson',
+      "data": 'bycitiesPHD.geojson'
+  });
+  map.addLayer({
+      "id": "cityPHD",
+      "type": "symbol",
+      "source": "cityPHD",
+      "layout":{
+        "visibility": "none",
+        "icon-image": "marker-11",
+        "icon-offset": [0, -7.5],
+        "icon-allow-overlap": true,
+      }
+  });
+
+  map.addSource('cityMASTERS', {
+      "type": 'geojson',
+      "data": 'bycitiesMasters.geojson'
+  });
+  map.addLayer({
+      "id": "cityMASTERS",
+      "type": "symbol",
+      "source": "cityMASTERS",
+      "layout":{
+        "visibility": "none",
+        "icon-image": "marker-11",
+        "icon-offset": [0, -7.5],
+        "icon-allow-overlap": true,
+      }
+  });
+
     map.addSource('uni', {
         "type": 'geojson',
         "data": 'bycourses1605.geojson'
@@ -1480,33 +1513,66 @@ setTimeout(function() {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
-           listingEl.innerHTML = '';
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
 
+
+           listingEl.innerHTML = '';
 
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
             ff.placeholder = 'Filter results or click city name'
             program.className = 'mode'
-            map.setLayoutProperty('city', 'visibility', 'visible');
             map.setLayoutProperty('uni', 'visibility', 'none');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
             map.setLayoutProperty('uni_icon', 'visibility', 'none');
+
             document.getElementById("program_title").style.display = "none";
 
+            if(phd.className === 'mode-selected'){
+              map.setLayoutProperty('city', 'visibility', 'none')
+              map.setLayoutProperty('cityPHD', 'visibility', 'visible');
+              map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
+            }else if (masters.className === 'mode-selected'){
+              map.setLayoutProperty('city', 'visibility', 'none')
+              map.setLayoutProperty('cityPHD', 'visibility', 'none');
+              map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
+            } else if (all.className === 'mode-selected'){
+            map.setLayoutProperty('city', 'visibility', 'visible')
+            map.setLayoutProperty('cityPHD', 'visibility', 'none');
+            map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
 
-          } else {
-            city.className = 'mode'
-            program.className = 'mode-selected'
-            ff.placeholder = 'Filter or click program name'
-            map.setLayoutProperty('city', 'visibility', 'none');
-            map.setLayoutProperty('uni', 'visibility', 'visible');
-        };
+          } else {console.log("fail")}
+        } else {
 
-        var delayMillis = 500;
+          ff.placeholder = 'Filter results or click city name'
+          program.className = 'mode'
+          document.getElementById("program_title").style.display = "none";
+
+          if (phd.className === 'mode-selected'){
+            map.setLayoutProperty('cityPHD', 'visibility', 'visible');
+            map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
+          } else if (masters.className === 'mode-selected'){
+            map.setLayoutProperty('cityPHD', 'visibility', 'none');
+            map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
+          } else if (all.className === 'mode-selected'){
+          } else if (masters.className === 'mode-selected'){
+            map.setLayoutProperty('cityPHD', 'visibility', 'none');
+            map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+          map.setLayoutProperty('city', 'visibility', 'visible')
+          map.setLayoutProperty('uni', 'visibility', 'none');
+          map.setLayoutProperty('uni_select', 'visibility', 'none');
+          map.setLayoutProperty('uni_icon', 'visibility', 'none');
+
+        }
+      };
+
+        var delayMillis = 1000;
 
         setTimeout(function() {
 
-          var features = map.queryRenderedFeatures({layers:['city', 'uni']});
+          var features = map.queryRenderedFeatures({layers:['city', 'uni', 'cityPHD', 'cityMASTERS']});
 
           console.log(features);
 
@@ -1559,7 +1625,7 @@ setTimeout(function() {
 
             };
 
-              var delayMillis = 250;
+              var delayMillis = 1000;
 
               setTimeout(function() {
 
@@ -1591,34 +1657,37 @@ setTimeout(function() {
           var masters = document.getElementById('masters');
           var all = document.getElementById('all');
           var phd = document.getElementById('phd');
+          var city = document.getElementById('city');
+          var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
 
                 filterEl.value = '';
                 listingEl.innerHTML = '';
 
-              if (all.className === 'mode') {
+              if (all.className === 'mode'){
                 all.className = 'mode-selected'
                 phd.className = 'mode'
                 masters.className = 'mode'
+
+              if(program.className === 'mode-selected'){
                 ff.placeholder = 'Filter results by program name'
                 map.setFilter('uni', ['!=', 'cat', 'fff'])
                 map.setLayoutProperty('uni', 'visibility', 'visible');
-                map.setLayoutProperty('city', 'visibility', 'none');
                 map.setLayoutProperty('uni_select', 'visibility', 'none');
-          //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+                map.setLayoutProperty('city', 'visibility', 'none');
 
               } else {
-                program.className = 'mode'
                 city.className = 'mode-selected'
-                ff.placeholder = 'Filter or click city name'
+                ff.placeholder = 'Filter results by city name'
                 map.setLayoutProperty('city', 'visibility', 'visible');
+                map.setLayoutProperty('cityPHD', 'visibility', 'none');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
                 map.setLayoutProperty('uni', 'visibility', 'none');
                 map.setLayoutProperty('uni_select', 'visibility', 'none');
-                map.setLayoutProperty('uni_code', 'visibility', 'none');
+              }
+            };
 
-              };
-
-                var delayMillis = 500;
+                var delayMillis = 1000;
 
                 setTimeout(function() {
 
@@ -1651,6 +1720,9 @@ setTimeout(function() {
               var masters = document.getElementById('masters');
               var all = document.getElementById('all');
               var phd = document.getElementById('phd');
+              var city = document.getElementById('city');
+              var program = document.getElementById('program');
+             var ff = document.getElementById('feature-filter');
 
                 filterEl.value = '';
                 listingEl.innerHTML = '';
@@ -1659,28 +1731,29 @@ setTimeout(function() {
                 masters.className = 'mode-selected'
                 phd.className = 'mode'
                 all.className = 'mode'
+
+                if (program.className === 'mode-selected'){
                 map.setFilter('uni', ['==', 'cat', 'EMJMD'])
+                ff.placeholder = 'Filter by program name'
+                map.setLayoutProperty('uni', 'visibility', 'visible');
                 map.setLayoutProperty('city', 'visibility', 'none');
                 map.setLayoutProperty('uni_select', 'visibility', 'none');
-
-          //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
-
-              } else {
-                program.className = 'mode'
-                city.className = 'mode-selected'
+              }else{
                 ff.placeholder = 'Filter or click city name'
-                map.setLayoutProperty('city', 'visibility', 'visible');
-                map.setLayoutProperty('uni', 'visibility', 'none');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
+                map.setLayoutProperty('city', 'visibility', 'none')
                 map.setLayoutProperty('uni_select', 'visibility', 'none');
-                map.setLayoutProperty('uni_code', 'visibility', 'none');
+                map.setLayoutProperty('uni', 'visibility', 'none');
+              }
 
+            } else { console.log("fail")
               };
 
-                var delayMillis = 500;
+                var delayMillis = 1000;
 
                 setTimeout(function() {
 
-                  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+                  var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityMASTERS']});
 
                   console.log(features)
 
@@ -1710,6 +1783,8 @@ setTimeout(function() {
                 var masters = document.getElementById('masters');
                 var all = document.getElementById('all');
                 var phd = document.getElementById('phd');
+                var city = document.getElementById('city');
+                var program = document.getElementById('program');
 
                   filterEl.value = '';
                   listingEl.innerHTML = '';
@@ -1718,9 +1793,18 @@ setTimeout(function() {
                   phd.className = 'mode-selected'
                   masters.className = 'mode'
                   all.className = 'mode'
+
+                  if (program.className === 'mode-selected'){
                   map.setFilter('uni', ['==', 'cat', 'EMJD'])
                   map.setLayoutProperty('city', 'visibility', 'none');
                   map.setLayoutProperty('uni_select', 'visibility', 'none');
+                }else{
+                  map.setLayoutProperty('cityPHD', 'visibility', 'visible');
+                  map.setLayoutProperty('city', 'visibility', 'none')
+                  map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+                  map.setLayoutProperty('uni_select', 'visibility', 'none');
+                  map.setLayoutProperty('uni', 'visibility', 'none');
+                }
 
             //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
@@ -1739,7 +1823,7 @@ setTimeout(function() {
 
                   setTimeout(function() {
 
-                    var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+                    var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityPHD']});
 
                     console.log(features)
 
@@ -1779,7 +1863,7 @@ setTimeout(function() {
             map.setFilter('uni', ['==', 'cat', 'EMJMD'])
           } else if (phd.className == 'mode-selected'){
             map.setFilter('uni', ['==', 'cat', 'EMJD'])
-          } else {console.log('nothing selected')
+          } else if(all.className == 'modes'){console.log('nothing selected')
           };
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
@@ -1820,7 +1904,7 @@ sorted = uniqueFeatures.sort(compare);
         });
 
 map.on('moveend', function() {
-     var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+     var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityPHD', 'cityMASTERS']});
 
      if (features) {
          var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -1946,7 +2030,7 @@ map.on('moveend', function() {
 } else if (city.className === "mode-selected") {
 
   var features = map.queryRenderedFeatures(e.point, {
-      layers: ['city']
+      layers: ['city', 'cityPHD', 'cityMASTERS']
   });
 
   // Change the cursor style as a UI indicator.
