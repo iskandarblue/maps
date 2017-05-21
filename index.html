@@ -372,7 +372,7 @@
 }
 
 .mode-selected {
-  background: #43cea2;
+  background: rgba(0, 128, 225, 1);
 }
 
 .mode:hover, .mode:active,
@@ -532,6 +532,7 @@ overflow: auto;
           line-height: 28px;
           color: #eee;
           border-radius: 10px;
+          border: 1px solid white;
           z-index: 3;
           cursor: pointer;
           margin-top: 0px;
@@ -910,7 +911,16 @@ function renderListings(features) {
             var ymax = feature.properties.ymax;
             var item = document.createElement('a');
             var status = feature.properties.status.trim()
+            var ongoing = feature.properties.ongoing2015_2017
 
+
+                                function hideNulls(str) {
+                                if (str === "null" || str === "") {
+                                  return ""
+                              } else {
+                                  return str
+                              }
+                            }
 
             function hideNulls(str) {
               if (str === "null" || str === "") {
@@ -1102,7 +1112,6 @@ function renderListings(features) {
 
               function colored(str){
                   if (str === "NEW"){
-
                     return "#3399ff"
 
                   } else {
@@ -1564,7 +1573,7 @@ setTimeout(function() {
         }
       };
 
-        var delayMillis = 1000;
+        var delayMillis = 500;
 
         setTimeout(function() {
 
@@ -1674,7 +1683,7 @@ setTimeout(function() {
         }
             };
 
-              var delayMillis = 1000;
+              var delayMillis = 500;
 
               setTimeout(function() {
 
@@ -1736,7 +1745,7 @@ setTimeout(function() {
               }
             };
 
-                var delayMillis = 1000;
+                var delayMillis = 500;
 
                 setTimeout(function() {
 
@@ -1798,7 +1807,7 @@ setTimeout(function() {
             } else { console.log("fail")
               };
 
-                var delayMillis = 1000;
+                var delayMillis = 500;
 
                 setTimeout(function() {
 
@@ -1873,7 +1882,7 @@ setTimeout(function() {
 
                 };
 
-                  var delayMillis = 1000;
+                  var delayMillis = 500;
 
                   setTimeout(function() {
 
