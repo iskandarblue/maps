@@ -358,7 +358,8 @@
   line-height: 28px;
   color: #fff;
   width: 100px;
-  border-radius: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
   z-index: 1;
   cursor: pointer;
   font-weight: 600;
@@ -367,9 +368,9 @@
   margin-top: 5px;
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
-  padding: 5px 10px;
+  padding: 5px 5px;
   text-align: center;
-  background: rgba(12, 12, 12, 0.7);
+  background: rgba(18, 18, 18, 0.7);
 }
 
 .mode-selected {
@@ -441,7 +442,7 @@
 }
 
 .map-overlay .listing a:hover {
-    background: rgba(146, 254, 157, 0.1);
+    background: rgba(0, 128, 225, 0.3);
     cursor: pointer;
 }
 
@@ -800,6 +801,9 @@ overflow: auto;
   <div id='about-link'></div>
   <div class = 'mode-selected' id='program'>Program</div>
   <div class = 'mode' id='city'>City</div>
+  <div class = 'mode-selected' id='all'>All</div>
+  <div class = 'mode' id='masters'>Masters</div>
+  <div class = 'mode' id='phd'>PhD</div>
 </div>
 </div>
     <fieldset>
@@ -1236,7 +1240,7 @@ function addDataLayer(){
 
   map.addSource('city', {
       "type": 'geojson',
-      "data": 'newCities.geojson'
+      "data": 'bycity1805.geojson'
   });
   map.addLayer({
       "id": "city",
@@ -1251,7 +1255,7 @@ function addDataLayer(){
   });
     map.addSource('uni', {
         "type": 'geojson',
-        "data": 'updateProgram.geojson'
+        "data": 'bycourses1605.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -1479,7 +1483,6 @@ setTimeout(function() {
            listingEl.innerHTML = '';
 
 
-
           if (city.className ===  'mode') {
             city.className = 'mode-selected'
             ff.placeholder = 'Filter results or click city name'
@@ -1499,7 +1502,7 @@ setTimeout(function() {
             map.setLayoutProperty('uni', 'visibility', 'visible');
         };
 
-        var delayMillis = 250;
+        var delayMillis = 500;
 
         setTimeout(function() {
 
@@ -1584,10 +1587,200 @@ setTimeout(function() {
 
         });
 
+        document.getElementById('all').addEventListener('click', function () {
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
+          var ff = document.getElementById('feature-filter');
+
+                filterEl.value = '';
+                listingEl.innerHTML = '';
+
+              if (all.className === 'mode') {
+                all.className = 'mode-selected'
+                phd.className = 'mode'
+                masters.className = 'mode'
+                ff.placeholder = 'Filter results by program name'
+                map.setFilter('uni', ['!=', 'cat', 'fff'])
+                map.setLayoutProperty('uni', 'visibility', 'visible');
+                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('uni_select', 'visibility', 'none');
+          //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+
+              } else {
+                program.className = 'mode'
+                city.className = 'mode-selected'
+                ff.placeholder = 'Filter or click city name'
+                map.setLayoutProperty('city', 'visibility', 'visible');
+                map.setLayoutProperty('uni', 'visibility', 'none');
+                map.setLayoutProperty('uni_select', 'visibility', 'none');
+                map.setLayoutProperty('uni_code', 'visibility', 'none');
+
+              };
+
+                var delayMillis = 500;
+
+                setTimeout(function() {
+
+                  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+                  if (features) {
+                      var uniqueFeatures = getUniqueFeatures(features, "code");
+
+                      function compare(a,b) {
+                  if (a.properties.code < b.properties.code)
+                    return -1;
+                  if (a.properties.code > b.properties.code)
+                    return 1;
+                  return 0;
+                }
+
+                sorted = uniqueFeatures.sort(compare);
+                      // Populate features for the listing overlay.
+                      renderListings(sorted);
+                      programs = sorted
+
+                    };
+
+                }, delayMillis);
+
+          });
+
+
+        document.getElementById('masters').addEventListener('click', function () {
+              var masters = document.getElementById('masters');
+              var all = document.getElementById('all');
+              var phd = document.getElementById('phd');
+
+                filterEl.value = '';
+                listingEl.innerHTML = '';
+
+              if(masters.className === 'mode') {
+                masters.className = 'mode-selected'
+                phd.className = 'mode'
+                all.className = 'mode'
+                map.setFilter('uni', ['==', 'cat', 'EMJMD'])
+                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('uni_select', 'visibility', 'none');
+
+          //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+
+              } else {
+                program.className = 'mode'
+                city.className = 'mode-selected'
+                ff.placeholder = 'Filter or click city name'
+                map.setLayoutProperty('city', 'visibility', 'visible');
+                map.setLayoutProperty('uni', 'visibility', 'none');
+                map.setLayoutProperty('uni_select', 'visibility', 'none');
+                map.setLayoutProperty('uni_code', 'visibility', 'none');
+
+              };
+
+                var delayMillis = 500;
+
+                setTimeout(function() {
+
+                  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+                  console.log(features)
+
+                  if (features) {
+                      var uniqueFeatures = getUniqueFeatures(features, "code");
+
+                      function compare(a,b) {
+                  if (a.properties.code < b.properties.code)
+                    return -1;
+                  if (a.properties.code > b.properties.code)
+                    return 1;
+                  return 0;
+                }
+
+                sorted = uniqueFeatures.sort(compare);
+                      // Populate features for the listing overlay.
+                      renderListings(sorted);
+                      programs = sorted
+
+                    };
+
+                }, delayMillis);
+
+          });
+
+          document.getElementById('phd').addEventListener('click', function () {
+                var masters = document.getElementById('masters');
+                var all = document.getElementById('all');
+                var phd = document.getElementById('phd');
+
+                  filterEl.value = '';
+                  listingEl.innerHTML = '';
+
+                if(phd.className === 'mode') {
+                  phd.className = 'mode-selected'
+                  masters.className = 'mode'
+                  all.className = 'mode'
+                  map.setFilter('uni', ['==', 'cat', 'EMJD'])
+                  map.setLayoutProperty('city', 'visibility', 'none');
+                  map.setLayoutProperty('uni_select', 'visibility', 'none');
+
+            //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
+
+                } else {
+                  program.className = 'mode'
+                  city.className = 'mode-selected'
+                  ff.placeholder = 'Filter or click city name'
+                  map.setLayoutProperty('city', 'visibility', 'visible');
+                  map.setLayoutProperty('uni', 'visibility', 'none');
+                  map.setLayoutProperty('uni_select', 'visibility', 'none');
+                  map.setLayoutProperty('uni_code', 'visibility', 'none');
+
+                };
+
+                  var delayMillis = 1000;
+
+                  setTimeout(function() {
+
+                    var features = map.queryRenderedFeatures({layers:['uni', 'city']});
+
+                    console.log(features)
+
+                    if (features) {
+                        var uniqueFeatures = getUniqueFeatures(features, "code");
+
+                        function compare(a,b) {
+                    if (a.properties.code < b.properties.code)
+                      return -1;
+                    if (a.properties.code > b.properties.code)
+                      return 1;
+                    return 0;
+                  }
+
+                  sorted = uniqueFeatures.sort(compare);
+                        // Populate features for the listing overlay.
+                        renderListings(sorted);
+                        programs = sorted
+
+                      };
+
+                  }, delayMillis);
+
+            });
+
+
 //closes left panel
 
         document.getElementById('interest-close').addEventListener('click', function () {
           listingEl.innerHTML = '';
+
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
+
+          if(masters.className == 'mode-selected'){
+            map.setFilter('uni', ['==', 'cat', 'EMJMD'])
+          } else if (phd.className == 'mode-selected'){
+            map.setFilter('uni', ['==', 'cat', 'EMJD'])
+          } else {console.log('nothing selected')
+          };
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
@@ -1598,7 +1791,7 @@ setTimeout(function() {
             $("#interest").fadeOut("slow");
               $("#program_title").fadeOut("slow")
 
-var delayMillis = 250; // .25 seconds
+var delayMillis = 550; // .25 seconds
 
 setTimeout(function() {
 
