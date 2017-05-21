@@ -1597,6 +1597,9 @@ setTimeout(function() {
             var city = document.getElementById('city');
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
+            var masters = document.getElementById('masters');
+            var all = document.getElementById('all');
+            var phd = document.getElementById('phd');
 
               filterEl.value = '';
               listingEl.innerHTML = '';
@@ -1608,17 +1611,67 @@ setTimeout(function() {
               map.setLayoutProperty('uni', 'visibility', 'visible');
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
+
+              if(all.className === 'mode-selected'){
+                map.setFilter('uni', ['!=', 'cat', 'fff'])
+                map.setLayoutProperty('uni', 'visibility', 'visible');
+                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+                map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+              } else if (phd.className === 'mode-selected'){
+
+                map.setFilter('uni', ['==', 'cat', 'EMJD'])
+                map.setLayoutProperty('uni', 'visibility', 'visible');
+                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+                map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+
+              } else if (masters.className === 'mode-selected'){
+
+                map.setFilter('uni', ['==', 'cat', 'EMJMD'])
+                map.setLayoutProperty('uni', 'visibility', 'visible');
+                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+                map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+              }
         //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
-            } else {
-              program.className = 'mode'
-              city.className = 'mode-selected'
-              ff.placeholder = 'Filter or click city name'
-              map.setLayoutProperty('city', 'visibility', 'visible');
-              map.setLayoutProperty('uni', 'visibility', 'none');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('uni_code', 'visibility', 'none');
+      } else {
 
+        city.className = 'mode'
+        ff.placeholder = 'Filter results by program name'
+        map.setLayoutProperty('uni', 'visibility', 'visible');
+        map.setLayoutProperty('city', 'visibility', 'none');
+        map.setLayoutProperty('uni_select', 'visibility', 'none');
+
+        if(all.className === 'mode-selected'){
+          map.setFilter('uni', ['!=', 'cat', 'fff'])
+          map.setLayoutProperty('uni', 'visibility', 'visible');
+          map.setLayoutProperty('city', 'visibility', 'none');
+          map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+          map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+        } else if (phd.className === 'mode-selected'){
+
+          map.setFilter('uni', ['==', 'cat', 'EMJD'])
+          map.setLayoutProperty('uni', 'visibility', 'visible');
+          map.setLayoutProperty('city', 'visibility', 'none');
+          map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+          map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+
+        } else if (masters.className === 'mode-selected'){
+
+          map.setFilter('uni', ['==', 'cat', 'EMJMD'])
+          map.setLayoutProperty('uni', 'visibility', 'visible');
+          map.setLayoutProperty('city', 'visibility', 'none');
+          map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+          map.setLayoutProperty('cityPHD', 'visibility', 'none')
+
+        }
             };
 
               var delayMillis = 1000;
@@ -1805,13 +1858,18 @@ setTimeout(function() {
             //      document.getElementById("appended-p").innerHTML = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
                 } else {
-                  program.className = 'mode'
-                  city.className = 'mode-selected'
-                  ff.placeholder = 'Filter or click city name'
-                  map.setLayoutProperty('city', 'visibility', 'visible');
-                  map.setLayoutProperty('uni', 'visibility', 'none');
+
+                  if (program.className === 'mode-selected'){
+                  map.setFilter('uni', ['==', 'cat', 'EMJD'])
+                  map.setLayoutProperty('city', 'visibility', 'none');
                   map.setLayoutProperty('uni_select', 'visibility', 'none');
-                  map.setLayoutProperty('uni_code', 'visibility', 'none');
+                }else{
+                  map.setLayoutProperty('cityPHD', 'visibility', 'visible');
+                  map.setLayoutProperty('city', 'visibility', 'none')
+                  map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+                  map.setLayoutProperty('uni_select', 'visibility', 'none');
+                  map.setLayoutProperty('uni', 'visibility', 'none');
+                }
 
                 };
 
