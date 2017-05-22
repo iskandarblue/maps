@@ -58,64 +58,6 @@
 </head>
 <style>
 
-.dropbtn {
-    background-color: rgba(0, 128, 225, 1);
-    color: white;
-    display: inline-block;
-    height: 38px;
-    line-height: 28px;
-    padding: 16px;
-    font-size: 16px;
-    border: 1px solid white;
-    font-weight: 600;
-    font-size: 16px;
-    margin-right: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    padding: 5px 5px;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 101010;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-    z-index: 101010;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Open Sans', sans-serif;
-    float: left;
-    padding: 1px 1px;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: rgba(80, 128, 225, 1);
-}
-
     #program_title{
       position: absolute;
       z-index: 2;
@@ -398,10 +340,6 @@
 
     border-radius: 5px;
     background: '#ff4b1f';
-  }
-
-  #drops {
-
   }
 
   #modes {
@@ -860,26 +798,10 @@ overflow: auto;
   <div id='about-link'></div>
   <div class = 'mode-selected' id='program'>Program</div>
   <div class = 'mode' id='city'>City</div>
-  <!--  <div class = 'mode-selected' id='all'>All</div> -->
-  <!--    <div class = 'mode' id='masters'>Masters</div> -->
-  <!--    <div class = 'mode' id='phd'>PhD</div> -->
-  <div class="dropdown">
-  <button class="dropbtn" id="dropbtn">Degree</button>
-  <div class="dropdown-content" id="dropdown-content">
-    <a href="#">Masters</a>
-    <a href="#">PhD</a>
-    <a href="#">All</a>
-  </div>
+  <div class = 'mode-selected' id='all'>All</div>
+  <div class = 'mode' id='masters'>Masters</div>
+  <div class = 'mode' id='phd'>PhD</div>
 </div>
-<div class="dropdown">
-<button class="dropbtn" id="ongoing">Period</button>
-<div class="dropdown-content" id="ongoing-content">
-<a href="#">Past</a>
-<a href="#">Current</a>
-</div>
-</div>
-</div>
-
 </div>
     <fieldset>
         <input id='feature-filter' type='text' placeholder='Filter reults or click program' />
@@ -888,17 +810,6 @@ overflow: auto;
 </div>
 
 <script>
-
-var btn = document.getElementById('dropbtn'),
-		links = document.getElementById('dropdown-content').getElementsByTagName('a');
-
-var btnB = document.getElementById('ongoing'),
-    linksB = document.getElementById('ongoing-content').getElementsByTagName('a');
-
-
-var words = document.getElementById('dropbtn').textContent
-
-
 /*
 $(window).load(function() {
 		// Animate loader off screen
@@ -1003,13 +914,13 @@ function renderListings(features) {
             var ongoing = feature.properties.ongoing2015_2017
 
 
-          function deprecated(str) {
-                if (str === 1 ) {
-                  return ""
-              } else {
-                  return "D/C"
-              }
-            }
+                                function hideNulls(str) {
+                                if (str === "null" || str === "") {
+                                  return ""
+                              } else {
+                                  return str
+                              }
+                            }
 
             function hideNulls(str) {
               if (str === "null" || str === "") {
@@ -1032,7 +943,7 @@ function renderListings(features) {
 //Content of the listing
 
             item.target = '_blank';
-            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>' +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color: #ff6666"><i>' + deprecated(ongoing) + '</i></div>';
+            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
 
 //Program mode - on click zoom to extent with fitBounds
             item.addEventListener('click', function(){
@@ -1097,7 +1008,7 @@ function renderListings(features) {
 
                map.setLayoutProperty('uni_select', 'visibility', 'none');
             setTimeout(function() {
-               item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>' +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:#ff6666"><i>' + deprecated(ongoing) + '</i></div>';
+               item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>';
                item.style.fontWeight = 400;
                item.style.color = 'rgba(255, 255, 255, 0.9)';
                item.style.borderRadius = 0 + 'px';
@@ -1108,7 +1019,7 @@ function renderListings(features) {
 
             listingEl.appendChild(item);
             var itemList = document.getElementById("feature-listing");
-
+            console.log(itemList);
         });
 
         // Show the filter input
@@ -1246,13 +1157,8 @@ function renderListings(features) {
         var city = document.getElementById('city');
         var program = document.getElementById('program');
         var country = document.getElementById('country');
-      //  document.getElementById('dropdown-content').textContent = 'Blah'
-      //  document.getElementById('ongoing-content').textContent = 'Blah'
-
 
         var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
-
-
 
 
         empty.innerHTML = variable1
@@ -1446,6 +1352,7 @@ function addDataLayer(){
     "filter": ["==", "code", ""]
 });
 
+
     map.addLayer({
         "id": "uni_icon",
         "type": "symbol",
@@ -1470,6 +1377,7 @@ map.on('style.load', function (e) {
 });
 
 
+
 function animateMarker(timestamp) {
     setTimeout(function(){
         requestAnimationFrame(animateMarker);
@@ -1488,8 +1396,11 @@ function animateMarker(timestamp) {
     }, 1000 / framesPerSecond);
 
 }
+
 // Start the animation.
 animateMarker(0);
+
+
 
 //Create hover effect with countries
 map.on('load', function () {
@@ -1575,7 +1486,7 @@ for (var i = 0; i < inputs.length; i++) {
     inputs[i].onclick = switchLayer;
 }
 
-var delayMillis = 100;
+var delayMillis = 10;
 
 setTimeout(function() {
 
@@ -1604,14 +1515,13 @@ setTimeout(function() {
 }, delayMillis);
 
     document.getElementById('city').addEventListener('click', function () {
-
-          var ongoing = document.getElementById('ongoing')
-          var degree = document.getElementById('dropbtn')
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
 
-      ongoing.style.display = 'none';
 
            listingEl.innerHTML = '';
 
@@ -1625,15 +1535,15 @@ setTimeout(function() {
 
             document.getElementById("program_title").style.display = "none";
 
-            if(degree.textContent === 'PhD'){
+            if(phd.className === 'mode-selected'){
               map.setLayoutProperty('city', 'visibility', 'none')
               map.setLayoutProperty('cityPHD', 'visibility', 'visible');
               map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
-            } else if (degree.textContent === 'Masters'){
+            }else if (masters.className === 'mode-selected'){
               map.setLayoutProperty('city', 'visibility', 'none')
               map.setLayoutProperty('cityPHD', 'visibility', 'none');
               map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
-            } else if (degree.textContent === 'All' || degree.textContent === "Degree"){
+            } else if (all.className === 'mode-selected'){
             map.setLayoutProperty('city', 'visibility', 'visible')
             map.setLayoutProperty('cityPHD', 'visibility', 'none');
             map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
@@ -1645,21 +1555,22 @@ setTimeout(function() {
           program.className = 'mode'
           document.getElementById("program_title").style.display = "none";
 
-          if (degree.textContent === 'PhD'){
+          if (phd.className === 'mode-selected'){
             map.setLayoutProperty('cityPHD', 'visibility', 'visible');
             map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
-          } else if (degree.textContent === 'Masters'){
+          } else if (masters.className === 'mode-selected'){
             map.setLayoutProperty('cityPHD', 'visibility', 'none');
             map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
-          } else if (degree.textContent === 'All'  || degree.textContent === 'Degree'){
-          map.setLayoutProperty('cityPHD', 'visibility', 'none');
-          map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
+          } else if (all.className === 'mode-selected'){
+          } else if (masters.className === 'mode-selected'){
+            map.setLayoutProperty('cityPHD', 'visibility', 'none');
+            map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
           map.setLayoutProperty('city', 'visibility', 'visible')
           map.setLayoutProperty('uni', 'visibility', 'none');
           map.setLayoutProperty('uni_select', 'visibility', 'none');
           map.setLayoutProperty('uni_icon', 'visibility', 'none');
 
-        } else {console.log("fail")}
+        }
       };
 
         var delayMillis = 500;
@@ -1692,15 +1603,12 @@ setTimeout(function() {
       });
 
       document.getElementById('program').addEventListener('click', function () {
-
-            var x = document.getElementById('ongoing');
             var city = document.getElementById('city');
             var program = document.getElementById('program');
             var ff = document.getElementById('feature-filter');
-            var degree = document.getElementById('dropbtn')
-            var ongoing = document.getElementById('ongoing').textContent
-
-        x.style.display = 'block';
+            var masters = document.getElementById('masters');
+            var all = document.getElementById('all');
+            var phd = document.getElementById('phd');
 
               filterEl.value = '';
               listingEl.innerHTML = '';
@@ -1713,24 +1621,23 @@ setTimeout(function() {
               map.setLayoutProperty('city', 'visibility', 'none');
               map.setLayoutProperty('uni_select', 'visibility', 'none');
 
-              if(degree.textContent === 'Degree' || degree.textContent === 'All' && ongoing === 'Current' || ongoing === 'Period'){
-
-                map.setFilter('uni', ['==', 'cat', 'fff'])
+              if(all.className === 'mode-selected'){
+                map.setFilter('uni', ['!=', 'cat', 'fff'])
                 map.setLayoutProperty('uni', 'visibility', 'visible');
                 map.setLayoutProperty('city', 'visibility', 'none');
                 map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
                 map.setLayoutProperty('cityPHD', 'visibility', 'none')
 
-              } else if (degree.textContent === 'PhD'  && ongoing === 'Current' || ongoing === 'Period'){
+              } else if (phd.className === 'mode-selected'){
 
-                var new_Filter = ["all",["==", 'ongoing2015_2017', 1],["==", 'cat', 'EMJD']];
-                map.setFilter('uni', new_Filter)
+                map.setFilter('uni', ['==', 'cat', 'EMJD'])
                 map.setLayoutProperty('uni', 'visibility', 'visible');
                 map.setLayoutProperty('city', 'visibility', 'none');
                 map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
                 map.setLayoutProperty('cityPHD', 'visibility', 'none')
 
-              } else if (degree.textContent === 'Masters'){
+
+              } else if (masters.className === 'mode-selected'){
 
                 map.setFilter('uni', ['==', 'cat', 'EMJMD'])
                 map.setLayoutProperty('uni', 'visibility', 'visible');
@@ -1749,26 +1656,23 @@ setTimeout(function() {
         map.setLayoutProperty('city', 'visibility', 'none');
         map.setLayoutProperty('uni_select', 'visibility', 'none');
 
-        if(degree.textContent === 'Degree' && ongoing === 'Period'){
-
+        if(all.className === 'mode-selected'){
           map.setFilter('uni', ['!=', 'cat', 'fff'])
           map.setLayoutProperty('uni', 'visibility', 'visible');
           map.setLayoutProperty('city', 'visibility', 'none');
           map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
           map.setLayoutProperty('cityPHD', 'visibility', 'none')
 
+        } else if (phd.className === 'mode-selected'){
 
-        } else if (degree.textContent === 'PhD' && ongoing == 'Current'){
-
-          var new_Filter = ["all",["==", 'ongoing2015_2017', 1],["==", 'cat', 'EMJD']];
-          map.setFilter('uni', new_Filter)
+          map.setFilter('uni', ['==', 'cat', 'EMJD'])
           map.setLayoutProperty('uni', 'visibility', 'visible');
           map.setLayoutProperty('city', 'visibility', 'none');
           map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
           map.setLayoutProperty('cityPHD', 'visibility', 'none')
 
 
-        } else if (degree.textContent === 'Masters'){
+        } else if (masters.className === 'mode-selected'){
 
           map.setFilter('uni', ['==', 'cat', 'EMJMD'])
           map.setLayoutProperty('uni', 'visibility', 'visible');
@@ -1778,130 +1682,6 @@ setTimeout(function() {
 
         }
             };
-
-              var delayMillis = 1000;
-
-              setTimeout(function() {
-
-                var features = map.queryRenderedFeatures({layers:['uni', 'city']});
-
-                if (features) {
-                    var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                    function compare(a,b) {
-                if (a.properties.code < b.properties.code)
-                  return -1;
-                if (a.properties.code > b.properties.code)
-                  return 1;
-                return 0;
-              }
-
-              sorted = uniqueFeatures.sort(compare);
-                    // Populate features for the listing overlay.
-                    renderListings(sorted);
-                    programs = sorted
-
-                  };
-
-              }, delayMillis);
-
-        });
-
-
-      for (var i = 0; i < linksB.length; i++) {
-      	linksB[i].addEventListener('click',function() {
-
-          btnB.textContent = this.textContent
-          ongoing = this.textContent
-          var city = document.getElementById('city');
-          var program = document.getElementById('program');
-          var ff = document.getElementById('feature-filter');
-
-    });
-  }
-
-        for (var i = 0; i < links.length; i++) {
-        	links[i].addEventListener('click',function() {
-
-            btn.textContent = this.textContent;
-            degree = this.textContent
-            var city = document.getElementById('city');
-            var program = document.getElementById('program');
-            var ff = document.getElementById('feature-filter');
-            var ongoing = document.getElementById('ongoing').textContent
-
-            console.log(degree)
-            console.log(ongoing)
-            console.log(program.className)
-
-              filterEl.value = '';
-              listingEl.innerHTML = '';
-
-              if (degree === 'Masters' && ongoing === 'Current' || ongoing === 'Period'){
-
-                console.log('yes!')
-
-              if(program.className === 'mode-selected'){
-                ff.placeholder = 'Filter results by program name'
-                var new_Filter = ["all",["==", 'ongoing2015_2017', 1],["==", 'cat', 'EMJMD']];
-                map.setFilter('uni', new_Filter)
-                map.setLayoutProperty('uni', 'visibility', 'visible');
-                map.setLayoutProperty('uni_select', 'visibility', 'none');
-                map.setLayoutProperty('city', 'visibility', 'none');
-
-              } else {
-                ff.placeholder = 'Filter results by city name'
-                map.setLayoutProperty('city', 'visibility', 'visible');
-                map.setLayoutProperty('cityPHD', 'visibility', 'none');
-                map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
-                map.setLayoutProperty('uni', 'visibility', 'none');
-                map.setLayoutProperty('uni_select', 'visibility', 'none');
-              }
-
-                var delayMillis = 500;
-
-                setTimeout(function() {
-
-                  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
-
-                  if (features) {
-                      var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                      function compare(a,b) {
-                  if (a.properties.code < b.properties.code)
-                    return -1;
-                  if (a.properties.code > b.properties.code)
-                    return 1;
-                  return 0;
-                }
-
-                sorted = uniqueFeatures.sort(compare);
-                      // Populate features for the listing overlay.
-                      renderListings(sorted);
-                      programs = sorted
-
-                    };
-
-                }, delayMillis);
-
-          } else if (degree === 'All' && ongoing === 'Past'){
-
-            if(program.className === 'mode-selected'){
-              ff.placeholder = 'Filter results by program name'
-              map.setFilter('uni', ['!=', 'ongoing2015_2017', 1])
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            } else {
-              ff.placeholder = 'Filter results by city name'
-              map.setLayoutProperty('city', 'visibility', 'visible');
-              map.setLayoutProperty('cityPHD', 'visibility', 'none');
-              map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
-              map.setLayoutProperty('uni', 'visibility', 'none');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-            }
-
 
               var delayMillis = 500;
 
@@ -1929,197 +1709,18 @@ setTimeout(function() {
 
               }, delayMillis);
 
-          } else if (degree === 'Masters' && ongoing === 'Period' || ongoing === 'Current'){
+        });
 
-            console.log('yes')
-
-            if (program.className === 'mode-selected'){
-
-            var new_Filter = ["==", 'cat', 'EMJMD'];
-            map.setFilter("uni", new_Filter)
-            ff.placeholder = 'Filter by program name'
-            map.setLayoutProperty('uni', 'visibility', 'visible');
-            map.setLayoutProperty('city', 'visibility', 'none');
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-          }else{
-            ff.placeholder = 'Filter or click city name'
-            map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
-            map.setLayoutProperty('city', 'visibility', 'none')
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-            map.setLayoutProperty('uni', 'visibility', 'none');
-          };
-
-            var delayMillis = 500;
-
-            setTimeout(function() {
-
-              var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityMASTERS']});
-
-              if (features) {
-                  var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                  function compare(a,b) {
-              if (a.properties.code < b.properties.code)
-                return -1;
-              if (a.properties.code > b.properties.code)
-                return 1;
-              return 0;
-            }
-
-            sorted = uniqueFeatures.sort(compare);
-                  // Populate features for the listing overlay.
-                  renderListings(sorted);
-                  programs = sorted
-
-                };
-
-            }, delayMillis);
-
-          } else if (degree ==='Masters' && ongoing === 'Past'){
-            if (program.className === 'mode-selected'){
-
-            var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],["==", 'cat', 'EMJMD']];
-            map.setFilter('uni', new_Filter)
-            ff.placeholder = 'Filter by program name'
-            map.setLayoutProperty('uni', 'visibility', 'visible');
-            map.setLayoutProperty('city', 'visibility', 'none');
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-          }else{
-            ff.placeholder = 'Filter or click city name'
-            map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
-            map.setLayoutProperty('city', 'visibility', 'none')
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-            map.setLayoutProperty('uni', 'visibility', 'none');
-          };
-
-            var delayMillis = 500;
-
-            setTimeout(function() {
-
-              var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityMASTERS']});
-
-              if (features) {
-                  var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                  function compare(a,b) {
-              if (a.properties.code < b.properties.code)
-                return -1;
-              if (a.properties.code > b.properties.code)
-                return 1;
-              return 0;
-            }
-
-            sorted = uniqueFeatures.sort(compare);
-                  // Populate features for the listing overlay.
-                  renderListings(sorted);
-                  programs = sorted
-
-                };
-
-            }, delayMillis);
-
-
-          } else if (degree === "PhD" && ongoing === 'Current'){
-
-            filterEl.value = '';
-            listingEl.innerHTML = '';
-
-            if (program.className === 'mode-selected'){
-            var new_Filter = ["all",["==", 'ongoing2015_2017', 1],['==', 'cat', 'EMJD']];
-            map.setFilter('uni', new_Filter)
-            map.setLayoutProperty('city', 'visibility', 'none');
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-          }else{
-            map.setLayoutProperty('cityPHD', 'visibility', 'visible');
-            map.setLayoutProperty('city', 'visibility', 'none')
-            map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
-            map.setLayoutProperty('uni_select', 'visibility', 'none');
-            map.setLayoutProperty('uni', 'visibility', 'none');
-          };
-
-            var delayMillis = 500;
-
-            setTimeout(function() {
-
-              var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityPHD']});
-
-              if (features) {
-                  var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                  function compare(a,b) {
-              if (a.properties.code < b.properties.code)
-                return -1;
-              if (a.properties.code > b.properties.code)
-                return 1;
-              return 0;
-            }
-
-            sorted = uniqueFeatures.sort(compare);
-                  // Populate features for the listing overlay.
-                  renderListings(sorted);
-                  programs = sorted
-
-                };
-
-            }, delayMillis);
-
-          } else if (degree === "PhD" && ongoing === 'Past'){
-
-        filterEl.value = '';
-        listingEl.innerHTML = '';
-
-        if (program.className === 'mode-selected'){
-        var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],['==', 'cat', 'EMJD']];
-        map.setFilter('uni', new_Filter)
-        map.setLayoutProperty('city', 'visibility', 'none');
-        map.setLayoutProperty('uni_select', 'visibility', 'none');
-      }else{
-        map.setLayoutProperty('cityPHD', 'visibility', 'visible');
-        map.setLayoutProperty('city', 'visibility', 'none')
-        map.setLayoutProperty('cityMASTERS', 'visibility', 'none')
-        map.setLayoutProperty('uni_select', 'visibility', 'none');
-        map.setLayoutProperty('uni', 'visibility', 'none');
-      };
-
-        var delayMillis = 500;
-
-        setTimeout(function() {
-
-          var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityPHD']});
-
-          if (features) {
-              var uniqueFeatures = getUniqueFeatures(features, "code");
-
-              function compare(a,b) {
-          if (a.properties.code < b.properties.code)
-            return -1;
-          if (a.properties.code > b.properties.code)
-            return 1;
-          return 0;
-        }
-
-        sorted = uniqueFeatures.sort(compare);
-              // Populate features for the listing overlay.
-              renderListings(sorted);
-              programs = sorted
-
-            };
-
-        }, delayMillis);
-
-
-          } else {console.log("fail")}
-
-          }
-        )
-      };
-
-/*
         document.getElementById('all').addEventListener('click', function () {
-
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
+
+                filterEl.value = '';
+                listingEl.innerHTML = '';
 
               if (all.className === 'mode'){
                 all.className = 'mode-selected'
@@ -2311,23 +1912,18 @@ setTimeout(function() {
 
             });
 
-*/
 
 //closes left panel
 
         document.getElementById('interest-close').addEventListener('click', function () {
           listingEl.innerHTML = '';
 
-          btn.textContent = this.textContent;
-          degree = this.textContent
-          var city = document.getElementById('city');
-          var program = document.getElementById('program');
-          var ff = document.getElementById('feature-filter');
-          var ongoing = document.getElementById('ongoing').textContent
+          var masters = document.getElementById('masters');
+          var all = document.getElementById('all');
+          var phd = document.getElementById('phd');
 
-
-          if(degree === 'All' || degree === 'Degree'){
-            map.setFilter('uni', ['!=', 'cat', 'fff'])
+          if(masters.className == 'mode-selected'){
+            map.setFilter('uni', ['==', 'cat', 'EMJMD'])
           } else if (phd.className == 'mode-selected'){
             map.setFilter('uni', ['==', 'cat', 'EMJD'])
           } else if(all.className == 'modes'){console.log('nothing selected')
