@@ -4,6 +4,8 @@
     <meta charset='utf-8' />
     <title>EMA Map</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/Dejan11/EMA/master/ema.ico" type="image/x-icon"/>
+
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.0/mapbox-gl.js'></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -13,27 +15,8 @@
 
 
 <style>
-  #survey{
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    width: 175px;
-    height: 100px;
-    border: 3px solid rgb(65,207,161);
-    border-radius: 20px;
-    color: rgb(39,39,39);
-    background-color: rgba(250,250,250,0.88);
-    text-align:center;
-    font-size: 12px;
-    padding: 5px 5px;
-    font-weight: bold;
-  }
-  #close{
-    position: absolute;
-    top: -5px;
-    left: -25px;
-    border-radius: 1px;
-  }
+
+
   body {
     color: #eee;
     overflow: hidden;
@@ -59,7 +42,7 @@
 <style>
 
 .dropbtn {
-    background-color: rgba(243,123,33, 0.88);
+    background-color: rgba(0, 128, 225, 1);
     color: white;
     display: inline-block;
     height: 38px;
@@ -113,44 +96,48 @@
 }
 
 .dropdown:hover .dropbtn {
-    background-color: rgba(243,123,33, 0.5);
+    background-color: rgba(80, 128, 225, 1);
 }
 
-    #program_title{
-      position: absolute;
-      z-index: 2;
-      background: rgba(12, 12, 12, 0.89);
-      border-style: solid;
-      border-color: rgba(243,123,33, 1);
-      color: #fff;
-      font-weight: 600;
-      font-size: 18px;
-      display: none;
-      left: 50%;
-      width: auto;
-      bottom: 1%;
-      text-align: center;
-      padding: 5px 10px;
-      border-radius: 10px;
-      -webkit-transform: translateX(-50%);
-       -moz-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-       transform: translateX(-50%);
-    }
+#program_title{
+  /*opacity: .5;*/
+  position: absolute;
+  z-index: 2;
+  /*background: rgba(12, 12, 12, 0.89);*/
+  /*background-color: rgba(0,77,133,0.89);*/
+  background: rgb(243,123,33);
+  border-style: solid;
+  /*border-color: #43cea2;*/
+  border-color: rgba(0,77,133,0.89);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  display: none;
+  left: 50%;
+  width: auto;
+  top: 90%;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
 
-    #go-back {
-      content:url('./back-button.svg');
-      color: #fff;
-      border-radius: 5px;
-      left: 1%;
-      height: 20px;
-      width: 20px;
-      opacity: 0.79;
-      float: left;
-      margin-right: 10px;
-      display:inline-block;
-    }
+#go-back {
+  content:url('./back-button.svg');
+  color: #fff;
+  border-radius: 5px;
+  left: 1%;
+  height: 20px;
+  width: 20px;
+  opacity: 0.79;
+  float: left;
+  margin-right: 10px;
+  display:inline-block;
+}
 
     #go-back:hover {
       opacity: 0.99;
@@ -166,9 +153,15 @@
       background: rgba(0, 0, 0, 0.88);
       color: #fff;
       width: 25%;
-      height: 100%;
+      height: 95%;
       display: none;
-      overflow-x: scroll;
+      border-radius: 20px;
+      font-size:25px;
+      font-size: 20px;
+      margin-top: 50px;
+      padding-left: 10px;
+      padding-top: 7.5%;
+      text-align: center;
     }
 
     #interest-close {
@@ -193,7 +186,6 @@
     #interest-close:hover {
       opacity: 0.9;
     }
-
     #about {
       position: absolute;
       z-index: 20202020;
@@ -220,11 +212,11 @@
     #about-close {
       border: 1px solid #eee;
       position: relative;
-      right: 0px;
+      right: 5%;
       margin-top: 20px;
       margin-right: 20px;
       float: right;
-      top: 0px;
+      top: 5%;
       width: 38px;
       height: 38px;
       border-radius: 19px;
@@ -243,127 +235,133 @@
      margin: 25px 0;
     }
 
-    #about-map-button {
-      display: inline-block;
-      font-weight: 600;
-      padding: 10px;
-      background:#3B4371;
-      cursor: pointer;
-      border-radius: 5px;
+        #about-map-button {
+          display: inline-block;
+          font-weight: 600;
+          padding: 10px;
+          background:#3B4371;
+          cursor: pointer;
+          border-radius: 5px;
 
-    }
+        }
 
-    #about-map-button:hover {
-      background: #F3904F;
-    }
+        #about-map-button:hover {
+          background: #F3904F;
+        }
 
-    #about-credits {
-      font-size: 13px;
-      color: rgba(250, 250, 250, 0.88);
-    }
+        #about-credits {
+          font-size: 13px;
+          color: rgba(250, 250, 250, 0.88);
+        }
 
-    #about-link{
-      content:url('./info.svg');
-      position: absolute;
-      background-color: rgba(24, 24, 24, 0.0);
-      z-index: 10;
-      border-radius: 5px;
-      bottom: 1%;
-      left: 1%;
-      height: 35px;
-      width: 35px;
-      opacity: 0.7;
-      display: none
-    }
+        #about-link{
+          content:url('./info.svg');
+          position: absolute;
+          background-color: rgba(24, 24, 24, 0.0);
+          z-index: 10;
+          border-radius: 5px;
+          bottom: 1%;
+          left: 1%;
+          height: 35px;
+          width: 35px;
+          opacity: 0.7;
+          display: none
+        }
 
-    #about-link:hover{
-      cursor: pointer;
-      opacity: 0.9;
-  }
+        #about-link:hover{
+          cursor: pointer;
+          opacity: 0.9;
+      }
 
-  #about-linked{
-    background-image:url('./info.svg');
-    background-size: 35px 35px;
-    background-repeat: no-repeat;
-    position: absolute;
-    background-color: rgba(24, 24, 24, 0.0);
-    z-index: 10;
-    border-radius: 5px;
-    bottom: 1%;
-    left: 1%;
-    height: 35px;
-    width: 35px;
-    opacity: 0.7;
-  }
 
-  #about-linked:hover{
-    cursor: pointer;
-    opacity: 0.9;
-  }
+        #about-linked{
+          background-image:url('./info.svg');
+          background-size: 35px 35px;
+          background-repeat: no-repeat;
+          position: absolute;
+          background-color: rgba(24, 24, 24, 0.0);
+          z-index: 10;
+          border-radius: 5px;
+          bottom: 1%;
+          left: 1.5%;
+          height: 35px;
+          width: 35px;
+          opacity: 0.7;
+        }
 
-  #ema_title {
-   display: none;
-   position: absolute;
-   width: 83px;
-   height: 20px;
-   left: 49%;
-   top: 1%;
-   right: 25%;
-   /*font-size: 20px;*/
-   color: white;
+        #about-linked:hover{
+          cursor: pointer;
+          opacity: 0.9;
+        }
+        #ema_title {
+         display: none;
+         position: absolute;
+         left: 49%;
+         top: 1%;
+         right: 25%;
+         /*font-size: 20px;*/
+         color: white;
 
-   /*padding:  10px 10px;*/
-   opacity: .7;
-   text-align:center;
-   z-index:1;
- }
+         /*padding:  10px 10px;*/
+         opacity: .7;
+         text-align:center;
+         z-index:1;
+       }
+       /*#logo_text{
+         position:relative;
+         padding-left: 25.5%;
+         padding-top: 3%;
+         color: rgba(0,77,133,0.9);
+         z-index: 1;
+         font-size-adjust: auto;
+       }*/
 
-  #banner{
-    content:url(http://iskandari.github.io/maps/EMA_med.jpg);
-    display: none;
-  	position: fixed;
-    border-style: solid;
-  	top: 30%;
-  	left: calc(50% - 488.5px);
-  	opacity: 0.9;
-  	z-index:1001;
-  }
+       #banner{
+         display: none;
+       	position: fixed;
+         border-style: solid;
+       	top: 30%;
+       	left: calc(50% - 488.5px);
+       	opacity: 0.9;
+       	z-index:1001;}
+         img {
+          max-width: 100%;
+          max-height: 100%;
+        }
 
-  #menu {
-    position: absolute;
-    z-index: 2;
-    top: 3px;
-    left: 28.5%;
-    height: 30px;
-    padding: 10px;
-    color: #ccc;
-    border-radius: 5px;
-    font-family: 'Open Sans', sans-serif;
-    background-color:rgba(24, 24, 24, 0.9);
-    visibility: hidden;
-}
+        #menu {
+          display: none;
+          position: absolute;
+          z-index: 2;
+          top: 1.2%;
+          left: 5%;
+          height: 30px;
+          padding: 7px;
+          color: #ccc;
+          border-radius: 5px;
+          font-family: 'Open Sans', sans-serif;
 
-    #changeLayer{
-      background-image:url(https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5049-512.png);
-      background-size: 35px 35px;
-      background-repeat: no-repeat;
-      position: absolute;
-      background-color: rgba(24, 24, 24, 0.0);
-      z-index: 3;
-      border-radius: 5px;
-    	top: 10%;
-      left: 26%;
-    	height: 35px;
-      width: 35px;
-    	opacity: 0.7;
-    }
-    .wrap {
-      position: relative;
-      height: 50px;
-    }
-    .wrap:hover #menu {
-      visibility: visible;
-    }
+          background-color: rgba(0,77,133,0.9);
+
+
+      }
+
+      #changeLayer{
+        background-image:url(https://cdn1.iconfinder.com/data/icons/pixel-perfect-at-16px-volume-1/16/5049-512.png);
+        background-size: 35px 35px;
+        background-repeat: no-repeat;
+        position: absolute;
+        background-color: rgba(24, 24, 24, 0.0);
+        z-index: 3;
+        border-radius: 5px;
+      	top: 1%;
+        left: 1.5%;
+      	height: 35px;
+        width: 35px;
+      	opacity: 0.7;
+        cursor: pointer;
+      }
+
 
 #map {
     position:absolute;
@@ -435,8 +433,8 @@
   line-height: 28px;
   color: #fff;
   width: 100px;
-  border: 1px solid white;
-  border-radius: 5px;
+  /*border: 1px solid white;*/
+  border-radius: 20px;
   z-index: 1;
   cursor: pointer;
   font-weight: 600;
@@ -447,17 +445,14 @@
   font-family: 'Open Sans', sans-serif;
   padding: 5px 5px;
   text-align: center;
-  background: rgba(18, 18, 18, 0.7);
+  background: rgba(12, 12, 12, 0.7);
 }
 
 .mode-selected {
-  background: rgba(0, 128, 225, 1);
+
+  background: rgb(243,123,33);
 }
 
-.mode:hover, .mode:active,
-.mode-selected:hover, .mode-selected:active {
-    color: #fff;
-}
 
 .map-overlay {
     position: absolute;
@@ -468,7 +463,7 @@
     left: 0;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 
-    background-color: rgba(12, 12, 12, 0.7);
+    background-color: rgba(0,77,133,0.9);
     max-height: 100%;
     overflow: hidden;
 }
@@ -476,7 +471,8 @@
 .map-overlay fieldset {
     display: none;
     z-index: 2;
-    background: rgba(12, 12, 12, 0.7);
+
+    background-color: rgba(0,77,133,100);
     border: none;
     padding: 10px;
     margin: 0;
@@ -485,9 +481,11 @@
 
 .map-overlay input {
     display: block;
+    position: relative;
     z-index: 2;
     border: none;
     width: 100%;
+    /*left: 20%;*/
     border-radius: 3px;
     background: rgba(12, 12, 12, 0.7);
     padding: 10px;
@@ -496,7 +494,7 @@
 
 .map-overlay .listing {
     overflow: auto;
-    max-height: 100%;
+    max-height: 90%;
 
 }
 
@@ -507,8 +505,9 @@
 
 }
 
+
 .map-overlay .listing a {
-    border-bottom: 1px solid rgba(0, 128, 225, 0.3);
+    border-bottom: 1px solid rgba(2, 70, 0, 0.5);
     color: rgba(255, 255, 255, 0.9);
     background: rgba(12, 12, 12, 0.7);
     text-decoration: none;
@@ -519,9 +518,10 @@
 }
 
 .map-overlay .listing a:hover {
-    background: rgba(0, 128, 225, 0.3);
+    background: rgba(146, 254, 157, 0.1);
     cursor: pointer;
 }
+
 
 .mapboxgl-popup {
 
@@ -536,7 +536,7 @@ overflow: auto;
 .mapboxgl-popup-content {
     overflow: auto;
     color: #fff;
-    background: rgba(12, 12, 12, 0.88);
+    background: rgba(12, 12, 12, 0.8);
     border-radius: 5px;
 
 }
@@ -555,38 +555,37 @@ overflow: auto;
   width: 100%;
   line-height: 50px;
   height: 50px;
-  background: rgba(12, 12, 12, 0.8);
+  background-color: rgba(0,77,133,0.9);
   color: #eee;
   display: none;
 }
 
 @media screen and (max-width: 480px) {
 
-  #interest {
-    position: fixed;
-    bottom:0;
-    z-index: 99;
-    font-size: calc(7px + .5vw);
-    background: rgba(0, 0, 0, 0.98);
-    width: 100%;
-    height: 50vh;
-    display: none;
-    overflow: auto;
-  }
-
-
-    .desktop {
-        display: none;
-    }
-    .mobile {
-      display: inline;
-    }
-
-    .wrap {
-      display:none;
+    #interest {
+      position: fixed;
+      bottom:50%;
+      z-index: 99;
+      font-size: calc(7px + .5vw);
+      background: rgba(0, 0, 0, 0.98);
+      width: 100%;
+      height: 50vh;
+      display: none;
+      overflow: auto;
+      font-size: 15px;
     }
 
 
+      .desktop {
+          display: none;
+      }
+      .mobile {
+        display: inline;
+      }
+
+      .mapboxgl-ctrl {
+        display:none
+      }
     #header {
       position: absolute;
       z-index: 1012022;
@@ -605,27 +604,28 @@ overflow: auto;
     }
 
 
-      .mode, .mode-selected {
-          width: auto;
-          display: inline-block;
-          height: 38px;
-          line-height: 28px;
-          color: #eee;
-          border-radius: 10px;
-          border: 1px solid white;
-          z-index: 3;
-          cursor: pointer;
-          float:left;
-          font-weight: 600;
-          margin-top: 5px;
-          margin-bottom:5px;
-          margin-right: 1px;
-          padding: 1px 1px;
-      }
+    .mode, .mode-selected {
+        display: inline-block;
+        height: 38px;
+        line-height: 28px;
+        color: #eee;
+        border-radius: 10px;
+        z-index: 3;
+        cursor: pointer;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: 600;
+        margin-top: 5px;
+        margin-bottom:5px;
+        margin-right: 10px;
+        padding: 5px 10px;
+    }
 
-      .mode-selected {
-        background: rgba(0, 128, 225, 1);
-      }
+    .mode-selected {
+      /*background: #43cea2;*/
+      background: rgba(255,132,66,0.7);
+    }
+
 
       .mode:hover, .mode:active,
       .mode-selected:hover, .mode-selected:active {
@@ -640,83 +640,69 @@ overflow: auto;
         left: 0;
     }
 
-    #changeLayer {
-      display: none
-    }
 
-    #banner{
-      content:url(http://iskandari.github.io/maps/EMA_med.jpg);
-      display: none;
-    	position: fixed;
-      width: 240px;
-      height: 60px;
-      border-style: solid;
-    	top: calc(50% - 30px);;
-    	left: calc(50% - 120px);
-    	opacity: 0;
-    	z-index:1001;
 
-    }
 
-    .map-overlay {
-      position: relative;
-        width: 100%;
-        top: 0;
-        height: 50vh;
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        background-color: rgba(12, 12, 12, 0.7);
-        overflow: hidden;
+        .map-overlay {
+          position: relative;
+            width: 100%;
+            top: 0;
+            height: 50vh;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            background-color: rgba(12, 12, 12, 0.7);
+            overflow: hidden;
 
-    }
+        }
 
-    .map-overlay fieldset {
-        display: none;
-        z-index: 2;
-        background: rgba(12, 12, 12, 0.9);
-        border: none;
-        padding: 10px;
-        margin: 0;
-        color: rgba(255, 255, 255, 0.7);
-    }
+        .map-overlay fieldset {
+            display: none;
+            z-index: 2;
+            background: rgba(12, 12, 12, 0.9);
+            border: none;
+            padding: 10px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.7);
+        }
 
-    .map-overlay input {
-        display: block;
-        z-index: 2;
-        border: none;
-        width: 100%;
-        border-radius: 3px;
-        background: rgba(12, 12, 12, 0.7);
-        padding: 0px;
-        margin-top: 2px;
-        font-size: 16px;
-    }
+        .map-overlay input {
+            display: block;
+            z-index: 2;
+            border: none;
+            width: 100%;
+            border-radius: 3px;
+            background: rgba(12, 12, 12, 0.7);
+            padding: 0px;
+            margin-top: 2px;
+            font-size: 16px;
+        }
 
-    .map-overlay .listing {
-        overflow: auto;
+        .map-overlay .listing {
+            overflow: auto;
 
-    }
+        }
 
-    .map-overlay .listing > * {
-        display: block;
-        padding: 5px 10px;
-        margin: 0;
+        .map-overlay .listing > * {
+            display: block;
+            padding: 5px 10px;
+            margin: 0;
 
-    }
+        }
 
-    .map-overlay .listing a {
-        border-bottom: 1px solid rgba(2, 70, 0, 0.5);
-        color: rgba(255, 255, 255, 0.9);
-        background: rgba(12, 12, 12, 0.7);
-        text-decoration: none;
-    }
+        .map-overlay .listing a {
+            border-bottom: 1px solid rgba(2, 70, 0, 0.5);
+            color: rgba(255, 255, 255, 0.9);
+            background: rgba(12, 12, 12, 0.7);
+            text-decoration: none;
+        }
 
-    .map-overlay .listing a:last-child {
-        border: none;
-    }
+        .map-overlay .listing a:last-child {
+            border: none;
+        }
 
-    .map-overlay .listing a:hover {
-        background: rgba(0, 128, 225, 0.3);
-    }
+        .map-overlay .listing a:hover {
+            background: rgba(146, 254, 157, 0.1);
+        }
+
 
     #about-link {
     background: url('info.svg') center center no-repeat;
@@ -811,14 +797,7 @@ overflow: auto;
     #about-text a {
       color: #08f!important;
 }
-      .mapboxgl-popup {
 
-      max-width: 150px;
-      max-height: 250px;
-      font: 12px/20px 'Open Sans', sans-serif;
-      border-radius: 5px;
-
-      }
 }
 
 </style>
@@ -847,20 +826,17 @@ overflow: auto;
 </div>
 </div>
 
-<div class="wrap">
-<div id='changeLayer'></div>
-<div id='menu'>
-  <input id='light' type='radio' name='rtoggle' value='light'>
-  <label for='light'>light</label>
-  <input id='dark' type='radio' name='rtoggle' value='dark'>
-  <label for='dark'>dark</label>
-  <input id='bright' type='radio' name='rtoggle' value='bright', checked='checked'>
-  <label for='bright'>streets</label>
-
-</div>
-</div>
-
   <div id='map'>
+    <div id='changeLayer'></div>
+    <div id='menu'>
+      <input id='light' type='radio' name='rtoggle' value='light'>
+      <label for='light'>light</label>
+      <input id='dark' type='radio' name='rtoggle' value='dark'>
+      <label for='dark'>dark</label>
+      <input id='bright' type='radio' name='rtoggle' value='bright', checked='checked'>
+      <label for='bright'>streets</label>
+    </div>
+
     <div id='program_title'>
         <span id="myspan">TITLE</span>
     </div>
@@ -868,9 +844,8 @@ overflow: auto;
     <div id ='about-linked'></div>
   </div>
 
-<div id ='banner'></div>
-<div id='ema_title'><a href='http://www.em-a.eu/'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;" align ="middle" height = "80" width = "332"></a></div>
-
+<div id ='banner'><img src="EMA_med.jpg" alt="EMA"></div>
+<div id='ema_title'><a href='http://www.em-a.eu/' style="color: white;" target='_blank'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;"></a></div>
 
 
 <div class='map-overlay'>
@@ -882,7 +857,7 @@ overflow: auto;
   <!--  <div class = 'mode-selected' id='all'>All</div> -->
   <!--    <div class = 'mode' id='masters'>Masters</div> -->
   <!--    <div class = 'mode' id='phd'>PhD</div> -->
-  <div class="dropdown">
+  <div id = 'drop1' class="dropdown">
   <button class="dropbtn" id="dropbtn">Degree</button>
   <div class="dropdown-content" id="dropdown-content">
     <a href="#">Masters</a>
@@ -890,7 +865,7 @@ overflow: auto;
     <a href="#">All</a>
   </div>
 </div>
-<div class="dropdown">
+<div id = 'drop2' class="dropdown">
 <button class="dropbtn" id="ongoing">Period</button>
 <div class="dropdown-content" id="ongoing-content">
 <a href="#">Past</a>
@@ -971,7 +946,7 @@ $.fn.center = function () {
 }
 
 $("#banner").show();
-
+//
 setTimeout(function(){
   $("#banner").fadeOut();
 }, 1500);
@@ -1045,17 +1020,18 @@ function renderListings(features) {
           function colored(str){
               if (str === "NEW"){
 
-                return "#43cea2"
+                // return "#43cea2"
+                return "#f2fa72"
 
               } else {
-                return "#fa8072"
+                return "#FF0000"
               }
             }
 
 //Content of the listing
 
             item.target = '_blank';
-            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>' +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color: #ff6666"><i>' + deprecated(ongoing) + '</i></div>';
+            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>' +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color: #FF0000"><i>' + deprecated(ongoing) + '</i></div>';
 
 //Program mode - on click zoom to extent with fitBounds
             item.addEventListener('click', function(){
@@ -1083,7 +1059,7 @@ function renderListings(features) {
 
               $("#interest").children().not('#interest-close').remove();
               $("#interest-close").appendTo("#interest");
-              $('<div style ="font-size:25px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              $('<div style ="font-size:25px;  margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
               '<div style ="font-size:25px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
 
             });
@@ -1171,7 +1147,6 @@ function renderListings(features) {
     var courses = [];
     var websites = [];
     var status = [];
-    var ongoing = [];
     for (p in props) {
       if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
         if (isCourse(p)) {
@@ -1180,14 +1155,12 @@ function renderListings(features) {
           websites[getIndex(p)] = props[p];
         } else if (isStatus(p)){
           status[getIndex(p)] = props[p];
-        } else if (isOngoing(p)){
-          ongoing[getIndex(p)] = props[p];
         } else {
           city = props[p];
         }
       }
     }
-    return buildHTML(city, courses, websites, status, ongoing);
+    return buildHTML(city, courses, websites, status);
   }
 
   function isCourse(propname) {
@@ -1202,9 +1175,6 @@ function renderListings(features) {
     return (propname.indexOf("status") != -1);
   }
 
-  function isOngoing(propname) {
-    return (propname.indexOf("ongoing") != -1);
-  }
 
   function getIndex(propname) {
     var indexRegEx = new RegExp("^.*?(\\d+)$");
@@ -1215,33 +1185,21 @@ function renderListings(features) {
       return 0;
     }
   }
+
+// Add NEW and DISCONTINUED
+
                 function hideUndf(str) {
                   if (str == undefined) {
-                    return "D/C"
-                } else if (str == 1){
                     return ""
+                } else if (str == "DISCONTINUED"){
+                    return "D/C"
                 } else {
                    return str
                 }
               }
 
-              function colored(str){
-                  if (str == "NEW"){
-                    return "#3399ff"
-                  } else {
-                    return "#fa8072"
-                  }
-                };
 
-                function dstats(str){
-                  if(str == undefined){
-                    return ""
-                  } else {
-                    return "NEW"
-                  }
-                }
-
-                function buildHTML(city, courses, websites, status, ongoing) {
+                function buildHTML(city, courses, websites, status) {
                   var html = "";
                   html += "<div><strong>";
                   html += feature.properties.city;
@@ -1250,12 +1208,13 @@ function renderListings(features) {
                   for (i = 1; i < courses.length; i++) {
                     if (courses[i]) {
                     html += "<div class='link'>";
-                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.9; color: RoyalBlue;"><i>' + dstats(status[i]) + '</i></div>' + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:LightCoral;"><i>' + hideUndf(ongoing[i]) + '</i></div>';
+                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
                     html += "</div>\n";
                   }
                 }
               return html;
             }
+
 
                 // Populate the popup and set its coordinates
                 // based on the feature found.
@@ -1278,16 +1237,9 @@ function renderListings(features) {
         var city = document.getElementById('city');
         var program = document.getElementById('program');
         var country = document.getElementById('country');
-
-        if (city.className === 'mode-selected'){
-          console.log('citymode')
-        } else {
-
-        document.getElementById('dropbtn').textContent = 'Degree'
-        document.getElementById('ongoing').textContent = 'Period'
       //  document.getElementById('dropdown-content').textContent = 'Blah'
       //  document.getElementById('ongoing-content').textContent = 'Blah'
-        }
+
 
         var variable1 = '<p><div>' + 'Drag map to populate results!' + '</div></p>';
 
@@ -1561,8 +1513,15 @@ map.on('load', function () {
 
 
 var layerList = document.getElementById('menu');
-var inputs = layerList.getElementsByTagName('input');
 
+
+// on lcick show background layer menu list
+$(document).ready(function() {
+       $('#changeLayer').click(function() {
+               $('#menu').slideToggle("fast");
+       });
+   });
+var inputs = layerList.getElementsByTagName('input');
 function switchLayer(layer) {
     var layerId = layer.target.id;
 
@@ -1857,96 +1816,6 @@ setTimeout(function() {
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
-          var degree = document.getElementById('dropbtn').textContent
-
-          console.log(ongoing)
-          console.log(degree)
-
-          if (ongoing === 'Past'){
-
-            if(degree === 'Degree' || degree === 'All'){
-
-              map.setFilter('uni', ['!=', 'ongoing2015_2017', 1])
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            } else if (degree === "Masters"){
-
-              var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],["==", 'cat', 'EMJMD']];
-              map.setFilter('uni', new_Filter)
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            } else {
-
-              var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],["==", 'cat', 'EMJD']];
-              map.setFilter('uni', new_Filter)
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            }
-
-        } else {
-
-          if(degree === 'Degree' || degree === 'All'){
-              map.setFilter('uni', ['==', 'ongoing2015_2017', 1])
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            } else if (degree === "Masters"){
-
-              var new_Filter = ["all",["==", 'ongoing2015_2017', 1],["==", 'cat', 'EMJMD']];
-              map.setFilter('uni', new_Filter)
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            } else {
-
-              var new_Filter = ["all",["==", 'ongoing2015_2017', 1],["==", 'cat', 'EMJD']];
-              map.setFilter('uni', new_Filter)
-              ff.placeholder = 'Filter results by program name'
-              map.setLayoutProperty('uni', 'visibility', 'visible');
-              map.setLayoutProperty('uni_select', 'visibility', 'none');
-              map.setLayoutProperty('city', 'visibility', 'none');
-
-            }
-          };
-
-              var delayMillis = 500;
-
-              setTimeout(function() {
-
-                var features = map.queryRenderedFeatures({layers:['uni', 'city']});
-
-                if (features) {
-                    var uniqueFeatures = getUniqueFeatures(features, "code");
-
-                    function compare(a,b) {
-                if (a.properties.code < b.properties.code)
-                  return -1;
-                if (a.properties.code > b.properties.code)
-                  return 1;
-                return 0;
-              }
-
-              sorted = uniqueFeatures.sort(compare);
-                    // Populate features for the listing overlay.
-                    renderListings(sorted);
-                    programs = sorted
-
-                  };
-
-              }, delayMillis);
 
     });
   }
@@ -1994,11 +1863,10 @@ setTimeout(function() {
                 map.setLayoutProperty('city', 'visibility', 'none');
 
               } else {
-
                 ff.placeholder = 'Filter results by city name'
-                map.setLayoutProperty('city', 'visibility', 'none');
+                map.setLayoutProperty('city', 'visibility', 'visible');
                 map.setLayoutProperty('cityPHD', 'visibility', 'none');
-                map.setLayoutProperty('cityMASTERS', 'visibility', 'visible');
+                map.setLayoutProperty('cityMASTERS', 'visibility', 'none');
                 map.setLayoutProperty('uni', 'visibility', 'none');
                 map.setLayoutProperty('uni_select', 'visibility', 'none');
               }
@@ -2007,7 +1875,7 @@ setTimeout(function() {
 
                 setTimeout(function() {
 
-                  var features = map.queryRenderedFeatures({layers:['uni', 'city', 'cityMASTERS']});
+                  var features = map.queryRenderedFeatures({layers:['uni', 'city']});
 
                   if (features) {
                       var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -2516,49 +2384,20 @@ setTimeout(function() {
         document.getElementById('interest-close').addEventListener('click', function () {
           listingEl.innerHTML = '';
 
-
+          btn.textContent = this.textContent;
+          degree = this.textContent
           var city = document.getElementById('city');
           var program = document.getElementById('program');
           var ff = document.getElementById('feature-filter');
           var ongoing = document.getElementById('ongoing').textContent
-          var degree = document.getElementById('dropbtn').textContent
 
 
           if(degree === 'All' || degree === 'Degree'){
-
-            if(ongoing === 'Period'){
-                map.setFilter('uni', ['!=', 'cat', 'fff'])
-            } else if (ongoing === 'Current'){
-              map.setFilter('uni', ['==', 'ongoing2015_2017', 1])
-            } else {
-              map.setFilter('uni', ['!=', 'ongoing2015_2017', 1])
-            }
-
-          } else if (degree === 'PhD'){
-
-            if(ongoing === 'Period'){
-                map.setFilter('uni', ['==', 'cat', 'EMJD'])
-            } else if (ongoing === 'Current'){
-              var new_Filter = ["all",["==", 'ongoing2015_2017', 1],['==', 'cat', 'EMJD']];
-              map.setFilter('uni', new_Filter)
-            } else {
-              var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],['==', 'cat', 'EMJD']];
-              map.setFilter('uni', new_Filter)
-            }
-
-          } else {
-
-            if(ongoing === 'Period'){
-                map.setFilter('uni', ['==', 'cat', 'EMJMD'])
-            } else if (ongoing === 'Current'){
-              var new_Filter = ["all",["==", 'ongoing2015_2017', 1],['==', 'cat', 'EMJMD']];
-              map.setFilter('uni', new_Filter)
-            } else {
-              var new_Filter = ["all",["!=", 'ongoing2015_2017', 1],['==', 'cat', 'EMJMD']];
-              map.setFilter('uni', new_Filter)
-            }
-
-          }
+            map.setFilter('uni', ['!=', 'cat', 'fff'])
+          } else if (phd.className == 'mode-selected'){
+            map.setFilter('uni', ['==', 'cat', 'EMJD'])
+          } else if(all.className == 'modes'){console.log('nothing selected')
+          };
 
             map.setLayoutProperty('uni', 'visibility', 'visible');
             map.setLayoutProperty('uni_select', 'visibility', 'none');
@@ -2715,7 +2554,7 @@ map.on('moveend', function() {
         } else {
 
         popup.setLngLat(feature.geometry.coordinates)
-            .setHTML('<div><b>' + feature.properties.city  + '</b></div>')
+            .setHTML('<div><b>' + feature.properties.city  + ', ' + feature.properties.country + '</b></div>')
             .addTo(map);
 
         }
@@ -2744,7 +2583,6 @@ var feature = features[0];
     var courses = [];
     var websites = [];
     var status = [];
-    var ongoing = [];
     for (p in props) {
       if (props[p] && props[p] != "null" && props[p] != "NA" && props[p] != "") {
         if (isCourse(p)) {
@@ -2753,14 +2591,12 @@ var feature = features[0];
           websites[getIndex(p)] = props[p];
         } else if (isStatus(p)){
           status[getIndex(p)] = props[p];
-        } else if (isOngoing(p)){
-          ongoing[getIndex(p)] = props[p];
         } else {
           city = props[p];
         }
       }
     }
-    return buildHTML(city, courses, websites, status, ongoing);
+    return buildHTML(city, courses, websites, status);
   }
 
   function isCourse(propname) {
@@ -2775,10 +2611,6 @@ var feature = features[0];
     return (propname.indexOf("status") != -1);
   }
 
-  function isOngoing(propname) {
-    return (propname.indexOf("ongoing") != -1);
-  }
-
   function getIndex(propname) {
     var indexRegEx = new RegExp("^.*?(\\d+)$");
     var matches = indexRegEx.exec(propname);
@@ -2788,33 +2620,28 @@ var feature = features[0];
       return 0;
     }
   }
+
                 function hideUndf(str) {
                   if (str == undefined) {
-                    return "D/C"
-                } else if (str == 1){
                     return ""
+                } else if (str == "DISCONTINUED"){
+                    return "D/C"
                 } else {
                    return str
                 }
               }
 
-              function colored(str){
-                  if (str == "NEW"){
-                    return "#3399ff"
-                  } else {
-                    return "#fa8072"
-                  }
-                };
+              // function colored(str){
+              //     if (str === "NEW"){
+              //
+              //       return "#3399ff"
+              //
+              //     } else {
+              //       return "#fa8072"
+              //     }
+              //   }
 
-                function dstats(str){
-                  if(str == undefined){
-                    return ""
-                  } else {
-                    return "NEW"
-                  }
-                }
-
-                function buildHTML(city, courses, websites, status, ongoing) {
+                function buildHTML(city, courses, websites, status) {
                   var html = "";
                   html += "<div><strong>";
                   html += feature.properties.city;
@@ -2823,7 +2650,7 @@ var feature = features[0];
                   for (i = 1; i < courses.length; i++) {
                     if (courses[i]) {
                     html += "<div class='link'>";
-                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.9; color: RoyalBlue;"><i>' + dstats(status[i]) + '</i></div>' + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:LightCoral;"><i>' + hideUndf(ongoing[i]) + '</i></div>';
+                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style = "display:inline; opacity: 0.7; color:' + colored(status[i]) +  ';" ><i>' + hideUndf(status[i]) + '</i></div>' ;
                     html += "</div>\n";
                   }
                 }
