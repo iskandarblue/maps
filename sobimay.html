@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
+    <script type="text/javascript" src="d3.min.js"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+
+        #map canvas {
+    cursor: crosshair;
+}
+
+        #description .child {
+          position: absolute;
+          line-height:1.6em;
+    			z-index: 1;
+    			width: 200px;
+    			overflow-y: auto;
+    			color: white;
+          top: 10px;
+          left: 5px;
+          font-family: 'Open Sans', sans-serif
+
+        }
+
+        #features .child {
+          position: absolute;
+    			display: block;
+    			width: 250px;
+          line-height:1.6em;
+          overflow-x: auto;
+    			color: white;
+          bottom: 50px;
+          font-family: 'Open Sans', sans-serif
+    		}
+
+        #panel {
+          position: absolute;
+    			z-index: 3;
+    			display: block;
+    			width: 250px;
+    			overflow-y: auto;
+          line-height:1.5;
+    			background: rgba(12, 12, 12, 0.8);
+    			color: white;
+          height: 85%;
+          top: 75px;
+          left: 5px;
+    			padding: 0 10px;
+          border: 2px solid lightgrey;
+          border-radius: 5px;
+          font-family: 'Open Sans', sans-serif
+    		}
+
+        #abstract .child {
+
+            position: absolute;
+      			width: 200px;
+      			overflow-y: auto;
+            overflow-x: hidden;
+            line-height:1.5;
+      			color: white;
+            top: 120px;
+            left: 5px;
+            font-family: 'Open Sans', sans-serif
+        }
+
+        #header {
+          position: absolute;
+          z-index: 1012022;
+          top: 0px;
+          width: 100%;
+          line-height: 50px;
+          height: 50px;
+          background: rgba(12, 12, 12, 0.8);
+          color: #eee;
+        }
+
+        #footer {
+          position: absolute;
+          visibility: hidden;
+          z-index: 10;
+          bottom: 10px;
+          left: 50%;
+          width: 300px;
+          margin-left: -150px;
+          height: 20px;
+          border: 2px solid black;
+          background: rgba(12, 12, 12, 0.8);
+          color: #eee;
+          font-family: 'Open Sans', sans-serif;
+
+        }
+
+
+        #ratio {
+          position: absolute;
+          visibility: hidden;
+          z-index: 10;
+          bottom: 10px;
+          left: 50%;
+          width: 300px;
+          margin-left: -150px;
+          height: 20px;
+          border: 2px solid black;
+          background: rgba(12, 12, 12, 0.8);
+          color: #eee;
+          font-family: 'Open Sans', sans-serif;
+
+        }
+
+        #modes {
+          margin-left: 20px;
+          display: inline-block;
+        }
+
+        .mode, .mode-selected, .mode-summer, .mode-fall, .mode-winter {
+            display: inline-block;
+            height: 28px;
+            line-height: 28px;
+            color: #eee;
+            border-radius: 2px;
+            z-index: 3;
+            cursor: pointer;
+            font-weight: 600;
+            margin-right: 10px;
+            font-family: 'Open Sans', sans-serif;
+            padding: 5px 10px;
+        }
+
+        .mode-selected {
+          background: rgba(85, 98, 112, 1);
+        }
+
+        .mode:hover, .mode:active,
+        .mode-selected:hover, .mode-selected:active {
+            color: #fff;
+        }
+
+        #chart{
+          margin-left: 20px;
+          bottom: 100px;
+          z-index: 3;
+          }
+
+      .chart div {
+         font: 10px sans-serif;
+         background-color: steelblue;
+         text-align: right;
+         padding: 3px;
+         margin: 1px;
+         color: white;
+
+      }
+      .redText
+      {
+          color: red;
+      }
+    </style>
+</head>
+<body>
+
+<div id= 'panel'>
+<div class= "child" id ='description'><h2><b>SoBi Hamilton</b></h2><p>Ridership Analysis</p></div>
+<div class = "child" id ='abstract'>Top month of ridership: September 2016</div>
+<div class = "child" id='features'></div>
+</div>
+
+
+<div id='chart'>
+    <canvas id="myCanvas" width="350" height="50" style="border:1px solid #d3d3d3;
+    bottom: 30px;">
+</div>
+
+
+<div id='header'>
+   <div id = 'modes'>
+   <div class = 'mode-selected' id='ham'>Hamilton</div>
+   <div class = 'mode' id='breeze'>Santa Monica</div>
+   <div class = 'mode' id='pdx'>Portland</div>
+   <div class = 'mode-selected' id='pdens'>Pop Density</div>
+   <div class = 'mode-selected' id='stations'>Stations</div>
+  </div>
+</div>
+
+<div id = 'footer'></div>
+<div id = 'ratio'></div>
+<div id='map'></div>
+
+
+<script>
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+
+
+var colors = [];
+for (var i = 0; i < 20; ++i) {
+  colors[i] = getRandomColor();
+}
+
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiaXNrYW5kYXJibHVlIiwiYSI6ImNpazE3MTJldjAzYzZ1Nm0wdXZnMGU2MGMifQ.i3E1_b9QXJS8xXuPy3OTcg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-79.8711, 43.2557],
+    zoom: 12.5
+});
+
+map.on('load', function () {
+
+  abstract.innerHTML =  '<div>' +
+    'Top month of ridership: September 2016' + '</div>' + '<br><div>' +
+    'Total bikes: 750' + '</div>' + '<div>' +
+    'Number of trips: 39,948' + '</div>' + '<div>' +
+    'Average trips per bike in top 25% of hubs: ' + '<div style = "display: inline; color: orange">' + 8.6 + '</div>'
+
+
+  map.addSource('ham_stations', {
+      'type': 'geojson',
+      'data': 'top_ham_hubs.geojson'
+  });
+
+  map.addLayer({
+      'id': 'ham_stations',
+      'type': 'circle',
+      'source': 'ham_stations',
+
+      "paint": {
+        "circle-color" : "#e55e5e",
+        'circle-radius': {
+              property: 'hamPeform_Freq',
+              stops: [
+                  [0, 0],
+                  [3620, 25]
+              ]
+            },
+        "circle-opacity" :0.78
+
+
+      }
+  });
+
+  map.addSource('ham_station', {
+      'type': 'geojson',
+      'data': 'ham_hubs.json'
+  });
+
+  map.addLayer({
+      'id': 'ham_station',
+      'type': 'circle',
+      'source': 'ham_station',
+
+      "paint": {
+        "circle-color" : "#383838",
+        'circle-radius': 3,
+        "circle-opacity" :0.88
+
+      }
+  });
+
+
+
+        map.addSource('breeze_census', {
+            'type': 'geojson',
+            'data': 'census_breeze.geojson'
+        });
+
+        map.addLayer({
+            'id': 'breeze_census',
+            'type': 'fill',
+            'source': 'breeze_census',
+            'layout': {
+         'visibility': 'visible'
+     },
+            'paint': {
+                'fill-color': {
+                  property: 'pop_dens',
+                  stops:[
+                    [0, '#FFFFFF'],
+                    [10000, '#006600']
+
+            ]},
+                'fill-opacity': 0.7,
+                'fill-outline-color': 'rgba(0, 0, 0, 1.0)'
+            }
+        },'road-label-small');
+
+        map.addSource('ham_census', {
+            'type': 'geojson',
+            'data': 'census_ham.geojson'
+        });
+
+        map.addLayer({
+            'id': 'ham_census',
+            'type': 'fill',
+            'source': 'ham_census',
+            'layout': {
+         'visibility': 'visible'
+     },
+            'paint': {
+                'fill-color': {
+                  property: 'popdens',
+                  stops:[
+                    [0, '#FFFFFF'],
+                    [15000, '#006600']
+
+            ]},
+                'fill-opacity': 0.7,
+                'fill-outline-color': 'rgba(0, 0, 0, 0.5)'
+            }
+        },'water');
+
+        map.addSource('portland', {
+            'type': 'geojson',
+            'data': 'census_portland.geojson'
+        });
+
+        map.addLayer({
+            'id': 'portland_census',
+            'type': 'fill',
+            'source': 'portland',
+            'layout': {
+         'visibility': 'visible'
+     },
+            'paint': {
+                'fill-color': {
+                  property: 'pop_dens',
+                  stops:[
+                    [0, '#FFFFFF'],
+                    [5200, '#006600']
+
+            ]},
+                'fill-opacity': 0.7,
+                'fill-outline-color': 'rgba(0, 0, 0, 0.5)'
+            }
+        },'water');
+
+
+        map.addSource('nike', {
+            'type': 'geojson',
+            'data': 'nike_Top.geojson'
+        });
+
+
+        map.addLayer({
+            'id': 'nike_stations',
+            'type': 'circle',
+            'source': 'nike',
+
+            "paint": {
+              "circle-color" : "#e55e5e",
+              'circle-radius': {
+                    property: 'nikePeform_Freq',
+                    stops: [
+                        [0, 0],
+                        [3739, 25]
+                    ]
+                  },
+              "circle-opacity" :0.78
+
+
+            }
+        });
+
+
+        map.addSource('breeze_stations', {
+            'type': 'geojson',
+            'data': 'breeze_top.geojson'
+        });
+
+
+        map.addLayer({
+            'id': 'breeze_stations',
+            'type': 'circle',
+            'source': 'breeze_stations',
+
+            "paint": {
+              "circle-color" : "#e55e5e",
+              'circle-radius': {
+                    property: 'breezePeform_Freq',
+                    stops: [
+                        [0, 0],
+                        [3110, 25]
+                    ]
+                  },
+              "circle-opacity" :0.78
+
+
+            }
+        });
+
+                map.addSource('nike_hubs', {
+                    'type': 'geojson',
+                    'data': 'nike_hubs.json'
+                });
+
+
+                map.addLayer({
+                    'id': 'nike_hubs',
+                    'type': 'circle',
+                    'source': 'nike_hubs',
+
+                    "paint": {
+                      "circle-color" : "#383838",
+                      'circle-radius': 3,
+                      "circle-opacity" :0.88
+
+                    }
+                });
+
+
+                map.addSource('breeze_hubs', {
+                    'type': 'geojson',
+                    'data': 'breeze_stations.geojson'
+                });
+
+
+                map.addLayer({
+                    'id': 'breeze_hubs',
+                    'type': 'circle',
+                    'source': 'breeze_hubs',
+
+                    "paint": {
+                      "circle-color" : "#383838",
+                      'circle-radius': 3,
+                      "circle-opacity" :0.88
+
+                    }
+                });
+
+
+});
+
+
+
+document.getElementById('breeze').addEventListener('click', function () {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+
+        map.jumpTo({
+            center: [-118.4912, 34.0195],
+            zoom: 12
+        });
+
+  document.getElementById('features').innerHTML = ""
+
+
+        var description = document.getElementById('description')
+
+        var linkA = document.getElementById('breeze');
+        linkA.className = 'mode-selected';
+
+        var linkB = document.getElementById('ham');
+        linkB.className = 'mode';
+
+        var linkC = document.getElementById('pdx');
+        linkC.className = 'mode';
+
+        abstract.innerHTML =  '<div>' +
+          'Top month of ridership: July 2016' + '</div>' + '<br><div>' +
+          'Total bikes: 500' + '</div>' + '<div>' +
+          'Number of trips: 37,357' + '</div>' + '<div>' +
+          'Average trips per bike in top 25% of hubs: ' + '<div style = "display: inline; color: orange">' + 7.2 + '</div>'
+
+        description.innerHTML =  '<h2><b>' + 'Breeze Bike Share' + '</b></h2>' + '<p>' + 'Ridership Analysis' + '</p></div>'
+
+      });
+
+      document.getElementById('ham').addEventListener('click', function () {
+              // Fly to a random location by offsetting the point -74.50, 40
+              // by up to 5 degrees.
+
+              map.jumpTo({
+                  center: [-79.8711, 43.2557],
+                  zoom: 12.5
+              });
+
+              document.getElementById('features').innerHTML = ""
+
+              var description = document.getElementById('description')
+
+              var linkA = document.getElementById('breeze');
+              linkA.className = 'mode';
+
+              var linkB = document.getElementById('ham');
+              linkB.className = 'mode-selected';
+
+              var linkC = document.getElementById('pdx');
+              linkC.className = 'mode';
+
+              abstract.innerHTML =  '<div>' +
+                'Top month of ridership: September 2016' + '</div>' + '<div>' +
+                'Total bikes: 750' + '</div>' + '<div>' +
+                'Number of trips: 39,948' + '</div>' + '<div>' +
+                'Average trips per bike in top 25% of hubs: ' + '<div style = "display: inline; color: orange">' + 8.6 + '</div>'
+
+
+              description.innerHTML =  '<h2><b>' + 'SoBi Hamilton' + '</b></h2>' + '<p>' + 'Ridership Analysis' + '</p></div>'
+
+            });
+
+
+    document.getElementById('pdx').addEventListener('click', function () {
+            // Fly to a random location by offsetting the point -74.50, 40
+            // by up to 5 degrees.
+            map.jumpTo({
+                center: [-122.6765, 45.5231],
+                zoom: 12.5
+            });
+
+            document.getElementById('features').innerHTML = ""
+
+            var description = document.getElementById('description')
+
+            var linkA = document.getElementById('breeze');
+            linkA.className = 'mode';
+
+            var linkB = document.getElementById('ham');
+            linkB.className = 'mode';
+
+            var linkC = document.getElementById('pdx');
+            linkC.className = 'mode-selected';
+
+            abstract.innerHTML =  '<div>' +
+              'Top month of ridership: August 2016' + '</div>' + '<br><div>' +
+              'Total bikes: 1,000' + '</div>' + '<div>' +
+              'Number of trips: 57,921' + '</div>' + '<div>' +
+              'Average trips per bike in top 25% of hubs: ' + '<div style = "display: inline; color: orange">' + 6.18 + '</div>'
+
+            description.innerHTML =  '<h2><b>' + 'BIKETOWN Portland' + '</b></h2>' + '<p>' + 'Ridership Analysis' + '</p></div>'
+
+          });
+
+
+
+
+document.getElementById('stations').addEventListener('click', function () {
+        // Fly to a random location by offsetting the point -74.50, 40
+        // by up to 5 degrees.
+        var visibility = map.getLayoutProperty('ham_station', 'visibility');
+        var link = document.getElementById('stations');
+
+        if (visibility === 'visible') {
+            link.className = 'mode'
+            map.setLayoutProperty('ham_station', 'visibility', 'none');
+            map.setLayoutProperty('breeze_hubs', 'visibility', 'none');
+            map.setLayoutProperty('nike_hubs', 'visibility', 'none');
+
+        } else {
+            link.className = 'mode-selected';
+            map.setLayoutProperty('ham_station', 'visibility', 'visible');
+            map.setLayoutProperty('breeze_hubs', 'visibility', 'visible');
+            map.setLayoutProperty('nike_hubs', 'visibility', 'visible');
+
+
+        }
+      });
+
+/*
+
+      document.getElementById('pairs').addEventListener('click', function () {
+              // Fly to a random location by offsetting the point -74.50, 40
+              // by up to 5 degrees.
+              var visibility = map.getLayoutProperty('nov_pairs', 'visibility');
+              var link = document.getElementById('pairs');
+              var abstract = document.getElementById('abstract')
+
+
+              if (visibility === 'visible') {
+                  link.className = 'mode-fall'
+                  map.setLayoutProperty('nov_pairs', 'visibility', 'none')
+                  map.setLayoutProperty('heat_nov', 'visibility', 'none');
+                  abstract.innerHTML = ''
+              } else {
+                  link.className = 'mode-selected';
+                  map.setLayoutProperty('nov_pairs', 'visibility', 'visible')
+                  map.setLayoutProperty('heat_nov', 'visibility', 'visible');
+                  abstract.innerHTML = '<br>' + 'Displays the hubs associated with the 10 most frequent occuring trip pairs in November. '
+                  + 'Paired stations are color-coded the same and sized proportionately, however in some cases one hub may be part of the different pairs' +
+                  ' and therefore points overlap.' + '</br>'
+              }
+            });
+
+
+  document.getElementById('pairs_j').addEventListener('click', function () {
+          // Fly to a random location by offsetting the point -74.50, 40
+          // by up to 5 degrees.
+          var visibility = map.getLayoutProperty('jul_pairs', 'visibility');
+          var link = document.getElementById('pairs_j');
+          var abstract = document.getElementById('abstract')
+
+
+          if (visibility === 'visible') {
+              link.className = 'mode-summer'
+              map.setLayoutProperty('jul_pairs', 'visibility', 'none')
+              map.setLayoutProperty('heat_jul', 'visibility', 'none');
+              abstract.innerHTML = ''
+          } else {
+              link.className = 'mode-selected';
+              map.setLayoutProperty('jul_pairs', 'visibility', 'visible')
+              map.setLayoutProperty('heat_jul', 'visibility', 'visible');
+              abstract.innerHTML = '<br>' + 'Displays the hubs associated with the 10 most frequent occuring trip pairs in July.'
+              + ' Paired stations are color-coded the same and sized proportionately, however in some cases one hub may be part of different pairs' +
+              ' and therefore points overlap.      '  +  '<span class="redText"> NOTE: </span>' + 'No data for Van Wagner MEC although it was the second most-occuring pair, pairing with itself for 272 trips.' + '</br>'
+
+          }
+        });
+
+
+
+map.on('mousemove', function (e) {
+    var features = map.queryRenderedFeatures(e.point, { layers: ['stations'] });
+
+    if (!features.length) {
+        return;
+    }
+
+    var feature = features[0];
+
+    // Populate the popup and set its coordinates
+    // based on the feature found.
+    var popup = new mapboxgl.Popup()
+        .setLngLat(feature.geometry.coordinates)
+        .setHTML(feature.properties["data.stations.name"])
+        .addTo(map);
+});
+
+
+
+map.on("mousemove", function(e) {
+
+  function replacer(key, value) {
+            // Filtering out properties
+            if (value === null || key=="x_min" || key=="x_max" || key=="y_min" || key=="y_max") {
+              return undefined;
+            }
+            return value;
+          }
+
+    var features = map.queryRenderedFeatures(e.point, { layers: ["jul_activity"] });
+    if (features.length) {
+        map.setFilter("jul_activity-hover", ["==", "NH_NAME", features[0].properties.NH_NAME]);
+        document.getElementById('features').innerHTML = '<pre>' + '<div>' + '<br>' + 'Neighborhood: ' + features[0].properties.NH_NAME + '</div>' + '</br>' + '<div>' + 'Total Activity: ' +
+        features[0].properties.PNTCNT + '</div>' + '<div>' + 'Percent total: ' + Math.round((features[0].properties.PNTCNT/74138) * 10000)/100 + '</div>' + '</pre>';
+    } else {
+        map.setFilter("jul_activity-hover", ["==", "NH_NAME", ""]);
+    }
+});
+
+// Reset the state-fills-hover layer's filter when the mouse leaves the map
+map.on("mouseout", function() {
+    map.setFilter("jul_activity-hover", ["==", "NH_NAME", ""]);
+});
+
+*/
+
+map.on("mousemove", function(e) {
+
+    var features = map.queryRenderedFeatures(e.point, { layers: ["nike_stations"] });
+    if (features.length ) {
+        document.getElementById('features').innerHTML = '<pre>' + '<div>' + 'Station: ' + features[0].properties.name  + '</div>' + '<div>' + 'Total trips via station: ' + features[0].properties.nikePeform_Freq + '</div>' + '<div>' + 'Target bikes: ' +
+        features[0].properties.target_bikes_amount + '</div>' + '</pre>';
+    } else {
+       console.log("nothing")
+    }
+});
+
+map.on("mousemove", function(e) {
+
+    var features = map.queryRenderedFeatures(e.point, { layers: ["ham_stations"] });
+    if (features.length ) {
+        document.getElementById('features').innerHTML = '<pre>' + '<div>' + 'Station: ' + features[0].properties.name  + '</div>' + '<div>' + 'Total trips via station: ' + features[0].properties.hamPeform_Freq + '</div>' + '<div>' + 'Target bikes: ' +
+        features[0].properties.target_bikes_amount + '</div>' + '</pre>';
+    } else {
+       console.log("nothing")
+    }
+});
+
+map.on("mousemove", function(e) {
+
+    var features = map.queryRenderedFeatures(e.point, { layers: ["breeze_stations"] });
+    if (features.length ) {
+        document.getElementById('features').innerHTML = '<pre>' + '<div>' + 'Station: ' + features[0].properties.name  + '</div>' + '<div>' + 'Total trips via station: ' + features[0].properties.breezePeform_Freq + '</div>' + '<div>' + 'Target bikes: ' +
+        features[0].properties.target_bikes_amount + '</div>' + '</pre>';
+    } else {
+       console.log("nothing")
+    }
+});
+
+// Reset the state-fills-hover layer's filter when the mouse leaves the map
+
+
+</script>
+
+</body>
+</html>
