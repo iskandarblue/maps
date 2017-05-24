@@ -1,0 +1,32 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1591, "name": "Tilikum West at SW Moody", "target_bikes_amount": 8, "nikePeform2016_Freq": 3827 }, "geometry": { "type": "Point", "coordinates": [ -122.671562157282239, 45.502615338459698 ] } },
+{ "type": "Feature", "properties": { "id": 1592, "name": "NW Kearney at 23rd", "target_bikes_amount": 9, "nikePeform2016_Freq": 3776 }, "geometry": { "type": "Point", "coordinates": [ -122.698893096678049, 45.529135872446901 ] } },
+{ "type": "Feature", "properties": { "id": 1558, "name": "NW Everett at 22nd", "target_bikes_amount": 9, "nikePeform2016_Freq": 3740 }, "geometry": { "type": "Point", "coordinates": [ -122.696618817071908, 45.524877901166334 ] } },
+{ "type": "Feature", "properties": { "id": 1561, "name": "NW Johnson at Jamison Square", "target_bikes_amount": 9, "nikePeform2016_Freq": 4990 }, "geometry": { "type": "Point", "coordinates": [ -122.682030088240197, 45.528635583255266 ] } },
+{ "type": "Feature", "properties": { "id": 1600, "name": "SW Naito at Ankeny Plaza", "target_bikes_amount": 9, "nikePeform2016_Freq": 4700 }, "geometry": { "type": "Point", "coordinates": [ -122.670359529817802, 45.522680611899169 ] } },
+{ "type": "Feature", "properties": { "id": 1528, "name": "NW 13th at Marshall", "target_bikes_amount": 9, "nikePeform2016_Freq": 6312 }, "geometry": { "type": "Point", "coordinates": [ -122.684424416059841, 45.530906061670969 ] } },
+{ "type": "Feature", "properties": { "id": 1569, "name": "SW Salmon at Waterfront Park", "target_bikes_amount": 9, "nikePeform2016_Freq": 9682 }, "geometry": { "type": "Point", "coordinates": [ -122.673694677117084, 45.515529151058253 ] } },
+{ "type": "Feature", "properties": { "id": 1570, "name": "SW River at Montgomery", "target_bikes_amount": 9, "nikePeform2016_Freq": 5654 }, "geometry": { "type": "Point", "coordinates": [ -122.673439219385216, 45.509361011288476 ] } },
+{ "type": "Feature", "properties": { "id": 1571, "name": "SW Stark at Burnside", "target_bikes_amount": 9, "nikePeform2016_Freq": 4457 }, "geometry": { "type": "Point", "coordinates": [ -122.684032917022719, 45.522781029554594 ] } },
+{ "type": "Feature", "properties": { "id": 1610, "name": "SE 7th at Burnside", "target_bikes_amount": 9, "nikePeform2016_Freq": 4021 }, "geometry": { "type": "Point", "coordinates": [ -122.658770270983709, 45.522776209873435 ] } },
+{ "type": "Feature", "properties": { "id": 1574, "name": "SW 2nd at Pine", "target_bikes_amount": 9, "nikePeform2016_Freq": 5492 }, "geometry": { "type": "Point", "coordinates": [ -122.67261212624291, 45.521444967159049 ] } },
+{ "type": "Feature", "properties": { "id": 1575, "name": "SW 3rd at Ankeny", "target_bikes_amount": 9, "nikePeform2016_Freq": 5918 }, "geometry": { "type": "Point", "coordinates": [ -122.673300346024973, 45.522409908921894 ] } },
+{ "type": "Feature", "properties": { "id": 1576, "name": "SW 3rd at Morrison", "target_bikes_amount": 9, "nikePeform2016_Freq": 4466 }, "geometry": { "type": "Point", "coordinates": [ -122.675583487538319, 45.518041469324359 ] } },
+{ "type": "Feature", "properties": { "id": 1577, "name": "SW 5th at Morrison", "target_bikes_amount": 10, "nikePeform2016_Freq": 5544 }, "geometry": { "type": "Point", "coordinates": [ -122.67738119432488, 45.518989228302196 ] } },
+{ "type": "Feature", "properties": { "id": 1615, "name": "SE Ladd at Hawthorne", "target_bikes_amount": 8, "nikePeform2016_Freq": 4927 }, "geometry": { "type": "Point", "coordinates": [ -122.653307871313032, 45.512086055376962 ] } },
+{ "type": "Feature", "properties": { "id": 1541, "name": "SW Moody at Aerial Tram Terminal", "target_bikes_amount": 9, "nikePeform2016_Freq": 7012 }, "geometry": { "type": "Point", "coordinates": [ -122.671497596407235, 45.499141763293366 ] } },
+{ "type": "Feature", "properties": { "id": 1578, "name": "SW 5th at Oak", "target_bikes_amount": 9, "nikePeform2016_Freq": 4313 }, "geometry": { "type": "Point", "coordinates": [ -122.676286292592096, 45.521260541842231 ] } },
+{ "type": "Feature", "properties": { "id": 1580, "name": "SW Morrison at 18th", "target_bikes_amount": 9, "nikePeform2016_Freq": 5000 }, "geometry": { "type": "Point", "coordinates": [ -122.690548136446552, 45.522219035801896 ] } },
+{ "type": "Feature", "properties": { "id": 1581, "name": "SW Morrison at Pioneer Courthouse Sq.", "target_bikes_amount": 9, "nikePeform2016_Freq": 4922 }, "geometry": { "type": "Point", "coordinates": [ -122.679229052170527, 45.519213364593362 ] } },
+{ "type": "Feature", "properties": { "id": 1582, "name": "SW Yamhill at Director Park", "target_bikes_amount": 10, "nikePeform2016_Freq": 5488 }, "geometry": { "type": "Point", "coordinates": [ -122.681288811384348, 45.518974862665196 ] } },
+{ "type": "Feature", "properties": { "id": 1545, "name": "NW Marshall at Tanner Springs Park", "target_bikes_amount": 9, "nikePeform2016_Freq": 4329 }, "geometry": { "type": "Point", "coordinates": [ -122.681684863087568, 45.530824707350448 ] } },
+{ "type": "Feature", "properties": { "id": 1583, "name": "NW 11th at The Fields", "target_bikes_amount": 9, "nikePeform2016_Freq": 3801 }, "geometry": { "type": "Point", "coordinates": [ -122.682427658147304, 45.532381064770597 ] } },
+{ "type": "Feature", "properties": { "id": 1512, "name": "SW 10th at Stark", "target_bikes_amount": 9, "nikePeform2016_Freq": 4713 }, "geometry": { "type": "Point", "coordinates": [ -122.681111630408935, 45.52167680505535 ] } },
+{ "type": "Feature", "properties": { "id": 1587, "name": "NW 8th at Everett", "target_bikes_amount": 9, "nikePeform2016_Freq": 4208 }, "geometry": { "type": "Point", "coordinates": [ -122.678460517172269, 45.524946194738703 ] } },
+{ "type": "Feature", "properties": { "id": 1588, "name": "NW Couch at 11th", "target_bikes_amount": 9, "nikePeform2016_Freq": 6220 }, "geometry": { "type": "Point", "coordinates": [ -122.681818162539329, 45.523726497231202 ] } },
+{ "type": "Feature", "properties": { "id": 1590, "name": "NW Flanders at 14th", "target_bikes_amount": 7, "nikePeform2016_Freq": 5542 }, "geometry": { "type": "Point", "coordinates": [ -122.685602519714351, 45.525795541167156 ] } }
+]
+}
