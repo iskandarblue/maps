@@ -110,7 +110,11 @@ var stateline = d3.svg.line()
     .x(function(d) { return x(d.hour); })
     .y(function(d) { return y(d.value); });
 
-
+  var area = d3.svg.area()
+  .interpolate("cardinal")
+      .x(function(d) { return x(d.hour); })
+      .y0(height)
+      .y1(function(d) { return y(d.value); });
 
 
 // Adds the svg canvas
@@ -162,6 +166,7 @@ d3.json("availability.json", function(error, json) {
 
 var color = d3.scale.ordinal().range(["#D3D3D3",  "#0096ff", "#ff6347"]);
 var width = d3.scale.ordinal().range([2,  5, 1]);
+var opac = d3.scale.ordinal().range([0.3, 0.5, 0.0])
 
 function updateGraph(data) {
 
@@ -179,6 +184,25 @@ function updateGraph(data) {
 				  return $("." + val.key).attr("fill") != "#ccc"
 				  // matching the data with selector status
 				})
+
+
+  var stateArea = svg.selectAll(".area")
+
+.data(result, function(d){return d.key});
+
+stateArea.enter().append("path")
+  .attr("class", "area");
+
+stateArea.transition()
+  .style("fill", function(d,i) { return d.color = color(d.key); })
+  .style("opacity", function(d,i) { return d.opacity = opac(d.key); })
+  .attr("id", function(d){ return 'tagArea'+d.key.replace(/\s+/g, '');}) // assign ID
+  .attr("d", function(d){
+
+    return area(d.values)
+  });
+
+stateArea.exit().remove();
 
 
  		var state = svg.selectAll(".line")
@@ -283,8 +307,8 @@ svg.append("text")
 
     svg.append("text")
         .attr("transform",
-              "translate(" + (250) + " ," +
-                             (550) + ")")
+              "translate(" + (100/2) + " ," +
+                             (height + margin.top + 20) + ")")
         .style("text-anchor", "middle")
         .text("Date");
 
