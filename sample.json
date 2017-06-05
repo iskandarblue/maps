@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::3857" } },
+"features": [
+{ "type": "Feature", "properties": { "cat": "A", "name": "Aberdeen"}, "geometry": { "type": "Point", "coordinates": [ 16.37208, 48.20849 ] } },
+{ "type": "Feature", "properties": { "cat": "B", "name": "Berlin"}, "geometry": { "type": "Point", "coordinates": [ 4.3517103, 50.8503396 ] } },
+{ "type": "Feature", "properties": { "cat": "C", "name": "Copenhagen"}, "geometry": { "type": "Point", "coordinates": [ 4.3517103, 50.8503396 ] } },
+{ "type": "Feature", "properties": { "cat": "D", "name": "Dublin" }, "geometry": { "type": "Point", "coordinates": [ 12.56553, 55.67594 ] } },
+{ "type": "Feature", "properties": { "cat": "E", "name": "Edinburgh"}, "geometry": { "type": "Point", "coordinates": [ -3.7037902, 40.4167754 ] } }
+]
+}

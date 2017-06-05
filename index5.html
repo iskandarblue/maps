@@ -14,27 +14,6 @@
 
 
 <style>
-  #survey{
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    width: 175px;
-    height: 100px;
-    border: 3px solid rgb(65,207,161);
-    border-radius: 20px;
-    color: rgb(39,39,39);
-    background-color: rgba(250,250,250,0.88);
-    text-align:center;
-    font-size: 12px;
-    padding: 5px 5px;
-    font-weight: bold;
-  }
-  #close{
-    position: absolute;
-    top: -5px;
-    left: -25px;
-    border-radius: 1px;
-  }
   body {
     color: #eee;
     overflow: hidden;
@@ -305,8 +284,6 @@
   #ema_title {
    display: none;
    position: absolute;
-   width: 83px;
-   height: 20px;
    left: 49%;
    top: 1%;
    right: 25%;
@@ -317,17 +294,18 @@
    opacity: .7;
    text-align:center;
    z-index:1;
- }
-
-  #banner{
-    content:url(http://iskandari.github.io/maps/EMA_med.jpg);
-    display: none;
-  	position: fixed;
-    border-style: solid;
-  	top: 30%;
-  	left: calc(50% - 488.5px);
-  	opacity: 0.9;
-  	z-index:1001;
+  }
+ #banner{
+  display: none;
+  position: fixed;
+  border-style: solid;
+  top: 30%;
+  left: calc(50% - 488.5px);
+  opacity: 0.9;
+  z-index:1001;}
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   #menu {
@@ -490,7 +468,7 @@
     border: none;
     width: 100%;
     border-radius: 3px;
-    background: rgba(250, 250, 250, 0.88);
+    background: rgba(12, 12, 12, 0.7);
     padding: 10px;
     margin-top: 5px;
 }
@@ -511,7 +489,7 @@
 .map-overlay .listing a {
     border-bottom: 1px solid rgba(0, 128, 225, 0.3);
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(32, 32, 32, 0.4);
+    background: rgba(12, 12, 12, 0.7);
     text-decoration: none;
 }
 
@@ -548,6 +526,35 @@ overflow: auto;
    text-decoration: none;
    background-color: none;
 }
+
+/*.label {
+    padding: 1px 3px 2px;
+    font-size: 9.75px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #bfbfbf;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.label.success {
+    background-color: #46a546;
+}
+
+
+.itemH:hover a  span{
+  display: none;
+}
+.itemH:hover a :after{
+  content: 'ADD';
+}*/
+
+.link:hover span {display:none;}
+.link:hover::after {content: attr(data-content) 'bar';}
+
 
 #header {
   position: absolute;
@@ -660,7 +667,7 @@ overflow: auto;
     }
 
     #ema_title {
-     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
+     /*content:url(http://iskandari.github.io/maps/EMA_med.jpg);*/
      display: none;
      position: absolute;
      width: 200px;
@@ -888,8 +895,8 @@ overflow: auto;
     <div id ='about-linked'></div>
   </div>
 
-<div id ='banner'></div>
-<div id='ema_title'><a href='http://www.em-a.eu/'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;" align ="middle" height = "80" width = "332"></a></div>
+  <div id ='banner'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA"></div>
+  <div id='ema_title'><a href='http://www.em-a.eu/' style="color: white;" target='_blank'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;"></a></div>
 
 
 
@@ -1103,7 +1110,7 @@ function renderListings(features) {
 
               $("#interest").children().not('#interest-close').remove();
               $("#interest-close").appendTo("#interest");
-              $('<div style ="font-size:25px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              $('<div style ="font-size:25px;  margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
               '<div style ="font-size:25px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
 
             });
@@ -1270,7 +1277,7 @@ function renderListings(features) {
                   for (i = 1; i < courses.length; i++) {
                     if (courses[i]) {
                     html += "<div class='link'>";
-                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'>" + courses[i] + "</a>" + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.9; color: RoyalBlue;"><i>' + dstats(status[i]) + '</i></div>' + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:LightCoral;"><i>' + hideUndf(ongoing[i]) + '</i></div>';
+                    html += "<a href='" + websites[i] + "'style='color: rgb(0,255,0)'; target='_blank'><span>" + courses[i] + "</a></span>" + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.9; color: RoyalBlue;"><i>' + dstats(status[i]) + '</i></div>' + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:LightCoral;"><i>' + hideUndf(ongoing[i]) + '</i></div>';
                     html += "</div>\n";
                   }
                 }
@@ -1727,7 +1734,6 @@ setTimeout(function() {
 
           var features = map.queryRenderedFeatures({layers:['city', 'uni', 'cityPHD', 'cityMASTERS']});
 
-          console.log(features);
 
           if (features) {
               var uniqueFeatures = getUniqueFeatures(features, "code");
@@ -1879,9 +1885,6 @@ setTimeout(function() {
           var ff = document.getElementById('feature-filter');
           var degree = document.getElementById('dropbtn').textContent
 
-          console.log(ongoing)
-          console.log(degree)
-
           if (ongoing === 'Past'){
 
             if(degree === 'Degree' || degree === 'All'){
@@ -1981,9 +1984,6 @@ setTimeout(function() {
             var ff = document.getElementById('feature-filter');
             var ongoing = document.getElementById('ongoing').textContent
 
-            console.log(degree)
-            console.log(ongoing)
-            console.log(program.className)
 
               filterEl.value = '';
               listingEl.innerHTML = '';
@@ -2850,6 +2850,17 @@ var feature = features[0];
               return html;
             }
 
+
+            $.getJSON("bycourses1605.geojson", function(json) {
+
+              var obj=json.features.reduce(function(obj,item){
+                obj[item.properties.code]=item.properties.title;
+                return obj;
+                },{});
+
+                console.log(obj);
+            // this will show the info it in firebug console
+              });
 
                   // Populate the popup and set its coordinates
                   // based on the feature found.

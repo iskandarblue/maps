@@ -1,0 +1,1730 @@
+[
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 0,
+    "value": 5.21
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 1,
+    "value": 4.34
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 2,
+    "value": 3.19
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 3,
+    "value": 2.95
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 4,
+    "value": 2.49
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 5,
+    "value": 1.85
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 6,
+    "value": 2.8
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 7,
+    "value": 2.5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 8,
+    "value": 1.7
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 9,
+    "value": 3
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 10,
+    "value": 1.2
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 11,
+    "value": 2.16
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 12,
+    "value": 7.26
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 13,
+    "value": 14.65
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 14,
+    "value": 16.9
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 15,
+    "value": 18.16
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 16,
+    "value": 18.45
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 17,
+    "value": 17.7
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 18,
+    "value": 17.35
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 19,
+    "value": 16.08
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 20,
+    "value": 13.68
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 21,
+    "value": 9.68
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 22,
+    "value": 6.47
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "average",
+    "hour": 23,
+    "value": 5.64
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 0,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 1,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 2,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 3,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 4,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 5,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 6,
+    "value": 8
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 7,
+    "value": 9
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 8,
+    "value": 9
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 9,
+    "value": 9
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 10,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 11,
+    "value": 3
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 12,
+    "value": 3
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 13,
+    "value": 2
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 14,
+    "value": 1
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 15,
+    "value": 1
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 16,
+    "value": 1
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 17,
+    "value": 1
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 18,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 19,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 20,
+    "value": 5
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 21,
+    "value": 6
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 22,
+    "value": 8
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "today",
+    "hour": 23,
+    "value": 9
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 0,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 1,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 2,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 3,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 4,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 5,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 6,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 7,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 8,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 9,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 10,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 11,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 12,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 13,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 14,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 15,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 16,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 17,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 18,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 19,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 20,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 21,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 22,
+    "value": 4
+  },
+  {
+    "station": "McMaster Student Centre - 17",
+    "type": "target",
+    "hour": 23,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 0,
+    "value": 3.58
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 1,
+    "value": 3.08
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 2,
+    "value": 1.73
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 3,
+    "value": 2.25
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 4,
+    "value": 2.25
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 5,
+    "value": 2.31
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 6,
+    "value": 2
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 7,
+    "value": 3.63
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 8,
+    "value": 5.67
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 9,
+    "value": 0.67
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 10,
+    "value": 1.83
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 11,
+    "value": 2.66
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 12,
+    "value": 8.63
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 13,
+    "value": 16.26
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 14,
+    "value": 18.83
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 15,
+    "value": 18.44
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 16,
+    "value": 17.13
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 17,
+    "value": 17.11
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 18,
+    "value": 16.87
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 19,
+    "value": 14.88
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 20,
+    "value": 10.84
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 21,
+    "value": 6.43
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 22,
+    "value": 4.39
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "average",
+    "hour": 23,
+    "value": 3.86
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 0,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 1,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 2,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 3,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 4,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 5,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 6,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 7,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 8,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 9,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 10,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 11,
+    "value": 5
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 12,
+    "value": 7
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 13,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 14,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 15,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 16,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 17,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 18,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 19,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 20,
+    "value": 8
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 21,
+    "value": 7
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 22,
+    "value": 7
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "today",
+    "hour": 23,
+    "value": 6
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 0,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 1,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 2,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 3,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 4,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 5,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 6,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 7,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 8,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 9,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 10,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 11,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 12,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 13,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 14,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 15,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 16,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 17,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 18,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 19,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 20,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 21,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 22,
+    "value": 4
+  },
+  {
+    "station": "McMaster Health Sciences - 10",
+    "type": "target",
+    "hour": 23,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 0,
+    "value": 9.4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 1,
+    "value": 9.13
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 2,
+    "value": 9.3
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 3,
+    "value": 9.07
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 4,
+    "value": 8.04
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 5,
+    "value": 7.46
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 6,
+    "value": 6.22
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 7,
+    "value": 6.82
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 8,
+    "value": 6.17
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 9,
+    "value": 5.5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 10,
+    "value": 6.71
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 11,
+    "value": 6.36
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 12,
+    "value": 5.65
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 13,
+    "value": 6.82
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 14,
+    "value": 7.17
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 15,
+    "value": 7.01
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 16,
+    "value": 7.64
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 17,
+    "value": 7.59
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 18,
+    "value": 7.87
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 19,
+    "value": 8.21
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 20,
+    "value": 9.1
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 21,
+    "value": 9.86
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 22,
+    "value": 9.55
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "average",
+    "hour": 23,
+    "value": 9.13
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 0,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 1,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 2,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 3,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 4,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 5,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 6,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 7,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 8,
+    "value": 3
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 9,
+    "value": 3
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 10,
+    "value": 3
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 11,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 12,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 13,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 14,
+    "value": 4
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 15,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 16,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 17,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 18,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 19,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 20,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 21,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 22,
+    "value": 7
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "today",
+    "hour": 23,
+    "value": 5
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 0,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 1,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 2,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 3,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 4,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 5,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 6,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 7,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 8,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 9,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 10,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 11,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 12,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 13,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 14,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 15,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 16,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 17,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 18,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 19,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 20,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 21,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 22,
+    "value": 6
+  },
+  {
+    "station": "James North at Mulberry - 76",
+    "type": "target",
+    "hour": 23,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 0,
+    "value": 7
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 1,
+    "value": 7.120879121
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 2,
+    "value": 6.376470588
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 3,
+    "value": 6.321428571
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 4,
+    "value": 5.585365854
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 5,
+    "value": 6.673469388
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 6,
+    "value": 6.259259259
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 7,
+    "value": 5.454545455
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 8,
+    "value": 6.153846154
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 9,
+    "value": 5
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 10,
+    "value": 3.538461538
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 11,
+    "value": 5.318181818
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 12,
+    "value": 4.837209302
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 13,
+    "value": 4.87755102
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 14,
+    "value": 4.090909091
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 15,
+    "value": 4.770833333
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 16,
+    "value": 4.75
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 17,
+    "value": 5.683760684
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 18,
+    "value": 5.546218487
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 19,
+    "value": 5.785185185
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 20,
+    "value": 6.285714286
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 21,
+    "value": 6.835820896
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 22,
+    "value": 7.043478261
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "average",
+    "hour": 23,
+    "value": 6.3515625
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 0,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 1,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 2,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 3,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 4,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 5,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 6,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 7,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 8,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 9,
+    "value": 2
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 10,
+    "value": 3
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 11,
+    "value": 3
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 12,
+    "value": 3
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 13,
+    "value": 4
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 14,
+    "value": 4
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 15,
+    "value": 4
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 16,
+    "value": 4
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 17,
+    "value": 5
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 18,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 19,
+    "value": 7
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 20,
+    "value": 7
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 21,
+    "value": 4
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 22,
+    "value": 3
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "today",
+    "hour": 23,
+    "value": 3
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 0,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 1,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 2,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 3,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 4,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 5,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 6,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 7,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 8,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 9,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 10,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 11,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 12,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 13,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 14,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 15,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 16,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 17,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 18,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 19,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 20,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 21,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 22,
+    "value": 6
+  },
+  {
+    "station": "Westdale Village - 24",
+    "type": "target",
+    "hour": 23,
+    "value": 6
+  }
+]

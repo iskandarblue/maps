@@ -14,27 +14,6 @@
 
 
 <style>
-  #survey{
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    width: 175px;
-    height: 100px;
-    border: 3px solid rgb(65,207,161);
-    border-radius: 20px;
-    color: rgb(39,39,39);
-    background-color: rgba(250,250,250,0.88);
-    text-align:center;
-    font-size: 12px;
-    padding: 5px 5px;
-    font-weight: bold;
-  }
-  #close{
-    position: absolute;
-    top: -5px;
-    left: -25px;
-    border-radius: 1px;
-  }
   body {
     color: #eee;
     overflow: hidden;
@@ -117,28 +96,34 @@
     background-color: rgba(243,123,33, 0.5);
 }
 
-    #program_title{
-      position: absolute;
-      z-index: 2;
-      background: rgba(12, 12, 12, 0.89);
-      border-style: solid;
-      border-color: rgba(243,123,33, 1);
-      color: #fff;
-      font-weight: 600;
-      font-size: 18px;
-      display: none;
-      left: 50%;
-      width: auto;
-      bottom: 1%;
-      text-align: center;
-      padding: 5px 10px;
-      border-radius: 10px;
-      -webkit-transform: translateX(-50%);
-       -moz-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-       -o-transform: translateX(-50%);
-       transform: translateX(-50%);
-    }
+#program_title{
+  /*opacity: .5;*/
+  position: absolute;
+  z-index: 2;
+  /*background: rgba(12, 12, 12, 0.89);*/
+  /*background-color: rgba(0,77,133,0.89);*/
+  background: rgb(243,123,33);
+  border-style: solid;
+  border-width:thin;
+  /*border-color: #43cea2;*/
+  /*border-color: white;*/
+  border-color: rgba(0,77,133,0.89);
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  display: none;
+  left: 50%;
+  width: auto;
+  top: 90%;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  -webkit-transform: translateX(-50%);
+   -moz-transform: translateX(-50%);
+   -ms-transform: translateX(-50%);
+   -o-transform: translateX(-50%);
+   transform: translateX(-50%);
+}
 
     #go-back {
       content:url('./back-button.svg');
@@ -169,7 +154,6 @@
       width: 25%;
       height: 100%;
       display: none;
-      overflow-x: scroll;
     }
 
     #interest-close {
@@ -222,10 +206,9 @@
       border: 1px solid #eee;
       position: relative;
       right: 0px;
-      margin-top: 20px;
-      margin-right: 20px;
+      margin-top: 3%;
+      margin-right: 7%;
       float: right;
-      top: 0px;
       width: 38px;
       height: 38px;
       border-radius: 19px;
@@ -305,8 +288,6 @@
   #ema_title {
    display: none;
    position: absolute;
-   width: 83px;
-   height: 20px;
    left: 49%;
    top: 1%;
    right: 25%;
@@ -317,26 +298,28 @@
    opacity: .7;
    text-align:center;
    z-index:1;
- }
+  }
 
-  #banner{
-    content:url(http://iskandari.github.io/maps/EMA_med.jpg);
-    display: none;
-  	position: fixed;
-    border-style: solid;
-  	top: 30%;
-  	left: calc(50% - 488.5px);
-  	opacity: 0.9;
-  	z-index:1001;
+ #banner{
+  display: none;
+  position: fixed;
+  border-style: solid;
+  top: 30%;
+  left: calc(50% - 488.5px);
+  opacity: 0.9;
+  z-index:1001;}
+  img {
+    max-width: 100%;
+    max-height: 100%;
   }
 
   #menu {
     position: absolute;
     z-index: 2;
-    top: 3px;
+    top: 6px;
     left: 28.5%;
     height: 30px;
-    padding: 10px;
+    padding: 5px;
     color: #ccc;
     border-radius: 5px;
     font-family: 'Open Sans', sans-serif;
@@ -490,14 +473,14 @@
     border: none;
     width: 100%;
     border-radius: 3px;
-    background: rgba(250, 250, 250, 0.88);
+    background: rgba(12, 12, 12, 0.7);
     padding: 10px;
     margin-top: 5px;
 }
 
 .map-overlay .listing {
     overflow: auto;
-    max-height: 100%;
+    max-height: 90%;
 
 }
 
@@ -511,7 +494,7 @@
 .map-overlay .listing a {
     border-bottom: 1px solid rgba(0, 128, 225, 0.3);
     color: rgba(255, 255, 255, 0.9);
-    background: rgba(32, 32, 32, 0.4);
+    background: rgba(12, 12, 12, 0.7);
     text-decoration: none;
 }
 
@@ -572,7 +555,6 @@ overflow: auto;
     width: 100%;
     height: 50vh;
     display: none;
-    overflow: auto;
   }
 
 
@@ -645,22 +627,8 @@ overflow: auto;
       display: none
     }
 
-    #banner{
-      content:url(http://iskandari.github.io/maps/EMA_med.jpg);
-      display: none;
-    	position: fixed;
-      width: 240px;
-      height: 60px;
-      border-style: solid;
-    	top: calc(50% - 30px);;
-    	left: calc(50% - 120px);
-    	opacity: 0;
-    	z-index:1001;
-
-    }
-
     #ema_title {
-     content:url(http://iskandari.github.io/maps/EMA_med.jpg);
+     /*content:url(http://iskandari.github.io/maps/EMA_med.jpg);*/
      display: none;
      position: absolute;
      width: 200px;
@@ -853,7 +821,7 @@ overflow: auto;
   <div id = 'about-close'></div>
   <div id='about-content'>
     <div id='about-text'>
-    <div id = 'about-header'>EMA web map</div>
+    <div id = 'about-header'>Erasmus Mundus Web Map</div>
       <p>The Erasmus Mundus Association is a professional network for Erasmus Mundus students and graduates. This webmap serves as a search tool for graduate programs by location and links prospective students to program webpages.</p>
       <p>There are two modes: <b>Program</b> and <b>City</b>.  The first mode allows one to filter the programs in mapview by program name and displays markers for all locations of an individual program. The second displays programs and links to individual webpages by city.  The default filter button is 'All', which displays both Master's and PhD programs.  To see only Master's or PhD programs, click the corresponding button.  Discontinued programs are marked <b>D/C</b>. For more details, please see the list of all <a href='http://eacea.ec.europa.eu/erasmus_mundus/results_compendia/selected_projects_action_1_master_courses_en.php'>Erasmus Mundus Masters Courses</a>.</p>
       <p>We hope that this program exploration tool will serve as a resource for students, faculty, and EMA staff.</p>
@@ -861,7 +829,7 @@ overflow: auto;
       <div id = 'about-map'><div id = 'about-map-button'>Back to the map</div></div>
       <div id='about-credits'>
         <br/>Map engine — <a href='https://www.mapbox.com/mapbox-gl-js/'>Mapbox GL JS</a>
-        <p><br/>Development: <a href="https://www.linkedin.com/in/alexander-tedeschi-4a006938">Alexander Tedeschi</a>  |  Data Processing:  <a href="https://de.linkedin.com/in/dejanpopovic11">Dejan Popović</a>  |  Conceptual design: <a href="https://www.linkedin.com/in/ruxandraaelenei/">Ruxandra Aelenei</a></p>
+        <p><br/>Development & Data Processing: <a href="https://www.linkedin.com/in/alexander-tedeschi-4a006938">Alexander Tedeschi</a>, <a href="https://de.linkedin.com/in/dejanpopovic11">Dejan Popović</a>  |  Conceptual idea: <a href="https://www.linkedin.com/in/ruxandraaelenei/">Ruxandra Aelenei</a></p>
     </div>
   </div>
 </div>
@@ -888,8 +856,8 @@ overflow: auto;
     <div id ='about-linked'></div>
   </div>
 
-<div id ='banner'></div>
-<div id='ema_title'><a href='http://www.em-a.eu/'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;" align ="middle" height = "80" width = "332"></a></div>
+<div id ='banner'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA"></div>
+<div id='ema_title'><a href='http://www.em-a.eu/' style="color: white;" target='_blank'><img src="https://dejan11.github.io//EMA_med_map.jpg" alt="EMA" style="border-radius: 20px;"></a></div>
 
 
 
@@ -1065,17 +1033,17 @@ function renderListings(features) {
           function colored(str){
               if (str === "NEW"){
 
-                return "#FFFF00"
+                return "#f2fa72"
 
               } else {
-                return "#fa8072"
+                return "#FF0000"
               }
             }
 
 //Content of the listing
 
             item.target = '_blank';
-            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>' +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color: #ff6666"><i>' + deprecated(ongoing) + '</i></div>';
+            item.innerHTML = '<div style ="display:inline;">   ' + prop.code + ' </div>' + "  " + '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color:' +  colored(status) + ';"><i>' + hideNulls(status) + '</i></div>'// +  '<div style ="display:inline; margin-left: 5px; opacity: 0.6; color: #ff6666"><i>' + deprecated(ongoing) + '</i></div>';
 
 //Program mode - on click zoom to extent with fitBounds
             item.addEventListener('click', function(){
@@ -1103,7 +1071,7 @@ function renderListings(features) {
 
               $("#interest").children().not('#interest-close').remove();
               $("#interest-close").appendTo("#interest");
-              $('<div style ="font-size:25px; overflow-x: scroll; margin-left:10px; margin-right: 10px; margin-top: 25px">' + prop.title + '</div>' +
+              $('<div style ="font-size:25px; margin-left:10px; margin-right: 10px; margin-top: 20%">' + prop.title + '</div>' +
               '<div style ="font-size:25px; margin-left:10px; margin-top: 25px;"><a href="' + prop.website + '" target="_blank">program details</a></div>').appendTo("#interest");
 
             });
@@ -1236,22 +1204,14 @@ function renderListings(features) {
     }
   }
                 function hideUndf(str) {
-                  if (str == undefined) {
-                    return "D/C"
-                } else if (str == 1){
+                  if (str == 1) {
                     return ""
                 } else {
-                   return str
+                   return "D/C"
                 }
               }
 
-              function colored(str){
-                  if (str == "NEW"){
-                    return "#3399ff"
-                  } else {
-                    return "#fa8072"
-                  }
-                };
+
 
                 function dstats(str){
                   if(str == undefined){
@@ -1447,6 +1407,7 @@ function addDataLayer(){
     map.addSource('uni', {
         "type": 'geojson',
         "data": 'bycourses1605.geojson'
+        // "data": 'by_cources_all_24_05.geojson'
     });
     map.addLayer({
         "id": "uni",
@@ -2818,13 +2779,7 @@ var feature = features[0];
                 }
               }
 
-              function colored(str){
-                  if (str == "NEW"){
-                    return "#3399ff"
-                  } else {
-                    return "#fa8072"
-                  }
-                };
+
 
                 function dstats(str){
                   if(str == undefined){
