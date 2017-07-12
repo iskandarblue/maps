@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset='UTF-8' />
+</head>
+<style>
+#counter {
+  background: #333;
+  font-family: sans-serif;
+  text-align: center;
+  color: #eee;
+  text-shadow: 1px 1px 5px black;
+  padding: 1rem 0;
+  font-size: 3rem;
+}
+</style>
+<body>
+  <div id="counter">
+    <p></p>
+  </div>
+<script>
+
+var seconds=0;
+var increasepersecond = 31;//a regular timer
+
+//Call according to speed
+function countAndDisplay(){
+   var time=[];
+   [60,60,24].reduce(function(left,max,i){
+      time[i]= ('0' + (left%max)).slice(-2);
+      return (left-time[i])/max;
+   },seconds);
+
+ jQuery('#counter').html(time.reverse().join(":"))
+seconds+=increasepersecond;
+
+}
+setInterval(countAndDisplay,1000/increasepersecond);
+
+// -->
+</script>
+</body>
+</html>
